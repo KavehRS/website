@@ -62,13 +62,16 @@
       <div class="container"> 
        
        <h3> <i class="fa fa-briefcase"></i>  EXPERIENCES</h3>
-       <li>Junior Software Engineer at R&D section, Aug 2019 – Jan 2021
+       <li>Junior Software Engineer at R&D section, Aug 2019 – Jan 2021</li>
        Tehran, Tehran, Iran
+       
        I work at the R&D section in the IRIB cyberspace department.
+       
          >Research & Development
+         
          >Web Crawling
-       </li>
-       <li>Monitoring And Evaluation Specialist, Aug 2018 – Aug 2019
+       
+       <li>Monitoring And Evaluation Specialist, Aug 2018 – Aug 2019</li>
        Tehran, Tehran, Iran
        I work at the IPTV/OTT center in the IRIB cyberspace department.
          >Mividi TSM100 admin
@@ -76,7 +79,7 @@
          >Python programmer
          >Data Analysis
          & ...
-       </li>
+       
 
        
        
