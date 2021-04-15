@@ -7,7 +7,7 @@ description: Software Engineer
 
 baseurl: / #name of GitHub repository
 url: #custom url to be used instead of GitHub repository
-email: #
+email: me@kavehrs.com
 
 
 highlighter: rouge
@@ -24,8 +24,8 @@ twitter: "kavehrs"
 linkedin: "kavehrs"
 github: "kavehrs"
 #researchgate: "#"
-orcid: "#"
-email: me@kavehrs.com
+orcid: "0000-0001-9591-7724"
+
 
 highlighter: rouge
 markdown: kramdown
