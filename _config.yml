@@ -1,9 +1,11 @@
 ### your site title here
 
-title: Your Name
-description: subtitle | affiliations | motto
+title: Kaveh Rezaei Shiraz
+# description: subtitle | affiliations | motto
+description: Software Engineer 
 
-baseurl: /gradfolio #name of GitHub repository
+
+baseurl: / #name of GitHub repository
 url: #custom url to be used instead of GitHub repository
 email: #
 
@@ -17,11 +19,11 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-facebook: "#"
-twitter: "#"
-linkedin: "#"
-github: "#"
-researchgate: "#"
+#facebook: "#"
+twitter: "kavehrs"
+linkedin: "kavehrs"
+github: "kavehrs"
+#researchgate: "#"
 orcid: "#"
 
 highlighter: rouge
