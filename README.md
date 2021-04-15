@@ -1,7 +1,8 @@
 # KavehRS
 responsive, dark-mode ready Jekyll theme designed for use as a personal website
 
-![Gradfolio Template Homepage](https://user-images.githubusercontent.com/2485715/110634179-acaa7e00-81cf-11eb-8846-062ecf961d1e.png)
+[![JekyllThemes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com)
+
 
 ## Features
 - Responsive
@@ -21,4 +22,3 @@ The `--incremental` flag ensures that any changes you make are reflected in your
 Once you have personalised and tested the site, you can create a new repo, upload these files and host your website from the repo.
 
 
-[![JekyllThemes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com)
