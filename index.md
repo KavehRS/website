@@ -27,5 +27,6 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 >><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
 ​
+
 * <strong> BS Computer Software Engineering, Payame Noor University, 2010 </strong>
 
