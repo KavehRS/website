@@ -11,7 +11,7 @@ published: true
 >> I’m a fan of technology, OpenSource Software and education. I’m also interested in hiking and reading. 
  ‌
 
-> Comming Soon <br> 
+>  <br> 
 
  ‌  <br><br><br><br>
 <!--
