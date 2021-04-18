@@ -9,11 +9,17 @@ published: true
 
 
 #### ABOUT
-
-
-Comming Soon
-
-
+>
+>
+>
+>
+>> Comming Soon
+>
+>
+>
+>
+>
+>
 <!--
 [Gradfolio](https://github.com/jitinnair1/gradfolio){:target="_blank"} is a responsive, dark-mode ready Jekyll theme designed keeping academia in mind. The easiest way to install the theme is to fork it using GitHub. Check the README file for [instructions](https://github.com/jitinnair1/gradfolio#installation){:target="_blank"}.
 <!--
@@ -23,7 +29,6 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 -->
 
 
-<br><br><br><br><br><br><br>
 
 #### EDUCATION
 >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
