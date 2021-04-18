@@ -14,9 +14,8 @@ published: true
 > My hobbies are hiking and reading.<br>
  
  ‌
-<!--
-> I strive for gender equality  <br>
--->
+ 
+<!-- > I strive for gender equality  <br> -->
 
 
  ‌  <br><br>
