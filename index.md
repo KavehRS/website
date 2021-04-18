@@ -19,7 +19,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 -->
 
 
-
+<br><br><br><br><br><br><br>
 
 ## EDUCATION
 ​
