@@ -6,10 +6,7 @@ profile:
   image: profile.png
 published: true
 ---
- 
-‌
-‌
-‌
+
 #### ABOUT
 > ‌
 > ‌
@@ -31,9 +28,6 @@ If you want to use this space to write your biography here, edit the `index.md` 
 <!--
 The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
 -->
-
-
-
 #### EDUCATION
 >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
 >><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
