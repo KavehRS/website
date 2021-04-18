@@ -8,7 +8,10 @@ published: true
 ---
 
 #### ABOUT
->> I’m a fan of technology, OpenSource Software. I’m also interested in hiking and reading. 
+
+>> I’m Junior DovOps and Data Scientist.
+>> I’m a fan of OpenSource Software and technology. 
+>> I’m also interested in hiking and reading. 
  ‌
 
 >  <br> 
