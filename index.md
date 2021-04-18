@@ -25,9 +25,9 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 ​
 * ** M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 **
 
-learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.
-My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network 
-algorithm"
+<p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.</p>
+<p>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network 
+algorithm". </p>
 ​
 * ** BS Computer Software Engineering, Payame Noor University, 2010 **
 
