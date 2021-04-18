@@ -10,10 +10,13 @@ published: true
 #### ABOUT
 
 > I’m Junior DovOps and Data Scientist. <br>
-> I’m a fan of OpenSource Software and technology. <br>
-> I’m also interested in hiking and reading. <br>
+> I am also interested in open source software, technologies and knowledge. <br>
+> My hobbies are hiking and reading.<br>
+> 
  ‌
-
+<!--
+> I strive for gender equality  <br>
+-->
 >  <br> 
 
  ‌  <br><br>
