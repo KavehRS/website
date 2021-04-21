@@ -39,34 +39,37 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 Aug 2018- present
 
 >> •	Software Engineer at the Datamining section.<br>
->>> Jan 2021 – Present<br>
->>>> Python Programmer<br>
->>>> Data Gathering<br>
->>>> Linux SysAdmin<br>
->>>> Zabbix Admin<br>
+>> Jan 2021 – Present<br>
+>>> Python Programmer<br>
+>>> Data Gathering<br>
+>>> Linux SysAdmin<br>
+>>> Zabbix Admin<br>
  ‌ <br>
 >> •	Junior Software Engineer at the R&D section.<br>
->>> Aug 2019 – Jan 2021<br>
->>>> Research & Development<br>
->>>> Web Crawling<br>
+>> Aug 2019 – Jan 2021<br>
+>>> Research & Development<br>
+>>> Web Crawling<br>
  ‌ <br>
->> •	Monitoring And Evaluation Specialist<br>
->>> I work at the IPTV/OTT center.<br>
->>> Aug 2018 – Aug 2019<br>
->>>> Mividi TSM100 admin<br>
->>>> Data Gathering<br>
->>>> Python programmer<br>
->>>>Data Analysis<br>
+>> •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br>
+>> Aug 2018 – Aug 2019<br>
+>>> Mividi TSM100 admin<br>
+>>> Data Gathering<br>
+>>> Python programmer<br>
+>>>Data Analysis<br>
+
  ‌ <br>
+
 > •	Projets :<br>
 > Rasad Analytic Platform ( 2019 - 2021)<br>
 > Web Crawling (2018 - 2020)<br>
- ‌ 
-<br>
+
+
+ ‌  <br>
+ 
 > - Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br>
 > Nov 2017 - Dec 2017<br>
 > •	Wiring Technician<br>
->>Electrical switchboard wiring<br>
+>> Electrical switchboard wiring<br>
 
  ‌ <br>
  
