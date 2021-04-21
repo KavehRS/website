@@ -57,8 +57,9 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >>
 >> ‌ <br>
 >> •	Projets :<br>
->> Rasad Analytic Platform ( 2019 - 2021)<br>
->> Web Crawling (2018 - 2020)<br>
+>>> Implement Zabbix Monitoring System (2021 - 2021)<br>
+>>> Rasad Analytic Platform (2019 - 2021)<br>
+>>> Web Crawling (2018 - 2020)<br>
 >
 >
 > ##### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
