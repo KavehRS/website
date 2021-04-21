@@ -63,28 +63,28 @@ Aug 2018- present
 > Web Crawling (2018 - 2020)<br>
  ‌ 
 <br>
-> Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br>
-Nov 2017 - Dec 2017<br>
-•	Wiring Technician<br>
->Electrical switchboard wiring<br>
+> - Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br>
+> Nov 2017 - Dec 2017<br>
+> •	Wiring Technician<br>
+>>Electrical switchboard wiring<br>
 
  ‌ <br>
  
-Shokouh Electronic co, Hashtgerd Industrial City, Iran<br>
-Nov 2011 - Feb 2012<br>
-•	Assembler of electronic boards (Part Time)<br>
+> - Shokouh Electronic co, Hashtgerd Industrial City, Iran<br>
+> Nov 2011 - Feb 2012<br>
+> •	Assembler of electronic boards (Part Time)<br>
 
  ‌ <br>
  
-Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br>
-Aug 2011 - Oct 2011<br>
-•	Assembler of electronic boards<br>
+> - Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br>
+> Aug 2011 - Oct 2011<br>
+> •	Assembler of electronic boards<br>
 
  ‌ <br>
  
-Iranian Students News Agency (ISNA), Hamedan, Iran<br>
-Sep 2005 - Feb 2009<br>
-•	Reporter<br>
+> - Iranian Students News Agency (ISNA), Hamedan, Iran<br>
+> Sep 2005 - Feb 2009<br>
+> •	Reporter<br>
  ‌ <br>
 
 
@@ -93,20 +93,3 @@ Sep 2005 - Feb 2009<br>
 
 
 
-
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
->
