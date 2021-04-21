@@ -57,20 +57,14 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >>Data Analysis<br>
 
 > ‌ <br>
-
 > •	Projets :<br>
 > Rasad Analytic Platform ( 2019 - 2021)<br>
 > Web Crawling (2018 - 2020)<br>
 
-
-> ‌ <br>
- 
-> - Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
+> ##### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
 >> •	Wiring Technician<br> Electrical switchboard wiring<br>
-
-> - Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012
+> ##### Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012
 >> •	Assembler of electronic boards (Part Time)<br>
- 
 > ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
 >> •	Assembler of electronic boards<br>
 > ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
