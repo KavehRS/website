@@ -44,10 +44,12 @@ Aug 2018- present
 >>>> Data Gathering<br>
 >>>> Linux SysAdmin<br>
 >>>> Zabbix Admin<br>
+ ‌ 
 >> •	Junior Software Engineer at the R&D section.<br>
 >>> Aug 2019 – Jan 2021<br>
 >>>> Research & Development<br>
 >>>> Web Crawling<br>
+ ‌ 
 >> •	Monitoring And Evaluation Specialist<br>
 >>> I work at the IPTV/OTT center.<br>
 >>> Aug 2018 – Aug 2019<br>
@@ -55,27 +57,35 @@ Aug 2018- present
 >>>> Data Gathering<br>
 >>>> Python programmer<br>
 >>>>Data Analysis<br>
+ ‌ 
 > •	Projets :<br>
 > Rasad Analytic Platform ( 2019 - 2021)<br>
 > Web Crawling (2018 - 2020)<br>
+ ‌ 
 <br>
 > Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br>
-Nov 2017 - Dec 2017
-•	Wiring Technician
->Electrical switchboard wiring
+Nov 2017 - Dec 2017<br>
+•	Wiring Technician<br>
+>Electrical switchboard wiring<br>
 
-Shokouh Electronic co, Hashtgerd Industrial City, Iran
-Nov 2011 - Feb 2012
-•	Assembler of electronic boards (Part Time)
+ ‌ <br>
+ 
+Shokouh Electronic co, Hashtgerd Industrial City, Iran<br>
+Nov 2011 - Feb 2012<br>
+•	Assembler of electronic boards (Part Time)<br>
 
-Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran
-Aug 2011 - Oct 2011
-•	Assembler of electronic boards
+ ‌ <br>
+ 
+Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br>
+Aug 2011 - Oct 2011<br>
+•	Assembler of electronic boards<br>
 
-Iranian Students News Agency (ISNA), Hamedan, Iran
-Sep 2005 - Feb 2009
-•	Reporter
-
+ ‌ <br>
+ 
+Iranian Students News Agency (ISNA), Hamedan, Iran<br>
+Sep 2005 - Feb 2009<br>
+•	Reporter<br>
+ ‌ <br>
 
 
 
