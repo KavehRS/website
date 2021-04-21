@@ -42,10 +42,12 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >>> Linux SysAdmin<br>
 >>> Zabbix Admin<br>
 >> ‌ <br>
+>> <br>
 >> •	Junior Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 >>> Research & Development<br>
 >>> Web Crawling<br>
 >> ‌ <br>
+>> <br>
 >> •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
 >>> Mividi TSM100 admin<br>
 >>> Data Gathering<br>
