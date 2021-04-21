@@ -35,7 +35,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 #### EXPERIENCE
 
-> - IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
+##### - IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
 > •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >> Python Programmer<br>
 >> Data Gathering<br>
@@ -74,7 +74,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 > - Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
 >> •	Assembler of electronic boards<br>
 
-> -- Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
+##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
 >> •	Reporter<br>
 
 
