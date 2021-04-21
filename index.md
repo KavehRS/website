@@ -35,49 +35,52 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 #### EXPERIENCE
 
-> - IRIB, cyberspace department., Tehran, Iran<br>
-Aug 2018- present
+> - IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
+> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
+>> Python Programmer<br>
+>> Data Gathering<br>
+>> Linux SysAdmin<br>
+>> Zabbix Admin<br>
 
->> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
->>> Python Programmer<br>
->>> Data Gathering<br>
->>> Linux SysAdmin<br>
->>> Zabbix Admin<br>
- ‌ <br>
->> •	Junior Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
->>> Research & Development<br>
->>> Web Crawling<br>
- ‌ <br>
->> •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
->>> Mividi TSM100 admin<br>
->>> Data Gathering<br>
->>> Python programmer<br>
->>>Data Analysis<br>
+> ‌ <br>
 
- ‌ <br>
+> •	Junior Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
+>> Research & Development<br>
+>> Web Crawling<br>
+
+> ‌ <br>
+
+
+> •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
+>> Mividi TSM100 admin<br>
+>> Data Gathering<br>
+>> Python programmer<br>
+>>Data Analysis<br>
+
+> ‌ <br>
 
 > •	Projets :<br>
 > Rasad Analytic Platform ( 2019 - 2021)<br>
 > Web Crawling (2018 - 2020)<br>
 
 
- ‌  <br>
+> ‌ <br>
  
 > - Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
 > •	Wiring Technician<br>
 >> Electrical switchboard wiring<br>
 
- ‌ <br>
+> ‌ <br>
  
 > - Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012<br>
 > •	Assembler of electronic boards (Part Time)<br>
 
- ‌ <br>
+> ‌ <br>
  
 > - Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011<br>
 > •	Assembler of electronic boards<br>
 
- ‌ <br>
+> ‌ <br>
  
 > - Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009<br>
 > •	Reporter<br>
