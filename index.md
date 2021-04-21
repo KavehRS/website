@@ -71,10 +71,10 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 > - Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012
 >> •	Assembler of electronic boards (Part Time)<br>
  
-> - Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
+> ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
 >> •	Assembler of electronic boards<br>
 
-##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
+> ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
 >> •	Reporter<br>
 
 
