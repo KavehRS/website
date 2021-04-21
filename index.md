@@ -43,7 +43,6 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >> Zabbix Admin<br>
 
 > ‌ <br>
-
 > •	Junior Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 >> Research & Development<br>
 >> Web Crawling<br>
@@ -77,13 +76,11 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 > ‌ <br>
  
-> - Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011<br>
-> •	Assembler of electronic boards<br>
+> - Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
+>> •	Assembler of electronic boards<br>
 
-> ‌ <br>
- 
-> - Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009<br>
-> •	Reporter<br>
+> - Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
+>> •	Reporter<br>
  ‌ <br>
 
 
