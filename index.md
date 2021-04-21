@@ -62,13 +62,13 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >
 > ##### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
 >> •	Wiring Technician<br> Electrical switchboard wiring<br>
->> <br>
+> <br>
 > ##### Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012
 >> •	Assembler of electronic boards (Part Time)<br>
->> <br>
+> <br>
 > ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
 >> •	Assembler of electronic boards<br>
->> <br>
+> <br>
 > ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
 >> •	Reporter<br>
 
