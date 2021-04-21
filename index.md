@@ -38,15 +38,15 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 > - Islamic Republic of Iran Broadcasting, cyberspace department., Tehran, Iran
 Aug 2018- present
 
->> •	Software Engineer
->>> I work at the Datamining section.
->>> Jan 2021 – Present
->>>> Python Programmer
->>>> Data Gathering
->>>> Linux SysAdmin
->>>> Zabbix Admin
->> •	Junior Software Engineer
->>> I work at the R&D section.
+>> •	Software Engineer<br>
+>>> I work at the Datamining section.<br>
+>>> Jan 2021 – Present<br>
+>>>> Python Programmer<br>
+>>>> Data Gathering<br>
+>>>> Linux SysAdmin<br>
+>>>> Zabbix Admin<br>
+>> •	Junior Software Engineer<br>
+>>> I work at the R&D section.<br>
 >>> Aug 2019 – Jan 2021
 >>>> Research & Development
 >>>> Web Crawling
