@@ -68,21 +68,14 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
   
   
   </div>
-  <div id="SKILLS" style="display: none;" markdown="1">I'm container two</div>
-  <div id="EXPERIENCE" style="display: none;" markdown="1">I'm container three</div>
-  <div id="COURSES" style="display: none;"markdown="1">I'm container four</div>
+  <div id="SKILLS" style="display: none;" markdown="1">
+  
+  
 
-
-
-
-
-
-
-</div>
-
-#### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EXPERIENCE</a>
-
-<div style="display: none;" id="script" markdown="1"> 
+  
+  </div>
+  <div id="EXPERIENCE" style="display: none;" markdown="1">
+  
 
 
 > ##### IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
@@ -127,7 +120,22 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 > ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
 >> •	Reporter<br>
 
+  
+  
+  </div>
+  <div id="COURSES" style="display: none;"markdown="1">I'm container four</div>
+
+
+
+
+
+
+
 </div>
+
+
+
+
 
 
 #### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >COURSES</a>
