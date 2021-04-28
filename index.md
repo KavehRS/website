@@ -32,6 +32,21 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
 >
 
+#### Courses
+
+>- <strong>[Coursera](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca) <strong>
+>- <strong>[DataCamp](https://www.datacamp.com/profile/kavehrs) <strong>
+
+
+
+
+
+
+
+
+
+
+
 
 #### EXPERIENCE
 
