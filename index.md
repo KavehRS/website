@@ -89,6 +89,13 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 #### COURSES 
 
 
+
+
+<a href="#" onclick="showhide('script'); return(false);">نمایش/مخفی</a></p>
+
+<div style="display: none;" id="script"> 
+
+
 >- <strong>Coursera<strong>
 >> Security and Privacy for Big Data - Part 1<br>
 >>  Introduction to Machine Learning<br>
@@ -119,6 +126,9 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 
 
+
+
+</div>
 
 
 
