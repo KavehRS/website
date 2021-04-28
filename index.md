@@ -104,9 +104,9 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 
 <p>
-<a href="#" onclick="showhide('script'); return(false);">COURSES</a></p>
+<a href="#" onclick="showhide('script'); return(false);" markdown="1" > #### COURSES</a></p>
 
-<div style="display: none;" id="script"> 
+<div style="display: none;" id="script" markdown="1"> 
 
 
 >- <strong>Coursera<strong>
@@ -135,7 +135,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 > - <strong>Arjang Higher Education Institute (GoToclass platform)<strong>
 >> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
 >> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
->> 
+>> <br>
 
 
 
