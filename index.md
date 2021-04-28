@@ -105,9 +105,10 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >>And other courses you can inquire it with my student code(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://www.datacamp.com/profile/kavehrs) )
 >>
 > - <strong>Iran's Technical and Vocational Training Organization (Iran TVTO)<strong>
->> ICDL second-rate (cert no. : 26716881)
->> ICDL (cert no. : 28202462)	
->> General Network Security Technician  (cert no. : 27591652)	
+>> ICDL second-rate (cert no. : 26716881)<br>
+>> ICDL (cert no. : 28202462)	<br>
+>> General Network Security Technician  (cert no. : 27591652)	<br>
+>> 
 
 
 
