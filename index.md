@@ -30,10 +30,9 @@ published: true
   <a href="#" onclick="toggleVisibility('COURSES');">COURSES</a> ||
 </div>
 <div id="EDUCATION" markdown="1">
-    >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
-    >>><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
-    >>>>- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
-
+>- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
+>>><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
+>>>>- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
 </div>
 
 <div id="SKILLS" style="display: none;" markdown="1">
@@ -83,14 +82,14 @@ published: true
     >> •	Reporter<br>
  </div>
 
- <div id="COURSES" style="display: none;"markdown="1">
-    >- <strong>Coursera<strong>
-    >> Security and Privacy for Big Data - Part 1<br>
-    >>  Introduction to Machine Learning<br>
-    >> And other training courses that you can see in [my coursera profile](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca)
-    >>
-    >- <strong>DataCamp <strong>
-    >>Python Fundamentals - SKILL TRACK  (4 Courses) <br>
+<div id="COURSES" style="display: none;"markdown="1">
+>- <strong>Coursera<strong>
+>> Security and Privacy for Big Data - Part 1<br>
+>>  Introduction to Machine Learning<br>
+>> And other training courses that you can see in [my coursera profile](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca)
+>>
+>- <strong>DataCamp <strong>
+>>Python Fundamentals - SKILL TRACK  (4 Courses) <br>
     >>Python Programmer - CAREER TRACK  (16 Courses) <br>
     >>And several other training courses that you can see in [my DataCamp profile](https://www.datacamp.com/profile/kavehrs)
     >>
