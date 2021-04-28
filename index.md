@@ -7,15 +7,27 @@ profile:
 published: true
 ---
 <script>
-function showhide(id){
-if (document.getElementById){
-obj = document.getElementById(id);
-if (obj.style.display == "none"){
-obj.style.display = "";
-} else {
-obj.style.display = "none";
+var divs = ["EDUCATION", "SKILLS", "EXPERIENCE", "COURSES"];
+var visibleDivId = null;
+function toggleVisibility(divId) {
+  if(visibleDivId === divId) {
+    //visibleDivId = null;
+  } else {
+    visibleDivId = divId;
+  }
+  hideNonVisibleDivs();
 }
-}
+function hideNonVisibleDivs() {
+  var i, divId, div;
+  for(i = 0; i < divs.length; i++) {
+    divId = divs[i];
+    div = document.getElementById(divId);
+    if(visibleDivId === divId) {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
 }
 </script>
 
@@ -40,15 +52,32 @@ If you want to use this space to write your biography here, edit the `index.md` 
 The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
 -->
 
-
-#### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EDUCATION</a>
-
-<div style="display: none;" id="script" markdown="1"> 
-
->- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
+<div class="buttons">
+  <a href="#" onclick="toggleVisibility('Menu1');">EDUCATION</a>
+  <a href="#" onclick="toggleVisibility('Menu2');">SKILLS</a>
+  <a href="#" onclick="toggleVisibility('Menu3');">EXPERIENCE</a>
+  <a href="#" onclick="toggleVisibility('Menu4');">COURSES</a>
+</div>
+ 
+  <div id="EDUCATION" markdown="1">
+  >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
 >><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
 >- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
 >
+  
+  
+  
+  </div>
+  <div id="SKILLS" style="display: none;" markdown="1">I'm container two</div>
+  <div id="EXPERIENCE" style="display: none;" markdown="1">I'm container three</div>
+  <div id="COURSES" style="display: none;"markdown="1">I'm container four</div>
+
+
+
+
+
+
+
 </div>
 
 #### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EXPERIENCE</a>
