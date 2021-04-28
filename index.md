@@ -83,7 +83,7 @@ published: true
 >> •	Reporter<br>
 </div>
 
-<div id="COURSES" style="display: none;"markdown="1">
+<div id="COURSES" style="display: none;" markdown="1">
 >- <strong>Coursera<strong>
 >> Security and Privacy for Big Data - Part 1<br>
 >>  Introduction to Machine Learning<br>
