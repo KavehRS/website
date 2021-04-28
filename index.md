@@ -109,6 +109,11 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >> ICDL (cert no. : 28202462)	<br>
 >> General Network Security Technician  (cert no. : 27591652)	<br>
 >> 
+> - <strong>Arjang Higher Education Institute (GoToclass platform)<strong>
+>> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
+>> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
+>> 
+
 
 
 
