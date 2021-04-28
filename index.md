@@ -35,16 +35,24 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 #### COURSES 
 
 
->- <strong>[Coursera](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca) <strong>
+>- <strong>Coursera<strong>
 >> Security and Privacy for Big Data - Part 1<br>
 >>  Introduction to Machine Learning<br>
->> And several other training courses that you can see in [my coursera profile](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca)
+>> And other training courses that you can see in [my coursera profile](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca)
 >>
->- <strong>[DataCamp](https://www.datacamp.com/profile/kavehrs) <strong>
+>- <strong>DataCamp <strong>
 >>Python Fundamentals - SKILL TRACK  (4 Courses) <br>
 >>Python Programmer - CAREER TRACK  (16 Courses) <br>
 >>And several other training courses that you can see in [my DataCamp profile](https://www.datacamp.com/profile/kavehrs)
 >>
+
+>- <strong>laitec<strong>
+>>Lpic 1 <br>
+>>C++ <br>
+>>And other courses you can inquire it with my student code(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://www.datacamp.com/profile/kavehrs) )
+>>
+
+
 
 
 
