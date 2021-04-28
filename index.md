@@ -6,6 +6,19 @@ profile:
   image: profile.png
 published: true
 ---
+<script>
+function showhide(id){
+if (document.getElementById){
+obj = document.getElementById(id);
+if (obj.style.display == "none"){
+obj.style.display = "";
+} else {
+obj.style.display = "none";
+}
+}
+}
+</script>
+
 
 #### ABOUT
 
@@ -90,8 +103,8 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 
 
-
-<a href="#" onclick="showhide('script'); return(false);">نمایش/مخفی</a></p>
+<p>
+<a href="#" onclick="showhide('script'); return(false);">COURSES</a></p>
 
 <div style="display: none;" id="script"> 
 
