@@ -14,57 +14,34 @@ published: true
 > * I’m Junior DovOps and Data Scientist. <br>
 > * I'm also interested in open source software, technologies and knowledge. <br>
 > * My hobbies are hiking and reading.<br>
- 
+
  ‌
- 
+
 <!-- > I strive for gender equality  <br> -->
 
+<br><br>
 
- ‌  <br><br>
+
+<script src=".\assets\js\indexpage.js"></script>
 
 
-<script>
-var divs = ["EDUCATION", "SKILLS", "EXPERIENCE", "COURSES"];
-var visibleDivId = null;
-function toggleVisibility(divId) {
-  if(visibleDivId === divId) {
-    //visibleDivId = null;
-  } else {
-    visibleDivId = divId;
-  }
-  hideNonVisibleDivs();
-}
-function hideNonVisibleDivs() {
-  var i, divId, div;
-  for(i = 0; i < divs.length; i++) {
-    divId = divs[i];
-    div = document.getElementById(divId);
-    if(visibleDivId === divId) {
-      div.style.display = "block";
-    } else {
-      div.style.display = "none";
-    }
-  }
-}
-</script>
-  
-  
+
 <div class="buttons">
   <a href="#" onclick="toggleVisibility('Menu1');">EDUCATION</a> ||
   <a href="#" onclick="toggleVisibility('Menu2');">SKILLS</a> ||
   <a href="#" onclick="toggleVisibility('Menu3');">EXPERIENCE</a> ||
   <a href="#" onclick="toggleVisibility('Menu4');">COURSES</a> ||
 </div>
- 
+
 <div id="EDUCATION" markdown="1">
   >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
   >>><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
   >>>>- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
   </div>
-  
+
   <div id="SKILLS" style="display: none;" markdown="1">
   </div>
-  
+
  <div id="EXPERIENCE" style="display: none;" markdown="1">
     > ##### IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
     >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
@@ -74,12 +51,12 @@ function hideNonVisibleDivs() {
     >>> Zabbix Admin<br>
     >>
     >> ‌ <br>
-    >> 
+    >>
     >> •	Junior Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
     >>> Research & Development<br>
     >>> Web Crawling<br>
     >> ‌ <br>
-    >> 
+    >>
     >> •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
     >>> Mividi TSM100 admin<br>
     >>> Data Gathering<br>
@@ -107,7 +84,7 @@ function hideNonVisibleDivs() {
     >
     > ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
     >> •	Reporter<br>
- </div> 
+ </div>
   <div id="COURSES" style="display: none;"markdown="1">
     >- <strong>Coursera<strong>
     >> Security and Privacy for Big Data - Part 1<br>
@@ -131,18 +108,9 @@ function hideNonVisibleDivs() {
     >> ICDL second-rate (cert no. : 26716881)<br>
     >> ICDL (cert no. : 28202462)	<br>
     >> General Network Security Technician  (cert no. : 27591652)	<br>
-    >> 
+    >>
     > - <strong>Arjang Higher Education Institute (GoToclass platform)<strong>
     >> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
     >> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
     >> <br>
 </div>
-
-
-
-
-
-
-
-
-
