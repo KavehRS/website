@@ -53,10 +53,10 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 -->
 
 <div class="buttons">
-  <a href="#" onclick="toggleVisibility('Menu1');">EDUCATION</a>
-  <a href="#" onclick="toggleVisibility('Menu2');">SKILLS</a>
-  <a href="#" onclick="toggleVisibility('Menu3');">EXPERIENCE</a>
-  <a href="#" onclick="toggleVisibility('Menu4');">COURSES</a>
+  <a href="#" onclick="toggleVisibility('Menu1');">EDUCATION</a> ||
+  <a href="#" onclick="toggleVisibility('Menu2');">SKILLS</a> ||
+  <a href="#" onclick="toggleVisibility('Menu3');">EXPERIENCE</a> ||
+  <a href="#" onclick="toggleVisibility('Menu4');">COURSES</a> ||
 </div>
  
   <div id="EDUCATION" markdown="1">
