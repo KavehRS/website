@@ -23,12 +23,14 @@ published: true
 
 <script src=".\assets\js\indexpage.js"></script>
 
-<div class="buttons">
+<div class="buttons"> ||
   <a href="#" onclick="toggleVisibility('EDUCATION');">EDUCATION</a> ||
   <a href="#" onclick="toggleVisibility('SKILLS');">SKILLS</a> ||
   <a href="#" onclick="toggleVisibility('EXPERIENCE');">EXPERIENCE</a> ||
   <a href="#" onclick="toggleVisibility('COURSES');">COURSES</a> ||
 </div>
+
+
 <div id="EDUCATION" markdown="1">
 >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
 >>><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
@@ -90,24 +92,24 @@ published: true
 >>
 >- <strong>DataCamp <strong>
 >>Python Fundamentals - SKILL TRACK  (4 Courses) <br>
-    >>Python Programmer - CAREER TRACK  (16 Courses) <br>
-    >>And several other training courses that you can see in [my DataCamp profile](https://www.datacamp.com/profile/kavehrs)
-    >>
-    >- <strong>DataCamp <strong>
-    >> You can see [my udemy profile](https://www.udemy.com/user/kaveh-rezaeishiraz/)
-    >>
-    >- <strong>laitec<strong>
-    >>Lpic 1 <br>
-    >>C++ <br>
-    >>And other courses you can inquire it with my student code(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://www.datacamp.com/profile/kavehrs) )
-    >>
-    > - <strong>Iran's Technical and Vocational Training Organization (Iran TVTO)<strong>
-    >> ICDL second-rate (cert no. : 26716881)<br>
-    >> ICDL (cert no. : 28202462)	<br>
-    >> General Network Security Technician  (cert no. : 27591652)	<br>
-    >>
-    > - <strong>Arjang Higher Education Institute (GoToclass platform)<strong>
-    >> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
-    >> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
-    >> <br>
+>>Python Programmer - CAREER TRACK  (16 Courses) <br>
+>>And several other training courses that you can see in [my DataCamp profile](https://www.datacamp.com/profile/kavehrs)
+>>
+>- <strong>DataCamp <strong>
+>> You can see [my udemy profile](https://www.udemy.com/user/kaveh-rezaeishiraz/)
+>>
+>- <strong>laitec<strong>
+>>Lpic 1 <br>
+>>C++ <br>
+>>And other courses you can inquire it with my studencode(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://www.datacamp.com/profile/kavehrs) )
+>>
+> - <strong>Iran's Technical and Vocational Training Organization (Iran TVTO)<strong>
+>> ICDL second-rate (cert no. : 26716881)<br>
+>> ICDL (cert no. : 28202462)	<br>
+>> General Network Security Technician  (cert no. : 27591652)	<br>
+>>
+> - <strong>Arjang Higher Education Institute (GoToclass platform)<strong>
+>> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
+>> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
+>> <br>
 </div>
