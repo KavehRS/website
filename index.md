@@ -15,10 +15,8 @@ published: true
 > * I'm also interested in open source software, technologies and knowledge. <br>
 > * My hobbies are hiking and reading.<br>
 
- ‌
 
 <!-- > I strive for gender equality  <br> -->
-<br>
 
 <script src=".\assets\js\indexpage.js"></script>
 
