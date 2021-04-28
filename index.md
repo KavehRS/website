@@ -36,13 +36,14 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 
 >- <strong>[Coursera](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca) <strong>
->> Security and Privacy for Big Data - Part 1
->>  Introduction to Machine Learning
+>> Security and Privacy for Big Data - Part 1<br>
+>>  Introduction to Machine Learning<br>
 >> and ...  ([my coursera profile](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca))
 >>
 >- <strong>[DataCamp](https://www.datacamp.com/profile/kavehrs) <strong>
->>
->>
+>>SKILL TRACK Python Fundamentals () <br>
+>>CAREER TRACK Python Programmer () <br>
+>>and ...  ([my DataCamp profile](https://www.datacamp.com/profile/kavehrs))
 >>
 
 
