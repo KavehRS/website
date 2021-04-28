@@ -99,6 +99,9 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >>Python Programmer - CAREER TRACK  (16 Courses) <br>
 >>And several other training courses that you can see in [my DataCamp profile](https://www.datacamp.com/profile/kavehrs)
 >>
+>- <strong>DataCamp <strong>
+>> You can see [my udemy profile](https://www.udemy.com/user/kaveh-rezaeishiraz/)
+>>
 >- <strong>laitec<strong>
 >>Lpic 1 <br>
 >>C++ <br>
