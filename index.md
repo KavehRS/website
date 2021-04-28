@@ -40,7 +40,7 @@ If you want to use this space to write your biography here, edit the `index.md` 
 The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
 -->
 
-#### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EDUCATION</a>
+#### <p><a href="#" onclick="showhide('script'); return(false);" markdown="1" >EDUCATION</a></p>
 
 <div style="display: none;" id="script" markdown="1"> 
 >- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
@@ -49,6 +49,8 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >
 </div>
 <br>
+
+
 #### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EXPERIENCE</a>
 
 <div style="display: none;" id="script" markdown="1"> 
