@@ -56,6 +56,11 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 #### EXPERIENCE
 
+ #### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >COURSES</a>
+
+<div style="display: none;" id="script" markdown="1"> 
+
+
 > ##### IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
 >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >>> Python Programmer<br>
@@ -98,7 +103,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 > ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
 >> •	Reporter<br>
 
-
+</div>
 #### COURSES 
 
 
