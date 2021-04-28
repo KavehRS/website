@@ -41,7 +41,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 -->
 
 
-#### <p><a href="#" onclick="showhide('script'); return(false);" markdown="1" >EDUCATION</a></p>
+#### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EDUCATION</a>
 
 <div style="display: none;" id="script" markdown="1"> 
 
