@@ -50,10 +50,10 @@ function hideNonVisibleDivs() {
   
   
 <div class="buttons">
-  <a href="EDUCATION" onclick="toggleVisibility('Menu1');">EDUCATION</a> ||
-  <a href="SKILLS" onclick="toggleVisibility('Menu2');">SKILLS</a> ||
-  <a href="EXPERIENCE" onclick="toggleVisibility('Menu3');">EXPERIENCE</a> ||
-  <a href="COURSES" onclick="toggleVisibility('Menu4');">COURSES</a> ||
+  <a href="#" onclick="toggleVisibility('Menu1');">EDUCATION</a> ||
+  <a href="#" onclick="toggleVisibility('Menu2');">SKILLS</a> ||
+  <a href="#" onclick="toggleVisibility('Menu3');">EXPERIENCE</a> ||
+  <a href="#" onclick="toggleVisibility('Menu4');">COURSES</a> ||
 </div>
  
   <div id="EDUCATION" markdown="1">
@@ -143,9 +143,6 @@ function hideNonVisibleDivs() {
 >> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
 >> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
 >> <br>
-
-
-
 
 
 </div>
