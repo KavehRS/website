@@ -48,7 +48,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 >- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
 >
 </div>
-
+<br>
 #### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >EXPERIENCE</a>
 
 <div style="display: none;" id="script" markdown="1"> 
@@ -98,7 +98,7 @@ The social-icons footer can be used to link profiles from GitHub, OrcID and Reas
 
 </div>
 
-
+<br>
 #### <a href="#" onclick="showhide('script'); return(false);" markdown="1" >COURSES</a>
 
 <div style="display: none;" id="script" markdown="1"> 
