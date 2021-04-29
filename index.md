@@ -17,7 +17,7 @@ published: true
 
 
 <!-- > I strive for gender equality  <br> -->
-
+<br><br>
 <script src=".\assets\js\indexpage.js"></script>
 
 <div class="buttons"> ||
