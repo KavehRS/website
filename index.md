@@ -39,7 +39,7 @@ published: true
   </div>
 
 <div id="EXPERIENCE" style="display: none;" markdown="1">
-> ##### IRIB, cyberspace department., Tehran, Iran<br> Aug 2018- present
+> ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >>> Python Programmer<br>
 >>> Data Gathering<br>
