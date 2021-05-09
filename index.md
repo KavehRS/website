@@ -70,15 +70,15 @@ published: true
 >> •	Wiring Technician<br> Electrical switchboard wiring<br>
 >
 >
-> ##### Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012
+> ##### Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012<br>
 >> •	Assembler of electronic boards (Part Time)<br>
+><br>
 >
->
-> ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
+> ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011<br>
 >> •	Assembler of electronic boards<br>
+><br>
 >
->
-> ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
+> ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009<br>
 >> •	Reporter<br>
 </div>
 
