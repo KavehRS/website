@@ -74,7 +74,8 @@ published: true
 >> •	Assembler of electronic boards (Part Time)<br>
 >
 >
-> ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 201>> •	Assembler of electronic boards<br>
+> ##### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011
+>> •	Assembler of electronic boards<br>
 >
 >
 > ##### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009
