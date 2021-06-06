@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title:  نصب و تنظیم زبیکس 5 - زبیکس سرور
 pdate: 1399-12-28
 author: KavehRS
