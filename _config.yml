@@ -14,7 +14,7 @@ highlighter: rouge
 markdown: kramdown
 
 # Pagination
-paginate: 4
+paginate: 10
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
