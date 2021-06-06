@@ -1,9 +1,6 @@
 ---
   layout: post2
   title: راهنمای کاربری ویدیو وال video wall
-  pdate: 1398-2-5
-  author: KavehRS
-  tags: mividi
 ---
 
 
