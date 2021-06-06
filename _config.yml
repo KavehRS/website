@@ -21,13 +21,22 @@ paginate_multiple:
   - paginate: 5
     permalink: /blog/:year/:title/
     paginate_path: '/blog/page:num/'
-    sub_dir: '/blog'
+    
   - paginate: 5
     permalink: /fa/:year/:title/
     paginate_path: '/fa/page:num/'
     sub_dir: '/fa'
 
-    
+paginate:          # default for all below; will be overridden by `per_page` value
+  pagination: 
+    - paginate:
+        path:       /blog/page:num/
+        per_page:   5
+        sub_dir: '/blog'
+    - paginate:
+        path:       /fa/page:num/
+        per_page:   5   
+        sub_dir: '/fa'
     
 
 # Social media links in footer
