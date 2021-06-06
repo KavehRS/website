@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title: آداب عذرخواهی بابت آزار جنسی / فرناز سیفی
 pdate: 1397-2-5
 author: فرناز سیفی
