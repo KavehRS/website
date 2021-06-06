@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+
+<ul>
+  <div class="posts">
+
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post2.url }}"><small><em>{{ post2.pdate }} </em></small>  - {{ post2.title }}</a>
+     </li>
+   {% endfor %}
+</div>
+</ul>
+{% include emojiparser.html %}
