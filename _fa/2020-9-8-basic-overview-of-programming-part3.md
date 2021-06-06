@@ -73,18 +73,4 @@ d: 30949.374
 پایتون از Escape Sequences کاملا شبیه c پشتیبانی می‌کند.
 
 <hr>
-<hr>
 
-
-##### لیست سلسله یادداشت های مفاهیم اولیه برنامه نویسی
-
-[یادداشت نخست](/basic-overview-of-programming-part1/)
-
-[یادداشت دوم](/basic-overview-of-programming-part2/)
-
-[یادداشت سوم](/basic-overview-of-programming-part3/)
-
-[یادداشت چهارم](/basic-overview-of-programming-part4/)
-
-
-<hr>
