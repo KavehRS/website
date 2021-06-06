@@ -13,10 +13,22 @@ email: me@kavehrs.com
 highlighter: rouge
 markdown: kramdown
 
-# Pagination
-paginate: 10
-permalink: /blog/:year/:title/
-paginate_path: /blog/page:num/
+# Blog Pagination
+# paginate: 10
+# permalink: /blog/:year/:title/
+#paginate_path: /blog/page:num/
+paginate_multiple:
+  - paginate: 5
+    permalink: /blog/:year/:title/
+    paginate_path: '/blog/page:num/'
+    sub_dir: '/blog'
+  - paginate: 5
+    permalink: /fa/:year/:title/
+    paginate_path: '/fa/page:num/'
+    sub_dir: '/fa'
+
+    
+    
 
 # Social media links in footer
 #facebook: "#"
