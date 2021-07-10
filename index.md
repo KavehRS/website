@@ -40,7 +40,7 @@ published: true
 
 > Python <br>
 >> Django<br>
->> Crawl ()<br>
+>> Crawl (scrapy, requests & Beautifulsoup)<br>
 >> Data Analysis<br>
 >
 > Zabbix <br>
