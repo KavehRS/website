@@ -36,6 +36,18 @@ published: true
 </div>
 
 <div id="SKILLS" style="display: none;" markdown="1">
+
+
+> Python <br>
+>> Django<br>
+>> Crawl ()<br>
+>> Data Analysis<br>
+
+> Zabbix <br>
+> Data Mining <br>
+
+
+
   </div>
 
 <div id="EXPERIENCE" style="display: none;" markdown="1">
