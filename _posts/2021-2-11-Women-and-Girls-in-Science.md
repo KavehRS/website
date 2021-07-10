@@ -1,9 +1,6 @@
 ---
-layout: post2
+layout: post
 title:   روز جهانی زنان و دختران در علم گرامی باد
-pdate: 1399-11-23
-author: KavehRS
-tags: پیشرفت علم
 ---
 
 ![International Day of Women and Girls in Science](/assets/images/11feb-02.jpg)
