@@ -38,16 +38,16 @@ published: true
 <div id="SKILLS" style="display: none;" markdown="1">
 
 
-> Python <br>
+> * Python <br>
 >> Django<br>
 >> Crawl (scrapy, requests & Beautifulsoup)<br>
 >> Data Analysis<br>
 >
-> Zabbix <br>
+> * Zabbix <br>
 >
-> Data Mining <br>
+> * Data Mining <br>
 >
-> Ruby
+> * Ruby
 >> RubyOnRails
 
 
