@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 title: نصب زبان برنامه نویسی گو
 date: 2020-01-24 10:07 +0330
 pdate: 1398-11-4
