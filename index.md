@@ -29,10 +29,12 @@ published: true
 
 
 <div id="EDUCATION" markdown="1">
->- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2021 </strong>
+>- <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
 >><p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p>
 >><br>
->- <strong> B.S. Computer Software Engineering, Payame Noor University, 2010 </strong>
+>- <strong> B.S. Computer Software Engineering, Payame Noor University, 2011 - 2016 </strong>
+>- <strong> B.S. Electrical Engineering - Electronics, Bu-Ali Sina University, Incomplete Course 2005 - 2008 </strong>
+
 </div>
 
 <div id="SKILLS" style="display: none;" markdown="1">
