@@ -3,7 +3,7 @@ layout: about
 permalink: /
 profile:
   align: right
-  image: profile.png
+  image: kavehrs.jpg
 published: true
 ---
 
