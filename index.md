@@ -42,9 +42,14 @@ published: true
 >> Django<br>
 >> Crawl ()<br>
 >> Data Analysis<br>
-
+>
 > Zabbix <br>
+>
 > Data Mining <br>
+>
+> Ruby
+>> RubyOnRails
+
 
 
 
