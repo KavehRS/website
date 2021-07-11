@@ -178,7 +178,3 @@ print "Hello, World!"
 
 
 
-
-
-<hr>
-
