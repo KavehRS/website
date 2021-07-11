@@ -1,6 +1,6 @@
 ---
-layout: post2
-title:  نصب و تنظیم زبیکس 5 - زبیکس اجنت لینوکس
+layout: post
+title:  " نصب و تنظیم زبیکس 5 - زبیکس اجنت لینوکس"
 pdate: 1399-12-30
 author: KavehRS
 tags: zabbix zabbix-agent
