@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 title:  مفاهیم اولیه برنامه نویسی - یادداشت سوم (اعداد و کاراکتر‌ها)  
 pdate: 1399-6-18
 author: KavehRS
