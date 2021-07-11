@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 title: مفاهیم اولیه برنامه نویسی - یادداشت نخست (مفاهیم پایه)
 pdate: 1399-6-10
 author: KavehRS
