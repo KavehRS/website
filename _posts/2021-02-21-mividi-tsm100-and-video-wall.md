@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 title:  راهنمای کار با ابزارهای Mividi TSM100 و Video wall
 pdate: 1399-12-4
 author: KavehRS
