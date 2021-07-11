@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 title: مفاهیم اولیه برنامه نویسی - یادداشت چهارم (توابع و I/O)
 pdate: 1399-6-24
 author: KavehRS
