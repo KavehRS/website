@@ -11,7 +11,8 @@ published: true
 
 #### ABOUT
 
-> * I’m Junior DovOps and Data Scientist. <br>
+> * Software Engineer
+> * I’m Junior DovOps and Enterprise Architecture. <br>
 > * I'm also interested in open source software, technologies and knowledge. <br>
 > * My hobbies are hiking and reading.<br>
 
