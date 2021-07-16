@@ -11,12 +11,12 @@ published: true
 
 #### ABOUT
 
-> * I'm Software Engineer & Enterprise Architecture
-> & maybe Junior DovOps .
+> * I'm Software Engineer & Enterprise Architecture<br>
+> & maybe Junior DovOps .<br>
 > * I'm also interested in open source software, technologies and knowledge. <br>
 > * My hobbies are hiking and reading.<br>
->> Born: Oct 1985 - Guilan, Iran
->> Live: Tehran, Iran
+> Born: Oct 1985 - Guilan, Iran <br>
+> Live: Tehran, Iran <br>
 
 
 
