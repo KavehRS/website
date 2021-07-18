@@ -46,7 +46,7 @@ published: true
 
 </div>
 
-<div id="SKILLS" style="display: none;" markdown="1">
+<div id="SKILLS" style="display: none; markdown="1">
       <li>Python</li>
             >> Django
             >> Crawl (scrapy, requests & Beautifulsoup)
