@@ -48,12 +48,10 @@ published: true
 <div id="SKILLS" style="display: none;" markdown="1">
     <blockquote> 
       <li>Python</li>
-        <blockquote> 
-            <li>Django</li>
-            <li>Crawl (scrapy, requests & Beautifulsoup)</li>
-            <li>Data Analysis</li>
-            <li>Data Mining</li>
-        </blockquote> 
+            >> Django
+            >> Crawl (scrapy, requests & Beautifulsoup)
+            >> Data Analysis
+            >> Data Mining
       <li>Zabbix</li>
       <li>Ruby lang </li>
         >> RubyOnRails
