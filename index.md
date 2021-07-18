@@ -34,8 +34,6 @@ published: true
 
 
 <div id="EDUCATION" markdown="1">
-
-
   <blockquote>
     <li> <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
     <p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced     network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p> </li> <br>
@@ -46,9 +44,8 @@ published: true
 
 </div>
 
-<div id="SKILLS" style="display: none; markdown="1">
+<div id="SKILLS" style="display: none;" markdown="1">
     <blockquote>
-
       <li>Python</li>
             >> Django
             >> Crawl (scrapy, requests & Beautifulsoup)
@@ -58,7 +55,6 @@ published: true
       <li>Ruby lang </li>
         >> RubyOnRails
     </blockquote>
-
   </div>
 
 <div id="EXPERIENCE" style="display: none;" markdown="1">
