@@ -13,10 +13,10 @@ published: true
 <blockquote>
  <li> I'm Software Engineer & Enterprise Architecture<br>
  & maybe Junior DovOps .</li>
- * I'm also interested in open source software, technologies and knowledge. <br>
- * My hobbies are hiking and reading.<br>
- Born: Oct 1985 - Guilan, Iran <br>
- Live: Tehran, Iran <br>
+ <li> I'm also interested in open source software, technologies and knowledge. </li>
+ <li> My hobbies are hiking and reading.</li>
+ <li> Born: Oct 1985 - Guilan, Iran </li>
+ <li> Live: Tehran, Iran </li>
 </blockquote>
 
 
