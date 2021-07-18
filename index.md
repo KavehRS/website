@@ -56,16 +56,13 @@ published: true
         </blockquote> 
       <li>Zabbix</li>
       <li>Ruby lang </li>
+        >> RubyOnRails
+
     
     
     </blockquote>
 
 
-
-
-
-> * Ruby
->> RubyOnRails
 
 
 
