@@ -55,10 +55,12 @@ published: true
 
 <div id="SKILLS" style="display: none;" markdown="1">
 >Python
-    >> Django
-    >> Crawl (scrapy, requests & Beautifulsoup)
-    >> Data Analysis
-    >> Data Mining
+ > <blockquote>
+     Django
+     Crawl (scrapy, requests & Beautifulsoup)
+     Data Analysis
+     Data Mining
+ </blockquote>
 >Zabbix
 
   </div>
