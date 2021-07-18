@@ -47,6 +47,8 @@ published: true
 </div>
 
 <div id="SKILLS" style="display: none; markdown="1">
+    <blockquote>
+
       <li>Python</li>
             >> Django
             >> Crawl (scrapy, requests & Beautifulsoup)
@@ -55,6 +57,7 @@ published: true
       <li>Zabbix</li>
       <li>Ruby lang </li>
         >> RubyOnRails
+    </blockquote>
 
   </div>
 
