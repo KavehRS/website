@@ -53,7 +53,7 @@ published: true
 
 
 
-<div id="SKILLS" markdown="1">
+<div id="SKILLS" style="display: none;" markdown="1">
     <blockquote>
       <li>Python</li>
             >> Django
