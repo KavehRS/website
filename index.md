@@ -33,6 +33,9 @@ published: true
 </div>
 
 
+
+
+
 <div id="EDUCATION" markdown="1">
   <blockquote>
     <li> <strong> M. Eng. Information Technology Engineering - Enterprise Architecture ,  West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
@@ -44,7 +47,13 @@ published: true
 
 </div>
 
-<div id="SKILLS" style="display: none;" markdown="1">
+
+
+
+
+
+
+<div id="SKILLS" markdown="1">
     <blockquote>
       <li>Python</li>
             >> Django
@@ -54,7 +63,8 @@ published: true
       <li>Zabbix</li>
       <li>Ruby lang </li>
         >> RubyOnRails
-    </blockquote>
+    </blockquote>  <br>
+
   </div>
 
 <div id="EXPERIENCE" style="display: none;" markdown="1">
