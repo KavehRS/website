@@ -127,7 +127,7 @@ published: true
 >- <strong> laitec<strong>
 >>Lpic 1 <br>
 >>C++ <br>
->>And other courses you can inquire it with my studencode(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://www.datacamp.com/profile/kavehrs) )
+>>And other courses you can inquire it with my studencode(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://laitec.ir/certification-verification) )
 >>
 > - <strong> Iran's Technical and Vocational Training Organization (Iran TVTO)<strong>
 >> ICDL second-rate (cert no. : 26716881)<br>
