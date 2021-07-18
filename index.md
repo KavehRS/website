@@ -45,6 +45,15 @@ published: true
 </div>
 
 <div id="SKILLS" style="display: none;" markdown="1">
+    <blockquote> 
+      <li>Python</li>
+      <li>Zabbix</li>
+      <li>Ruby lang </li>
+    
+    
+    </blockquote>
+
+
 
 
 > * Python <br>
