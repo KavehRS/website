@@ -56,11 +56,11 @@ published: true
 <div id="SKILLS" style="display: none;" markdown="1">
 >Python
  > <blockquote>
-     Django
-     Crawl (scrapy, requests & Beautifulsoup)
-     Data Analysis
-     Data Mining
- </blockquote>
+     Django<br>
+     Crawl (scrapy, requests & Beautifulsoup)<br>
+     Data Analysis<br>
+     Data Mining<br></blockquote>
+ 
 >Zabbix
 
   </div>
