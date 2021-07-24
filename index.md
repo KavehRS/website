@@ -16,8 +16,7 @@ published: true
  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> My hobbies are hiking and reading.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
- <li> Live: Tehran, Iran </li>
-</blockquote>
+ <li> Live: Tehran, Iran </li></blockquote>
 
 
 
@@ -61,9 +60,7 @@ published: true
      TensorFlow <br>
      Data Analysis<br>
      Data Mining<br>
-     Deep Learning<br>
-     
-     </blockquote>
+     Deep Learning<br></blockquote>
  
 >Zabbix
 
