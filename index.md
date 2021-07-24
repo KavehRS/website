@@ -58,8 +58,12 @@ published: true
  > <blockquote>
      Django<br>
      Crawl (scrapy, requests & Beautifulsoup)<br>
+     TensorFlow <br>
      Data Analysis<br>
-     Data Mining<br></blockquote>
+     Data Mining<br>
+     Deep Learning<br>
+     
+     </blockquote>
  
 >Zabbix
 
