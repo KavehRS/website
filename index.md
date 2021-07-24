@@ -12,7 +12,7 @@ published: true
 #### ABOUT
 <blockquote>
  <li> I'm Software Engineer & Enterprise Architecture <br>
- & maybe Junior DevOps .</li>
+ & maybe Researcher.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> My hobbies are hiking and reading.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
