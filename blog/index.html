@@ -2,8 +2,21 @@
 layout: default
 ---
 
-<br><br><br>
-<h3>   English Notes </h3> <br>
+
+<!-- > I strive for gender equality  <br> -->
+<br><br>
+<script src=".\assets\js\indexpage.js"></script>
+
+<div class="buttons"> ||
+  <a href="#" onclick="toggleVisibility('English Notes');">English Notes</a> ||
+  <a href="#" onclick="toggleVisibility('Persian Notes');">Persian Notes</a> ||
+</div>
+
+
+
+
+<h3> <div id="English Notes" markdown="1"></h3>
+
 <br><br>
 
 
@@ -15,12 +28,18 @@ layout: default
 
 
 <br><br><br><br><br><br>
+ 
+ 
+</div>
 
 
-<h3>  Persian Notes </h3><br>
 
-<div dir="rtl">
- <br><br>
+
+
+
+
+<div id="Persian Notes" style="display: none;" markdown="1"  dir="rtl">
+
  
  
   <li><a href="/2021/03/20/zabbix-5-agent"> نصب و تنظیم زبیکس 5 - زبیکس اجنت لینوکس</a></li>
