@@ -124,18 +124,10 @@ published: true
 >- <strong> Udemy <strong>
 >> You can see [my udemy profile](https://www.udemy.com/user/kaveh-rezaeishiraz/)
 >>
->- <strong> laitec<strong>
->>Lpic 1 <br>
->>C++ <br>
->>And other courses you can inquire it with my studencode(SUTIT code) : 9219 ([laitec Document Inquiry Center](https://laitec.ir/certification-verification) )
->>
 > - <strong> Iran's Technical and Vocational Training Organization (Iran TVTO)<strong>
 >> ICDL second-rate (cert no. : 26716881)<br>
 >> ICDL (cert no. : 28202462)	<br>
 >> General Network Security Technician  (cert no. : 27591652)	<br>
 >>
-> - <strong>Arjang Higher Education Institute (GoToclass platform)<strong>
->> CCNA 200-120 (cert no. : ofwyc5ots0egrmjlfdmk)<br>
->> Certified Ethical Hacker (cert no. : a9r7qu4f2l9ez03q1cc9)	<br>
->> <br>
+
 </div>
