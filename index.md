@@ -61,8 +61,6 @@ published: true
      Data Analysis<br>
      Data Mining<br>
      Deep Learning<br></blockquote>
- 
->Zabbix
 
   </div>
 
