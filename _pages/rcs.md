@@ -4,7 +4,7 @@ layout: about
 permalink: /mount/rcs/
 published: true
 ---
-
+<div dir="rtl">
   
 منابع آموزشی مقدماتی هلال احمر (1400)
 
