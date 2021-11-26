@@ -1,5 +1,5 @@
 ---
-title: RCS
+title: منابع آموزشی مقدماتی هلال احمر (1400)
 layout: default
 permalink: /mount/rcs/
 published: true
