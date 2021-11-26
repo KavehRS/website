@@ -4,7 +4,7 @@ layout: about
 permalink: /mount/rcs/
 published: true
 ---
-<div dir="rtl">
+
   
 منابع آموزشی مقدماتی هلال احمر (1400)
 
@@ -23,14 +23,6 @@ published: true
   
   
   
-  
-  
-  -
-  -
-  -
-  
-  
-...[جزوه پایه داوطلبی](/mount/rcs/جزوه پایه داوطلبی.pdf)
 
 
   
