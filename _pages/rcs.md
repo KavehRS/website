@@ -1,11 +1,11 @@
 ---
 title: منابع آموزشی مقدماتی هلال احمر (1400)
-layout: default
+layout: about
 permalink: /mount/rcs/
 published: true
 ---
 
-
+منابع آموزشی مقدماتی هلال احمر (1400)
 
 جزوه کمک های اولیه
 /mount/rcs/2جزوه.pdf
