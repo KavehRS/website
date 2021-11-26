@@ -5,7 +5,7 @@ permalink: /mount/rcs/
 published: true
 ---
 
-hi
+
 
 جزوه کمک های اولیه
 /mount/rcs/2جزوه.pdf
