@@ -4,7 +4,7 @@ layout: about
 permalink: /mount/rcs/
 published: true
 ---
-&#x202b;   منابع آموزشی مقدماتی هلال احمر (1400)
+&#x202b; [منابع آموزشی مقدماتی هلال احمر (1400)](/mount/rcs/)<br/><br/><br/><br/>
 
 
 
