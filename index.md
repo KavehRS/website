@@ -9,7 +9,7 @@ published: true
 
 ## *
 
-### ABOUT
+### About
 <blockquote>
  <li> I'm Software Engineer & Enterprise Architecture <br>
  & maybe Researcher.</li>
@@ -24,7 +24,7 @@ published: true
 
 
 
-### EXPERIENCE
+### Career background
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >>> Python Programmer<br>
@@ -69,7 +69,7 @@ published: true
 
 
 <br><br>
-### EDUCATION
+### Education
 <blockquote>
 <li> <strong> M. Eng. Information Technology Engineering - Enterprise Architecture, West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
     <p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced     network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p> </li> <br>
@@ -77,23 +77,23 @@ published: true
 <li><strong> B.S. Computer Software Engineering, Payame Noor University, 2011 - 2016 </strong> </li> 
 <li><strong> B.S. Electrical Engineering - Electronics, Bu-Ali Sina University, Incomplete Course 2005 - 2008 </strong></li>  </blockquote>  
   <br>
+  
+  
+### Mountaineering professional background
+
+
+#### Shaghayegh Mountaineering Club (2022 - Today)
+  Memeber - Rock Climber - Mountaineer
+
+#### Hamon Karaj Mountaineering Club (2021 - 2021)
+  Memeber - Mountaineer 
+  
+#### Sepanta Mountaineering Group (2021 - Today)
+  Memeber - Mountaineer 
 
 
 
 
-
-
-
-### SKILLS
-
-##### Python
-<blockquote>
-     Django<br>
-     Crawl (scrapy, requests & Beautifulsoup)<br>
-     TensorFlow <br>
-     Data Analysis<br>
-     Data Mining<br>
-     Deep Learning<br></blockquote>
 
 
 
