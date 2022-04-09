@@ -86,12 +86,16 @@ published: true
 ### Mountaineering professional background
 <blockquote>
 <li> <strong> Shaghayegh Mountaineering Club - Karaj </strong> (2022 - Present)<br>
-  Memeber<br>Rock Climber <br>Mountaineer<br>
+>>> Memeber
+>>> Rock Climber 
+>>> Mountaineer<br>
 
 <li> <strong> Hamon Mountaineering Club - Karaj</strong> (2021 - 2021)<br>
- Memeber<br>Mountaineer <br>
+>>>Memeber
+>>>Mountaineer <br>
   
-<li> <strong> Sepanta Mountaineering Group - Tehran </strong>(2021 - Present)<br> Mountaineer <br>
+<li> <strong> Sepanta Mountaineering Group - Tehran </strong>(2021 - Present)<br> 
+>>> Mountaineer <br>
   
 </blockquote>
 
