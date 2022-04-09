@@ -81,20 +81,23 @@ published: true
   
 ### Mountaineering professional background
 <blockquote>
-  #### Shaghayegh Mountaineering Club - Karaj (2022 - Present)
+<li> <strong> Shaghayegh Mountaineering Club - Karaj </strong> (2022 - Present)<br>
   
-    Memeber
-    Rock Climber 
-    Mountaineer
+    Memeber<br>
   
-  #### Hamon Mountaineering Club - Karaj (2021 - 2021)
+    Rock Climber <br>
   
-    Memeber
-    Mountaineer 
+    Mountaineer<br>
+
+<li> <strong> Hamon Mountaineering Club - Karaj</strong> (2021 - 2021)<br>
   
-  #### Sepanta Mountaineering Group - Tehran (2021 - Present)
+    Memeber<br>
   
-    Mountaineer 
+    Mountaineer <br>
+  
+<li> <strong> Sepanta Mountaineering Group - Tehran </strong>(2021 - Present)<br>
+  
+    Mountaineer <br>
   
 </blockquote>
 
@@ -103,7 +106,7 @@ published: true
 
 ### Volunteering
 <blockquote>
-#### KarajLug
+<li> <strong> KarajLug</strong>
 Executive Board Member (Oct 2011 - Present)
   
 Science and Technology Community
@@ -111,7 +114,7 @@ Science and Technology Community
 Karaj Linux User Group :
 A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.
 
-#### OCCC - Open Community of Cloud Copmputing (Tehran Branch)
+<li> <strong> OCCC - Open Community of Cloud Copmputing (Tehran Branch)</strong>
   
 Cloud Security Committee Member
   
@@ -119,7 +122,7 @@ Oct 2015 - Jan 2018
   
 Science and Technology Community
 
-#### DerakhtKaran NGO
+<li> <strong> DerakhtKaran NGO </strong>
   
 Executive Board Member
   
