@@ -97,35 +97,34 @@ published: true
 
 
 
-### Volunteering
-<blockquote>
-  
-<li> <strong> KarajLug</strong>
-  
->> Executive Board Member (Oct 2011 - Present)
-  
+### Volunteering  
+<li> <strong> KarajLug</strong> 
+>> Executive Board Member (Oct 2011 - Present) 
 >> Science and Technology Community
-  
+>>
 >> Karaj Linux User Group :
 >> A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.
 
 <li> <strong> OCCC - Open Community of Cloud Copmputing (Tehran Branch)</strong>
-  
 >> Cloud Security Committee Member (Oct 2015 - Jan 2018)
   
 >> Science and Technology Community
 
-<li> <strong> DerakhtKaran NGO </strong>
+<li> <strong> DerakhtKaran NGO </strong><br>
   
->> Executive Board Member (Dec 2013 - Jan 2015) 
+>> Executive Board Member (Dec 2013 - Jan 2015) <br>
   
->> Civil Rights and Social Action Community
->> DerakhtKaran are a Persian name with the concept of those who are trees.
->> This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.
+>> Civil Rights and Social Action Community<br>
+>> DerakhtKaran are a Persian name with the concept of those who are trees.<br>
+>> This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.<br>
+  
+<li> <strong>One Million Signatures for the Repeal of Discriminatory Laws </strong><br>
+>> Activist (Oct 2015 - Jan 2018)<br>
+>> Civil Rights and Social Action Community<br>
+>>  campaign to collect one million signatures in support of changing discriminatory laws against women in their country. Activists of the movement have been attacked and jailed by the government, and the campaign has had to extend its two-year target to collect the full number of signatures. <br><br><br>
   
   
 
-</blockquote>
 
 
 
