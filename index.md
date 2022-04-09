@@ -119,7 +119,7 @@ published: true
 >> This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.<br>
   
 <li> <strong>One Million Signatures for the Repeal of Discriminatory Laws </strong><br>
->> Activist (Oct 2015 - Jan 2018)<br>
+>> Activist (Oct 2007 - Oct 2012)<br>
 >> Civil Rights and Social Action Community<br>
 >>  campaign to collect one million signatures in support of changing discriminatory laws against women in their country. Activists of the movement have been attacked and jailed by the government, and the campaign has had to extend its two-year target to collect the full number of signatures. <br><br><br>
   
