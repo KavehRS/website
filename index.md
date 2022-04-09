@@ -108,24 +108,5 @@ published: true
 >> •	Reporter<br>
 </div>
 
-<div id="COURSES" style="display: none;" markdown="1">
->- <strong> Coursera<strong>
->> Security and Privacy for Big Data - Part 1<br>
->>  Introduction to Machine Learning<br>
->> And other training courses that you can see in [my coursera profile](https://www.coursera.org/user/53af89539f2cd0ad9a781d465a0dfdca)
->>
->- <strong> DataCamp <strong>
->>Python Fundamentals - SKILL TRACK  (4 Courses) <br>
->>Python Programmer - CAREER TRACK  (16 Courses) <br>
->>And several other training courses that you can see in [my DataCamp profile](https://www.datacamp.com/profile/kavehrs)
->>
->- <strong> Udemy <strong>
->> You can see [my udemy profile](https://www.udemy.com/user/kaveh-rezaeishiraz/)
->>
-> - <strong> Iran's Technical and Vocational Training Organization (Iran TVTO)<strong>
->> ICDL second-rate (cert no. : 26716881)<br>
->> ICDL (cert no. : 28202462)	<br>
->> General Network Security Technician  (cert no. : 27591652)	<br>
->>
 
-</div>
+
