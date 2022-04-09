@@ -14,7 +14,8 @@ published: true
  <li> I'm Software Engineer & Enterprise Architecture <br>
  & maybe Researcher.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
- <li> My hobbies are hiking and reading.</li>
+ <li> Hiking and Mountaineering Leader / Level Club </li>
+  <li> My hobbies are hiking and reading.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Tehran, Iran </li></blockquote>
 
@@ -69,11 +70,12 @@ published: true
 
 <br><br>
 ### EDUCATION
+<blockquote>
 <li> <strong> M. Eng. Information Technology Engineering - Enterprise Architecture, West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
     <p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced     network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p> </li> <br>
     
 <li><strong> B.S. Computer Software Engineering, Payame Noor University, 2011 - 2016 </strong> </li> 
-<li><strong> B.S. Electrical Engineering - Electronics, Bu-Ali Sina University, Incomplete Course 2005 - 2008 </strong></li>    
+<li><strong> B.S. Electrical Engineering - Electronics, Bu-Ali Sina University, Incomplete Course 2005 - 2008 </strong></li>  </blockquote>  
   <br>
 
 
