@@ -101,7 +101,9 @@ published: true
 
 ### Volunteering
 <blockquote>
+  
 <li> <strong> KarajLug</strong>
+  
 >> Executive Board Member (Oct 2011 - Present)
   
 >> Science and Technology Community
