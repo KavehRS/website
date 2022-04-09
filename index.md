@@ -20,20 +20,7 @@ published: true
 
 
 
-<!-- > I strive for gender equality  <br> -->
 <br><br>
-<script src=".\assets\js\indexpage.js"></script>
-
-<div class="buttons"> ||
-  <a href="#" onclick="toggleVisibility('EDUCATION');">EDUCATION</a> ||
-  <a href="#" onclick="toggleVisibility('SKILLS');">SKILLS</a> ||
-  <a href="#" onclick="toggleVisibility('EXPERIENCE');">EXPERIENCE</a> ||
-  <a href="#" onclick="toggleVisibility('COURSES');">COURSES</a> ||
-</div>
-
-
-
-
 
 <div id="EDUCATION" markdown="1">
   <blockquote>
@@ -52,7 +39,7 @@ published: true
 
 
 
-<div id="SKILLS" style="display: none;" markdown="1">
+<div id="SKILLS">
 >Python
  > <blockquote>
      Django<br>
@@ -64,7 +51,7 @@ published: true
 
   </div>
 
-<div id="EXPERIENCE" style="display: none;" markdown="1">
+<div id="EXPERIENCE">
 > ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >>> Python Programmer<br>
