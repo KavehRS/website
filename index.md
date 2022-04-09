@@ -88,7 +88,7 @@ published: true
   Memeber - Mountaineer 
   
 #### Sepanta Mountaineering Group - Tehran(2021 - Today)
-  Memeber - Mountaineer 
+  Mountaineer 
 </blockquote>
 
 
