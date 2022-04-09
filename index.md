@@ -25,8 +25,9 @@ published: true
 
 
 ### Career background
->
->
+>>
+
+
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >>> Python Programmer<br>
@@ -71,6 +72,7 @@ published: true
 
 
 <br><br>
+
 ### Education
 <blockquote>
 <li> <strong> M. Eng. Information Technology Engineering - Enterprise Architecture, West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
@@ -93,36 +95,33 @@ published: true
   
 </blockquote>
 
+<br><br>
 
 
 
 ### Volunteering
 <blockquote>
 <li> <strong> KarajLug</strong>
-Executive Board Member (Oct 2011 - Present)
+>> Executive Board Member (Oct 2011 - Present)
   
-Science and Technology Community
+>> Science and Technology Community
   
-Karaj Linux User Group :
-A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.
+>> Karaj Linux User Group :
+>> A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.
 
 <li> <strong> OCCC - Open Community of Cloud Copmputing (Tehran Branch)</strong>
   
-Cloud Security Committee Member
+>> Cloud Security Committee Member (Oct 2015 - Jan 2018)
   
-Oct 2015 - Jan 2018
-  
-Science and Technology Community
+>> Science and Technology Community
 
 <li> <strong> DerakhtKaran NGO </strong>
   
-Executive Board Member
+>> Executive Board Member (Dec 2013 - Jan 2015) 
   
-Dec 2013 - Jan 2015 
-  
-Civil Rights and Social Action Community
-DerakhtKaran are a Persian name with the concept of those who are trees.
-This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.
+>> Civil Rights and Social Action Community
+>> DerakhtKaran are a Persian name with the concept of those who are trees.
+>> This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.
   
   
 
