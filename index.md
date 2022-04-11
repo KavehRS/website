@@ -87,20 +87,30 @@ published: true
 <blockquote>
 
 > <li> <strong> Shaghayegh Mountaineering Club - Karaj </strong>  <br>
+  
 >     <br>
+  
 >> Memeber (2022 - Present)   <br> 
+  
 >>> Rock Climber &   Mountaineer <br> 
   
   
+  
 > <li> <strong> Sepanta Mountaineering Group - Tehran </strong>  <br> 
+  
 >     <br>
+  
 >> Guest Mountaineer (2021 - Present) <br>
   
   
   
+  
 > <li> <strong> Hamon Mountaineering Club - Karaj</strong><br>
+  
 >    <br>
+  
 >> Memeber (2021 - 2021) <br>
+  
 >>> Mountaineer   <br>
   
 </blockquote>
