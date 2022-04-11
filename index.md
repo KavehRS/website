@@ -84,6 +84,7 @@ published: true
   
   
 ### Mountaineering professional background
+<blockquote>
 
 <li> <strong> Shaghayegh Mountaineering Club - Karaj </strong> (2022 - Present)   <br>
   
@@ -93,7 +94,8 @@ published: true
   
 >>> Mountaineer  <br>
   
-<li> <strong> Hamon Mountaineering Club - Karaj</strong> (2021 - 2021)  <br>
+<li> <strong> Hamon Mountaineering Club - Karaj</strong> (2021 - 2021)  </blockquote>
+<br>
   
 >>>Memeber  <br>
   
@@ -107,9 +109,9 @@ published: true
 
 
 
-### Volunteering  
->> 
-  
+### Volunteering   
+<blockquote>
+
 <li> <strong> KarajLug</strong> <br>
   
 >> Executive Board Member (Oct 2011 - Present) <br>
@@ -142,7 +144,8 @@ published: true
   
 >> Civil Rights and Social Action Community <br>
   
->> campaign to collect one million signatures in support of changing discriminatory laws against women in their country. Activists of the movement have been attacked and jailed by the government, and the campaign has had to extend its two-year target to collect the full number of signatures. <br><br><br>
+>> campaign to collect one million signatures in support of changing discriminatory laws against women in their country. Activists of the movement have been attacked and jailed by the government, and the campaign has had to extend its two-year target to collect the full number of signatures. </blockquote>
+<br><br><br>
   
   
 
