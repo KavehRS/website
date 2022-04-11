@@ -84,34 +84,30 @@ published: true
   
   
 ### Mountaineering professional background
-<blockquote>
 
-<li> <strong> Shaghayegh Mountaineering Club - Karaj </strong>  <br>   
-> Memeber (2022 - Present)   <br>  
+##### Shaghayegh Mountaineering Club - Karaj  <br>   
+###### Memeber (2022 - Present)   <br>  
 >> Rock Climber &   Mountaineer <br> 
   
   
   
-<li> <strong> Sepanta Mountaineering Group - Tehran </strong>  <br>     
->> Guest Mountaineer (2021 - Present) <br>
+##### Sepanta Mountaineering Group - Tehran <br>     
+###### Guest Mountaineer (2021 - Present) <br>
   
   
   
   
-<li> <strong> Hamon Mountaineering Club - Karaj</strong><br> 
-> Memeber (2021 - 2021) <br>
+##### Hamon Mountaineering Club - Karaj<br> 
+###### Memeber (2021 - 2021) <br>
 >> Mountaineer   <br>
-  
-</blockquote>
  
 <br><br>
 
 
 
 ### Volunteering   
-<blockquote>
 
-<li> <strong> KarajLug</strong> <br>
+##### KarajLug<br>
   
 >> Executive Board Member (Oct 2011 - Present) <br>
   
@@ -121,13 +117,14 @@ published: true
   
 >> A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.<br>
 
-<li> <strong> OCCC - Open Community of Cloud Copmputing (Tehran Branch)</strong><br>
+
+##### OCCC - Open Community of Cloud Copmputing (Tehran Branch)<br>
   
 >> Cloud Security Committee Member (Oct 2015 - Jan 2018)<br>
   
 >> Science and Technology Community<br>
 
-<li> <strong> DerakhtKaran NGO </strong><br>
+##### DerakhtKaran NGO <br>
   
 >> Executive Board Member (Dec 2013 - Jan 2015) <br>
   
@@ -137,7 +134,7 @@ published: true
   
 >> This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.<br>
   
-<li><strong>One Million Signatures for the Repeal of Discriminatory Laws </strong><br>
+##### One Million Signatures for the Repeal of Discriminatory Laws <br>
   
 >> Activist (Oct 2007 - !!!!) <br>
   
