@@ -86,22 +86,22 @@ published: true
 ### Mountaineering professional background
 
 ##### Shaghayegh Mountaineering Club - Karaj  <br>   
-###### Memeber (2022 - Present)   <br>  
-####### Rock Climber &   Mountaineer <br> 
+###### •	 Memeber (2022 - Present)   <br>  
+#######  	       Rock Climber &   Mountaineer <br> 
   
   
   
 ##### Sepanta Mountaineering Group - Tehran <br>     
-###### Guest Mountaineer (2021 - Present) <br>
-####### Mountaineer   <br>
+###### •	 Guest Mountaineer (2021 - Present) <br>
+#######  	       Mountaineer   <br>
 <br>
   
   
   
   
 ##### Hamon Mountaineering Club - Karaj<br> 
-###### Memeber (2021 - 2021) <br>
-####### Mountaineer   <br>
+###### •	 Memeber (2021 - 2021) <br>
+#######  	       Mountaineer   <br>
  
 <br><br>
 
@@ -110,28 +110,28 @@ published: true
 ### Volunteering   
 
 ##### KarajLug<br>
-###### Executive Board Member (Oct 2011 - Present) <br> 
-###### Science and Technology Community<br>
+###### •	 Executive Board Member (Oct 2011 - Present) <br> 
+######  	       Science and Technology Community<br>
 > Karaj Linux User Group :<br>
   
 > A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.<br>
 
 
 ##### OCCC - Open Community of Cloud Copmputing (Tehran Branch)<br> 
-###### Cloud Security Committee Member (Oct 2015 - Jan 2018)<br> 
-###### Science and Technology Community<br>
+###### •	 Cloud Security Committee Member (Oct 2015 - Jan 2018)<br> 
+######  	       Science and Technology Community<br>
 
 
 ##### DerakhtKaran NGO <br> 
-###### Executive Board Member (Dec 2013 - Jan 2015) <br>
-###### Civil Rights and Social Action Community<br>
+###### •	 Executive Board Member (Dec 2013 - Jan 2015) <br>
+###### 	        Civil Rights and Social Action Community<br>
   
 > DerakhtKaran are a Persian name with the concept of those who are trees.<br> 
 > This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.<br>
   
 ##### One Million Signatures for the Repeal of Discriminatory Laws <br>
-###### Activist (Oct 2007 - !!!!) <br> 
-###### Civil Rights and Social Action Community <br>
+###### •	 Activist (Oct 2007 - !!!!) <br> 
+###### 	        Civil Rights and Social Action Community <br>
   
 > campaign to collect one million signatures in support of changing discriminatory laws against women in their country. Activists of the movement have been attacked and jailed by the government, and the campaign has had to extend its two-year target to collect the full number of signatures. </blockquote>
 <br><br><br>
