@@ -95,7 +95,6 @@ published: true
 #####  • Sepanta Mountaineering Group - Tehran <br>     
 ###### • •	 Guest Mountaineer (2021 - Present) <br>
 >> Mountaineer   <br>
-<br>
 >
 >  
 #####  • Hamon Mountaineering Club - Karaj<br> 
