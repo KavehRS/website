@@ -25,8 +25,7 @@ published: true
 
 
 ### Career background
->
-
+> .
 >
 >
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
