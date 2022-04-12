@@ -27,7 +27,8 @@ published: true
 ### Career background
 >
 
-
+>
+>
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
 >>> Python Programmer<br>
@@ -84,25 +85,24 @@ published: true
   
   
 ### Mountaineering professional background
-
+>
+>
 #####  • Shaghayegh Mountaineering Club - Karaj  <br>   
 ###### • •	 Memeber (2022 - Present)   <br>  
-> Rock Climber &   Mountaineer <br> 
-  
-  
-  
+>> Rock Climber &   Mountaineer <br>  
+>
+> 
 #####  • Sepanta Mountaineering Group - Tehran <br>     
 ###### • •	 Guest Mountaineer (2021 - Present) <br>
-> Mountaineer   <br>
+>> Mountaineer   <br>
 <br>
-  
-  
-  
-  
+>
+>  
 #####  • Hamon Mountaineering Club - Karaj<br> 
 ###### • •	 Memeber (2021 - 2021) <br>
-> Mountaineer   <br>
- 
+>> Mountaineer   <br>
+>
+> 
 <br><br>
 
 
