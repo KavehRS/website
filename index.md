@@ -29,7 +29,13 @@ published: true
 >
 >
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
->> •	Software Engineer at the Datamining section.<br> Jan 2021 – Present<br>
+>> •	DevOps at the Datamining section.<br> Aug 2022 – Present<br>
+>>> Linux SysAdmin<br>
+>>> Zabbix, Gitlab-CI, Ansible, Docker Swarm, PostgreSQL, Prometheus, Grafana & ... <br>
+>>
+>> ‌ <br>
+>>
+>> •	SysAdmin at the Datamining section.<br> Jan 2021 – Aug 2022<br>
 >>> Python Programmer<br>
 >>> Data Gathering<br>
 >>> Linux SysAdmin<br>
@@ -37,7 +43,7 @@ published: true
 >>
 >> ‌ <br>
 >>
->> •	Junior Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
+>> • Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 >>> Research & Development<br>
 >>> Web Crawling<br>
 >> ‌ <br>
