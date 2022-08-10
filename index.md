@@ -29,16 +29,9 @@ published: true
 >
 >
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
->> •	DevOps at the Datamining section.<br> Aug 2022 – Present<br>
+>> •	SysAdmin at the Datamining section<br> Jan 2021 – Present<br>
 >>> Linux SysAdmin<br>
->>> Zabbix, Gitlab-CI, Ansible, Docker Swarm, PostgreSQL, Prometheus, Grafana & ... <br>
->>
->> ‌ <br>
->>
->> •	SysAdmin at the Datamining section.<br> Jan 2021 – Aug 2022<br>
->>> Python Programmer<br>
->>> Linux SysAdmin<br>
->>> Zabbix Admin<br>
+>>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
 >>
 >> ‌ <br>
 >>
