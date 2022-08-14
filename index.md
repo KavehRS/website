@@ -27,9 +27,17 @@ published: true
 ### Career background
 > 
 >
+
 >
+>
+##### TAKTA , the Electronic Research and Production co.,Tehran, Iran<br> Sep 2022 - present<br>
+>> •	SysAdmin at the Datamining section<br>  Sep 2022 - present<br>
+>>> Linux SysAdmin<br>
+>>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
+>>
+>> ‌ <br>
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
->> •	SysAdmin at the Datamining section<br> Jan 2021 – Present<br>
+>> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
 >>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
 >>
