@@ -118,7 +118,7 @@ published: true
 >
 >
 #####  • KarajLug<br>
-###### • •	 Executive Board Member (Oct 2011 - Present) <br> 
+###### • •	 Executive Board Member (Oct 2011 - Oct 2022) <br> 
 ###### Science and Technology Community<br>
 >> Karaj Linux User Group :<br>
   
@@ -141,7 +141,7 @@ published: true
 >
 >  
 #####  • One Million Signatures for the Repeal of Discriminatory Laws <br>
-###### • •	 Activist (Oct 2007 - !!!!) <br> 
+###### • •	 Activist (Oct 2007 - ~) <br> 
 ###### Civil Rights and Social Action Community <br>
   
 >> campaign to collect one million signatures in support of changing discriminatory laws against women in their country. Activists of the movement have been attacked and jailed by the government, and the campaign has had to extend its two-year target to collect the full number of signatures. 
