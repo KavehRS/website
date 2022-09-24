@@ -14,7 +14,7 @@ published: true
  <li> I'm Software Engineer & Enterprise Architecture <br>
  & maybe Researcher.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
- <li> Hiking and Mountaineering Leader / Level Club </li>
+ <li> Mountaineer and Climber </li>
   <li> My hobbies are hiking and reading.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Tehran, Iran </li></blockquote>
@@ -129,8 +129,7 @@ published: true
 ###### Science and Technology Community<br>
 >
 >
->
->
+
 #####  • DerakhtKaran NGO <br> 
 ###### • •	 Executive Board Member (Dec 2013 - Jan 2015) <br>
 ###### Civil Rights and Social Action Community<br>
