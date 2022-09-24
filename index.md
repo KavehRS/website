@@ -36,13 +36,15 @@ published: true
 >>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
 >>
 >> ‌ <br>
+>> 
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
 >>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
 >>
 >> ‌ <br>
->>
+>
+>
 >> • Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 >>> Research & Development<br>
 >>> Web Crawling<br>
@@ -94,17 +96,17 @@ published: true
 >
 >
 #####  • Shaghayegh Mountaineering Club - Karaj  <br>   
-###### • •	 Memeber (2022 - Present)   <br>  
+###### • •	 Memeber (Jan 2022 - Present)   <br>  
 >> Rock Climber &   Mountaineer <br>  
 >
 > 
 #####  • Sepanta Mountaineering Group - Tehran <br>     
-###### • •	 Guest Mountaineer (2021 - Present) <br>
+###### • •	 Guest Mountaineer (Jun 2021 - Sep 2022) <br>
 >> Mountaineer   <br>
 >
 >  
 #####  • Hamon Mountaineering Club - Karaj<br> 
-###### • •	 Memeber (2021 - 2021) <br>
+###### • •	 Memeber (Jul 2021 - Dec 2021) <br>
 >> Mountaineer   <br>
 >
 > 
