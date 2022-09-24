@@ -38,7 +38,7 @@ published: true
 >> ‌ <br>
 >
 >
-##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
+##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- Sep 2022 <br>
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
 >>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
