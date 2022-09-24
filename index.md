@@ -36,15 +36,14 @@ published: true
 >>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
 >>
 >> ‌ <br>
->> 
+>
+>
 ##### SOROUSH Multimedia Corporation (IRIB), Tehran, Iran<br> Aug 2018- present
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
 >>> Zabbix, Ansible, Docker Swarm, Prometheus, Grafana & ... <br>
 >>
 >> ‌ <br>
->
->
 >> • Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 >>> Research & Development<br>
 >>> Web Crawling<br>
