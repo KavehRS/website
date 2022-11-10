@@ -44,8 +44,7 @@ published: true
 >> ‌ <br>
 >> • Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 >>> Research & Development<br>
->>> Web Crawling<br>
->>>  Data Gathering<br>
+>>> Linux SysAdmin<br>
 >> ‌ <br>
 >>
 >> •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
@@ -58,7 +57,6 @@ published: true
 >> •	Projets :<br>
 >>> Implement Zabbix Monitoring System (2021 - 2021)<br>
 >>> Rasad Analytic Platform (2019 - 2021)<br>
->>> Web Crawling (2018 - 2020)<br>
 >
 >
 ##### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
