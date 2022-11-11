@@ -11,8 +11,7 @@ published: true
 
 ### About
 <blockquote>
- <li> I'm Software Engineer & Enterprise Architecture <br>
- & maybe Researcher.</li>
+ <li> I'm Software Engineer & Enterprise Architecture.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> Mountaineer and Climber </li>
   <li> My hobbies are hiking and reading.</li>
@@ -56,7 +55,7 @@ published: true
 >> ‌ <br>
 >> •	Projets :<br>
 >>> Implement Zabbix Monitoring System (2021 - 2021)<br>
->>> Rasad Analytic Platform (2019 - 2021)<br>
+>>> Statistics Analytic Platform (2019 - 2021)<br>
 >
 >
 ##### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
