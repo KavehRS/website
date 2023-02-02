@@ -30,8 +30,9 @@ published: true
 >
 >
 ##### TAKTA , the Electronic Research and Production co.,Tehran, Iran<br> Sep 2022 - present<br>
->> •	Database Manager at the Datamining section<br>  Sep 2022 - present<br>
->>> PostgreSQL<br>
+>> •	Software Eng at the Datamining section<br>  Sep 2022 - present<br>
+>>> Zabbix Admin<br>
+>>> Data Gathering <br>
 >>
 >> ‌ <br>
 >
