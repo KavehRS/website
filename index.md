@@ -6,9 +6,6 @@ profile:
   image: kavehrs.jpg
 published: true
 ---
-
-   
-
 ## About
 <blockquote>
  <li> I'm Software Engineer & Enterprise Architecture.</li>
@@ -17,11 +14,6 @@ published: true
   <li> My hobbies are hiking and reading.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Tehran, Iran </li></blockquote>
-
-
-
-
-
 
 ### Career background
 > 
@@ -37,8 +29,7 @@ published: true
 >> ‌ <br>
 >
 
-
-#####  • Shaghayegh Mountaineering Club - Karaj  <br>   (Jan 2022 - Present)<br>
+#####  • Shaghayegh Mountaineering Club - Karaj  <br> Jan 2022 - Present<br> 
 >> •	 Memeber (Jan 2022 - Feb 2023)   <br>  
 >>> Rock Climber, Ice Climber &   Mountaineer <br>  
 >> <br>
