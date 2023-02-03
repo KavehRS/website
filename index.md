@@ -42,9 +42,8 @@ published: true
 >> •	 Memeber (Jan 2022 - Feb 2023)   <br>  
 >>> Rock Climber, Ice Climber &   Mountaineer <br>  
 >> <br>
->> <br>
 >> •	 Mountain Guides - Club level (Feb 2023 - Present)   <br> 
->> Rock Climber, Ice Climber & Mountaineer <br>  
+>>> Rock Climber, Ice Climber & Mountaineer <br>  
 > 
 
 
