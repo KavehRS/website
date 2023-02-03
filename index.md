@@ -92,19 +92,10 @@ published: true
 >
 #####  • Shaghayegh Mountaineering Club - Karaj  <br>   
 ###### • •	 Memeber (Jan 2022 - Present)   <br>  
->> Rock Climber &   Mountaineer <br>  
+>> Rock Climber, Ice Climber &   Mountaineer <br>  
 >
 > 
-#####  • Sepanta Mountaineering Group - Tehran <br>     
-###### • •	 Guest Mountaineer (Jun 2021 - Sep 2022) <br>
->> Mountaineer   <br>
->
->  
-#####  • Hamon Mountaineering Club - Karaj<br> 
-###### • •	 Memeber (Jul 2021 - Dec 2021) <br>
->> Mountaineer   <br>
->
-> 
+
 <br><br>
 
 
@@ -119,18 +110,6 @@ published: true
 >> A Linux User Group or Linux Users' Group (LUG) or GNU/Linux User Group (GLUG) is a private, generally non-profit or not-for-profit organization that provides support and/or education for Linux users, particularly for inexperienced users. The term commonly refers to local groups that meet in person, but is also used to refer to online support groups that may have members spread over a very wide area and that do not organize, or are not dependent on, physical meetings. Many LUGs encompass FreeBSD and other free-software / open source Unix-based operating systems.<br>
 >
 >
-#####  • OCCC - Open Community of Cloud Copmputing (Tehran Branch)<br> 
-###### • •	 Cloud Security Committee Member (Oct 2015 - Jan 2018)<br> 
-###### Science and Technology Community<br>
->
->
-#####  • DerakhtKaran NGO <br> 
-###### • •	 Executive Board Member (Dec 2013 - Jan 2015) <br>
-###### Civil Rights and Social Action Community<br>
->> DerakhtKaran are a Persian name with the concept of those who are trees.<br> 
->> This ngo has been established to promote the planting and maintenance of trees and has weekly plans in this direction.<br>
->
->  
 #####  • One Million Signatures for the Repeal of Discriminatory Laws <br>
 ###### • •	 Activist (Oct 2007 - May 2009) <br> 
 ###### Civil Rights and Social Action Community <br>
