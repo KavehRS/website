@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: Kaveh Rezaei Shiraz
 permalink: /
 profile:
   align: right
@@ -7,9 +7,9 @@ profile:
 published: true
 ---
 
-##    
+   
 
-### About
+## About
 <blockquote>
  <li> I'm Software Engineer & Enterprise Architecture.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
