@@ -36,7 +36,18 @@ published: true
 >>
 >> ‌ <br>
 >
->
+
+
+#####  • Shaghayegh Mountaineering Club - Karaj  <br>   (Jan 2022 - Present)<br>
+>> •	 Memeber (Jan 2022 - Feb 2023)   <br>  
+>>> Rock Climber, Ice Climber &   Mountaineer <br>  
+>> <br>
+>> <br>
+>> •	 Mountain Guides - Club level (Feb 2023 - Present)   <br> 
+>> Rock Climber, Ice Climber & Mountaineer <br>  
+> 
+
+
 ##### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
@@ -86,17 +97,7 @@ published: true
 <li><strong> B.S. Electrical Engineering - Electronics, Bu-Ali Sina University, Incomplete Course 2005 - 2008 </strong></li>  </blockquote>  
   <br>
   
-  
-### Mountaineering professional background
->
->
-#####  • Shaghayegh Mountaineering Club - Karaj  <br>   
-###### • •	 Memeber (Jan 2022 - Present)   <br>  
->> Rock Climber, Ice Climber &   Mountaineer <br>  
->
-> 
 
-<br><br>
 
 
 
