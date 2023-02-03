@@ -1,5 +1,5 @@
 ---
-layout: Kaveh Rezaei Shiraz
+layout: کاوه
 permalink: /
 profile:
   align: right
