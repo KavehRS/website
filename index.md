@@ -7,20 +7,17 @@ profile:
 published: true
 ---
 
-##  کاوه
 ### About
-<blockquote>
-  
+<blockquote>  
  <li> I'm Software Engineer & Enterprise Architecture.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> Mountaineer and Climber </li>
-  <li> My hobbies are hiking and reading.</li>
+ <li> My hobbies are hiking and reading.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
- <li> Live: Tehran, Iran </li></blockquote>
+ <li> Live: Tehran, Iran </li>
+</blockquote>
 
 ### Career background
-> 
->
 >
 >
 ##### TAKTA , the Electronic Research and Production co.,Tehran, Iran<br> Sep 2022 - present<br>
