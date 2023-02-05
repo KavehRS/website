@@ -34,8 +34,8 @@ published: true
 >> <br>
 >> •  Mountain Guides - Club level (Feb 2023 - Present)   <br> 
 >>> Rock Climber, Ice Climber & Mountaineer <br>  
-> <br>
-> 
+>
+>
 ##### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
