@@ -21,7 +21,6 @@ published: true
 ### Career background
 > 
 >
-
 >
 >
 ##### TAKTA , the Electronic Research and Production co.,Tehran, Iran<br> Sep 2022 - present<br>
@@ -31,16 +30,13 @@ published: true
 >>
 >> ‌ <br>
 >
-
-#####  • Shaghayegh Mountaineering Club - Karaj  <br> Jan 2022 - Present<br> 
+##### Shaghayegh Mountaineering Club - Karaj  <br> Jan 2022 - Present<br> 
 >> •	 Memeber (Jan 2022 - Feb 2023)   <br>  
 >>> Rock Climber, Ice Climber &   Mountaineer <br>  
 >> <br>
 >> •	 Mountain Guides - Club level (Feb 2023 - Present)   <br> 
 >>> Rock Climber, Ice Climber & Mountaineer <br>  
 > 
-
-
 ##### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
