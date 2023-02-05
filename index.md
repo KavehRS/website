@@ -1,5 +1,5 @@
 ---
-layout: کاوه
+layout: about
 permalink: /
 profile:
   align: right
@@ -7,7 +7,7 @@ profile:
 published: true
 ---
 
-##  Kaveh
+##  کاوه
 ### About
 <blockquote>
   
