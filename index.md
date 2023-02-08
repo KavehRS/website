@@ -20,12 +20,20 @@ published: true
 ### Career background
 >
 >
-##### Hamnavard Mountaineering Club, Tehran, Iran. (Part Time) <br> Feb 2023 - Present<br> 
->> •  mountaineering and mountain climbing Guide - Club level (Feb 2023 - Present)   <br> 
+##### Shaghayegh Mountaineering Club, Karaj, Iran. (Part Time) <br> Jan 2022 - Present<br> 
+>> •  Memeber (Jan 2022 - Feb 2023)   <br>  
+>>> Rock Climber, Ice Climber &   Mountaineer <br>  
+>> <br>
+>> •  Club level guide for mountain climbing activities  (Feb 2023 - Present) - Part Time   <br> 
+>> •  Club level guide for ice climbing activities  (Feb 2023 - Present) - Part Time  <br> 
+>> •
+>
+>
+##### Hamnavard Mountaineering Club, Tehran, Iran. <br> Feb 2023 - Present<br> 
+>> •  mountaineering and mountain climbing Guide - Club level (Feb 2023 - Present)- Part Time  <br> 
 >>>   
 >
 >
-
 ##### TAKTA , the Electronic Research and Production co., Tehran, Iran<br> Sep 2022 - present<br>
 >> •	Software Eng at the Datamining section<br>  Sep 2022 - present<br>
 >>> Zabbix Admin<br>
@@ -34,15 +42,7 @@ published: true
 >> ‌ <br>
 >
 >
-##### Shaghayegh Mountaineering Club, Karaj, Iran. (Part Time) <br> Jan 2022 - Present<br> 
->> •  Memeber (Jan 2022 - Feb 2023)   <br>  
->>> Rock Climber, Ice Climber &   Mountaineer <br>  
->> <br>
->> •  Club level guide for mountain climbing activities  (Feb 2023 - Present)   <br> 
->> •  Club level guide for ice climbing activities  (Feb 2023 - Present)  <br> 
->> •
->
->
+
 ##### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
 >> •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 >>> Linux SysAdmin<br>
