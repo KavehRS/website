@@ -46,8 +46,7 @@ published: true
 > Data Gathering<br>
 > Python programmer<br>
 > Data Analysis<br>
-
-####### •	Projets :<br>
+#######  •	Projets :<br>
 > Implement Zabbix Monitoring System (2021 - 2021)<br>
 > Statistics Analytic Platform (2019 - 2021)<br>
 
