@@ -21,7 +21,7 @@ published: true
 >
 >
 ##### Hamnavard Mountaineering Club, Tehran, Iran. (Part Time) <br> Feb 2023 - Present<br> 
->> •  Mountain Guides - Club level (Feb 2023 - Present)   <br> 
+>> •  mountaineering and mountain climbing Guide - Club level (Feb 2023 - Present)   <br> 
 >>>   
 >
 >
@@ -38,8 +38,9 @@ published: true
 >> •  Memeber (Jan 2022 - Feb 2023)   <br>  
 >>> Rock Climber, Ice Climber &   Mountaineer <br>  
 >> <br>
->> •  Mountain Guides - Club level (Feb 2023 - Present)   <br> 
->>> Rock Climber, Ice Climber & Mountaineer <br>  
+>> •  Club level guide for mountain climbing activities  (Feb 2023 - Present)   <br> 
+>> •  Club level guide for ice climbing activities  (Feb 2023 - Present)  <br> 
+>> •
 >
 >
 ##### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
