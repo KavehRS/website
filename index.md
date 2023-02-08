@@ -34,16 +34,17 @@ published: true
 <br>
 
 #### TAKTA , the Electronic Research and Production co., Tehran, Iran<br> Sep 2022 - present<br>
-###### •	Software Eng at the Datamining section<br>  Sep 2022 - present<br>
+•	Software Eng at the Datamining section<br>  Sep 2022 - present<br>
 > Zabbix Admin<br>
 > Data Gathering <br>
+<br>
 #### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
-###### •	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
+•	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
 > Linux SysAdmin<br>
-###### • Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
+• Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
 > Research & Development<br>
 > Linux SysAdmin<br>
-###### •	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
+•	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
 > Mividi TSM100 admin<br>
 > Data Gathering<br>
 > Python programmer<br>
@@ -52,7 +53,7 @@ published: true
   •	Projets :<br>
 > Implement Zabbix Monitoring System (2021 - 2021)<br>
 > Statistics Analytic Platform (2019 - 2021)<br>
-
+<br>
 #### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
 ###### •	Wiring Technician<br> Electrical switchboard wiring<br>
 
