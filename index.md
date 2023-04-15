@@ -24,25 +24,17 @@ published: true
 ## [CV (Persian)](/books/cv-fa.pdf)
 >
 >
+
 ## Professional sports activity
->
->
 #### Shaghayegh Mountaineering Club, Karaj, Iran. (Part Time) <br> Jan 2022 - Present<br> 
-•  Memeber (Jan 2022 - Feb 2023)   <br>  
-> Rock Climber, Ice Climber &   Mountaineer <br>  
-<br>
-•  Club level guide for mountain climbing activities  (Feb 2023 - Present) - Part Time   <br> 
-•  Club level guide for ice climbing activities  (Feb 2023 - Present) - Part Time  <br> 
-<br>
-
-#### Hamnavard Mountaineering Club, Tehran, Iran. <br> Feb 2023 - Present<br> 
-•  mountaineering and mountain climbing Guide - Club level (Feb 2023 - Present)- Part Time  <br> 
+	•  Memeber (Jan 2022 - Feb 2023)   <br>  
+	> Rock Climber, Ice Climber &   Mountaineer <br>  
+		
+	•  Club level guide for mountain climbing activities  (Feb 2023 - Present) - Part Time   <br> 
+	•  Club level guide for ice climbing activities  (Feb 2023 - Present) - Part Time  <br> 
 <br>
 
 
-
-
-  
 
 
 
