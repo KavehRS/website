@@ -18,12 +18,12 @@ published: true
  <li> Live: Tehran, Iran </li>
 </blockquote>
 
+
+
+
 ## [CV (Persian)](/books/cv-fa.pdf)
 >
 >
-
-
-
 ## Professional sports activity
 >
 >
