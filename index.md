@@ -18,7 +18,13 @@ published: true
  <li> Live: Tehran, Iran </li>
 </blockquote>
 
-## Career background
+## [CV (Persian)](/books/cv-fa.pdf)
+>
+>
+
+
+
+## Professional sports activity
 >
 >
 #### Shaghayegh Mountaineering Club, Karaj, Iran. (Part Time) <br> Jan 2022 - Present<br> 
@@ -33,58 +39,9 @@ published: true
 •  mountaineering and mountain climbing Guide - Club level (Feb 2023 - Present)- Part Time  <br> 
 <br>
 
-#### TAKTA , the Electronic Research and Production co., Tehran, Iran<br> Sep 2022 - present<br>
-•	Software Eng at the Datamining section<br>  Sep 2022 - present<br>
-> Zabbix Admin<br>
-> Data Gathering <br>
-<br>
-
-#### SOROUSH Multimedia Corporation, Tehran, Iran<br> Aug 2018- Sep 2022 <br>
-
-•	SysAdmin at the Datamining section<br> Jan 2021 – Sep 2022<br>
-> Linux SysAdmin<br>
-<br>
-
-• Software Engineer at the R&D section.<br> Aug 2019 – Jan 2021<br>
-> Research & Development<br>
-> Linux SysAdmin<br>
-<br>
-
-•	Monitoring And Evaluation Specialist at the IPTV/OTT center.<br> Aug 2018 – Aug 2019<br>
-> Mividi TSM100 admin<br>
-> Data Gathering<br>
-> Python programmer<br>
-> Data Analysis<br>
-<br>
-
-•	Projets :<br>
-> Implement Zabbix Monitoring System (2021 - 2021)<br>
-> Statistics Analytic Platform (2019 - 2021)<br>
-<br>
-
-#### Iran Tablo Co., Sepehr Industrial City,Nazarabad, Iran<br> Nov 2017 - Dec 2017<br>
-###### •	Wiring Technician<br> Electrical switchboard wiring<br>
-
-#### Shokouh Electronic co, Hashtgerd Industrial City, Iran<br> Nov 2011 - Feb 2012<br>
-###### •	Assembler of electronic boards (Part Time)<br>
-
-#### Maharan Engineering Corp., Baharestan Industrial Zone, Karaj, Iran<br> Aug 2011 - Oct 2011<br>
-###### •	Assembler of electronic boards<br>
-
-#### Iranian Students News Agency (ISNA), Hamedan, Iran<br> Sep 2005 - Feb 2009<br>
-###### •	Reporter<br>
 
 
-<br><br>
 
-## Education
-<blockquote>
-<li> <strong> M. Eng. Information Technology Engineering - Enterprise Architecture, West tehran Branch, Islamic Azad University, 2019 - 2021 </strong>
-    <p>learn & research about ML, Deep learning, Data minig, Enterprise cyber Security, Data visualization, BI, Ontology, Advanced software engineering, Advanced     network engineering, Software architecture & Enterprise software architecture.<br>My  master thesis was "Optimization of IoT attack detection with deep learning based on neural network algorithm". </p> </li> <br>
-    
-<li><strong> B.S. Computer Engineering - Software, Payame Noor University, 2011 - 2016 </strong> </li> 
-<li><strong> B.S. Electrical Engineering - Electronics, Bu-Ali Sina University, Incomplete Course 2005 - 2008 </strong></li>  </blockquote>  
-  <br>
   
 
 
