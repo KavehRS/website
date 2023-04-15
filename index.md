@@ -22,7 +22,6 @@ published: true
 
 
 ## [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#)
-// /books/cv-en.pdf
 >
 >
 >
