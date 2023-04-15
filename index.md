@@ -21,8 +21,8 @@ published: true
 
 
 
-### [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#)
-### [Professional sports activity](https://climbingreports.kavehrs.com/)
+#### [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#) | [Climbing activity](https://climbingreports.kavehrs.com/)
+
 
 
 
