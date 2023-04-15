@@ -21,20 +21,14 @@ published: true
 
 
 
-## [CV (Persian)](/books/cv-fa.pdf)
+## [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#)
+// /books/cv-en.pdf
 >
 >
 >
 >
-## Professional sports activity
+## [Professional sports activity](https://climbingreports.kavehrs.com/)
 
-#### Shaghayegh Mountaineering Club, Karaj, Iran. <br> Jan 2022 - Present<br> 
-	•  Memeber (Jan 2022 - Feb 2023)   <br>  
-	> Rock Climber, Ice Climber &   Mountaineer <br>  
-		
-	•  Club level guide for mountain climbing activities  (Feb 2023 - Present) - Part Time   <br> 
-	•  Club level guide for ice climbing activities  (Feb 2023 - Present) - Part Time  <br> 
-<br>
 
 
 
