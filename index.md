@@ -10,7 +10,7 @@ published: true
 
 ## About
 <blockquote>  
- <li> I'm Software Engineer & Enterprise Architecture.</li>
+ <li> I'm Software Engineer.</li>
  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> Mountaineer and Climber </li>
  <li> My hobbies are hiking and reading.</li>
@@ -21,7 +21,7 @@ published: true
 
 
 
-#### [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#) | [Climbing Logs](https://climbingreports.kavehrs.com/) | [Blog(Persian)](https://blog.kavehrs.com/)
+#### [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#) | [Blog(Persian)](https://blog.kavehrs.com/)
 
 
 
