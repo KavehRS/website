@@ -10,10 +10,15 @@ published: true
 
 ## About
 <blockquote>  
- <li> I'm Software Engineer.</li>
+ 
  <li> I'm also interested in open source software, technologies and knowledge. </li>
- <li> Mountaineer and Climber </li>
- <li> My hobbies are hiking and reading.</li>
+ <li> I'm Software Engineer, 
+   <br>&nbsp; Mountaineering and mountaineering guide,
+   <br>&nbsp; Rock climbing guide,
+   <br>&nbsp; Ice climbing guide,
+   <br>&nbsp; & Active in mixed climbing and dry tooling.
+ </li> 
+ <li> Maybe you can call me a book lover.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Tehran, Iran </li>
 </blockquote>
