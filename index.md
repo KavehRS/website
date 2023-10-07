@@ -26,7 +26,7 @@ published: true
 
 
 
-#### [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](#) | [Blog(Persian)](https://blog.kavehrs.com/)
+#### [CV (Persian)](/books/cv-fa.pdf) |  [CV (English)](/books/cv-fa.pdf) | [Blog(Persian)](https://blog.kavehrs.com/)
 
 
 
