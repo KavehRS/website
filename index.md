@@ -13,12 +13,8 @@ published: true
  
  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> I'm Software Engineer, 
-   <br>&nbsp; Mountaineering and mountaineering guide,
-   <br>&nbsp; Rock climbing guide,
-   <br>&nbsp; Ice climbing guide,
-   <br>&nbsp; & Active in mixed climbing and dry tooling.
+   <br>&nbsp; Mountaineering  guide & climber 
  </li> 
- <li> Maybe you can call me a book lover.</li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Tehran, Iran </li>
 </blockquote>
