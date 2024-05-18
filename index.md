@@ -11,10 +11,11 @@ published: true
 ## About
 <blockquote>  
  
- <li> I'm also interested in open source software, technologies and knowledge. </li>
+
  <li> I'm Software Engineer, 
    <br>&nbsp; Mountaineering  guide & climber 
  </li> 
+  <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Tehran, Iran </li>
 </blockquote>
