@@ -13,8 +13,7 @@ published: true
  
 
  <li> I'm Software Engineer, 
-    <br> Django Developer,
-   <br>&nbsp; Mountaineering  guide & climber 
+    <br> Django Developer
  </li> 
   <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
