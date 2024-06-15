@@ -17,7 +17,7 @@ published: true
  </li> 
   <li> I'm also interested in open source software, technologies and knowledge. </li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
- <li> Live: Tehran, Iran </li>
+ <li> Live: Karaj, Iran </li>
 </blockquote>
 
 
