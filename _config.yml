@@ -17,12 +17,12 @@ markdown: kramdown
     
 
 # Social media links in footer
-facebook: "imkavehrs"
+#facebook: "imkavehrs"
 twitter: "kavehrs"
 linkedin: "kavehrs"
 github: "kavehrs"
 #researchgate: "#"
-orcid: "0000-0001-9591-7724"
+#orcid: "0000-0001-9591-7724"
 
 
 highlighter: rouge
