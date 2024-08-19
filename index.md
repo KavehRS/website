@@ -12,10 +12,10 @@ published: true
 <blockquote>  
  
 
- <li> I'm Software Engineer, 
-    <br> Django Developer
- </li> 
-  <li> I'm also interested in open source software, technologies and knowledge. </li>
+ <li> I'm Software Engineer. </li> 
+  <li> I'm also interested in open source software, technologies and knowledge <br> of course, I love books, climbing, rock climbing & DryTooling.
+  
+  </li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
  <li> Live: Karaj, Iran </li>
 </blockquote>
