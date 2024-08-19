@@ -17,7 +17,8 @@ markdown: kramdown
     
 
 # Social media links in footer
-#facebook: "imkavehrs"
+facebook: "imkavehrs"
+instagram: "imkavehrs"
 twitter: "kavehrs"
 linkedin: "kavehrs"
 github: "kavehrs"
