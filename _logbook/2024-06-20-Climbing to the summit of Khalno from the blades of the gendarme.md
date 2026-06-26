@@ -2,7 +2,7 @@
 layout: post
 title:  "قله‌ خلنو از تیغه‌های ژاندارم "
 date: 2024-06-20
-image: /assets/mount/logbook/
+image: /assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/6.jpg
 ---
 
 صعود به قله‌های برج و خلنو از مسیر تیغه‌های ژاندارم
