@@ -46,3 +46,22 @@ article img {
     margin: 0 auto;
 }
 
+/* تنظیم عنوان و توضیحات هدر برای نمایش در یک خط */
+.post-headline {
+    font-size: 1.5rem;   /* یا هر مقدار دلخواه */
+    margin: 0;
+    white-space: nowrap;
+}
+
+.post-description {
+    font-size: 0.9rem;   /* ریزتر از قبل */
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* اگر منو هم در یک خط نباشد */
+nav a {
+    font-size: 0.9rem;
+    margin-left: 10px;   /* فاصله‌ی بین آیتم‌های منو */
+    white-space: nowrap;
+}
