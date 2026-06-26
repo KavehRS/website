@@ -1,48 +1,62 @@
 ---
-# layout: compress
+layout: compress
 ---
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
-        <h1 class="post-headline">{{site.title}}</h1>
-        <h3 class="post-description">{{site.description}}</h3>
+    <!-- هدر جدید با منو در سمت راست -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div>
+            <h1 class="post-headline" style="margin: 0;">{{ site.title }}</h1>
+            <h3 class="post-description" style="margin: 0;">{{ site.description }}</h3>
+        </div>
+        <div>
+            {% include navigation.html %}
+        </div>
+    </div>
 
-        {% include navigation.html %}
+    {% seo %}
 
-        {% seo %}
+    {% include favicon.html %}
 
-        {% include favicon.html %}
+    <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
+    <script type="text/javascript">
+        (function() {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+    </script>
 
-        <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
-        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+</head>
 
-    </head>
+<body>
+    <main>
+        <article>
+            {{ content }}
+        </article>
+    </main>
 
-    <body>
-        <main>
-            <article>
-                {{ content }}
-            </article>
-        </main>
-
-        <footer>
-          <p class="copy">
-            <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
-                    | Last updated on {{ site.time | date_to_long_string }}
+    <footer>
+        <p class="copy">
+            <small> &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                | Last updated on {{ site.time | date_to_long_string }}
             </small>
-          </p>
+        </p>
 
         {% include social-footer.html %}
 
-        </footer>
+    </footer>
 
-        {% include analytics.html %}
+    {% include analytics.html %}
 
-    </body>
+</body>
 
 </html>
