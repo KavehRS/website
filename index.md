@@ -7,18 +7,17 @@ profile:
 published: true
 ---
 
-###Software Engineer | Climber
+###Software Engineer | MBA - IT & Information Systems | Climber 
 
 ## About
 <blockquote>  
  
 
- <li> I'm Software Engineer. </li> 
-  <li> I'm also interested in open source software, technologies and knowledge <br> of course, I love books, climbing, rock climbing & DryTooling.
-  
+  <li> I'm Software Engineer also interested in open source software, technologies and knowledge <br> of course, I love books, climbing, rock climbing & DryTooling.
+
   </li>
  <li> Born: Oct 1985 - Guilan, Iran </li>
- <li> Live: Karaj, Iran </li>
+ <li> Live: Tehran, Iran </li>
 </blockquote>
 
 
