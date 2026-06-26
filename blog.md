@@ -9,7 +9,6 @@ permalink: /blog/
   {% for post in site.blog %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <span>{{ post.date | persian_date: "%Y/%m/%d" }}</span>
     </li>
   {% endfor %}
 </ul>
