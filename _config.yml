@@ -1,9 +1,8 @@
 ### your site title here
 
-title: Kaveh RezaeiShiraz | Software Engineer | Climber
+title: Kaveh RezaeiShiraz 
 # description: subtitle | affiliations | motto
-# description:  Software Engineer 
-
+description:   Software Engineer | Climber
 
 baseurl: / #name of GitHub repository
 url: #custom url to be used instead of GitHub repository
