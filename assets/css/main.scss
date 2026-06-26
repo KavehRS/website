@@ -29,3 +29,20 @@ $on-laptop:        1000px;
 ;
 
 
+
+/* عکس‌های وسط‌چین و واکنش‌گرا (Responsive) */
+article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* کلاس کمکی برای وسط‌چین کردن عکس‌ها (در صورت نیاز) */
+.img-center {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
