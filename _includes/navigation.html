@@ -1,3 +1,10 @@
+<nav>
+  <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>خانه</a>
+  <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>یادداشت‌ها</a>
+  <a href="{{ '/logbook/' | relative_url }}" {% if page.url contains '/logbook/' %}class="active"{% endif %}>گزارش صعود</a>
+</nav>
+
+
 <!--
 <div class="links scroll">
         <a href="{{site.baseurl}}/">Home</a>

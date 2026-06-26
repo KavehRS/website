@@ -40,11 +40,19 @@ compress_html:
   profile: false
   startings: []
 
-#collection
 collections:
   projects:
     output: true
     permalink: /projects/:path/
+  blog:
+    output: true
+    permalink: /blog/:path/
+  logbook:
+    output: true
+    permalink: /logbook/:path/
+
+
+
 
 sass:
   sass_dir: /assets/css/_sass
@@ -62,4 +70,4 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-email-protect
-  - jekyll-target-blank
+  #- jekyll-target-blank
