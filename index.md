@@ -7,7 +7,6 @@ profile:
 published: true
 ---
 
-###Software Engineer | MBA - IT & Information Systems | Climber 
 
 ## About
 <blockquote>  
