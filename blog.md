@@ -1,12 +1,12 @@
 ---
 layout: default
-title: یادداشت‌ها
+title: وبلاگ
 permalink: /blog/
 ---
 
 <h1>یادداشت‌ها</h1>
 <ul>
-  {% for post in site.blog %}
+  {% for post in site.blog reversed %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
