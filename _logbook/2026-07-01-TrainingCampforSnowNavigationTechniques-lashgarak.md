@@ -47,7 +47,7 @@ image: \assets\mount\logbook\
 
 ## درجه سختی
 
-<p lrt>
+<p dir="ltr" style="text-align: left; unicode-bidi: embed;">
 Lashgarak Peak, Snow Couloir, July ascent – TD, AI4, 80°, 16 pitches (1 roped + 8 running belays + 7 fixed), 7.5h summit, objective hazards: heat-crevasses/weak snow bridges & active rockfall from thawing permafrost, dusk descent – a committing advanced climb with high objective risk.
 </p>
 ## گزارش برنامه
