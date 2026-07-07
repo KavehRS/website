@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title:  "گزارش برنامه صعود به قله‌های واریش، لیز و لیچه"
 date: 2024-05-03
 image: /assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg
 ---
