@@ -10,7 +10,8 @@ published: true
 
 ## About
 <blockquote>  
- 
+   <b> Software Engineer | MBA - IT & Information Systems | Climber  </b>
+
 
   <li> I'm Software Engineer also interested in open source software, technologies and knowledge <br> of course, I love books, climbing, rock climbing & DryTooling.
 
