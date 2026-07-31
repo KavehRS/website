@@ -7,13 +7,15 @@ tags: [یخنوردی, البرز, لشگرک, حصارچال, علم‌کوه, 
 image: assets/mount/logbook/2026-07-01-Training Camp for Snow Navigation Techniques - Hesarchal/cover.jpg
 ---
 
-**تاریخ:** ۱۴ / ۰۴ / ۱۴۰۵  
-**شماره:** ................................
-
 **کمپ آموزشی و تمرینی تکنیک‌های پیمایش برفچال - قله لشگرک**
 
 ![cover]({{ site.baseurl }}/assets/mount/logbook/2026-07-01-Training Camp for Snow Navigation Techniques - Hesarchal/cover.jpg)
 *نمایی از منطقه حصارچال و مسیر برفچال*
+
+
+
+ برگزاری توسط باشگاه کوهنوردی و اسکی دماوند
+
 
 ## مشخصات قله
 
