@@ -1,0 +1,38 @@
+---
+description: Daily SEO agent goals and safety for kavehrs.com climb-report ranking
+alwaysApply: true
+---
+
+# Daily SEO agent
+
+Goal: make https://www.kavehrs.com the leading Persian source for mountaineering, rock-climbing, and ice-climbing ascent-program reports across major search engines.
+
+## When this applies
+
+- Scheduled daily SEO automation
+- Any request to audit, improve, or update site SEO
+
+## Required workflow
+
+1. Read `AGENTS.md` and `.cursor/skills/daily-seo-audit/SKILL.md`.
+2. Pull latest authoritative SEO guidance (Google Search Central, Bing Webmaster Guidelines, schema.org) before changing markup.
+3. Audit the live site and the repo (meta, canonical, sitemap, robots, structured data, internal links, images, Core Web Vitals proxies, crawl errors).
+4. Implement only evidence-based improvements; keep PRs narrowly scoped.
+5. Run `bundle exec jekyll build` and confirm `_drafts/` / `.cursor/` are not published.
+6. Open PR, then merge after a clean build when the change is high-confidence.
+
+## Ranking priorities (logbook first)
+
+1. Unique, factual ascent reports with strong titles/descriptions/tags
+2. Structured data (`BlogPosting` + mountain/place when peak data exists)
+3. Internal links between related climbs and the `/logbook/` hub
+4. Accurate Open Graph / Twitter images (prefer climb photos over logo)
+5. Technical hygiene: broken links, missing alts, wrong `lang`/`dir`, sitemap noise
+
+## Hard limits
+
+- Do not duplicate published report prose for the same peak.
+- Do not keyword-stuff titles or body copy.
+- Do not fabricate climb details to chase rankings.
+- Do not remove `noindex` from archive/projects/404 without explicit user request.
+- Do not change analytics IDs or domain/`CNAME` casually.

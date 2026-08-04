@@ -1,3 +1,4 @@
+{% comment %}Manual related links take precedence; otherwise suggest logbook posts that share tags.{% endcomment %}
 {% if page.related and page.related.size > 0 %}
 <nav class="related-posts" aria-label="مطالب مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
   <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">مطالب مرتبط</h2>
@@ -7,4 +8,31 @@
     {% endfor %}
   </ul>
 </nav>
+{% elsif page.collection == 'logbook' and page.tags and page.tags.size > 0 %}
+  {% assign related_count = 0 %}
+  {% capture related_list %}
+    {% for post in site.logbook reversed %}
+      {% if post.url != page.url and related_count < 5 %}
+        {% assign shares_tag = false %}
+        {% for tag in page.tags %}
+          {% if post.tags contains tag %}
+            {% assign shares_tag = true %}
+          {% endif %}
+        {% endfor %}
+        {% if shares_tag %}
+          {% assign related_count = related_count | plus: 1 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% assign related_list = related_list | strip %}
+  {% if related_list != '' %}
+<nav class="related-posts" aria-label="مطالب مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">گزارش‌های مرتبط</h2>
+  <ul>
+    {{ related_list }}
+  </ul>
+</nav>
+  {% endif %}
 {% endif %}

@@ -1,13 +1,15 @@
 ---
 layout: default
-title: گزارش صعود
-description: "گزارش برنامه‌های کوهنوردی و صعودهای کاوه‌ رضایی‌شیراز؛ قله‌ها، تیغه‌ها و کمپ‌های آموزشی البرز."
+title: گزارش برنامه صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی
+description: "آرشیو گزارش برنامه‌های صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی؛ قلل البرز، مسیرها، شرایط هوا و جزئیات اجرای برنامه."
 permalink: /logbook/
 lang: fa-IR
 dir_attr: rtl
 ---
 
-<h1>گزارش صعود</h1>
+<h1>گزارش برنامه صعود</h1>
+<p>گزارش‌های صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی — از مشخصات قله و مسیر تا شرایط برنامه و تیم اجرا.</p>
+
 <ul>
   {% for post in site.logbook reversed %}
     <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">

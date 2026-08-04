@@ -1,0 +1,70 @@
+{% if page.collection == 'logbook' and page.peak %}
+{% assign peak = page.peak %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify | jsonify_encode }},
+  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 300 | jsonify | jsonify_encode }},
+  "inLanguage": {{ page.lang | default: site.lang | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.author.url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": "{{ site.url }}{{ site.baseurl }}/"
+  },
+  "about": {
+    "@type": "Mountain",
+    "name": {{ peak.name | jsonify }}{% if peak.elevation_m %},
+    "elevation": {
+      "@type": "QuantitativeValue",
+      "value": {{ peak.elevation_m }},
+      "unitCode": "MTR"
+    }{% endif %}{% if peak.latitude and peak.longitude %},
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ peak.latitude }},
+      "longitude": {{ peak.longitude }}
+    }{% endif %}{% if peak.region %},
+    "containedInPlace": {
+      "@type": "Place",
+      "name": {{ peak.region | jsonify }}
+    }{% endif %}
+  },
+  "keywords": "{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}{% if page.categories %}, {{ page.categories | join: ', ' }}{% endif %}, گزارش صعود, کوهنوردی, برنامه صعود"
+}
+</script>
+{% endif %}
+
+{% if page.url == '/logbook/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify | jsonify_encode }},
+  "description": {{ page.description | jsonify | jsonify_encode }},
+  "url": "{{ page.url | absolute_url }}",
+  "inLanguage": "fa-IR",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}{{ site.baseurl }}/"
+  },
+  "about": [
+    {"@type": "Thing", "name": "گزارش برنامه صعود کوهنوردی"},
+    {"@type": "Thing", "name": "سنگ‌نوردی"},
+    {"@type": "Thing", "name": "یخ‌نوردی"}
+  ]
+}
+</script>
+{% endif %}

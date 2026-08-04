@@ -10,8 +10,9 @@ When the user asks for a new climb / ascent report (`گزارش صعود`):
 1. Use the section framework in:
    - `_drafts/logbook-ascent-report-template.md` (placeholders)
    - `_drafts/samples/kahar-peak-report-framework-sample.md` (worked Kahar sample)
-2. Create the published file under `_logbook/YYYY-MM-DD-<peak-slug>.md` with SEO front matter (`lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, tags).
+2. Create the published file under `_logbook/YYYY-MM-DD-<peak-slug>.md` with SEO front matter (`lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, tags) and, when known, `peak: { name, elevation_m, latitude, longitude, region }` for Mountain JSON-LD.
 3. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
+
 
 ## Hard uniqueness rule
 
