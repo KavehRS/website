@@ -17,9 +17,12 @@ USAGE
 2) Front matter must include: lang, dir_attr, description, date, tags, image
    and peak: { name, elevation_m, latitude, longitude, region } when known (SEO JSON-LD)
 3) Fill facts for THIS climb only
-4) Before publish: compare against existing `_logbook/*` for the same peak
-5) Never paste this sample prose unchanged into a published report
+4) Weather MUST come from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
+   (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
+5) Before publish: compare against existing `_logbook/*` for the same peak
+6) Never paste this sample prose unchanged into a published report
 -->
+
 
 
 **گزارش برنامه صعود به قله {{نام_قله}}**
@@ -54,12 +57,23 @@ USAGE
 
 {{اقلیم_و_نکات_محلی — متن تازه}}
 
-**آخرین پیش‌بینی هوا:**
+**آخرین پیش‌بینی هوا برای روز صعود — حتماً از سه منبع:**
 
-- **منبع / زمان به‌روزرسانی:**
-- **روز صعود:**
-- **ساعات روز صعود:**
-- **پای‌کار (همان روز):**
+زمان به‌روزرسانی:
+
+### ۱) Open-Meteo
+- نقطه / ارتفاع قله و پای‌کار:
+- خلاصه روز صعود (دما، باد/تندباد، ابر، احتمال بارش):
+
+### ۲) Mountain-Forecast (https://www.mountain-forecast.com/)
+- اگر خود قله در سایت نبود: نزدیک‌ترین قلهٔ هم‌ارتفاع + فاصله تقریبی + لینک elevation band
+- خلاصه روز صعود در نزدیک‌ترین باند ارتفاعی به قله:
+
+### ۳) Meteoblue (https://www.meteoblue.com/)
+- مختصات + ارتفاع تنظیم‌شده نزدیک قله + لینک
+- خلاصه روز صعود (دما، باد/تندباد، بارش، شرایط عمومی):
+
+> جمع‌بندی عملیاتی (اختلاف منابع / توصیه پوشاک و تصمیم برنامه):
 
 
 ## پوشش گیاهی

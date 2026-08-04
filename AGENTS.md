@@ -21,9 +21,20 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 | `_drafts/` | Unpublished templates/samples only |
 | `_projects/` | Not published (`output: false`, `noindex`) |
 
+## Climb-report weather (required)
+
+Every `_logbook` ascent report weather section must use **three** sources:
+
+1. Open-Meteo (peak / trailhead point forecast)
+2. [Mountain-Forecast](https://www.mountain-forecast.com/) (exact peak or nearest elevation-matched proxy + URL)
+3. [Meteoblue](https://www.meteoblue.com/) (peak coordinates + summit elevation + URL)
+
+See `.cursor/rules/logbook-reports.mdc` and `_drafts/logbook-ascent-report-template.md`.
+
 ## Daily SEO agent
 
 When running the scheduled SEO automation (or when asked to audit SEO):
+
 
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc` and `.cursor/rules/logbook-reports.mdc`.

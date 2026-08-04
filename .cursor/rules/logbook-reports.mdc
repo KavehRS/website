@@ -12,9 +12,24 @@ When the user asks for a new climb / ascent report (`گزارش صعود`):
    - `_drafts/samples/kahar-peak-report-framework-sample.md` (worked Kahar sample)
 2. Create the published file under `_logbook/YYYY-MM-DD-<peak-slug>.md` with SEO front matter (`lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, tags) and, when known, `peak: { name, elevation_m, latitude, longitude, region }` for Mountain JSON-LD.
 3. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
+4. Weather for the climb day **must** be fetched from all three sources below and written as three labeled subsections (plus a short operational summary). Refresh numbers from the latest available forecast; do not copy stale weather from samples.
+
+
+## Triple weather sources (required)
+
+For every new or updated ascent report, populate the weather block from:
+
+1. **Open-Meteo** — point forecast at peak coordinates / elevation (and trailhead when useful)
+2. **Mountain-Forecast** — https://www.mountain-forecast.com/  
+   If the exact peak is missing, use the geographically closest listed peak with the elevation band nearest the summit, and state the proxy peak + distance + forecast URL.
+3. **Meteoblue** — https://www.meteoblue.com/  
+   Use peak lat/lon with elevation set near the summit; include the forecast URL.
+
+Always record the update stamp (Jalali + Gregorian). Prefer metric units (°C, km/h, mm).
 
 
 ## Hard uniqueness rule
+
 
 - Never publish two reports for the same peak with duplicated prose.
 - For a repeat climb (e.g. another Kahar), rewrite the literature: new wording for region, routes, climate notes, gear framing, and especially the climb narrative.
