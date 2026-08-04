@@ -29,9 +29,14 @@ Goal: make https://www.kavehrs.com the leading Persian source for mountaineering
 4. Accurate Open Graph / Twitter images (prefer climb photos over logo)
 5. Technical hygiene: broken links, missing alts, wrong `lang`/`dir`, sitemap noise
 
+## Climb-report content note
+
+When touching `_logbook` weather while doing SEO work, keep the required triple-source weather block (Open-Meteo + Mountain-Forecast + Meteoblue) per `.cursor/rules/logbook-reports.mdc`. Do not collapse it to a single source for brevity.
+
 ## Hard limits
 
 - Do not duplicate published report prose for the same peak.
+
 - Do not keyword-stuff titles or body copy.
 - Do not fabricate climb details to chase rankings.
 - Do not remove `noindex` from archive/projects/404 without explicit user request.
