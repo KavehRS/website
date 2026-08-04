@@ -31,7 +31,7 @@ Goal: make https://www.kavehrs.com the leading Persian source for mountaineering
 
 ## Climb-report content note
 
-When touching `_logbook` weather while doing SEO work, keep the required triple-source weather block (Open-Meteo + Mountain-Forecast + Meteoblue) per `.cursor/rules/logbook-reports.mdc`. Do not collapse it to a single source for brevity.
+When touching `_logbook` weather while doing SEO work, keep the required triple-source weather block (Open-Meteo + Mountain-Forecast + Meteoblue) per `.cursor/rules/logbook-reports.mdc`. Do not collapse it to a single source for brevity. If weather text changes, also keep the gear list aligned to that date/forecast.
 
 ## Hard limits
 

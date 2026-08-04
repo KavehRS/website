@@ -28,12 +28,24 @@ For every new or updated ascent report, populate the weather block from:
 Always record the update stamp (Jalali + Gregorian). Prefer metric units (°C, km/h, mm).
 
 
-## Hard uniqueness rule
+## Weather-based gear list (required)
 
+The `تجهیزات مورد نیاز` section must be **specific to this climb date and the triple weather forecast**, not a generic “summer/winter packing list”.
+
+1. State the basis in one line: climb date + program type (one-day / overnight) + weather summary used.
+2. Recommend clothing layers from expected summit/trailhead temperatures and wind/gusts.
+3. Include rain/wind shells only when forecasts justify them; say why.
+4. Include sun/hydration/ice tools/overnight gear only when the date + forecast + route conditions require them.
+5. Explicitly list what is **not** needed for this date (e.g. crampons) unless the forecast changes.
+6. Whenever weather is refreshed, rewrite the gear section to match the new forecast.
+
+
+## Hard uniqueness rule
 
 - Never publish two reports for the same peak with duplicated prose.
 - For a repeat climb (e.g. another Kahar), rewrite the literature: new wording for region, routes, climate notes, gear framing, and especially the climb narrative.
-- Reuse only stable facts (height, coordinates, village names) when still accurate; refresh weather, team, dates, route conditions, and observations from the latest information.
+- Reuse only stable facts (height, coordinates, village names) when still accurate; refresh weather, gear list, team, dates, route conditions, and observations from the latest information.
+
 - Do not copy-paste paragraphs from `_drafts/samples/*` or from a previous published `_logbook/*` entry into a new published report.
 - Before publishing, skim existing `_logbook` entries for that peak and ensure the new text reads as a distinct report.
 

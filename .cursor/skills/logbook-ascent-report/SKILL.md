@@ -31,6 +31,20 @@ Requirements:
 - Add a short operational summary when sources disagree
 - Refresh weather whenever the climb date changes or the user asks for an update
 
+## Weather-based gear (mandatory)
+
+After writing the triple weather block, build `تجهیزات مورد نیاز` from **that climb date + those forecasts**:
+
+1. One-line basis (date, one-day/overnight, expected summit temps/wind/precip)
+2. Clothing layers matched to temperature and wind
+3. Rain shell / sun kit / hydration amounts justified by the forecast
+4. Technical tools (crampons, axe, rope, overnight kit) only if this date/route needs them
+5. A short “not needed for this date” list
+6. If weather is updated later, rewrite gear in the same pass — never leave a generic seasonal list
+
+See `_drafts/logbook-ascent-report-template.md` for the section skeleton.
+
 ## Uniqueness
 
 Never publish duplicate prose for a repeat climb of the same peak. Rewrite literature; only stable facts may repeat when still accurate.
+
