@@ -32,7 +32,7 @@ Then audit the live site + repo, implement only evidence-based SEO improvements 
 If you make verified high-confidence changes: open a PR on a cursor/*-33ce branch and merge to master after a clean build.
 If nothing material needs changing: do not open a PR; leave a brief summary of what you checked.
 
-Preserve logbook UI rules from logbook-reports.mdc: hub chronological; related links = flat «گزارش‌های مرتبط :» only (no agent blurbs / category subheads on pages).
+Preserve logbook UI rules from logbook-reports.mdc: hub chronological; related links = flat «گزارش‌های مرتبط :» only (no agent blurbs / category subheads on pages); reader-facing dates Jalali via _includes/jalali-date.html (e.g. آخرین بروزرسانی: 13 مرداد 1405).
 
 Never invent climb facts, never duplicate report prose for the same peak, never keyword-stuff, never commit secrets, never publish agent notes into live HTML.
 ```

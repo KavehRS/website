@@ -15,7 +15,7 @@ Improve discoverability of Persian **گزارش برنامه صعود** content 
 - کوهنوردی مرتفع (بالای ۴۰۰۰ متر) · کوهنوردی فنی · کوهپیمایی · سنگ‌نوردی · دیواره‌نوردی
 - plus یخ‌نوردی / DryTooling where relevant in report content
 
-Hub `/logbook/` is chronological. Related blocks must stay a flat `گزارش‌های مرتبط :` list (no agent blurbs / category subheads on the page).
+Hub `/logbook/` is chronological. Related blocks must stay a flat `گزارش‌های مرتبط :` list (no agent blurbs / category subheads on the page). Reader-facing dates stay Jalali (`_includes/jalali-date.html`), not English Gregorian.
 
 Primary hub: `/logbook/` · Site: `https://www.kavehrs.com`
 

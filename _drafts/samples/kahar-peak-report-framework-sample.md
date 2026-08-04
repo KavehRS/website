@@ -33,6 +33,8 @@ When creating a NEW climb report (even for Kahar again):
 - hub /logbook/ is chronological by date, not grouped by category
 - never republish this sample prose for a new report
 - never publish agent/implementation notes on live pages
+- reader-facing UI dates are Jalali via _includes/jalali-date.html (e.g. آخرین بروزرسانی: 13 مرداد 1405)
+- body program dates Jalali-first; optional Gregorian in parentheses for weather stamps
 -->
 
 
