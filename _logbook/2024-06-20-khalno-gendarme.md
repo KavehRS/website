@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "قله‌ خلنو از تیغه‌های ژاندارم"
+title: "صعود قله خلنو از تیغه‌های ژاندارم"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود قله خلنو از تیغه‌های ژاندارم."
+description: "گزارش صعود قله خلنو از مسیر تیغه‌های ژاندارم؛ جزئیات برنامه و تصاویر صعود."
 date: 2024-06-20
 image: /assets/mount/logbook/2024-06-20-khalno-gendarme/6.jpg
 ---

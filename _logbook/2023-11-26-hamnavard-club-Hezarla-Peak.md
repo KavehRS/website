@@ -3,7 +3,7 @@ layout: post
 title: "صعود به قله هزارلا"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود به قله هزارلا با باشگاه همنورد."
+description: "گزارش صعود زمستانی قله هزارلا با باشگاه همنورد؛ مسیر وارنگه‌رود، زمان‌بندی و جزئیات برنامه."
 date: 2023-11-26
 image: /assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg
 related:

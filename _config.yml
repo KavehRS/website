@@ -1,7 +1,7 @@
 ### Site settings
 
 title: Kaveh RezaeiShiraz
-tagline: "Software Engineer, MBA - IT & Information Systems, Climber"
+tagline: "Software Engineer & Climber"
 description: >-
   کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار، MBA فناوری اطلاعات و سیستم‌های اطلاعاتی،
   علاقه‌مند به متن‌باز و کوهنوردی. یادداشت‌های فنی و گزارش صعود.
@@ -62,7 +62,7 @@ compress_html:
 
 collections:
   projects:
-    output: true
+    output: false
     permalink: /projects/:path/
   blog:
     output: true
@@ -86,6 +86,12 @@ defaults:
       type: logbook
     values:
       layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      sitemap: false
+      noindex: true
 
 sass:
   sass_dir: /assets/css/_sass

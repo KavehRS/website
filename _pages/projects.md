@@ -1,47 +1,15 @@
 ---
 title: پروژه‌ها
-description: نمونه‌کارها و پروژه‌های کاوه‌ رضایی‌شیراز.
+description: صفحه پروژه‌ها و نمونه‌کارهای کاوه‌ رضایی‌شیراز؛ به‌زودی با پروژه‌های واقعی به‌روزرسانی می‌شود.
 layout: default
 permalink: /projects/
 published: true
 sitemap: false
+noindex: true
+lang: fa-IR
+dir_attr: rtl
 ---
 
+# پروژه‌ها
 
-<div class="ProjectContainer">
-
-	<div class="gallery">
-
-
-  {% for project in site.projects %}
-
-  {% if project.redirect %}
-  <div class="projectTile">
-          <a href="{{ project.redirect }}" target="_blank">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% else %}
-
-  <div class="projectTile">
-          <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-          <span>
-              <h2>{{ project.title }}</h2>
-              <br/>
-              <p>{{ project.description }}</p>
-          </span>
-          </a>
-  </div>
-
-  {% endif %}
-
-  {% endfor %}
-
-	</div>
-
-</div>
+این بخش به‌زودی با نمونه‌کارها و پروژه‌های واقعی به‌روزرسانی می‌شود.
