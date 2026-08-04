@@ -5,6 +5,11 @@ description: "کار با اعداد و کاراکترها در مفاهیم ا�
 pdate: 1399-6-18
 author: KavehRS
 tags: برنامه‌نویسی c python
+related:
+  - title: "یادداشت دوم: انواع داده و حلقه‌ها"
+    url: /blog/2020-9-4-basic-overview-of-programming-part2/
+  - title: "یادداشت چهارم: توابع و I/O"
+    url: /blog/2020-9-14-basic-overview-of-programming-part4/
 ---
 ## اعداد
 

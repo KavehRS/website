@@ -1,0 +1,10 @@
+{% if page.related and page.related.size > 0 %}
+<nav class="related-posts" aria-label="مطالب مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">مطالب مرتبط</h2>
+  <ul>
+    {% for item in page.related %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

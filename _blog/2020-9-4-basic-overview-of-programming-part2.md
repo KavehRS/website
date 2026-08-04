@@ -5,6 +5,13 @@ description: "انواع داده، کلمات کلیدی، عملگرها و ح
 pdate: 1399-6-14
 author: KavehRS
 tags: برنامه‌نویسی c python
+related:
+  - title: "یادداشت نخست: مفاهیم پایه"
+    url: /blog/2020-8-31-basic-overview-of-programming-part1/
+  - title: "یادداشت سوم: اعداد و کاراکترها"
+    url: /blog/2020-9-8-basic-overview-of-programming-part3/
+  - title: "یادداشت چهارم: توابع و I/O"
+    url: /blog/2020-9-14-basic-overview-of-programming-part4/
 ---
 
 

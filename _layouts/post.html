@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
+{% if page.collection == 'blog' %}
+<p class="meta"><small><a href="{{ '/blog/' | relative_url }}">یادداشت‌ها</a></small></p>
+{% elsif page.collection == 'logbook' %}
+<p class="meta"><small><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></small></p>
+{% endif %}
+
 <h1 class="post-headline">{{ page.title }}</h1>
 {% if page.date %}
 <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{{ page.date | date: '%B %d, %Y' }}</small></time></p>
 {% endif %}
 
 {{ content }}
+
+{% include related-links.html %}
 
 <!-- Comments only for posts -->
 {% if page.path contains '_posts' %}

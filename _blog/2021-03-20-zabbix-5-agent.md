@@ -5,6 +5,9 @@ description: "آموزش نصب و تنظیم Zabbix 5 Agent روی لینوکس
 pdate: 1399-12-30
 author: KavehRS
 tags: zabbix zabbix-agent
+related:
+  - title: "نصب و تنظیم زبیکس ۵ — Server"
+    url: /blog/2021-03-18-zabbix-5-server/
 ---
 
 ### غیر فعال کردن selinux
