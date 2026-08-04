@@ -1,0 +1,27 @@
+---
+description: How to create mountaineering logbook ascent reports for this site
+alwaysApply: true
+---
+
+# Logbook ascent reports
+
+When the user asks for a new climb / ascent report (`گزارش صعود`):
+
+1. Use the section framework in:
+   - `_drafts/logbook-ascent-report-template.md` (placeholders)
+   - `_drafts/samples/kahar-peak-report-framework-sample.md` (worked Kahar sample)
+2. Create the published file under `_logbook/YYYY-MM-DD-<peak-slug>.md` with SEO front matter (`lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, tags).
+3. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
+
+## Hard uniqueness rule
+
+- Never publish two reports for the same peak with duplicated prose.
+- For a repeat climb (e.g. another Kahar), rewrite the literature: new wording for region, routes, climate notes, gear framing, and especially the climb narrative.
+- Reuse only stable facts (height, coordinates, village names) when still accurate; refresh weather, team, dates, route conditions, and observations from the latest information.
+- Do not copy-paste paragraphs from `_drafts/samples/*` or from a previous published `_logbook/*` entry into a new published report.
+- Before publishing, skim existing `_logbook` entries for that peak and ensure the new text reads as a distinct report.
+
+## Drafts are not the site
+
+- Files under `_drafts/` are samples/templates only and must remain unpublished.
+- Update the live report in `_logbook/` when the user provides climb details, photos, or final team names.
