@@ -21,8 +21,11 @@ When creating a NEW climb report (even for Kahar again):
 - keep the SECTION FRAMEWORK
 - rewrite prose so it is not a duplicate of any published logbook entry
 - refresh weather (every program day, 3 sources), gear (from date + weather), team, dates, route notes, and climb narrative from latest facts
-- set categories from _data/logbook_disciplines.yml; related links group by those categories
+- set categories from _data/logbook_disciplines.yml
+  (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, hiking, rock-climbing, wall-climbing)
+- related links / hub group by those categories, not template similarity
 -->
+
 
 
 

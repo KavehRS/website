@@ -35,7 +35,7 @@ Requirements:
 
 Set `categories` using slugs from `_data/logbook_disciplines.yml`:
 
-`training-camp` · `snowfield` · `glacier` · `icefall` · `high-altitude` · `hiking` · `rock-climbing` · `wall-climbing`
+`training-camp` · `snowfield` · `glacier` · `icefall` · `winter-ascent` · `high-altitude` · `hiking` · `rock-climbing` · `wall-climbing`
 
 - Pick all that truly apply; keep them separate (do not collapse into a generic “mountaineering” category)
 - `/logbook/` and related-links group by these categories, not by template similarity

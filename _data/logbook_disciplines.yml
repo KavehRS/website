@@ -1,11 +1,13 @@
 # Activity disciplines for logbook reports (categories).
-# Related reports are grouped by these — not by template/tag similarity.
+# Related reports and /logbook/ hub group by these — not by template/tag similarity.
+# Keep this file as the single source of truth; rules/templates/samples must match it.
 
 order:
   - training-camp
   - snowfield
   - glacier
   - icefall
+  - winter-ascent
   - high-altitude
   - hiking
   - rock-climbing
@@ -16,6 +18,7 @@ labels:
   snowfield: برفچال
   glacier: یخچال
   icefall: آبشار یخی
+  winter-ascent: صعود زمستانه
   high-altitude: کوهنوردی مرتفع (بالای ۴۰۰۰ متر)
   hiking: کوهپیمایی
   rock-climbing: سنگ‌نوردی
