@@ -5,6 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش پیمایش مسیر پناهگاه پلنگ‌چال؛ مشخصات برنامه، شرایط مسیر و تصاویر صعود."
 date: 2024-02-02
+categories: [hiking]
 image: /assets/mount/logbook/berimkouh/palangchal-1.jpg
 ---
 

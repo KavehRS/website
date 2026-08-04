@@ -1,4 +1,8 @@
-{% comment %}Manual related links take precedence; otherwise suggest logbook posts that share tags.{% endcomment %}
+{% comment %}
+Related logbook reports: group by shared activity disciplines (categories),
+not by template similarity or loose tag overlap.
+Manual page.related still wins when provided.
+{% endcomment %}
 {% if page.related and page.related.size > 0 %}
 <nav class="related-posts" aria-label="مطالب مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
   <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">مطالب مرتبط</h2>
@@ -8,31 +12,48 @@
     {% endfor %}
   </ul>
 </nav>
-{% elsif page.collection == 'logbook' and page.tags and page.tags.size > 0 %}
-  {% assign related_count = 0 %}
-  {% capture related_list %}
-    {% for post in site.logbook reversed %}
-      {% if post.url != page.url and related_count < 5 %}
-        {% assign shares_tag = false %}
-        {% for tag in page.tags %}
-          {% if post.tags contains tag %}
-            {% assign shares_tag = true %}
+{% elsif page.collection == 'logbook' %}
+  {% assign page_cats = page.categories %}
+  {% if page_cats == nil or page_cats.size == 0 %}
+    {% assign page_cats = page.disciplines %}
+  {% endif %}
+  {% if page_cats and page_cats.size > 0 %}
+    {% assign discipline_order = site.data.logbook_disciplines.order %}
+    {% assign discipline_labels = site.data.logbook_disciplines.labels %}
+    {% assign related_blocks = '' %}
+    {% for disc in discipline_order %}
+      {% if page_cats contains disc %}
+        {% assign disc_count = 0 %}
+        {% assign disc_items = '' %}
+        {% for post in site.logbook reversed %}
+          {% if post.url != page.url and disc_count < 4 %}
+            {% assign post_cats = post.categories %}
+            {% if post_cats == nil or post_cats.size == 0 %}
+              {% assign post_cats = post.disciplines %}
+            {% endif %}
+            {% if post_cats contains disc %}
+              {% assign disc_count = disc_count | plus: 1 %}
+              {% capture one_item %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endcapture %}
+              {% assign disc_items = disc_items | append: one_item %}
+            {% endif %}
           {% endif %}
         {% endfor %}
-        {% if shares_tag %}
-          {% assign related_count = related_count | plus: 1 %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% if disc_count > 0 %}
+          {% capture one_block %}
+  <h3 style="font-size: 1rem; margin: 1rem 0 0.5rem;">{{ discipline_labels[disc] }}</h3>
+  <ul>{{ disc_items }}</ul>
+          {% endcapture %}
+          {% assign related_blocks = related_blocks | append: one_block %}
         {% endif %}
       {% endif %}
     {% endfor %}
-  {% endcapture %}
-  {% assign related_list = related_list | strip %}
-  {% if related_list != '' %}
-<nav class="related-posts" aria-label="مطالب مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">گزارش‌های مرتبط</h2>
-  <ul>
-    {{ related_list }}
-  </ul>
+    {% assign related_blocks = related_blocks | strip %}
+    {% if related_blocks != '' %}
+<nav class="related-posts" aria-label="گزارش‌های مرتبط بر اساس نوع برنامه" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.5rem;">گزارش‌های مرتبط</h2>
+  <p style="margin: 0 0 0.75rem; color: #555; font-size: 0.9rem;">بر اساس نوع برنامه (نه شباهت ظاهر گزارش)</p>
+  {{ related_blocks }}
 </nav>
+    {% endif %}
   {% endif %}
 {% endif %}

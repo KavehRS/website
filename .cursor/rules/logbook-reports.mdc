@@ -11,8 +11,10 @@ When the user asks for a new climb / ascent report (`گزارش صعود`):
    - `_drafts/logbook-ascent-report-template.md` (placeholders)
    - `_drafts/samples/kahar-peak-report-framework-sample.md` (worked Kahar sample)
 2. Create the published file under `_logbook/YYYY-MM-DD-<peak-slug>.md` with SEO front matter (`lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, tags) and, when known, `peak: { name, elevation_m, latitude, longitude, region }` for Mountain JSON-LD.
-3. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
-4. Weather for the climb day **must** be fetched from all three sources below and written as three labeled subsections (plus a short operational summary). Refresh numbers from the latest available forecast; do not copy stale weather from samples.
+3. Set `categories` from the discipline taxonomy in `_data/logbook_disciplines.yml` (one or more). Do **not** use vague categories like `mountaineering` / `logbook`.
+4. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
+5. Weather for **every program day** must be fetched from all three sources below and written as three labeled subsections (plus a short operational summary). Refresh numbers from the latest available forecast; do not copy stale weather from samples.
+
 
 
 ## Triple weather sources (required)
@@ -28,7 +30,27 @@ For every new or updated ascent report, populate the weather block from:
 Always record the update stamp (Jalali + Gregorian). Prefer metric units (°C, km/h, mm).
 
 
+## Activity disciplines / categories (required)
+
+Use only these category slugs (labels are in `_data/logbook_disciplines.yml`):
+
+| slug | label |
+|------|--------|
+| `training-camp` | کمپ‌های آموزشی |
+| `snowfield` | برفچال |
+| `glacier` | یخچال |
+| `icefall` | آبشار یخی |
+| `high-altitude` | کوهنوردی مرتفع (بالای ۴۰۰۰ متر) |
+| `hiking` | کوهپیمایی |
+| `rock-climbing` | سنگ‌نوردی |
+| `wall-climbing` | دیواره‌نوردی |
+
+A report may have multiple categories when accurate (e.g. training camp + snowfield).  
+Related links and the `/logbook/` hub group by these categories — **not** by template similarity or loose tag overlap. Prefer automatic related grouping; avoid hand-written `related:` lists that only mirror the same template.
+
+
 ## Weather-based gear list (required)
+
 
 The `تجهیزات مورد نیاز` section must be **specific to this climb date and the triple weather forecast**, not a generic “summer/winter packing list”.
 

@@ -14,22 +14,29 @@ dir_attr: rtl
 <!--
 USAGE
 1) Copy structure into `_logbook/YYYY-MM-DD-<peak-slug>.md`
-2) Front matter must include: lang, dir_attr, description, date, tags, image
+2) Front matter must include: lang, dir_attr, description, date, tags, image,
+   categories from _data/logbook_disciplines.yml
+   (training-camp | snowfield | glacier | icefall | high-altitude | hiking | rock-climbing | wall-climbing),
    and peak: { name, elevation_m, latitude, longitude, region } when known (SEO JSON-LD)
 3) Fill facts for THIS climb only
-4) Weather MUST come from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
+4) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
    (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
-5) Gear list MUST be derived from climb date + that triple weather forecast (not a generic seasonal packing list)
-6) Before publish: compare against existing `_logbook/*` for the same peak
-7) Never paste this sample prose unchanged into a published report
+5) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
+6) Related reports are auto-grouped by categories — do not rely on template look-alike links
+7) Before publish: compare against existing `_logbook/*` for the same peak
+8) Never paste this sample prose unchanged into a published report
 -->
 
-
-
+<!--
+Example front matter categories:
+categories: [high-altitude]
+# or: [training-camp, snowfield]
+# or: [wall-climbing, rock-climbing]
+-->
 
 **گزارش برنامه صعود به قله {{نام_قله}}**
 
-تاریخ اجرای برنامه: {{تاریخ_جلالی}}
+تاریخ اجرای برنامه: {{تاریخ_جلالی — یک‌روزه یا چندروزه}}
 
 > این پیش گزارش صعود به قله {{نام_قله}} است و جزییات و شرح برنامه پس از اجرای صعود تکمیل خواهد شد.
 
