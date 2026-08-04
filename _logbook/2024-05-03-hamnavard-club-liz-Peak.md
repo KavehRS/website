@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "گزارش برنامه صعود به قله‌های واریش، لیز و لیچه"
+title: "گزارش برنامه صعود به قله‌های واریش، لیز و لیچه"
+lang: fa-IR
+dir_attr: rtl
 description: "گزارش صعود به قله‌های واریش، لیز و لیچه با باشگاه همنورد."
 date: 2024-05-06
 image: /assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg
@@ -33,23 +35,23 @@ image: /assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg
 
 
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/1.jpg' | relative_url }}) <br>
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/2.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/1.jpg) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/2.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/3.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/3.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/4.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/4.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/6.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/6.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/7.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/7.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/8.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/8.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/9.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/9.jpg) <br>
 
-![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/10.jpg' | relative_url }}) <br>
+![قله‌های واریش، لیز و لیچه  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/10.jpg) <br>
 
 

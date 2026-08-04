@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  مفاهیم اولیه برنامه نویسی - یادداشت دوم (انواع داده، کلمات کلیدی، عملگر‌ها و حلقه‌ها)
+title: "مفاهیم اولیه برنامه نویسی - یادداشت دوم (انواع داده، کلمات کلیدی، عملگر‌ها و حلقه‌ها)"
+lang: fa-IR
+dir_attr: rtl
 description: "انواع داده، کلمات کلیدی، عملگرها و حلقه‌ها در مفاهیم اولیه برنامه‌نویسی."
 pdate: 1399-6-14
 author: KavehRS
@@ -253,7 +255,7 @@ Hello, world!
 
 
 
-<img src="/assets/images/loop1.jpg" alt="loop diagram" style="width:auto;">
+<img src="/assets/images/loop1.jpg" alt="loop diagram">
 
 
 ### حلقه while
@@ -269,7 +271,7 @@ while (condition)
 کد بالا را می‌توان به صورت دیاگرام پایین شرح داد :
 
 
-<img src="/assets/images/while-loop.jpg" alt="while-loop" style="width:auto;">
+<img src="/assets/images/while-loop.jpg" alt="while-loop">
 
 
 نکات قابل توجه در مورد حلقه while به شرح زیر است :
@@ -298,7 +300,7 @@ do
 
 کد بالا را می‌توان به صورت دیاگرام پایین شرح داد :
 
-<img src="/assets/images/cpp_do_while_loop.jpg" alt="cpp_do_while_loop" style="width:auto;">
+<img src="/assets/images/cpp_do_while_loop.jpg" alt="cpp_do_while_loop">
 
 
 
@@ -310,7 +312,7 @@ do
  ```
  دستور شکست به شکل دیاگرام زیر ارایه می‌شود :
 
-<img src="/assets/images/cpp_break_statement.jpg" alt="cpp_break_statement" style="width:auto;">
+<img src="/assets/images/cpp_break_statement.jpg" alt="cpp_break_statement">
 
  ### دستور ادامه the continue statement
   دستور ادامه در زبان c همانند دستور شکست عمل می‌کند. اما به جای اجبار پایان برنامه، اجبار به ادامه تکرار بعدی حلقه را در پی خواهد داشت. گرامر این دستور به شکل زیر است.
@@ -322,7 +324,7 @@ continue;
   دستور ادامه به شکل دیاگرام زیر تحلیل می‌شود :
 
 
- <img src="/assets/images/c_continue_statement.jpg" alt=" c_continue_statement" style="width:auto;">
+ <img src="/assets/images/c_continue_statement.jpg" alt=" c_continue_statement">
 
 
 ### حلقه در پایتون Loops in Python

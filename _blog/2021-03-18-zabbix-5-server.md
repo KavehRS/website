@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "نصب و تنظیم زبیکس 5 - زبیکس سرور"
+title: "نصب و تنظیم زبیکس 5 - زبیکس سرور"
+lang: fa-IR
+dir_attr: rtl
 description: "آموزش نصب و پیکربندی Zabbix 5 Server روی اوبونتو، شامل دیتابیس و فرانت‌اند."
 related:
   - title: "نصب و تنظیم زبیکس ۵ — Agent لینوکس"

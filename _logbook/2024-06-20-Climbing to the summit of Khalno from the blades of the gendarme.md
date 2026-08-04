@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "قله‌ خلنو از تیغه‌های ژاندارم "
+title: "قله‌ خلنو از تیغه‌های ژاندارم"
+lang: fa-IR
+dir_attr: rtl
 description: "گزارش صعود قله خلنو از تیغه‌های ژاندارم."
 date: 2024-06-20
-image: /assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/6.jpg
+image: /assets/mount/logbook/2024-06-20-khalno-gendarme/6.jpg
 ---
 
 صعود به قله‌های برج و خلنو از مسیر تیغه‌های ژاندارم
@@ -37,9 +39,9 @@ image: /assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from th
 
 به دلیل نمایان شدن علایم ارتفاع زدگی در برخی همنوردان، بلافاصله با گرفتن عکس‌های یادگاری فرود را شروع کردیم و مسیر بازگشت از سمت کاسه را در پیش گرفتیم، در داخل کاسه به مدت ۱۵ دقیقه برای استراحت و ناهار توقف کردیم، سپس به سمت گردنه وزرا و بعد از آن دشت محل کمپ حرکت کردیم و حدود ساعت ۱۵ به محل کمپ رسیده، پس از جمع کردن لوازم و چادرها به سمت روستا حرکت کردیم و ساعت 17 در داخل روستا برنامه به پایان رسید.
 
-![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/1.jpg' | relative_url }}) <br>
-![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/2.jpg' | relative_url }}) <br>
-![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/3.jpg' | relative_url }}) <br>
-![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/4.jpg' | relative_url }}) <br>
-![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/5.jpg' | relative_url }}) <br>
-![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2024-06-20-Climbing to the summit of Khalno from the blades of the gendarme/6.jpg' | relative_url }}) <br>
+![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-06-20-khalno-gendarme/1.jpg) <br>
+![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-06-20-khalno-gendarme/2.jpg) <br>
+![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-06-20-khalno-gendarme/3.jpg) <br>
+![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-06-20-khalno-gendarme/4.jpg) <br>
+![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-06-20-khalno-gendarme/5.jpg) <br>
+![قله‌ خلنو از تیغه‌های ژاندارم - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-06-20-khalno-gendarme/6.jpg) <br>

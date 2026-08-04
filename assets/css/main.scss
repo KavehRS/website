@@ -34,8 +34,10 @@ $on-laptop:        1000px;
 article img {
     display: block;
     max-width: 100%;
+    width: auto;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
+    border-radius: 2px;
 }
 
 /* کلاس کمکی برای وسط‌چین کردن عکس‌ها (در صورت نیاز) */
@@ -44,6 +46,21 @@ article img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+/* کد و ترمینال همیشه LTR بمانند حتی در صفحات RTL */
+article pre,
+article code,
+article kbd,
+article samp {
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: left;
+}
+
+article pre {
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 /* تنظیم عنوان و توضیحات هدر برای نمایش در یک خط */

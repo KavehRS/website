@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "قله خوراسان کوه  "
+title: "قله خوراسان کوه"
+lang: fa-IR
+dir_attr: rtl
 description: "گزارش صعود به قله خوراسان‌کوه فشم با باشگاه شقایق."
 date: 2024-01-08
-image: \assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1 (3).jpg
+image: /assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1.jpg
 ---
 
 صعود به قله خوراسان کوه
@@ -71,11 +73,11 @@ image: \assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbing
 در ساعت 13 تیم به منظور استراحت و صرف ناهار به مدت 15 دقیقه توقف داشت و سپس ادامه فرود را از سر گرفتیم،در کل ساعات صعود به قله هیچ تیم دیگری در منطقه دیده نمی‌شد ولی در این ساعت، با تیم‌های صعود کننده مختلفی روبرو شدیم و سپس در ساعت 16:05 دقیقه با رسیدن به روستای فشند برنامه پایان یافت.
 
 
-![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز]({{ '\assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1.jpg' | relative_url }}) <br>
-![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز]({{ '\assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/2.jpg' | relative_url }})<br>
-![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز]({{ '\assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/3.jpg' | relative_url }})<br>
-![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز]({{ '\assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/4.jpg' | relative_url }})<br>
-![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز]({{ '\assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/5.jpg' | relative_url }})<br>
-![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز]({{ '\assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/6.jpg' | relative_url }})<br>
+![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1.jpg) <br>
+![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/2.jpg)<br>
+![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/3.jpg)<br>
+![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/4.jpg)<br>
+![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/5.jpg)<br>
+![صعود به خوراسان کوه هشتگرد - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/6.jpg)<br>
 
 

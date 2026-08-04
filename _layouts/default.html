@@ -3,9 +3,12 @@ layout: compress
 ---
 <!DOCTYPE html>
 {% assign page_lang = page.lang | default: site.lang | default: 'fa-IR' %}
-{% assign page_dir = page.dir_attr | default: 'rtl' %}
-{% if page.url == "/" or page.url == "/index.html" %}
-  {% assign page_dir = page.dir_attr | default: 'ltr' %}
+{% if page.dir_attr %}
+  {% assign page_dir = page.dir_attr %}
+{% elsif page_lang == 'en' or page_lang == 'en-US' %}
+  {% assign page_dir = 'ltr' %}
+{% else %}
+  {% assign page_dir = 'rtl' %}
 {% endif %}
 <html lang="{{ page_lang }}" dir="{{ page_dir }}">
 
