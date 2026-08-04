@@ -6,7 +6,7 @@ dir_attr: rtl
 description: "گزارش پیمایش مسیر پناهگاه پلنگ‌چال؛ مشخصات برنامه، شرایط مسیر و تصاویر صعود."
 date: 2024-02-02
 categories: [winter-ascent, hiking]
-image: /assets/mount/logbook/berimkouh/palangchal-1.jpg
+image: /assets/mount/logbook/2024-02-02-palangchal-shelter/palangchal-1.jpg
 ---
 
 گزارش برنامه پیمایش مسیر پناهگاه پلنگچال
@@ -30,10 +30,10 @@ image: /assets/mount/logbook/berimkouh/palangchal-1.jpg
 
 با توجه به بارش برف در شهر تهران و لغزندگی جاده‌ها، برنامه با تاخیر آغاز شد و در ساعت ۵:۴۵ دقیقه برنامه را از میدان درکه آغاز کردیم با توجه به کوچک بودن گروه پیمایش تا پناهگاه به صورت مستمر و با توقف‌های بسیار کوتاه برای کاهش یا افزایش لباس و نوشیدن آب صورت گرفت، در مسیر نکات آموزشی مربوط به گام‌برداری، تغذیه، نحوه استفاده از باتوم، خطرات کوهستان در صعود زمستانه و لزوم آموزش اصولی و مستمر برای شرکت کنندگان در برنامه شرح داده شد و در ساعت ۱۰:۴۵ به پناهگاه رسیدیم و در آنجا وعده غذایی صرف شد، توقف ۴۵ دقیقه‌ای در پناهگاه داشتیم و تبادل نظر و تجربه پرداختیم در ساعت ۱۱:۳۰ شروع به بازگشت داشتیم، در مسیر بازگشت به آموزش گام‌برداری در زمان فرود در زمین یخ زده پرداختیم و در ساعت ۱۴:۱۵ با رسیدن به میدان درکه برنامه پایان یافت.[reference:15][reference:16]
 
-![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/palangchal-1.jpg)
+![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-02-02-palangchal-shelter/palangchal-1.jpg)
 
-![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/palangchal-2.jpg)
+![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-02-02-palangchal-shelter/palangchal-2.jpg)
 
-![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/palangchal-3.jpg)
+![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-02-02-palangchal-shelter/palangchal-3.jpg)
 
-![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/palangchal-4.jpg)
+![پناهگاه پلنگچال - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2024-02-02-palangchal-shelter/palangchal-4.jpg)

@@ -1,0 +1,23 @@
+---
+description: Per-report image folder naming under assets/mount/logbook must match the report URL slug
+alwaysApply: true
+---
+
+# Logbook report image assets
+
+For every `_logbook/YYYY-MM-DD-<slug>.md` report:
+
+1. Create folder: `assets/mount/logbook/YYYY-MM-DD-<slug>/`
+2. The folder name must **exactly equal** the report URL path segment  
+   (permalink `/logbook/:path/` → folder name = markdown filename without `.md`)
+3. Store **all** images for that report only in that folder (cover, route, team, maps, …)
+4. Reference images as `/assets/mount/logbook/YYYY-MM-DD-<slug>/<file>`
+5. Do **not** use shared buckets like `berimkouh/` or unrelated peak folder names
+6. If photos are not ready yet, keep the folder with `.gitkeep`
+7. When renaming a report slug/URL, rename the asset folder and rewrite image paths in the same change
+
+Example:
+
+- Report: `_logbook/2026-08-07-kahar-peak.md`
+- URL: `/logbook/2026-08-07-kahar-peak/`
+- Assets: `assets/mount/logbook/2026-08-07-kahar-peak/`

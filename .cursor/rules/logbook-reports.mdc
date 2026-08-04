@@ -14,6 +14,9 @@ When the user asks for a new climb / ascent report (`گزارش صعود`):
 3. Set `categories` from the discipline taxonomy in `_data/logbook_disciplines.yml` (one or more). Do **not** use vague categories like `mountaineering` / `logbook`.
 4. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
 5. Weather for **every program day** must be fetched from all three sources below and written as three labeled subsections (plus a short operational summary). Refresh numbers from the latest available forecast; do not copy stale weather from samples.
+6. Keep refreshing weather on the schedule in `.cursor/rules/logbook-weather-schedule.mdc` (04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before the climb).
+7. Put all report images in `assets/mount/logbook/<exact-url-slug>/` per `.cursor/rules/logbook-assets.mdc`.
+
 
 
 

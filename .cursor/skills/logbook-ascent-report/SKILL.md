@@ -30,8 +30,14 @@ Requirements:
 - Prefer metric units (°C, km/h, mm)
 - Add a short operational summary when sources disagree
 - Refresh weather whenever the climb date changes or the user asks for an update
+- Scheduled refreshes: 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before program start (see `.cursor/rules/logbook-weather-schedule.mdc`)
+
+## Report image folder (mandatory)
+
+Create `assets/mount/logbook/<exact-url-slug>/` matching `_logbook/<exact-url-slug>.md` and store all report images there (`.cursor/rules/logbook-assets.mdc`).
 
 ## Categories / disciplines (mandatory)
+
 
 Set `categories` using slugs from `_data/logbook_disciplines.yml`:
 

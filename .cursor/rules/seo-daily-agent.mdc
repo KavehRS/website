@@ -35,7 +35,9 @@ When touching `_logbook` content while doing SEO work:
 - keep the required triple-source weather block (Open-Meteo + Mountain-Forecast + Meteoblue)
 - keep gear aligned to date/forecast
 - keep `categories` on the discipline taxonomy in `_data/logbook_disciplines.yml` (including `winter-ascent` / صعود زمستانه)
-per `.cursor/rules/logbook-reports.mdc`. Do not invent vague categories.
+- keep images under `assets/mount/logbook/<exact-url-slug>/`
+per `.cursor/rules/logbook-reports.mdc` and `.cursor/rules/logbook-assets.mdc`. Do not invent vague categories.
+
 
 
 ## Hard limits
