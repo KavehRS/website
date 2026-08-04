@@ -3,8 +3,8 @@
 title: Kaveh RezaeiShiraz
 tagline: "Software Engineer & Climber"
 description: >-
-  کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار، MBA فناوری اطلاعات و سیستم‌های اطلاعاتی،
-  علاقه‌مند به متن‌باز و کوهنوردی. یادداشت‌های فنی و گزارش صعود.
+  گزارش برنامه‌های صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی به‌همراه یادداشت‌های فنی
+  کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار و کوهنورد.
 lang: fa-IR
 locale: fa_IR
 
@@ -115,6 +115,10 @@ exclude:
   - vendor
   - _drafts
   - .cursor
+  - .github
+  - AGENTS.md
+  - _seo
+
 
 plugins:
   - jekyll-seo-tag

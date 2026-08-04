@@ -14,10 +14,13 @@ dir_attr: rtl
 <!--
 USAGE
 1) Copy structure into `_logbook/YYYY-MM-DD-<peak-slug>.md`
-2) Fill facts for THIS climb only
-3) Before publish: compare against existing `_logbook/*` for the same peak
-4) Never paste this sample prose unchanged into a published report
+2) Front matter must include: lang, dir_attr, description, date, tags, image
+   and peak: { name, elevation_m, latitude, longitude, region } when known (SEO JSON-LD)
+3) Fill facts for THIS climb only
+4) Before publish: compare against existing `_logbook/*` for the same peak
+5) Never paste this sample prose unchanged into a published report
 -->
+
 
 **گزارش برنامه صعود به قله {{نام_قله}}**
 

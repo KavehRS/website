@@ -6,9 +6,16 @@ dir_attr: rtl
 description: "پیش‌گزارش صعود به قله کهار (۴۰۵۰ متر) در جمعه ۲۳ مرداد ۱۴۰۵؛ معرفی منطقه، مسیر کلوان، پناهگاه و جزئیات برنامه."
 date: 2026-08-14
 categories: [mountaineering, logbook]
-tags: [کهار, البرز, کلوان, آسارا, طالقان, کوهنوردی]
+tags: [کهار, البرز, کلوان, آسارا, طالقان, کوهنوردی, گزارش صعود]
 image: /assets/images/logos/1/kavehrs.jpg
+peak:
+  name: "کهار"
+  elevation_m: 4050
+  latitude: 36.14017
+  longitude: 51.07872
+  region: "البرز، آسارا / طالقان"
 ---
+
 
 **گزارش برنامه صعود به قله کهار**
 
