@@ -20,8 +20,10 @@ Source snapshot of the Kahar pre-report framework.
 When creating a NEW climb report (even for Kahar again):
 - keep the SECTION FRAMEWORK
 - rewrite prose so it is not a duplicate of any published logbook entry
-- refresh weather, gear (from date + weather), team, dates, route notes, and climb narrative from latest facts
+- refresh weather (every program day, 3 sources), gear (from date + weather), team, dates, route notes, and climb narrative from latest facts
+- set categories from _data/logbook_disciplines.yml; related links group by those categories
 -->
+
 
 
 **گزارش برنامه صعود به قله کهار**
