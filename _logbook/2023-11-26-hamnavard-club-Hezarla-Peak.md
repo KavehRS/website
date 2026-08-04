@@ -5,9 +5,8 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش صعود زمستانی قله هزارلا با باشگاه همنورد؛ مسیر وارنگه‌رود، زمان‌بندی و جزئیات برنامه."
 date: 2023-11-26
+categories: [hiking]
 image: /assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg
-related:
-  - title: "صعود به قله هزارلا (شقایق)"
     url: /logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/
 ---
 

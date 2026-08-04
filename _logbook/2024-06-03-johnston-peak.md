@@ -5,6 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش برنامه صعود به قله جانستون از روستای آبنیک؛ مسیر، زمان‌بندی و تصاویر."
 date: 2024-06-03
+categories: [hiking, rock-climbing]
 image: /assets/mount/logbook/berimkouh/johnston-1.jpg
 ---
 

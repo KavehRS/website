@@ -31,7 +31,10 @@ Every `_logbook` ascent report weather section must use **three** sources:
 
 See `.cursor/rules/logbook-reports.mdc` and `_drafts/logbook-ascent-report-template.md`.
 
-Gear lists in climb reports must be derived from the climb date and that triple weather forecast — not a generic seasonal checklist. Refresh gear whenever weather is refreshed.
+Gear lists in climb reports must be derived from the climb date(s) and that triple weather forecast — not a generic seasonal checklist. Refresh gear whenever weather is refreshed.
+
+Logbook `categories` must use the discipline slugs in `_data/logbook_disciplines.yml` (training camp, snowfield, glacier, icefall, high-altitude, hiking, rock-climbing, wall-climbing). Related reports are grouped by those categories.
+
 
 ## Daily SEO agent
 

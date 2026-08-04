@@ -5,6 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش صعود خط‌الراس دارآباد از مسیر تیغه‌ها؛ مشخصات برنامه و تصاویر مسیر."
 date: 2024-07-05
+categories: [wall-climbing, rock-climbing]
 image: /assets/mount/logbook/berimkouh/darabad-ridge-1.jpg
 ---
 

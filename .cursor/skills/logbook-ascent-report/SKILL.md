@@ -31,7 +31,18 @@ Requirements:
 - Add a short operational summary when sources disagree
 - Refresh weather whenever the climb date changes or the user asks for an update
 
+## Categories / disciplines (mandatory)
+
+Set `categories` using slugs from `_data/logbook_disciplines.yml`:
+
+`training-camp` · `snowfield` · `glacier` · `icefall` · `high-altitude` · `hiking` · `rock-climbing` · `wall-climbing`
+
+- Pick all that truly apply; keep them separate (do not collapse into a generic “mountaineering” category)
+- `/logbook/` and related-links group by these categories, not by template similarity
+- Avoid manual `related:` unless the user asks for a specific cross-link
+
 ## Weather-based gear (mandatory)
+
 
 After writing the triple weather block, build `تجهیزات مورد نیاز` from **that climb date + those forecasts**:
 

@@ -1,0 +1,22 @@
+# Activity disciplines for logbook reports (categories).
+# Related reports are grouped by these — not by template/tag similarity.
+
+order:
+  - training-camp
+  - snowfield
+  - glacier
+  - icefall
+  - high-altitude
+  - hiking
+  - rock-climbing
+  - wall-climbing
+
+labels:
+  training-camp: کمپ‌های آموزشی
+  snowfield: برفچال
+  glacier: یخچال
+  icefall: آبشار یخی
+  high-altitude: کوهنوردی مرتفع (بالای ۴۰۰۰ متر)
+  hiking: کوهپیمایی
+  rock-climbing: سنگ‌نوردی
+  wall-climbing: دیواره‌نوردی

@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کمپ آموزشی تکنیک‌های پیمایش برفچال در قله لشگرک و دشت حصارچال، علم‌کوه."
 date: 2026-07-05
-categories: [mountaineering, logbook]
+categories: [training-camp, snowfield, high-altitude]
 tags: [یخنوردی, البرز, لشگرک, حصارچال, علم‌کوه, برفچال]
 image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 ---

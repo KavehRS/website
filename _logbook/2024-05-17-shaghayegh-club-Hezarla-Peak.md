@@ -5,9 +5,8 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش صعود به قله هزارلا با باشگاه شقایق؛ مسیر، شرایط برنامه و تصاویر قله."
 date: 2024-05-17
+categories: [hiking]
 image: /assets/mount/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/7.jpg
-related:
-  - title: "صعود به قله هزارلا (همنورد)"
     url: /logbook/2023-11-26-hamnavard-club-Hezarla-Peak/
 ---
 

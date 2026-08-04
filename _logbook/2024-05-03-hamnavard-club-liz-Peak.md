@@ -5,6 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش صعود به قله‌های واریش، لیز و لیچه با باشگاه همنورد تهران همراه با تصاویر."
 date: 2024-05-06
+categories: [hiking]
 image: /assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg
 ---
 
