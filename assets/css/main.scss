@@ -48,7 +48,45 @@ article img {
     margin: 0 auto;
 }
 
-/* کد و ترمینال همیشه LTR بمانند حتی در صفحات RTL */
+/* جاستیفای متن‌ها بر اساس زبان/جهت صفحه */
+html[dir="rtl"] article,
+html[dir="rtl"] article p,
+html[dir="rtl"] article li,
+html[dir="rtl"] article blockquote {
+    text-align: justify;
+    text-align-last: right;
+}
+
+html[dir="ltr"] article,
+html[dir="ltr"] article p,
+html[dir="ltr"] article li,
+html[dir="ltr"] article blockquote {
+    text-align: justify;
+    text-align-last: left;
+}
+
+/* عنوان‌ها هم با جهت صفحه هم‌راستا بمانند */
+html[dir="rtl"] article h1,
+html[dir="rtl"] article h2,
+html[dir="rtl"] article h3,
+html[dir="rtl"] article h4,
+html[dir="rtl"] article h5,
+html[dir="rtl"] article h6 {
+    text-align: right;
+    text-align-last: right;
+}
+
+html[dir="ltr"] article h1,
+html[dir="ltr"] article h2,
+html[dir="ltr"] article h3,
+html[dir="ltr"] article h4,
+html[dir="ltr"] article h5,
+html[dir="ltr"] article h6 {
+    text-align: left;
+    text-align-last: left;
+}
+
+/* کد و ترمینال همیشه LTR و چپ‌چین بمانند حتی در صفحات RTL */
 article pre,
 article code,
 article kbd,
@@ -56,11 +94,14 @@ article samp {
     direction: ltr;
     unicode-bidi: isolate;
     text-align: left;
+    text-align-last: left;
 }
 
 article pre {
     overflow-x: auto;
     max-width: 100%;
+    text-align: left;
+    text-align-last: left;
 }
 
 /* تنظیم عنوان و توضیحات هدر برای نمایش در یک خط */
