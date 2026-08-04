@@ -16,7 +16,7 @@ USAGE
 1) Copy structure into `_logbook/YYYY-MM-DD-<peak-slug>.md`
 2) Front matter must include: lang, dir_attr, description, date, tags, image,
    categories from _data/logbook_disciplines.yml
-   (training-camp | snowfield | glacier | icefall | high-altitude | hiking | rock-climbing | wall-climbing),
+   (training-camp | snowfield | glacier | icefall | winter-ascent | high-altitude | hiking | rock-climbing | wall-climbing),
    and peak: { name, elevation_m, latitude, longitude, region } when known (SEO JSON-LD)
 3) Fill facts for THIS climb only
 4) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
@@ -31,8 +31,10 @@ USAGE
 Example front matter categories:
 categories: [high-altitude]
 # or: [training-camp, snowfield]
+# or: [winter-ascent, hiking]
 # or: [wall-climbing, rock-climbing]
 -->
+
 
 **گزارش برنامه صعود به قله {{نام_قله}}**
 

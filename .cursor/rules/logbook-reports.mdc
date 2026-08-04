@@ -40,6 +40,7 @@ Use only these category slugs (labels are in `_data/logbook_disciplines.yml`):
 | `snowfield` | برفچال |
 | `glacier` | یخچال |
 | `icefall` | آبشار یخی |
+| `winter-ascent` | صعود زمستانه |
 | `high-altitude` | کوهنوردی مرتفع (بالای ۴۰۰۰ متر) |
 | `hiking` | کوهپیمایی |
 | `rock-climbing` | سنگ‌نوردی |

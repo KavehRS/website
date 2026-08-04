@@ -9,11 +9,11 @@ Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API)
 
 ## Mission
 
-Improve discoverability of Persian **گزارش برنامه صعود** content for:
+Improve discoverability of Persian **گزارش برنامه صعود** content for the disciplines in `_data/logbook_disciplines.yml`:
 
-- کوهنوردی (mountaineering)
-- سنگ‌نوردی (rock climbing)
-- یخ‌نوردی / DryTooling (ice / mixed)
+- کمپ‌های آموزشی · برفچال · یخچال · آبشار یخی · صعود زمستانه
+- کوهنوردی مرتفع (بالای ۴۰۰۰ متر) · کوهپیمایی · سنگ‌نوردی · دیواره‌نوردی
+- plus یخ‌نوردی / DryTooling where relevant in report content
 
 Primary hub: `/logbook/` · Site: `https://www.kavehrs.com`
 
@@ -48,7 +48,7 @@ For each `_logbook/*.md` and key pages (`index.md`, `logbook.md`, blog index):
 - [ ] `lang` / `dir_attr` correct
 - [ ] `image` points to a real climb asset when available (not only the logo)
 - [ ] `image` alt available when using object form supported by theme/includes
-- [ ] Categories/tags cover peak, range, activity type (کوهنوردی / سنگ‌نوردی / یخ‌نوردی)
+- [ ] Categories use `_data/logbook_disciplines.yml` slugs (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, hiking, rock-climbing, wall-climbing) plus place/peak tags
 - [ ] Peak front matter (`peak.name`, elevation, lat/lon) present when known → feeds JSON-LD
 - [ ] Internal links: related climbs + hub `/logbook/`
 - [ ] No duplicate body text vs another report of the same peak

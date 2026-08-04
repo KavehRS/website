@@ -7,8 +7,8 @@ description: "گزارش صعود به قله هزارلا با باشگاه ش�
 date: 2024-05-17
 categories: [hiking]
 image: /assets/mount/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/7.jpg
-    url: /logbook/2023-11-26-hamnavard-club-Hezarla-Peak/
 ---
+
 
 گزارش برنامه صعود به قله هزارلا
 
