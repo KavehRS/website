@@ -33,6 +33,9 @@ Refresh schedule (Asia/Tehran): **04:00, 10:00, 16:00, 22:00** from report creat
 
 Gear lists must be derived from the climb date(s) and that triple weather forecast — refresh gear whenever weather is refreshed.
 
+If a forecast change is **noticeable**, add/update `## چالش‌های برنامه` with before→after details (sources, time, impact) — see thresholds in `.cursor/rules/logbook-reports.mdc`.
+
+
 ## Climb-report images (required)
 
 Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/logbook/<slug>/`). See `.cursor/rules/logbook-assets.mdc`.

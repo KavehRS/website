@@ -22,12 +22,14 @@ USAGE
 4) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
    (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
 5) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran from creation until 22:00 the night before the climb
-6) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
-7) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
-8) Related reports are auto-grouped by categories — do not rely on template look-alike links
-9) Before publish: compare against existing `_logbook/*` for the same peak
-10) Never paste this sample prose unchanged into a published report
+6) If a forecast change is noticeable, add/update ## چالش‌های برنامه with before→after details (sources, time, impact)
+7) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
+8) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
+9) Related reports are auto-grouped by categories — do not rely on template look-alike links
+10) Before publish: compare against existing `_logbook/*` for the same peak
+11) Never paste this sample prose unchanged into a published report
 -->
+
 
 
 <!--
@@ -148,7 +150,24 @@ categories: [high-altitude]
 {{متن تازه}}
 
 
+## چالش‌های برنامه
+
+### نوسان / تغییر پیش‌بینی هوا (فقط اگر قابل‌ملاحظه باشد)
+
+- **زمان مشاهده:** {{جلالی + میلادی + ساعت Asia/Tehran}}
+- **منبع(ها):** Open-Meteo / Mountain-Forecast / Meteoblue
+- **قبل → بعد:** {{اعداد مشخص: دما، باد/تندباد، احتمال/مقدار بارش، سطح انجماد}}
+- **اثر روی برنامه:** {{زمان‌بندی / مسیر / شب‌مانی / تجهیزات / تصمیم اجرا}}
+
+> آستانه‌های «قابل‌ملاحظه» در `.cursor/rules/logbook-reports.mdc` — در به‌روزرسانی‌های زمان‌بندی‌شده اگر تغییر مهم بود، این بخش را پر کن؛ فقط عوض کردن اعداد هوا کافی نیست.
+
+### سایر چالش‌ها
+
+- {{ارتفاع، باد معروف قله، شلوغی پناهگاه، بخش فنی، دسترسی آب، ...}}
+
+
 ## تجهیزات مورد نیاز (بر اساس تاریخ و پیش‌بینی هوا)
+
 
 **مبنا:** {{تاریخ_جلالی_و_نوع_برنامه}} + خلاصه پیش‌بینی سه منبع (Open-Meteo / Mountain-Forecast / Meteoblue).  
 خلاصه شرایط مورد انتظار: {{دما_باد_بارش_ابری_یخ_برف}}
@@ -191,13 +210,17 @@ categories: [high-altitude]
 ## شرح برنامه
 
 > تا قبل از صعود خالی/کوتاه بماند؛ بعد از صعود با روایت همان روز تکمیل شود.
+> اگر برنامه چندروزه است، برای هر روز زیربخش جدا بنویس.
+
+### روز / روزها
 
 - ساعت حرکت / محل قرار:
 - زمان رسیدن به پای‌کار:
 - زمان شروع پیمایش:
-- نقاط توقف مهم:
-- زمان صعود قله:
+- نقاط توقف مهم (پناهگاه، کمپ، ...):
+- زمان صعود قله (در صورت اجرا در آن روز):
 - زمان بازگشت:
 - وضعیت آب‌وهوا و باد:
 - نکات ایمنی و مشاهدات مسیر:
-- جمع‌بندی برنامه:
+- جمع‌بندی:
+

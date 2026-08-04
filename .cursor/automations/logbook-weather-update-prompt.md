@@ -24,7 +24,8 @@ For every `_logbook/*.md` report still inside the update window
 1. Refresh weather for every program day from Open-Meteo, Mountain-Forecast, and Meteoblue
 2. Stamp the update time in Asia/Tehran
 3. Update gear if the forecast change matters
-4. Keep uniqueness rules; do not rewrite unrelated prose
+4. If the change is noticeable, add/update `## چالش‌های برنامه` with before→after details, sources, time, and impact (see logbook-reports.mdc thresholds)
+5. Keep uniqueness rules; do not rewrite unrelated prose
 
 If anything material changed: branch `cursor/weather-refresh-YYYYMMDD-HHMM-33ce`,
 `bundle exec jekyll build`, open PR, merge after clean build.

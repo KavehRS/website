@@ -39,7 +39,9 @@ Cron equivalents in UTC (for Cursor Automations / GitHub Actions):
 2. For each, refresh the **triple-source** weather block for **every program day** (Open-Meteo + Mountain-Forecast + Meteoblue) per `.cursor/rules/logbook-reports.mdc`.
 3. Stamp the fetch time (Jalali + Gregorian + clock time Asia/Tehran).
 4. Rewrite the **gear** section if the forecast change materially affects packing.
-5. Commit / PR / merge only when numbers or recommendations actually changed; skip no-op runs.
+5. If the change is **noticeable** (thresholds in `.cursor/rules/logbook-reports.mdc`), add or update a detailed item under `## چالش‌های برنامه` (before→after, sources, time, impact). Do not leave significant swings only in the weather bullets.
+6. Commit / PR / merge only when numbers, gear, or challenges actually changed; skip no-op runs.
+
 
 ## Automation
 

@@ -1,67 +1,38 @@
 ---
 name: logbook-ascent-report
-description: Create or update Persian mountaineering ascent reports with the site framework and triple weather sources
+description: Create or update Persian mountaineering ascent reports with full site framework, triple weather, schedule, challenges, gear, categories, and URL-matched assets
 ---
 
 # Logbook ascent report skill
 
 Use when the user asks for `گزارش صعود` / a new climb report / weather update on a climb report.
 
-## Framework
+## Always read first
 
-1. Follow `.cursor/rules/logbook-reports.mdc`
-2. Copy section structure from `_drafts/logbook-ascent-report-template.md`
-3. Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as a structural example — never republish its prose
-4. Write the live file under `_logbook/YYYY-MM-DD-<peak-slug>.md`
+1. `.cursor/rules/logbook-reports.mdc` (master checklist)
+2. `.cursor/rules/logbook-weather-schedule.mdc`
+3. `.cursor/rules/logbook-assets.mdc`
+4. `_drafts/logbook-ascent-report-template.md`
+5. `_data/logbook_disciplines.yml`
 
-## Triple weather (mandatory)
+Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure — never republish its prose.
 
-Populate the climate/weather block from **all three** sources for the climb day:
+## Deliverables for a new report
 
-| # | Source | How to use |
-|---|--------|------------|
-| 1 | **Open-Meteo** | API/point forecast at peak lat/lon + elevation; also trailhead elevation when useful |
-| 2 | **Mountain-Forecast** | https://www.mountain-forecast.com/ — exact peak page if it exists; otherwise closest Alborz (or local range) peak with the elevation band nearest the summit. State proxy name, distance, elevation band, and URL |
-| 3 | **Meteoblue** | https://www.meteoblue.com/ — week/point forecast for peak coordinates with elevation set near the summit; include URL |
+1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `peak` front matter when known
+2. `categories` from the discipline taxonomy (including `winter-ascent` when applicable)
+3. Triple weather for every program day (Open-Meteo, Mountain-Forecast, Meteoblue)
+4. `## چالش‌های برنامه` — include weather volatility when forecasts differ or swing noticeably
+5. Gear derived from date(s) + that forecast (and “not needed for this date”)
+6. `assets/mount/logbook/<exact-url-slug>/` for all images
+7. Multi-day narrative outline when the program is more than one day
 
-Requirements:
+## Scheduled weather runs
 
-- Stamp the fetch date in Jalali + Gregorian
-- Prefer metric units (°C, km/h, mm)
-- Add a short operational summary when sources disagree
-- Refresh weather whenever the climb date changes or the user asks for an update
-- Scheduled refreshes: 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before program start (see `.cursor/rules/logbook-weather-schedule.mdc`)
+At 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before start:
 
-## Report image folder (mandatory)
-
-Create `assets/mount/logbook/<exact-url-slug>/` matching `_logbook/<exact-url-slug>.md` and store all report images there (`.cursor/rules/logbook-assets.mdc`).
-
-## Categories / disciplines (mandatory)
-
-
-Set `categories` using slugs from `_data/logbook_disciplines.yml`:
-
-`training-camp` · `snowfield` · `glacier` · `icefall` · `winter-ascent` · `high-altitude` · `hiking` · `rock-climbing` · `wall-climbing`
-
-- Pick all that truly apply; keep them separate (do not collapse into a generic “mountaineering” category)
-- `/logbook/` and related-links group by these categories, not by template similarity
-- Avoid manual `related:` unless the user asks for a specific cross-link
-
-## Weather-based gear (mandatory)
-
-
-After writing the triple weather block, build `تجهیزات مورد نیاز` from **that climb date + those forecasts**:
-
-1. One-line basis (date, one-day/overnight, expected summit temps/wind/precip)
-2. Clothing layers matched to temperature and wind
-3. Rain shell / sun kit / hydration amounts justified by the forecast
-4. Technical tools (crampons, axe, rope, overnight kit) only if this date/route needs them
-5. A short “not needed for this date” list
-6. If weather is updated later, rewrite gear in the same pass — never leave a generic seasonal list
-
-See `_drafts/logbook-ascent-report-template.md` for the section skeleton.
+- refresh weather → gear if needed → **challenges if change is noticeable** → PR only on real diffs
 
 ## Uniqueness
 
-Never publish duplicate prose for a repeat climb of the same peak. Rewrite literature; only stable facts may repeat when still accurate.
-
+Never publish duplicate prose for a repeat climb of the same peak.
