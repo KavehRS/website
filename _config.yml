@@ -77,6 +77,10 @@ defaults:
     values:
       image: /assets/images/logos/1/kavehrs.jpg
   - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
       path: ""
       type: blog
     values:
