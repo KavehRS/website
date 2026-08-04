@@ -1,6 +1,8 @@
 {% comment %}
-Related logbook reports: select by shared activity disciplines (categories),
-not by template similarity or loose tag overlap. Display is a flat list for readers.
+Related logbook reports: SELECT by shared activity disciplines (categories),
+not by template similarity or loose tag overlap.
+Reader UI must stay: heading «گزارش‌های مرتبط :» + flat list only.
+Do NOT render agent notes or discipline/category subheadings.
 Manual page.related still wins when provided.
 {% endcomment %}
 {% if page.related and page.related.size > 0 %}

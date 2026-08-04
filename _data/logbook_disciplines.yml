@@ -1,5 +1,7 @@
 # Activity disciplines for logbook reports (categories).
-# Related reports group by these — not by template/tag similarity.
+# Related reports are SELECTED by shared slugs — not by template/tag similarity.
+# Public related UI is a flat list under «گزارش‌های مرتبط :» (no category headings, no agent notes).
+# Hub /logbook/ is chronological by date, not grouped by these labels.
 # Keep this file as the single source of truth; rules/templates/samples must match it.
 #
 # Use rock-climbing / wall-climbing only for true sport/trad rock or multipitch wall routes.

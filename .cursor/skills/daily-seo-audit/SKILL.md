@@ -12,8 +12,10 @@ Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API)
 Improve discoverability of Persian **گزارش برنامه صعود** content for the disciplines in `_data/logbook_disciplines.yml`:
 
 - کمپ‌های آموزشی · برفچال · یخچال · آبشار یخی · صعود زمستانه
-- کوهنوردی مرتفع (بالای ۴۰۰۰ متر) · کوهپیمایی · سنگ‌نوردی · دیواره‌نوردی
+- کوهنوردی مرتفع (بالای ۴۰۰۰ متر) · کوهنوردی فنی · کوهپیمایی · سنگ‌نوردی · دیواره‌نوردی
 - plus یخ‌نوردی / DryTooling where relevant in report content
+
+Hub `/logbook/` is chronological. Related blocks must stay a flat `گزارش‌های مرتبط :` list (no agent blurbs / category subheads on the page).
 
 Primary hub: `/logbook/` · Site: `https://www.kavehrs.com`
 

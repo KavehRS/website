@@ -34,9 +34,12 @@ Goal: make https://www.kavehrs.com the leading Persian source for mountaineering
 When touching `_logbook` content while doing SEO work:
 - keep the required triple-source weather block (Open-Meteo + Mountain-Forecast + Meteoblue)
 - keep gear aligned to date/forecast
-- keep `categories` on the discipline taxonomy in `_data/logbook_disciplines.yml` (including `winter-ascent` / صعود زمستانه)
+- keep `categories` on the discipline taxonomy in `_data/logbook_disciplines.yml` (including `technical-mountaineering` / کوهنوردی فنی and `winter-ascent` / صعود زمستانه)
+- ridge/gendarme/alpine hand-and-foot → `technical-mountaineering`; rock/wall only for true rock/wall
 - keep images under `assets/mount/logbook/<exact-url-slug>/`
 - if touching weather numbers that changed noticeably, keep `## چالش‌های برنامه` in sync
+- hub `/logbook/` stays chronological; related UI stays flat `گزارش‌های مرتبط :` (no agent blurbs / category subheads)
+- never publish agent/implementation notes into live page copy
 per `.cursor/rules/logbook-reports.mdc` and `.cursor/rules/logbook-assets.mdc`. Do not invent vague categories.
 
 
