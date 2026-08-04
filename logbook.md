@@ -1,7 +1,9 @@
 ---
 layout: default
-title: گزارش برنامه صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی
-description: "آرشیو گزارش برنامه‌های صعود به تفکیک کمپ آموزشی، برفچال، یخچال، آبشار یخی، صعود زمستانه، کوهنوردی مرتفع، کوهپیمایی، سنگ‌نوردی و دیواره‌نوردی."
+title: گزارش صعود
+description: >-
+  آرشیو گزارش‌های واقعی صعود کوهنوردی، سنگ‌نوردی، دیواره‌نوردی و صعود زمستانه
+  در البرز؛ از مسیر و شرایط هوا تا تجهیزات، تیم و تجربهٔ اجرا.
 permalink: /logbook/
 lang: fa-IR
 dir_attr: rtl
@@ -10,12 +12,10 @@ dir_attr: rtl
 {% assign discipline_order = site.data.logbook_disciplines.order %}
 {% assign discipline_labels = site.data.logbook_disciplines.labels %}
 
-<h1>گزارش برنامه صعود</h1>
-<p>گزارش‌ها بر اساس نوع برنامه تفکیک شده‌اند: کمپ آموزشی، برفچال، یخچال، آبشار یخی، صعود زمستانه، کوهنوردی مرتفع (بالای ۴۰۰۰ متر)، کوهپیمایی، سنگ‌نوردی و دیواره‌نوردی.</p>
-
+<h1>گزارش صعود</h1>
+<p>اینجا روایت صعودهای اجراشده جمع شده است: قله‌های مرتفع، تیغه‌ها، کمپ‌های آموزشی برفچال و برنامه‌های زمستانه. هر گزارش مسیر، هوا، تجهیزات و جزئیات اجرا را برای کوهنوردانی می‌نویسد که پیش از برنامه به منبع دقیق نیاز دارند.</p>
 
 {% for disc in discipline_order %}
-  {% assign disc_posts = '' | split: '' %}
   {% assign has_posts = false %}
   {% for post in site.logbook reversed %}
     {% assign post_cats = post.categories | default: post.disciplines %}
