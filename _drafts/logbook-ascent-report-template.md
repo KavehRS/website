@@ -35,6 +35,9 @@ USAGE (agent-only — do not copy this comment block into published pages)
 12) Before publish: compare against existing `_logbook/*` for the same peak
 13) Never paste this template prose unchanged into a published report
 14) Never publish agent/implementation notes on live pages
+15) Reader-facing site dates (footer آخرین بروزرسانی, post meta, /logbook/ list) use Jalali via _includes/jalali-date.html
+    e.g. 13 مرداد 1405 — never English Gregorian like «04 August 2026» in those UI spots.
+    Report body: program dates Jalali-first; weather stamps may add Gregorian in parentheses.
 -->
 
 

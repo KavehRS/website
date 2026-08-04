@@ -17,3 +17,7 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Added/confirmed `technical-mountaineering` (کوهنوردی فنی) for ridge/gendarme/alpine hand-and-foot; rock/wall reserved for true rock/wall.
 - Kahar pre-report corrected to one-day on ۱۶ مرداد ۱۴۰۵.
 - Synced AGENTS.md, logbook rules/skills/template/sample.
+
+## 2026-08-04 — Jalali UI dates
+
+- Footer «آخرین بروزرسانی», post meta, and `/logbook/` list dates use Jalali via `_includes/jalali-date.html` (e.g. 13 مرداد 1405).
