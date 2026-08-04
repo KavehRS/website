@@ -1,41 +1,22 @@
 ---
-description: How to create mountaineering logbook ascent reports for this site
+description: Master checklist for creating mountaineering logbook ascent reports on this site
 alwaysApply: true
 ---
 
-# Logbook ascent reports
+# Logbook ascent reports — master checklist
 
-When the user asks for a new climb / ascent report (`گزارش صعود`):
+When the user asks for a new climb / ascent report (`گزارش صعود`), or when updating an existing one, apply **all** of the following. Details also live in sibling rules/skills; this file is the checklist.
 
-1. Use the section framework in:
-   - `_drafts/logbook-ascent-report-template.md` (placeholders)
-   - `_drafts/samples/kahar-peak-report-framework-sample.md` (worked Kahar sample)
-2. Create the published file under `_logbook/YYYY-MM-DD-<peak-slug>.md` with SEO front matter (`lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, tags) and, when known, `peak: { name, elevation_m, latitude, longitude, region }` for Mountain JSON-LD.
-3. Set `categories` from the discipline taxonomy in `_data/logbook_disciplines.yml` (one or more). Do **not** use vague categories like `mountaineering` / `logbook`.
-4. Keep the same overall structure (peak specs → region → weather → flora/fauna → access → routes → shelter/water → season → views → gear → team → narrative).
-5. Weather for **every program day** must be fetched from all three sources below and written as three labeled subsections (plus a short operational summary). Refresh numbers from the latest available forecast; do not copy stale weather from samples.
-6. Keep refreshing weather on the schedule in `.cursor/rules/logbook-weather-schedule.mdc` (04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before the climb).
-7. Put all report images in `assets/mount/logbook/<exact-url-slug>/` per `.cursor/rules/logbook-assets.mdc`.
+## Create / publish
 
+1. Framework: `_drafts/logbook-ascent-report-template.md` + structural sample `_drafts/samples/kahar-peak-report-framework-sample.md` (never republish sample prose).
+2. Live file: `_logbook/YYYY-MM-DD-<peak-slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, `tags`, and when known `peak: { name, elevation_m, latitude, longitude, region }`.
+3. `categories` from `_data/logbook_disciplines.yml` only (see table below) — never vague `mountaineering` / `logbook`.
+4. Section order: peak specs → region → **weather (3 sources)** → flora/fauna → access → routes → shelter/water → season → views → **چالش‌های برنامه** → **gear (date+weather)** → team → narrative (per program day if multi-day).
+5. Images: `assets/mount/logbook/<exact-url-slug>/` matching the report URL (see `.cursor/rules/logbook-assets.mdc`).
+6. Related links: automatic by shared categories — not template look-alikes.
 
-
-
-## Triple weather sources (required)
-
-For every new or updated ascent report, populate the weather block from:
-
-1. **Open-Meteo** — point forecast at peak coordinates / elevation (and trailhead when useful)
-2. **Mountain-Forecast** — https://www.mountain-forecast.com/  
-   If the exact peak is missing, use the geographically closest listed peak with the elevation band nearest the summit, and state the proxy peak + distance + forecast URL.
-3. **Meteoblue** — https://www.meteoblue.com/  
-   Use peak lat/lon with elevation set near the summit; include the forecast URL.
-
-Always record the update stamp (Jalali + Gregorian). Prefer metric units (°C, km/h, mm).
-
-
-## Activity disciplines / categories (required)
-
-Use only these category slugs (labels are in `_data/logbook_disciplines.yml`):
+## Categories (required)
 
 | slug | label |
 |------|--------|
@@ -49,33 +30,56 @@ Use only these category slugs (labels are in `_data/logbook_disciplines.yml`):
 | `rock-climbing` | سنگ‌نوردی |
 | `wall-climbing` | دیواره‌نوردی |
 
-A report may have multiple categories when accurate (e.g. training camp + snowfield).  
-Related links and the `/logbook/` hub group by these categories — **not** by template similarity or loose tag overlap. Prefer automatic related grouping; avoid hand-written `related:` lists that only mirror the same template.
+Use every slug that truly applies. Hub + related posts group by these.
 
+## Triple weather (required)
 
-## Weather-based gear list (required)
+For **every program day**, label three subsections:
 
+1. **Open-Meteo** — peak (+ trailhead when useful)
+2. **Mountain-Forecast** — https://www.mountain-forecast.com/ (exact peak or nearest elevation-matched proxy + distance + URL)
+3. **Meteoblue** — https://www.meteoblue.com/ (peak lat/lon + summit elevation + URL)
 
-The `تجهیزات مورد نیاز` section must be **specific to this climb date and the triple weather forecast**, not a generic “summer/winter packing list”.
+Stamp Jalali + Gregorian (+ clock on scheduled refreshes). Metric units. Short operational summary when sources disagree.
 
-1. State the basis in one line: climb date + program type (one-day / overnight) + weather summary used.
-2. Recommend clothing layers from expected summit/trailhead temperatures and wind/gusts.
-3. Include rain/wind shells only when forecasts justify them; say why.
-4. Include sun/hydration/ice tools/overnight gear only when the date + forecast + route conditions require them.
-5. Explicitly list what is **not** needed for this date (e.g. crampons) unless the forecast changes.
-6. Whenever weather is refreshed, rewrite the gear section to match the new forecast.
+## Weather refresh schedule (required)
 
+Per `.cursor/rules/logbook-weather-schedule.mdc`:
 
-## Hard uniqueness rule
+- From report creation until **22:00 Asia/Tehran the night before** program start
+- Refresh at **04:00 / 10:00 / 16:00 / 22:00** Asia/Tehran
+- Each refresh: update weather → maybe gear → maybe challenges (below)
 
-- Never publish two reports for the same peak with duplicated prose.
-- For a repeat climb (e.g. another Kahar), rewrite the literature: new wording for region, routes, climate notes, gear framing, and especially the climb narrative.
-- Reuse only stable facts (height, coordinates, village names) when still accurate; refresh weather, gear list, team, dates, route conditions, and observations from the latest information.
+## Significant forecast change → program challenge (required)
 
-- Do not copy-paste paragraphs from `_drafts/samples/*` or from a previous published `_logbook/*` entry into a new published report.
-- Before publishing, skim existing `_logbook` entries for that peak and ensure the new text reads as a distinct report.
+If a refresh shows a **noticeable** change vs the previous published forecast (or a sharp disagreement between the three sources), add/update an entry under `## چالش‌های برنامه` with details — do not only change the weather numbers silently.
 
-## Drafts are not the site
+Treat as noticeable when any of these hold (or equally serious judgment calls):
 
-- Files under `_drafts/` are samples/templates only and must remain unpublished.
-- Update the live report in `_logbook/` when the user provides climb details, photos, or final team names.
+- precip probability jumps by about **≥ ۱۵–۲۰٪**, or dry → wet / wet → dry
+- new meaningful precip amount, thunderstorm, or zeroing of previously expected rain/snow
+- sustained wind or gusts change by about **≥ ۱۵ km/h**
+- summit temperature band shifts by about **≥ ۵°C**
+- freezing level moves close to / away from the summit in a way that changes ice tools need
+- sources strongly diverge (e.g. one wet & cold, others dry) in a way that affects go/no-go or packing
+
+Each challenge entry must include:
+
+- when observed (Jalali/Gregorian + time Asia/Tehran)
+- which source(s)
+- before → after (concrete numbers)
+- impact on timing, route, shelter plan, or gear
+
+Also list non-weather challenges (altitude, wind-famous summit, crowded shelter, technical bits) when relevant.
+
+## Weather-based gear (required)
+
+`تجهیزات مورد نیاز` must be derived from **this** climb date(s) + latest triple forecast — not a generic seasonal list. Include what is **not** needed for this date. Refresh gear whenever weather is refreshed.
+
+## Uniqueness
+
+Never publish two reports for the same peak with duplicated prose. Rewrite literature on repeats; only stable facts may repeat when still accurate. Do not paste `_drafts/samples/*` into a published report.
+
+## Drafts
+
+`_drafts/` stays unpublished. Complete narrative/photos/team in `_logbook/` when the user provides them.

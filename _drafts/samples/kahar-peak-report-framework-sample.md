@@ -20,11 +20,14 @@ Source snapshot of the Kahar pre-report framework.
 When creating a NEW climb report (even for Kahar again):
 - keep the SECTION FRAMEWORK
 - rewrite prose so it is not a duplicate of any published logbook entry
+- follow master checklist in .cursor/rules/logbook-reports.mdc
 - refresh weather (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb
+- if forecast change is noticeable: add/update ## چالش‌های برنامه with before→after details
 - gear from date + weather; categories from _data/logbook_disciplines.yml
   (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, hiking, rock-climbing, wall-climbing)
 - images in assets/mount/logbook/<exact-url-slug>/ matching the report URL
 - related links / hub group by categories, not template similarity
+- never republish this sample prose for a new report
 -->
 
 
@@ -190,6 +193,24 @@ When creating a NEW climb report (even for Kahar again):
 - آزادکوه و کمان‌کوه در سمت شرق
 - محدوده‌های مرتبط با علم‌کوه در شمال‌غربی
 - شاه‌البرز و توچال در برخی زوایا و شرایط جوی مناسب
+
+
+
+## چالش‌های برنامه
+
+### اختلاف و نوسان پیش‌بینی هوا
+- **زمان مشاهده:** ۱۳ مرداد ۱۴۰۵ (۴ اوت ۲۰۲۶) — هم‌زمان با آخرین به‌روزرسانی سه منبع
+- **منبع(ها):** Open-Meteo، Mountain-Forecast (پروکسی کلون‌بستک ۴۱۸۰ م)، Meteoblue (@ ~۴۰۵۰ م)
+- **جزئیات قابل‌ملاحظه:**
+  - Open-Meteo برای روزهای ۱۵ و ۱۶ مرداد روی قله عمدتاً خشک است (احتمال بارش تا حدود ۱۰٪، بارش تجمعی نزدیک صفر) با دمای حدود ۵ تا ۱۷ درجه و تندباد تا حدود ۳۱ تا ۳۷ کیلومتر بر ساعت
+  - Meteoblue هم تصویر خشک‌تر/آفتابی‌تری می‌دهد (احتمال بارش عصرگاهی جمعه تا حدود ۲۰–۲۵٪، مقدار ناچیز) با تندباد تا حدود ۳۳ کیلومتر بر ساعت
+  - Mountain-Forecast روی کلون‌بستک برای همان بازه رگبار/بارش پراکنده نشان می‌دهد (حدود ۰٫۶ میلی‌متر پنج‌شنبه و حدود ۱ میلی‌متر جمعه) و دمای حداکثر پایین‌تر (حدود ۶ تا ۱۰ درجه)
+- **اثر روی برنامه:** به‌خاطر این اختلاف منابع، احتمال خیس شدن یال/قله و سرد شدن با باد را جدی می‌گیریم؛ رویه‌پوش ضدآب سبک و بادگیر گرم در تجهیزات اجباری است، حرکت سحرگاهی روز صعود قله ترجیح داده می‌شود، و شب قبل از حرکت هر سه منبع دوباره چک می‌شود. تصمیم نهایی اجرا/تأخیر بر اساس آخرین پیش‌بینی ۲۲:۰۰ خواهد بود.
+
+### سایر چالش‌ها
+- باد شناخته‌شده و معمولاً شدید روی قله و یال‌های بالایی کهار حتی در تابستان
+- اختلاف ارتفاع زیاد (~۱۷۰۰ تا ۱۹۰۰ م از کلوان) در برنامهٔ دو روزه با شب‌مانی پناهگاه ~۳۲۰۰ م
+- محدودیت منبع آب مطمئن از پناهگاه تا قله
 
 
 ## تجهیزات مورد نیاز (بر اساس تاریخ و پیش‌بینی هوا)
