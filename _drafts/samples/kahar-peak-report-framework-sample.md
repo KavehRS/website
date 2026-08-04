@@ -24,7 +24,7 @@ When creating a NEW climb report (even for Kahar again):
 - refresh weather (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb
 - if forecast change is noticeable: add/update ## چالش‌های برنامه with before→after details
 - gear from date + weather; categories from _data/logbook_disciplines.yml
-  (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, hiking, rock-climbing, wall-climbing)
+  (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering, hiking, rock-climbing, wall-climbing)
 - images in assets/mount/logbook/<exact-url-slug>/ matching the report URL
 - related links / hub group by categories, not template similarity
 - never republish this sample prose for a new report

@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش صعود قله خلنو از مسیر تیغه‌های ژاندارم؛ جزئیات برنامه و تصاویر صعود."
 date: 2024-06-20
-categories: [high-altitude, wall-climbing, rock-climbing]
+categories: [high-altitude, technical-mountaineering]
 image: /assets/mount/logbook/2024-06-20-khalno-gendarme/6.jpg
 ---
 
