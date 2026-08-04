@@ -113,6 +113,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _drafts
+  - .cursor
 
 plugins:
   - jekyll-seo-tag
