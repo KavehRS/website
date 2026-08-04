@@ -5,6 +5,13 @@ description: "توابع و ورودی/خروجی در مفاهیم اولیه �
 pdate: 1399-6-24
 author: KavehRS
 tags: برنامه‌نویسی c python
+related:
+  - title: "یادداشت نخست: مفاهیم پایه"
+    url: /blog/2020-8-31-basic-overview-of-programming-part1/
+  - title: "یادداشت سوم: اعداد و کاراکترها"
+    url: /blog/2020-9-8-basic-overview-of-programming-part3/
+  - title: "راه‌های ساده برای داشتن کد تمیز"
+    url: /blog/2020-9-16-Clean-Code/
 ---
 
 ## آرایه‌ها

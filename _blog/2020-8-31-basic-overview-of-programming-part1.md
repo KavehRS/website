@@ -5,6 +5,13 @@ description: "مفاهیم پایه برنامه‌نویسی: متغیر، ال
 pdate: 1399-6-10
 author: KavehRS
 tags: برنامه‌نویسی c python
+related:
+  - title: "یادداشت دوم: انواع داده، کلمات کلیدی، عملگرها و حلقه‌ها"
+    url: /blog/2020-9-4-basic-overview-of-programming-part2/
+  - title: "یادداشت سوم: اعداد و کاراکترها"
+    url: /blog/2020-9-8-basic-overview-of-programming-part3/
+  - title: "یادداشت چهارم: توابع و I/O"
+    url: /blog/2020-9-14-basic-overview-of-programming-part4/
 ---
 
 
