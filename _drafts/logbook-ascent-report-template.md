@@ -19,9 +19,11 @@ USAGE
 3) Fill facts for THIS climb only
 4) Weather MUST come from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
    (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
-5) Before publish: compare against existing `_logbook/*` for the same peak
-6) Never paste this sample prose unchanged into a published report
+5) Gear list MUST be derived from climb date + that triple weather forecast (not a generic seasonal packing list)
+6) Before publish: compare against existing `_logbook/*` for the same peak
+7) Never paste this sample prose unchanged into a published report
 -->
+
 
 
 
@@ -134,15 +136,37 @@ USAGE
 {{متن تازه}}
 
 
-## تجهیزات مورد نیاز
+## تجهیزات مورد نیاز (بر اساس تاریخ و پیش‌بینی هوا)
 
-### عمومی
+**مبنا:** {{تاریخ_جلالی_و_نوع_برنامه}} + خلاصه پیش‌بینی سه منبع (Open-Meteo / Mountain-Forecast / Meteoblue).  
+خلاصه شرایط مورد انتظار: {{دما_باد_بارش_ابری_یخ_برف}}
 
-- ...
+### پوشاک (متناسب با دمای پیش‌بینی‌شده و باد)
 
-### فنی / زمستانه / شب‌مانی (در صورت نیاز)
+- {{لایه_پایه}}
+- {{لایه_میانی}}
+- {{بادگیر_/_ضدآب}}
+- {{کلاه_دستکش_گردن‌پوش}}
 
-- ...
+### بارش / رطوبت (فقط اگر پیش‌بینی‌ها ایجاب کند)
+
+- {{رویه_ضدآب_سبک_یا_دلیل_حذف}}
+
+### آفتاب، سرما، آب و تغذیه (بر اساس فصل و پای‌کار/قله)
+
+- {{ضدآفتاب_عینک_آب_غذا}}
+
+### کفش و پیمایش (متناسب با سطح مسیر و شرایط روز)
+
+- {{کفش}}
+- {{باتوم_هدلایت_ناوبری_کمک‌های_اولیه}}
+- {{فنی_مثل_کرامپون_کلنگ_فقط_اگر_برای_همین_تاریخ_لازم_است}}
+
+### برای این تاریخ همراه نبرید (مگر تغییر پیش‌بینی)
+
+- {{اقلام_غیرضروری_با_دلیل}}
+
+> پس از هر به‌روزرسانی هوا، این بخش را دوباره با همان تاریخ صعود هم‌راستا کن؛ فهرست کلی و فصلیِ ثابت ممنوع است.
 
 
 ## اعضای شرکت‌کننده
