@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "صعود به قله هزارلا "
+description: "گزارش صعود به قله هزارلا با باشگاه همنورد."
 date: 2023-11-26
 image: /assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg
 ---

@@ -1,48 +1,25 @@
 ---
 layout: about
 permalink: /
+title: Kaveh RezaeiShiraz
+description: >-
+  کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار، MBA فناوری اطلاعات و سیستم‌های اطلاعاتی،
+  علاقه‌مند به متن‌باز، کوهنوردی و DryTooling. ساکن تهران.
 profile:
   align: right
   image: kavehrs.jpg
+  image_alt: عکس پروفایل کاوه‌ رضایی‌شیراز
 published: true
+dir_attr: ltr
+lang: en
 ---
 
-
-## About
-<blockquote>  
-   <b> Software Engineer | MBA - IT & Information Systems | Climber  </b>
-
-
-  <li> I'm Software Engineer also interested in open source software, technologies and knowledge <br> of course, I love books, climbing, rock climbing & DryTooling.
-
-  </li>
- <li> Born: Oct 1985 - Guilan, Iran </li>
- <li> Live: Tehran, Iran </li>
+# About
+<blockquote>
+  <p><strong>Software Engineer | MBA - IT &amp; Information Systems | Climber</strong></p>
+  <ul>
+    <li>I'm a Software Engineer interested in open source software, technologies and knowledge. I also love books, climbing, rock climbing &amp; DryTooling.</li>
+    <li>Born: Oct 1985 — Guilan, Iran</li>
+    <li>Live: Tehran, Iran</li>
+  </ul>
 </blockquote>
-
-
-
-<!--
-####  [Blog(Persian)](https://blog.kavehrs.com/)
- #### [CV (Persian)](/assets/pdf/cv-fa.pdf) |  [CV (English)](/assets/pdf/cv-en.pdf) | [Blog(Persian)](https://blog.kavehrs.com/)  -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X4V1FLGZMH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X4V1FLGZMH');
-</script>
-

@@ -3,9 +3,15 @@ layout: default
 ---
 
 {% if page.profile %}
-    {% if page.profile.image %}
-      <img class="profile {{ page.profile.align }}"  width="33.33%" src="{{ page.profile.image | prepend: '/assets/images/logos/1/' | prepend: site.baseurl | prepend: site.url }}">
-    {% endif %}
+  {% if page.profile.image %}
+    <img
+      class="profile {{ page.profile.align }}"
+      width="33.33%"
+      src="{{ page.profile.image | prepend: '/assets/images/logos/1/' | relative_url }}"
+      alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
+      loading="eager"
+      decoding="async">
+  {% endif %}
 {% endif %}
 
 {{ content }}

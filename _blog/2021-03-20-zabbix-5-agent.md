@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  " نصب و تنظیم زبیکس 5 - زبیکس اجنت لینوکس"
+description: "آموزش نصب و تنظیم Zabbix 5 Agent روی لینوکس برای مانیتورینگ سرورها."
 pdate: 1399-12-30
 author: KavehRS
 tags: zabbix zabbix-agent

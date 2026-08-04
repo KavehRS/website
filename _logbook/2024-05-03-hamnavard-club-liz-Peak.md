@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "گزارش برنامه صعود به قله‌های واریش، لیز و لیچه"
+description: "گزارش صعود به قله‌های واریش، لیز و لیچه با باشگاه همنورد."
 date: 2024-05-06
 image: /assets/mount/logbook/2024-05-03-hamnavard-club-liz-Peak/5.jpg
 ---

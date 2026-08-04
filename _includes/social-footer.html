@@ -3,7 +3,7 @@
 {%- if site.email -%}
 <a title="{{ _locale_string_email }}"
 class="social-button email" itemprop="email"
-href="mailto:{{ site.email | encode_email }}" target="_blank">
+href="mailto:{{ site.email | encode_email }}" target="_blank" rel="noopener noreferrer">
 <i class="far fa-envelope"></i>
 </a>
 {%- endif -%}
@@ -12,7 +12,7 @@ href="mailto:{{ site.email | encode_email }}" target="_blank">
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'LinkedIn' }}"
 class="social-button linkedin"
 href="https://www.linkedin.com/in/{{ site.linkedin }}" itemprop="sameAs"
-target="_blank">
+target="_blank" rel="noopener noreferrer">
 <i class="fab fa-linkedin"></i>
 </a>
 {%- endif -%}
@@ -20,8 +20,8 @@ target="_blank">
 {%- if site.github -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'GitHub' }}"
 class="social-button github"
-href="https://www.github.com/{{ site.github }}" itemprop="sameAs"
-target="_blank">
+href="https://github.com/{{ site.github }}" itemprop="sameAs"
+target="_blank" rel="noopener noreferrer">
 <i class="fab fa-github"></i>
 </a>
 {%- endif -%}
@@ -30,7 +30,7 @@ target="_blank">
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'ResearchGate' }}"
 class="social-button researchgate"
 href="https://www.researchgate.net/profile/{{ site.researchgate }}" itemprop="sameAs"
-target="_blank">
+target="_blank" rel="noopener noreferrer">
 <i class="fab fa-researchgate"></i>
 </a>
 {%- endif -%}
@@ -39,16 +39,17 @@ target="_blank">
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'Orcid' }}"
 class="social-button orcid"
 href="https://orcid.org/{{ site.orcid }}" itemprop="sameAs"
-target="_blank">
+target="_blank" rel="noopener noreferrer">
 <i class="fab fa-orcid"></i>
 </a>
 {%- endif -%}
 
-{%- if site.twitter -%}
+{%- assign twitter_user = site.twitter.username | default: site.twitter -%}
+{%- if twitter_user -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}"
 class="social-button twitter"
-href="https://www.twitter.com/{{ site.twitter }}" itemprop="sameAs"
-target="_blank">
+href="https://www.twitter.com/{{ twitter_user }}" itemprop="sameAs"
+target="_blank" rel="noopener noreferrer">
 <i class="fab fa-twitter"></i>
 </a>
 {%- endif -%}
@@ -57,7 +58,7 @@ target="_blank">
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'Facebook' }}"
 class="social-button facebook" itemprop="sameAs"
 href="https://www.facebook.com/{{ site.facebook }}"
-target="_blank">
+target="_blank" rel="noopener noreferrer">
 <i class="fab fa-facebook-f"></i>
 </a>
 {%- endif -%}

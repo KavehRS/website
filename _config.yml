@@ -1,31 +1,52 @@
-### your site title here
+### Site settings
 
-title: Kaveh RezaeiShiraz 
-# description: subtitle | affiliations | motto
-# description:   Software Engineer | MBA - IT & Information Systems | Climber 
+title: Kaveh RezaeiShiraz
+tagline: "Software Engineer, MBA - IT & Information Systems, Climber"
+description: >-
+  کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار، MBA فناوری اطلاعات و سیستم‌های اطلاعاتی،
+  علاقه‌مند به متن‌باز و کوهنوردی. یادداشت‌های فنی و گزارش صعود.
+lang: fa-IR
+locale: fa_IR
 
-baseurl: / #name of GitHub repository
-url: #custom url to be used instead of GitHub repository
+baseurl: ""
+url: "https://www.kavehrs.com"
 email: me@kavehrs.com
 
+# Logo used by jekyll-seo-tag (Open Graph / JSON-LD)
+logo: /assets/images/logos/1/kavehrs.jpg
 
-highlighter: rouge
-markdown: kramdown
+author:
+  name: Kaveh RezaeiShiraz
+  twitter: kavehrs
+  url: https://www.kavehrs.com/
 
-# Social media links in footer
+# Social profiles for jekyll-seo-tag JSON-LD
+social:
+  name: Kaveh RezaeiShiraz
+  links:
+    - https://www.linkedin.com/in/kavehrs
+    - https://github.com/kavehrs
+    - https://twitter.com/kavehrs
+    - https://www.facebook.com/imkavehrs
+    - https://www.instagram.com/imkavehrs
+
+# Twitter card settings for jekyll-seo-tag
+twitter:
+  username: kavehrs
+  card: summary
+
+# Social media usernames used in footer links
 facebook: "imkavehrs"
 instagram: "imkavehrs"
-twitter: "kavehrs"
 linkedin: "kavehrs"
 github: "kavehrs"
 #researchgate: "#"
 #orcid: "0000-0001-9591-7724"
 
-
 highlighter: rouge
 markdown: kramdown
 
-# Tracker
+# Tracker (Google Analytics 4 measurement ID)
 analytics: G-X4V1FLGZMH
 
 #optimization -> compress.html
@@ -50,8 +71,21 @@ collections:
     output: true
     permalink: /logbook/:path/
 
-
-
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/logos/1/kavehrs.jpg
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: logbook
+    values:
+      layout: post
 
 sass:
   sass_dir: /assets/css/_sass
@@ -63,10 +97,13 @@ include:
 exclude:
   - README.md
   - LICENSE.md
-
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-email-protect
   #- jekyll-target-blank

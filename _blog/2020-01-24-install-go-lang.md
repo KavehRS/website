@@ -1,6 +1,7 @@
 ---
 layout: post
 title: نصب زبان برنامه نویسی گو
+description: "آموزش نصب زبان برنامه‌نویسی Go روی لینوکس و راه‌اندازی محیط توسعه."
 ---
 
 <div dir="ltr" style="text-align: left;" trbidi="on">

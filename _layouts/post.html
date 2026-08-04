@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-<h1 class="post-headline">{{page.title}}</h1>
-<p class="meta"><small>{{page.date | date: '%B %d, %Y'}}</small></p>
+<h1 class="post-headline">{{ page.title }}</h1>
+{% if page.date %}
+<p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{{ page.date | date: '%B %d, %Y' }}</small></time></p>
+{% endif %}
 
-{{content}}
+{{ content }}
 
 <!-- Comments only for posts -->
 {% if page.path contains '_posts' %}
-    {% if site.disqus-shortname %}
-        {% include disqus.html %}
-    {% endif %}
+  {% if site.disqus-shortname %}
+    {% include disqus.html %}
+  {% endif %}
 {% endif %}
