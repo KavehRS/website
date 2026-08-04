@@ -20,13 +20,16 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 ## Deliverables for a new report
 
 1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `peak` front matter when known
-2. `categories` from `_data/logbook_disciplines.yml` (ridge/gendarme/alpine hand-and-foot → `technical-mountaineering`; use `rock-climbing` / `wall-climbing` only for true rock/wall routes)
-
+2. `categories` from `_data/logbook_disciplines.yml`:
+   - ridge / gendarme / alpine hand-and-foot → `technical-mountaineering` (کوهنوردی فنی)
+   - `rock-climbing` / `wall-climbing` only for true rock or multipitch wall routes
 3. Triple weather for every program day (Open-Meteo, Mountain-Forecast, Meteoblue)
 4. `## چالش‌های برنامه` — include weather volatility when forecasts differ or swing noticeably
 5. Gear derived from date(s) + that forecast (and “not needed for this date”)
 6. `assets/mount/logbook/<exact-url-slug>/` for all images
-7. Multi-day narrative outline when the program is more than one day
+7. Narrative outline matching the real program length (one-day vs multi-day). Do not invent overnight stays. Kahar sample is one-day on ۱۶ مرداد ۱۴۰۵ — do not turn it into a two-day plan unless the user asks.
+8. Hub `/logbook/` stays chronological by date (not category sections). Related links: select by shared categories; reader UI = only `گزارش‌های مرتبط :` + flat list (no agent explanation, no discipline headings).
+9. Never publish agent notes (implementation reminders, «بر اساس نوع برنامه…», path references to `.cursor/`) in live page HTML.
 
 ## Scheduled weather runs
 

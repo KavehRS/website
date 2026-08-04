@@ -41,7 +41,14 @@ If a forecast change is **noticeable**, add/update `## چالش‌های برن�
 Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/logbook/<slug>/`). See `.cursor/rules/logbook-assets.mdc`.
 
 
-Logbook `categories` must use the discipline slugs in `_data/logbook_disciplines.yml` (training camp, snowfield, glacier, icefall, winter ascent / صعود زمستانه, high-altitude, technical mountaineering / کوهنوردی فنی, hiking, rock-climbing, wall-climbing). Related reports are grouped by those categories.
+## Logbook categories, hub, related links
+
+- `categories` must use discipline slugs in `_data/logbook_disciplines.yml` only (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering / کوهنوردی فنی, hiking, rock-climbing, wall-climbing).
+- Classification: ridge / gendarme / alpine hand-and-foot → `technical-mountaineering`. Use `rock-climbing` / `wall-climbing` only for true rock or multipitch wall routes.
+- Hub `/logbook/` lists reports **chronologically by date** (newest first), not by category.
+- Related reports are **selected** by shared categories, but the **public UI** is only `گزارش‌های مرتبط :` + a flat list — no «بر اساس نوع برنامه…» note and no category subheadings on the page.
+- Never put agent/implementation instructions into published page copy; keep them in `.cursor/` and `_drafts/` comments.
+- Program dates/length come from the user only (e.g. Kahar is one-day on ۱۶ مرداد ۱۴۰۵ unless the user changes it).
 
 
 ## Daily SEO agent

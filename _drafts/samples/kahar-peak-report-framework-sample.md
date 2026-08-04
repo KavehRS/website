@@ -15,19 +15,24 @@ categories: [high-altitude]
 
 
 <!--
-SAMPLE / DRAFT ONLY
-Source snapshot of the Kahar pre-report framework.
+SAMPLE / DRAFT ONLY (agent guidance — never copy this comment into published pages)
+Source snapshot of the Kahar pre-report framework (one-day program on ۱۶ مرداد ۱۴۰۵ / 2026-08-07).
 When creating a NEW climb report (even for Kahar again):
-- keep the SECTION FRAMEWORK
-- rewrite prose so it is not a duplicate of any published logbook entry
+- keep the SECTION FRAMEWORK; rewrite prose so it is not a duplicate of any published logbook entry
 - follow master checklist in .cursor/rules/logbook-reports.mdc
+- THIS Kahar program is one-day on 1405/05/16 — do not reintroduce a two-day overnight plan unless the user asks
+- program length/dates always come from the user; do not invent overnight stays
 - refresh weather (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb
 - if forecast change is noticeable: add/update ## چالش‌های برنامه with before→after details
 - gear from date + weather; categories from _data/logbook_disciplines.yml
   (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering, hiking, rock-climbing, wall-climbing)
+- ridge/gendarme/alpine hand-and-foot → technical-mountaineering; rock-climbing/wall-climbing only for true rock/wall
 - images in assets/mount/logbook/<exact-url-slug>/ matching the report URL
-- related links / hub group by categories, not template similarity
+- related links: SELECT by shared categories; public UI = «گزارش‌های مرتبط :» + flat list only
+  (no «بر اساس نوع برنامه…», no discipline headings on the page)
+- hub /logbook/ is chronological by date, not grouped by category
 - never republish this sample prose for a new report
+- never publish agent/implementation notes on live pages
 -->
 
 

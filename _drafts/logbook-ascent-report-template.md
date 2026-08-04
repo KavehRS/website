@@ -12,22 +12,29 @@ dir_attr: rtl
 ---
 
 <!--
-USAGE
+USAGE (agent-only — do not copy this comment block into published pages)
 1) Copy structure into `_logbook/YYYY-MM-DD-<peak-slug>.md`
 2) Front matter must include: lang, dir_attr, description, date, tags, image,
    categories from _data/logbook_disciplines.yml
    (training-camp | snowfield | glacier | icefall | winter-ascent | high-altitude | technical-mountaineering | hiking | rock-climbing | wall-climbing),
    and peak: { name, elevation_m, latitude, longitude, region } when known (SEO JSON-LD)
-3) Fill facts for THIS climb only
-4) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
+3) Classification: ridge/gendarme/alpine hand-and-foot → technical-mountaineering (کوهنوردی فنی).
+   rock-climbing / wall-climbing only for true rock or multipitch wall — never for alpine ridge trips.
+4) Fill facts for THIS climb only. Program length/dates = exactly what the user said (one-day vs multi-day).
+   Do not invent overnight stays. Kahar sample is one-day on ۱۶ مرداد ۱۴۰۵.
+5) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
    (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
-5) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran from creation until 22:00 the night before the climb
-6) If a forecast change is noticeable, add/update ## چالش‌های برنامه with before→after details (sources, time, impact)
-7) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
-8) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
-9) Related reports are auto-grouped by categories — do not rely on template look-alike links
-10) Before publish: compare against existing `_logbook/*` for the same peak
-11) Never paste this sample prose unchanged into a published report
+6) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran from creation until 22:00 the night before the climb
+7) If a forecast change is noticeable, add/update ## چالش‌های برنامه with before→after details (sources, time, impact).
+   Thresholds live in .cursor/rules/logbook-reports.mdc — never paste that path into the published report body.
+8) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
+9) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
+10) Related reports: SELECT by shared categories in _includes/related-links.html.
+    Public UI must be only «گزارش‌های مرتبط :» + flat list — no «بر اساس نوع برنامه…», no category headings.
+11) Hub /logbook/ is chronological by date (newest first), not grouped by category.
+12) Before publish: compare against existing `_logbook/*` for the same peak
+13) Never paste this template prose unchanged into a published report
+14) Never publish agent/implementation notes on live pages
 -->
 
 
@@ -37,7 +44,7 @@ Example front matter categories:
 categories: [high-altitude]
 # or: [training-camp, snowfield]
 # or: [winter-ascent, hiking]
-# or: [technical-mountaineering]
+# or: [technical-mountaineering]  # ridge / gendarme / alpine hand-and-foot
 # or: [rock-climbing]  # only true rock climbing
 # or: [wall-climbing]  # only true multipitch/wall
 -->
@@ -160,8 +167,6 @@ categories: [high-altitude]
 - **منبع(ها):** Open-Meteo / Mountain-Forecast / Meteoblue
 - **قبل → بعد:** {{اعداد مشخص: دما، باد/تندباد، احتمال/مقدار بارش، سطح انجماد}}
 - **اثر روی برنامه:** {{زمان‌بندی / مسیر / شب‌مانی / تجهیزات / تصمیم اجرا}}
-
-> آستانه‌های «قابل‌ملاحظه» در `.cursor/rules/logbook-reports.mdc` — در به‌روزرسانی‌های زمان‌بندی‌شده اگر تغییر مهم بود، این بخش را پر کن؛ فقط عوض کردن اعداد هوا کافی نیست.
 
 ### سایر چالش‌ها
 

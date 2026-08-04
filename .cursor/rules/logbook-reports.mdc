@@ -14,7 +14,8 @@ When the user asks for a new climb / ascent report (`گزارش صعود`), or w
 3. `categories` from `_data/logbook_disciplines.yml` only (see table below) — never vague `mountaineering` / `logbook`.
 4. Section order: peak specs → region → **weather (3 sources)** → flora/fauna → access → routes → shelter/water → season → views → **چالش‌های برنامه** → **gear (date+weather)** → team → narrative (per program day if multi-day).
 5. Images: `assets/mount/logbook/<exact-url-slug>/` matching the report URL (see `.cursor/rules/logbook-assets.mdc`).
-6. Related links: automatic by shared categories — not template look-alikes.
+6. Related links: **select** by shared categories — not template look-alikes. **Public UI** must stay a flat list only (see below). Never put agent/implementation notes in published HTML.
+7. Program length/dates: use exactly what the user states (one-day vs multi-day). Do not invent overnight stays. Example: Kahar ۱۴۰۵/۰۵/۱۶ is **one-day** — see sample; do not reintroduce a two-day Kahar plan unless the user asks.
 
 ## Categories (required)
 
@@ -31,11 +32,30 @@ When the user asks for a new climb / ascent report (`گزارش صعود`), or w
 | `rock-climbing` | سنگ‌نوردی |
 | `wall-climbing` | دیواره‌نوردی |
 
-Use every slug that truly applies. Related posts group by these.  
-`/logbook/` lists reports **chronologically by date** (newest first), not grouped by category.
+Use every slug that truly applies.
+
+### Hub `/logbook/`
+
+Lists reports **chronologically by date** (newest first). **Do not** group the hub by category.
+
+### Related links (reader UI)
+
+Implementation: `_includes/related-links.html` selects matches by shared `categories`.  
+**Visible to readers — only this shape:**
+
+- Heading: `گزارش‌های مرتبط :`
+- Flat bullet list of report titles/links
+
+**Do not show** on any public page:
+
+- Agent explanations such as «بر اساس نوع برنامه (نه شباهت ظاهر گزارش)»
+- Discipline/category subheadings (e.g. «کوهنوردی مرتفع…», «کوهنوردی فنی»)
+- Any other implementation notes meant for agents
+
+Those notes belong only in `.cursor/`, `_drafts/` HTML comments / USAGE blocks — never in live page copy.
 
 Classification notes:
-- تیغه / ژاندارم / دست‌به‌سنگ آلپی → `technical-mountaineering` (کوهنوردی فنی)
+- تیغه / ژاندارم / دست‌به‌سنگ آلپی → `technical-mountaineering` (کوهنوردی فنی) — **not** سنگ‌نوردی / دیواره‌نوردی
 - `rock-climbing` / `wall-climbing` فقط برای سنگ‌نوردی یا دیواره‌نوردی واقعی
 
 
