@@ -48,7 +48,7 @@ For each `_logbook/*.md` and key pages (`index.md`, `logbook.md`, blog index):
 - [ ] `lang` / `dir_attr` correct
 - [ ] `image` points to a real climb asset when available (not only the logo)
 - [ ] `image` alt available when using object form supported by theme/includes
-- [ ] Categories use `_data/logbook_disciplines.yml` slugs (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, hiking, rock-climbing, wall-climbing) plus place/peak tags
+- [ ] Categories use `_data/logbook_disciplines.yml` slugs (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering, hiking, rock-climbing, wall-climbing) plus place/peak tags
 - [ ] Upcoming reports still follow weather schedule + challenge-on-significant-change rules when weather text is edited
 
 - [ ] Peak front matter (`peak.name`, elevation, lat/lon) present when known → feeds JSON-LD

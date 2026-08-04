@@ -41,7 +41,7 @@ If a forecast change is **noticeable**, add/update `## چالش‌های برن�
 Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/logbook/<slug>/`). See `.cursor/rules/logbook-assets.mdc`.
 
 
-Logbook `categories` must use the discipline slugs in `_data/logbook_disciplines.yml` (training camp, snowfield, glacier, icefall, winter ascent / صعود زمستانه, high-altitude, hiking, rock-climbing, wall-climbing). Related reports are grouped by those categories.
+Logbook `categories` must use the discipline slugs in `_data/logbook_disciplines.yml` (training camp, snowfield, glacier, icefall, winter ascent / صعود زمستانه, high-altitude, technical mountaineering / کوهنوردی فنی, hiking, rock-climbing, wall-climbing). Related reports are grouped by those categories.
 
 
 ## Daily SEO agent

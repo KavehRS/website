@@ -26,11 +26,18 @@ When the user asks for a new climb / ascent report (`گزارش صعود`), or w
 | `icefall` | آبشار یخی |
 | `winter-ascent` | صعود زمستانه |
 | `high-altitude` | کوهنوردی مرتفع (بالای ۴۰۰۰ متر) |
+| `technical-mountaineering` | کوهنوردی فنی |
 | `hiking` | کوهپیمایی |
 | `rock-climbing` | سنگ‌نوردی |
 | `wall-climbing` | دیواره‌نوردی |
 
-Use every slug that truly applies. Hub + related posts group by these.
+Use every slug that truly applies. Related posts group by these.  
+`/logbook/` lists reports **chronologically by date** (newest first), not grouped by category.
+
+Classification notes:
+- تیغه / ژاندارم / دست‌به‌سنگ آلپی → `technical-mountaineering` (کوهنوردی فنی)
+- `rock-climbing` / `wall-climbing` فقط برای سنگ‌نوردی یا دیواره‌نوردی واقعی
+
 
 ## Triple weather (required)
 

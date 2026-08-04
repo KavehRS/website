@@ -1,6 +1,9 @@
 # Activity disciplines for logbook reports (categories).
-# Related reports and /logbook/ hub group by these — not by template/tag similarity.
+# Related reports group by these — not by template/tag similarity.
 # Keep this file as the single source of truth; rules/templates/samples must match it.
+#
+# Use rock-climbing / wall-climbing only for true sport/trad rock or multipitch wall routes.
+# Ridge/gendarme/hand-and-foot technical alpine trips → technical-mountaineering.
 
 order:
   - training-camp
@@ -9,6 +12,7 @@ order:
   - icefall
   - winter-ascent
   - high-altitude
+  - technical-mountaineering
   - hiking
   - rock-climbing
   - wall-climbing
@@ -20,6 +24,7 @@ labels:
   icefall: آبشار یخی
   winter-ascent: صعود زمستانه
   high-altitude: کوهنوردی مرتفع (بالای ۴۰۰۰ متر)
+  technical-mountaineering: کوهنوردی فنی
   hiking: کوهپیمایی
   rock-climbing: سنگ‌نوردی
   wall-climbing: دیواره‌نوردی

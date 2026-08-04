@@ -20,7 +20,8 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 ## Deliverables for a new report
 
 1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `peak` front matter when known
-2. `categories` from the discipline taxonomy (including `winter-ascent` when applicable)
+2. `categories` from `_data/logbook_disciplines.yml` (ridge/gendarme/alpine hand-and-foot → `technical-mountaineering`; use `rock-climbing` / `wall-climbing` only for true rock/wall routes)
+
 3. Triple weather for every program day (Open-Meteo, Mountain-Forecast, Meteoblue)
 4. `## چالش‌های برنامه` — include weather volatility when forecasts differ or swing noticeably
 5. Gear derived from date(s) + that forecast (and “not needed for this date”)
