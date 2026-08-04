@@ -7,12 +7,12 @@ description: "گزارش کمپ آموزشی تکنیک‌های پیمایش ب
 date: 2026-07-05
 categories: [training-camp, snowfield, high-altitude]
 tags: [یخنوردی, البرز, لشگرک, حصارچال, علم‌کوه, برفچال]
-image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
+image: /assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/cover.jpg
 ---
 
 **کمپ آموزشی و تمرینی تکنیک‌های پیمایش برفچال - قله لشگرک**
 
-![نمای منطقه حصارچال و مسیر برفچال](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg)
+![نمای منطقه حصارچال و مسیر برفچال](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/cover.jpg)
 *نمایی از منطقه حصارچال و مسیر برفچال*
 
 
@@ -79,7 +79,7 @@ image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 
 سایر قله‌های مشرف به این قله، بعد از علم‌کوه و به ترتیب از غرب به جنوب: (یخچال اسپیلت)، خراسان شمالی، جنوبی، (یخچال خرسان)، ستاره، منار و گردون‌کوه شمالی و لشکرک‌ها می‌باشند.
 
-![دریاچه حصارچال](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/hesarchal.jpg)
+![دریاچه حصارچال](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/hesarchal.jpg)
 
 ### معرفی قله لشگرک بزرگ
 
@@ -124,7 +124,7 @@ image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 
 خانم ابریشمی با معرفی مکان‌ها و مسیرها و قله‌هایی که در مسیر قابل مشاهده بودند پرداختند و در ضمن آنها با توجه به عوارض مسیر به خطرات و نحوه اجتناب از آنها اشاره کردند و این پیشمایش و افزایش ارتفاع در ساعت ۱۲ با رسیدن به قرارگاه پایان یافت و تا ساعت ۱۴:۳۰ برای ناهار و استراحت زمان داده شد.
 
-![دیواره تمرینی برفچال](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/hesarchal2.jpg)
+![دیواره تمرینی برفچال](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/hesarchal2.jpg)
 
 پس از انجام هماهنگی با مسئولان قرارگاه و همچنین یک وقفه کوتاه برای رفع مشکل روشنایی سالن سنگ‌نوردی قرارگاه، در ساعت ۱۵ همزمان با شروع بارش باران در خارج از قرارگاه تمرین ما داخل سالن شروع شد. ابتدا مسیری بر روی دیواره طراحی شد و توسط خانم ابریشمی طناب‌ریزی و ثابت شد، سپس ایشان به توضیح نحوه استفاده از ابزارها برای عبور از موانع پرداختند و تأکید کردند بر اینکه مسیر طراحی شده بر روی دیواره سالن سنگ بسیار مشکل‌تر از مسیر واقعی در طبیعت است (مسیر داخل سالن شیب منفی داشت، در حالی که مسیرهای داخل طبیعت که قرار بود در روز بعد صعود کنیم، شیب خفته و در جاهای محدودی نزدیک به عمود داشتند).
 
@@ -138,9 +138,9 @@ image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 
 همگی اعضای تیم در ساعت ۵ صبح بعد از تحویل اتاق‌ها در جلوی درب‌های قرارگاه حضور داشتند و پس از تحویل بارها به پاترول‌ها در ساعت ۵:۳۰ به سمت تنگ‌گلو حرکت کردیم و بلافاصله بعد از آن به سمت منطقه حصارچال حرکت کردیم. در مسیر صعود با توجه به سقوط یکی از کوهنوردان در هفته قبل در داخل رودخانه، خانم ابریشمی با توقف در محل سقوط و شرح اتفاق و موارد ایمنی که باید رعایت شود تا از تکرار اینگونه حوادث جلوگیری شود، همچنین به بررسی محل برای پیدا کردن محل احتمالی پیکر آن کوهنورد پرداختند و بعد به مسیر ادامه دادیم و ساعت ۹:۳۰ به محل برقراری کمپ در حصارچال رسیدیم.
 
-![کمپ حصارچال](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/camp-hesarchal.jpg)
+![کمپ حصارچال](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/camp-hesarchal.jpg)
 
-![کمپ حصارچال](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/camp-hesarchal2.jpg)
+![کمپ حصارچال](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/camp-hesarchal2.jpg)
 
 * کمپ در دشت حصارچال*
 
@@ -150,11 +150,11 @@ image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 
 در ابتدا پس از طی مسافت کوتاهی بر روی خاک از محل کمپ تا پای برفچال، با بررسی شیب ابتدایی تصمیم گرفته شد بدون استفاده از کرامپون و با نحوه گام‌برداری درست، مسافت کوتاهی طی شود. به دستور سرپرست تمامی افراد کرامپون‌های سایز شده از قبل را بر روی کفش خود نصب کردند. در این بخش با توجه به گرفتگی شدید عضلانی، یکی از اعضای تیم از ادامه صعود انصراف داد و به کمپ برگشت. سپس سرپرست افراد شرکت‌کننده را به ۳ کرده (گروه) سه‌نفره تقسیم کرد. نحوه تقسیم براساس توانایی افراد داخل هر کرده بود تا تعادل بین کرده‌ها برقرار باشد و هر کرده توانایی صعود مستقل را داشته باشد. هر کرده یک طول طناب، ۵ عدد اسنوتوب، ۲ عدد کوییک‌درا، و هر نفر علاوه بر کرامپون و کلنگ، از دو عدد اسلینگ (یکی برای خود حمایت و دیگری برای استفاده در کارگاه) و سه عدد کارابین پیچ استفاده می‌کرد. همچنین تیم سرپرستی نانوترکشن و تی‌بلاک برای امداد رسانی در حوادث احتمالی به همراه داشتند.
 
-![شروع تمرین صعود برفی](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/snow-climbing-start.jpg)
+![شروع تمرین صعود برفی](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/snow-climbing-start.jpg)
 
-![شروع تمرین صعود برفی](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/snow-climbing-start2.jpg)
+![شروع تمرین صعود برفی](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/snow-climbing-start2.jpg)
 
-![شروع تمرین صعود برفی](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/snow-climbing-start3.jpg)
+![شروع تمرین صعود برفی](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/snow-climbing-start3.jpg)
 
 
 1. **بخش اول صعود هم‌طنابی**  
@@ -167,14 +167,14 @@ image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 3. **صعود طناب ثابت**  
    براساس ترک که با شناسه ۲۷۴۳۷۵۰۸۰ در ویکی‌لاک بارگذاری شده است، مسافت کل مسیر حدود ۷ کیلومتر (۴.۴ مایل) با ارتفاع‌گیری مثبت حدود ۱۰۹۰ متر (۳۵۷۶ فوت) ثبت شده است. با توجه به نقطه‌گذاری‌های مسیر، پس از اتمام بخش سرطناب، ۶ طول به صورت طناب ثابت انجام شد، به این صورت که یک نفر به صورت سرطناب و در حمایت صعود کرده و کارگاه دو نقطه ایجاد می‌کند و طناب بین دو کارگاه فیکس می‌شود و فقط در ابتدای هر طناب یک ریپل ایجاد شده تا بتوان از یک طناب به طناب بعدی متصل شد.
 
-![صعود با طناب ثابت](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/snow-climbing1.jpg)
+![صعود با طناب ثابت](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/snow-climbing1.jpg)
 *صعود با طناب ثابت در شیب‌های تند برفچال*
 
-![صعود با طناب ثابت](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/snow-climbing2.jpg)
+![صعود با طناب ثابت](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/snow-climbing2.jpg)
 
 **نحوه قرارگیری یومار بر روی طناب**  
 
-![صعود با طناب ثابت](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/snow-climbing3.jpg)
+![صعود با طناب ثابت](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/snow-climbing3.jpg)
 
 شیب برفچال: چند طول از این صعود در شیب تقریبی ۸۰ درجه، در نزدیکی قله، انجام شد (براساس گزارش سایت ویکی‌لاک نقاط با ارتفاع ۱۳۲۷۴، ۱۳۳۴۱، ۱۳۵۳۶ فوت نشان دهنده افزایش شیب هستند).
 
@@ -185,9 +185,9 @@ image: /assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/cover.jpg
 
 بعد از توقفی بسیار کوتاه و با توجه به اینکه در آستانه غروب خورشید بود، تیم بلافاصله شروع به فرود از مسیر نرمال قله کردند (با توجه به شرایط برفی همچنان از کرامپون و کلنگ استفاده شد) و در ساعت ۲۰ تا ۲۰:۱۰ تمامی اعضای تیم به محل کمپ حصارچال رسیدند و برنامه صعود پایان یافت.
 
-![فرود از مسیر برفی](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/end1.jpg)
+![فرود از مسیر برفی](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/end1.jpg)
 
-![فرود از مسیر برفی](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/end2.jpg)
+![فرود از مسیر برفی](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/end2.jpg)
 
 
 ### درجه سختی
@@ -196,14 +196,14 @@ Lashgarak Peak, Snow Couloir, July ascent – TD, AI4, 80°, 16 pitches (1 roped
 
 ### کروکی مسیر صعود
 
-![نقشه مسیر](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/route-map.jpg)
+![نقشه مسیر](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/route-map.jpg)
 *کروکی مسیر صعود برفچال لشگرک بزرگ*
 
 ### ۲۴ ساعت سوم و اتمام برنامه
 
 با توجه به اینکه قرار ما با پاترول‌ها ساعت ۱۳ در تنگ‌گلو بود، بعد از صرف صبحانه و جمع‌آوری کمپ، همچنین جمع‌آوری زباله‌های منطقه توسط حمید طالعی، فرود به سمت تنگ‌گلو در ساعت ۱۰ صبح شروع شد. در میانه راه ابتدا یک توقف نیم‌ساعته در محل سقوط کوهنورد داشتیم. خانم ابریشمی و آقای هاشمی با همراهی اعضای تیم به کنار رودخانه رفته و با رعایت مسائل ایمنی شرایط را بررسی کردند و برف‌های انباشته شده را مورد ارزیابی قرار دادند. پس از حرکت، در قسمت پایینی مسیر که باید از روی برفچال روی رودخانه عبور می‌کردیم، اعضای تیم با مدیریت خانم ابریشمی اقدام به علامت‌گذاری مسیر با سنگ‌چین و پرچم قرمز کردند تا کوهنوردان بتوانند مسیر ایمن را پیدا کنند. سپس به مسیر ادامه داده و کمی پیش از ساعت ۱۲ به تنگ‌گلو رسیدیم و با حضور پاترول‌ها و در ساعت ۱۲ به سمت قرارگاه حرکت کردیم و با رسیدن به قرارگاه ونداربن، برنامه رسماً به پایان رسید.
 
-![بازگشت از برنامه](/assets/mount/logbook/2026-07-01-hesarchal-snow-navigation/return.jpg)
+![بازگشت از برنامه](/assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/return.jpg)
 *بازگشت به تنگ‌گلو و پایان برنامه*
 
 

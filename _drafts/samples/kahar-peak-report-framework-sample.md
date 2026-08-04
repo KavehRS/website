@@ -20,10 +20,11 @@ Source snapshot of the Kahar pre-report framework.
 When creating a NEW climb report (even for Kahar again):
 - keep the SECTION FRAMEWORK
 - rewrite prose so it is not a duplicate of any published logbook entry
-- refresh weather (every program day, 3 sources), gear (from date + weather), team, dates, route notes, and climb narrative from latest facts
-- set categories from _data/logbook_disciplines.yml
+- refresh weather (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb
+- gear from date + weather; categories from _data/logbook_disciplines.yml
   (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, hiking, rock-climbing, wall-climbing)
-- related links / hub group by those categories, not template similarity
+- images in assets/mount/logbook/<exact-url-slug>/ matching the report URL
+- related links / hub group by categories, not template similarity
 -->
 
 

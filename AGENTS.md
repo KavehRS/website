@@ -29,9 +29,14 @@ Every `_logbook` ascent report weather section must use **three** sources:
 2. [Mountain-Forecast](https://www.mountain-forecast.com/) (exact peak or nearest elevation-matched proxy + URL)
 3. [Meteoblue](https://www.meteoblue.com/) (peak coordinates + summit elevation + URL)
 
-See `.cursor/rules/logbook-reports.mdc` and `_drafts/logbook-ascent-report-template.md`.
+Refresh schedule (Asia/Tehran): **04:00, 10:00, 16:00, 22:00** from report creation until **22:00 the night before** the program start. See `.cursor/rules/logbook-weather-schedule.mdc`.
 
-Gear lists in climb reports must be derived from the climb date(s) and that triple weather forecast — not a generic seasonal checklist. Refresh gear whenever weather is refreshed.
+Gear lists must be derived from the climb date(s) and that triple weather forecast — refresh gear whenever weather is refreshed.
+
+## Climb-report images (required)
+
+Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/logbook/<slug>/`). See `.cursor/rules/logbook-assets.mdc`.
+
 
 Logbook `categories` must use the discipline slugs in `_data/logbook_disciplines.yml` (training camp, snowfield, glacier, icefall, winter ascent / صعود زمستانه, high-altitude, hiking, rock-climbing, wall-climbing). Related reports are grouped by those categories.
 

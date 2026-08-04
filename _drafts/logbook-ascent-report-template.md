@@ -21,11 +21,14 @@ USAGE
 3) Fill facts for THIS climb only
 4) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
    (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
-5) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
-6) Related reports are auto-grouped by categories — do not rely on template look-alike links
-7) Before publish: compare against existing `_logbook/*` for the same peak
-8) Never paste this sample prose unchanged into a published report
+5) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran from creation until 22:00 the night before the climb
+6) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
+7) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
+8) Related reports are auto-grouped by categories — do not rely on template look-alike links
+9) Before publish: compare against existing `_logbook/*` for the same peak
+10) Never paste this sample prose unchanged into a published report
 -->
+
 
 <!--
 Example front matter categories:

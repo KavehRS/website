@@ -1,0 +1,46 @@
+---
+description: Scheduled weather refresh for upcoming climb reports until 22:00 night before ascent
+alwaysApply: true
+---
+
+# Logbook weather update schedule
+
+For every published `_logbook` ascent report whose program has not yet started:
+
+## Window
+
+- **Start:** from the moment the report is created / first published
+- **End:** **22:00 Asia/Tehran on the calendar day before the program start date**  
+  (for multi-day programs, use the first program day; if only a summit day is known, use that)
+- After that cutoff: do **not** auto-refresh weather unless the user explicitly asks
+
+## Cadence (Asia/Tehran)
+
+While inside the window, refresh the weather block at these local times every day:
+
+| Local time | Purpose |
+|------------|---------|
+| **04:00** | Overnight model update |
+| **10:00** | Morning check |
+| **16:00** | Afternoon check |
+| **22:00** | Evening check (also the final allowed slot on the night before the climb) |
+
+Cron equivalents in UTC (for Cursor Automations / GitHub Actions):
+
+```cron
+30 0,6,12,18 * * *
+```
+
+(04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran = 00:30 / 06:30 / 12:30 / 18:30 UTC)
+
+## What to update each run
+
+1. Find `_logbook/*.md` reports still inside the update window (program start in the future, and now ≤ 22:00 Tehran on the day before).
+2. For each, refresh the **triple-source** weather block for **every program day** (Open-Meteo + Mountain-Forecast + Meteoblue) per `.cursor/rules/logbook-reports.mdc`.
+3. Stamp the fetch time (Jalali + Gregorian + clock time Asia/Tehran).
+4. Rewrite the **gear** section if the forecast change materially affects packing.
+5. Commit / PR / merge only when numbers or recommendations actually changed; skip no-op runs.
+
+## Automation
+
+Use the prompt in `.cursor/automations/logbook-weather-update-prompt.md` on a scheduled Automation with the cron above, repo `KavehRS/website`, branch `master`.
