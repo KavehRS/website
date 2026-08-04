@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "قله خوراسان کوه  "
+description: "گزارش صعود به قله خوراسان‌کوه فشم با باشگاه شقایق."
 date: 2024-01-08
 image: \assets\mount\logbook\2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1 (3).jpg
 ---

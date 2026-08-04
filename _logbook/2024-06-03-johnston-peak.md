@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "گزارش برنامه صعود به قله جانستون"
+description: "گزارش برنامه صعود به قله جانستون."
 date: 2024-06-03
 image: /assets/mount/logbook/berimkouh/johnston-1.jpg
 ---

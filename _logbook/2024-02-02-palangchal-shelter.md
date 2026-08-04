@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "گزارش برنامه پیمایش مسیر پناهگاه پلنگچال"
+description: "گزارش پیمایش مسیر پناهگاه پلنگ‌چال."
 date: 2024-02-02
 image: /assets/mount/logbook/berimkouh/palangchal-1.jpg
 ---

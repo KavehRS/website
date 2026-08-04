@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "گزارش برنامه صعود خط الارس دارآباد از روی تیغه‌ها"
+description: "گزارش صعود خط‌الراس دارآباد از روی تیغه‌ها."
 date: 2024-07-05
 image: /assets/mount/logbook/berimkouh/darabad-ridge-1.jpg
 ---

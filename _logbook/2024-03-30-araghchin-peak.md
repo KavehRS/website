@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "گزارش برنامه قله عرقچین"
+description: "گزارش برنامه صعود به قله عرقچین."
 date: 2024-03-30
 image: /assets/mount/logbook/berimkouh/araghchin-1.jpg
 ---

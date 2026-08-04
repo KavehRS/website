@@ -1,5 +1,6 @@
 ---
 title: منابع آموزشی مقدماتی هلال احمر (1400)
+description: منابع و جزوه‌های آموزشی مقدماتی هلال احمر شامل کمک‌های اولیه و آمادگی در مخاطرات.
 layout: about
 permalink: /mount/rcs/
 published: true

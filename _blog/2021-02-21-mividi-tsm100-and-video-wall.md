@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  راهنمای کار با ابزارهای Mividi TSM100 و Video wall
+description: "راهنمای کار با ابزارهای Mividi TSM100 و Video Wall برای مانیتورینگ تصویر."
 pdate: 1399-12-4
 author: KavehRS
 tags: Mividi Tsm100 videowall

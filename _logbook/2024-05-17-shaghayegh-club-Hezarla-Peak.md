@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "صعود به قله هزارلا "
+description: "گزارش صعود به قله هزارلا با باشگاه شقایق."
 date: 2024-05-17
 image: /assets/mount/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/7.jpg
 ---

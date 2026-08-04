@@ -1,8 +1,10 @@
 ---
-title:
+title: پروژه‌ها
+description: نمونه‌کارها و پروژه‌های کاوه‌ رضایی‌شیراز.
 layout: default
 permalink: /projects/
 published: true
+sitemap: false
 ---
 
 
