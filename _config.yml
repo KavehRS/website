@@ -8,6 +8,9 @@ description: >-
 lang: fa-IR
 locale: fa_IR
 
+# Allow publishing dated logbook/blog entries ahead of the climb date
+future: true
+
 baseurl: ""
 url: "https://www.kavehrs.com"
 email: me@kavehrs.com
