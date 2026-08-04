@@ -19,8 +19,9 @@ Source snapshot of the Kahar pre-report framework.
 When creating a NEW climb report (even for Kahar again):
 - keep the SECTION FRAMEWORK
 - rewrite prose so it is not a duplicate of any published logbook entry
-- refresh weather, team, dates, route notes, and climb narrative from latest facts
+- refresh weather, gear (from date + weather), team, dates, route notes, and climb narrative from latest facts
 -->
+
 
 **گزارش برنامه صعود به قله کهار**
 
