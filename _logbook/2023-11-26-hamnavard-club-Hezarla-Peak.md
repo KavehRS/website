@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "صعود به قله هزارلا "
+title: "صعود به قله هزارلا"
+lang: fa-IR
+dir_attr: rtl
 description: "گزارش صعود به قله هزارلا با باشگاه همنورد."
 date: 2023-11-26
 image: /assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg
@@ -39,9 +41,9 @@ related:
 
 
 
-![قله هزارلا  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/1.jpg' | relative_url }}) <br>
-![قله هزارلا  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/2.jpg' | relative_url }}) <br>
-![قله هزارلا  - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg' | relative_url }}) <br>
+![قله هزارلا  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/1.jpg) <br>
+![قله هزارلا  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/2.jpg) <br>
+![قله هزارلا  - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg) <br>
 
 
 

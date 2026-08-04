@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "گزارش برنامه صعود به قله جانستون"
+title: "گزارش برنامه صعود به قله جانستون"
+lang: fa-IR
+dir_attr: rtl
 description: "گزارش برنامه صعود به قله جانستون."
 date: 2024-06-03
 image: /assets/mount/logbook/berimkouh/johnston-1.jpg
@@ -32,12 +34,12 @@ image: /assets/mount/logbook/berimkouh/johnston-1.jpg
 
 ساعت ۵:۱۰ از میدان نوبنیاد به سمت روستای آبنیک حرکت کردیم و پس از رسیدن به روستا به منظور حفظ امنیت خودروها در بافت اصلی روستا ماشین‌ها را پارک کردیم و از خیابان جانستان، مسیر صعود را آغاز کردیم، در طول مسیر منتهی به غار بیوک آقا دو بار از رودخانه رد شدیم، در کنار غار و کنار آب برای صرف صبحانه استراحت کردیم و سپس مسیر را به سمت قله از سر گرفتیم، پیش از دست به سنگ نخست، دو نفر از اعضای تیم بخاطر گرفتگی شدید عضلانی توان همراهی نداشتند در همان نقطه تا بازگشت تیم توقف کردند تیم صعود کننده، پس از عبور از دست به سنگ‌های سمت چپ مسیر، در ساعت ۱۴:۰۰ به قله رسیدن و پس از نیم ساعت توقف و صرف ناهار شروع به فرود کردیم، در ساعت ۱۶:۰۰ به محل توقف دو نفر باقی مانده و در ساعت ۲۱ به روستای آبنیک رسیدیم و برنامه پایان یافت.[reference:4]
 
-![قله جانستون - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/berimkouh/johnston-1.jpg' | relative_url }})
+![قله جانستون - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/johnston-1.jpg)
 
-![قله جانستون - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/berimkouh/johnston-2.jpg' | relative_url }})
+![قله جانستون - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/johnston-2.jpg)
 
-![قله جانستون - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/berimkouh/johnston-3.jpg' | relative_url }})
+![قله جانستون - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/johnston-3.jpg)
 
-![قله جانستون - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/berimkouh/johnston-4.jpg' | relative_url }})
+![قله جانستون - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/johnston-4.jpg)
 
-![قله جانستون - سرپرست برنامه کاوه رضائی شیراز]({{ '/assets/mount/logbook/berimkouh/johnston-5.jpg' | relative_url }})
+![قله جانستون - سرپرست برنامه کاوه رضائی شیراز](/assets/mount/logbook/berimkouh/johnston-5.jpg)

@@ -3,6 +3,8 @@ layout: default
 title: گزارش صعود
 description: گزارش برنامه‌های کوهنوردی و صعودهای کاوه‌ رضایی‌شیراز، شامل قله‌ها، تیغه‌ها و کمپ‌های آموزشی.
 permalink: /logbook/
+lang: fa-IR
+dir_attr: rtl
 ---
 
 <h1>گزارش صعود</h1>

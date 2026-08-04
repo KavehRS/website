@@ -3,6 +3,8 @@ layout: default
 title: یادداشت‌ها
 description: یادداشت‌ها و آموزش‌های فنی کاوه‌ رضایی‌شیراز درباره برنامه‌نویسی، مانیتورینگ و ابزارهای نرم‌افزاری.
 permalink: /blog/
+lang: fa-IR
+dir_attr: rtl
 ---
 
 <h1>یادداشت‌ها</h1>
