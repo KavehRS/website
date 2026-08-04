@@ -3,7 +3,7 @@ layout: post
 title: "صعود به قله هزارلا"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود به قله هزارلا با باشگاه شقایق."
+description: "گزارش صعود به قله هزارلا با باشگاه شقایق؛ مسیر، شرایط برنامه و تصاویر قله."
 date: 2024-05-17
 image: /assets/mount/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/7.jpg
 related:

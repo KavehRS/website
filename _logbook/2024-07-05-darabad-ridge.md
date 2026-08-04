@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "گزارش برنامه صعود خط الارس دارآباد از روی تیغه‌ها"
+title: "صعود خط‌الراس دارآباد از روی تیغه‌ها"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود خط‌الراس دارآباد از روی تیغه‌ها."
+description: "گزارش صعود خط‌الراس دارآباد از مسیر تیغه‌ها؛ مشخصات برنامه و تصاویر مسیر."
 date: 2024-07-05
 image: /assets/mount/logbook/berimkouh/darabad-ridge-1.jpg
 ---

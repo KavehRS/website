@@ -3,7 +3,7 @@ layout: post
 title: "گزارش برنامه قله عرقچین"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش برنامه صعود به قله عرقچین."
+description: "گزارش برنامه صعود به قله عرقچین؛ جزئیات مسیر، زمان‌بندی و تصاویر تیم."
 date: 2024-03-30
 image: /assets/mount/logbook/berimkouh/araghchin-1.jpg
 ---

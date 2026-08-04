@@ -3,7 +3,7 @@ layout: post
 title: "راه‌های ساده برای داشتن کد تمیز"
 lang: fa-IR
 dir_attr: rtl
-description: "راه‌های ساده برای نوشتن کد تمیز، خوانا و قابل نگهداری."
+description: "راه‌های ساده برای نوشتن کد تمیز، خوانا و قابل نگهداری در پروژه‌های نرم‌افزاری."
 related:
   - title: "مفاهیم اولیه برنامه‌نویسی — یادداشت نخست"
     url: /blog/2020-8-31-basic-overview-of-programming-part1/

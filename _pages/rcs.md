@@ -4,8 +4,12 @@ description: منابع و جزوه‌های آموزشی مقدماتی هلا�
 layout: about
 permalink: /mount/rcs/
 published: true
+lang: fa-IR
+dir_attr: rtl
 ---
-&#x202b; [منابع آموزشی مقدماتی هلال احمر (1400)](/mount/rcs/)<br/><br/><br/><br/>
+# منابع آموزشی مقدماتی هلال احمر (1400)
+
+
 
 
 

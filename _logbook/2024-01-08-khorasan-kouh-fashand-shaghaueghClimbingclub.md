@@ -3,7 +3,7 @@ layout: post
 title: "قله خوراسان کوه"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود به قله خوراسان‌کوه فشم با باشگاه شقایق."
+description: "گزارش صعود به قله خوراسان‌کوه فشم با باشگاه شقایق؛ مسیر فشند، شرایط برنامه و تصاویر."
 date: 2024-01-08
 image: /assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1.jpg
 ---
