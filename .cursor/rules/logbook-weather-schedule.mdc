@@ -1,11 +1,11 @@
 ---
-description: Scheduled weather refresh for upcoming climb reports until 22:00 night before ascent
+description: Scheduled weather refresh for active climb reports until 22:00 night before ascent
 alwaysApply: true
 ---
 
 # Logbook weather update schedule
 
-For every published `_logbook` ascent report whose program has not yet started:
+For every published `_logbook` ascent report that is still **active** (`report_status: active` or unset) and whose program has not yet started:
 
 ## Window
 
@@ -13,6 +13,7 @@ For every published `_logbook` ascent report whose program has not yet started:
 - **End:** **22:00 Asia/Tehran on the calendar day before the program start date**  
   (for multi-day programs, use the first program day; if only a summit day is known, use that)
 - After that cutoff: do **not** auto-refresh weather unless the user explicitly asks
+- If `report_status: completed`: never auto-refresh weather
 
 ## Cadence (Asia/Tehran)
 
@@ -35,21 +36,27 @@ Cron equivalents in UTC (for Cursor Automations / GitHub Actions):
 
 ## What to update each run
 
-1. Find `_logbook/*.md` reports still inside the update window (program start in the future, and now ≤ 22:00 Tehran on the day before).
-2. For each, refresh the **triple-source** weather block for **every program day** (Open-Meteo + Mountain-Forecast + Meteoblue) per `.cursor/rules/logbook-reports.mdc`.
+1. Find `_logbook/*.md` reports with `report_status: active` (or no status) still inside the weather window.
+2. For each program day, refresh **only accurate sources** per `.cursor/rules/logbook-reports.mdc`:
+   - Open-Meteo when coordinates apply
+   - Mountain-Forecast **only** if the peak has its own page (no distant proxy)
+   - Meteoblue when lat/lon + elevation are reliable for that peak
+   - **Omit** any source without accurate peak/region data; do not keep empty subsections
 3. Stamp the fetch time (Jalali + Gregorian + clock time Asia/Tehran).
 4. Rewrite the **gear** section if the forecast change materially affects packing.
-5. If the change is **noticeable** (thresholds in `.cursor/rules/logbook-reports.mdc`), add or update a detailed item under `## چالش‌های برنامه` (before→after, sources, time, impact). Do not leave significant swings only in the weather bullets.
+5. If the change is **noticeable** (thresholds in `.cursor/rules/logbook-reports.mdc`), add or update a detailed item under `## چالش‌های برنامه` (before→after, sources, time, impact). Compare only among sources actually used.
 6. Commit / PR / merge only when numbers, gear, or challenges actually changed; skip no-op runs.
 
 
-## Automation (required — agent runs this, not the user)
+## Automation (required when billing enabled — paused until recharge)
 
 The weather-refresh agent must run these updates **automatically** inside the window. Do not wait for the user to ask.
 
-Enable both (belt and suspenders):
+**Billing pause (site owner):** automation is **configured but paused** until the Cursor account is recharged and schedulers are enabled. Rules still apply on manual agent runs. **After recharge: mandatory always-on.**
+
+Enable both (belt and suspenders) once billing allows:
 
 1. **Cursor Automation** — paste `.cursor/automations/logbook-weather-update-prompt.md` with cron `30 0,6,12,18 * * *` (UTC), repo `KavehRS/website`, branch `master`
 2. **GitHub Action fallback** — `.github/workflows/logbook-weather-agent.yml` (same cron; needs repo secret `CURSOR_API_KEY`)
 
-Each run: find in-window reports → refresh triple weather → gear/challenges if needed → PR/merge only on real diffs.
+Each run: find active in-window reports → refresh applicable accurate sources → gear/challenges if needed → PR/merge only on real diffs.

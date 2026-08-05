@@ -1,6 +1,6 @@
 ---
 name: logbook-ascent-report
-description: On-demand agent skill to create or update Persian گزارش صعود with full site framework, triple weather, challenges, gear, categories, Jalali UI dates, and URL-matched assets
+description: Agent skill for Persian گزارش صعود — lifecycle-active reports, accurate weather sources only, gear, challenges, Jalali UI, URL-matched assets
 ---
 
 # Logbook ascent report skill
@@ -22,28 +22,36 @@ Agent rule: `.cursor/rules/logbook-ascent-agent.mdc`
 
 Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure — never republish its prose.
 
+## Lifecycle (agent stays active)
+
+- **From:** report file created in `_logbook/`
+- **Until:** `report_status: completed` or user confirms post-climb report is finished
+- **While active:** all logbook rules apply (including post-climb narrative/photos when user provides them)
+- **New reports:** `report_status: active` in front matter
+- **Weather sub-window:** 04/10/16/22 Asia/Tehran until 22:00 night before climb (active reports only)
+
 ## Deliverables for a new report
 
-1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `peak` front matter when known
+1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `report_status: active` + `peak` front matter when known
 2. `categories` from `_data/logbook_disciplines.yml`:
    - ridge / gendarme / alpine hand-and-foot → `technical-mountaineering` (کوهنوردی فنی)
    - `rock-climbing` / `wall-climbing` only for true rock or multipitch wall routes
-3. Triple weather for every program day (Open-Meteo, Mountain-Forecast, Meteoblue)
-4. `## چالش‌های برنامه` — include weather volatility when forecasts differ or swing noticeably
-5. Gear derived from date(s) + that forecast (and “not needed for this date”)
+3. Weather for every program day from **accurate sources only** (Open-Meteo, Mountain-Forecast if peak has its own page, Meteoblue when reliable) — **omit** distant proxies / missing data
+4. `## چالش‌های برنامه` — noticeable forecast change or disagreement among **sources actually used**
+5. Gear derived from date(s) + applicable forecast(s) (and “not needed for this date”)
 6. `assets/mount/logbook/<exact-url-slug>/` for all images
-7. Narrative outline matching the real program length (one-day vs multi-day). Do not invent overnight stays. Kahar sample is one-day on ۱۶ مرداد ۱۴۰۵ — do not turn it into a two-day plan unless the user asks.
-8. Hub `/logbook/` stays chronological by date (not category sections). Related links: select by shared categories; reader UI = only `گزارش‌های مرتبط :` + flat list (no agent explanation, no discipline headings).
-9. Never publish agent notes (implementation reminders, «بر اساس نوع برنامه…», path references to `.cursor/`) in live page HTML.
-10. Reader-facing UI dates are Jalali (`_includes/jalali-date.html`); body program dates Jalali-first (Gregorian optional in parentheses for weather stamps).
+7. Narrative outline → post-climb completion when user provides details. Program length from user only (Kahar = one-day ۱۶ مرداد ۱۴۰۵ unless changed).
+8. Hub `/logbook/` chronological; related UI = only `گزارش‌های مرتبط :` + flat list
+9. Never publish agent notes in live HTML
+10. Reader-facing UI dates Jalali (`_includes/jalali-date.html`)
 
-## Scheduled weather runs (automatic — agent duty)
+## Scheduled weather runs (automatic when billing enabled)
 
-At 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before start, the weather agent runs **without being asked**:
+At 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran for **active** reports until 22:00 night before start:
 
-- refresh weather → gear if needed → **challenges if change is noticeable** → PR only on real diffs
-- Automation prompt: `.cursor/automations/logbook-weather-update-prompt.md`
-- GitHub Action fallback: `.github/workflows/logbook-weather-agent.yml` (secret `CURSOR_API_KEY`)
+- refresh **applicable accurate** sources → gear if needed → **challenges if noticeable** → PR only on real diffs
+- **Paused until owner recharges Cursor account** and enables schedulers — then **mandatory always-on**
+- `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 
 ## Uniqueness
 

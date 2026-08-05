@@ -14,6 +14,14 @@ When the user asks to create, update, complete, or fix a climb / ascent report (
 3. Use template `_drafts/logbook-ascent-report-template.md` and structural sample `_drafts/samples/kahar-peak-report-framework-sample.md` (structure only)
 4. Automation prompt (for Cursor Automations dashboard): `.cursor/automations/logbook-ascent-report-prompt.md`
 
+## Lifecycle (stay active until finished)
+
+- **Active from:** first `_logbook` report file is created
+- **Active until:** `report_status: completed` **or** user confirms done + post-climb narrative filled
+- **While active:** follow all logbook rules (categories, assets, weather in window, gear, challenges, narrative, UI, uniqueness)
+- **New reports:** set `report_status: active` in front matter
+- **When done:** set `report_status: completed`; stop scheduled weather
+
 ## Hard product rules from the site owner
 
 - Program length and dates = exactly what the user said (one-day vs multi-day). Do not invent overnight stays.
@@ -23,6 +31,7 @@ When the user asks to create, update, complete, or fix a climb / ascent report (
 - تیغه / ژاندارم / آلپی دست‌به‌سنگ → `technical-mountaineering` (کوهنوردی فنی); سنگ‌نوردی/دیواره‌نوردی only for true rock/wall.
 - Reader-facing UI dates Jalali (`_includes/jalali-date.html`).
 - Never publish agent/implementation notes into live pages.
-- Triple weather + date-based gear + challenges on noticeable forecast change.
-- **Weather auto-refresh is mandatory:** the scheduled weather agent (`.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`) must update in-window reports at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before the climb — without waiting for the user.
+- **Weather sources:** use only Open-Meteo / Mountain-Forecast / Meteoblue when accurate for **this peak and region**; **omit** distant proxies or missing data — do not fake a third source.
+- Date-based gear + challenges on noticeable forecast change (among sources actually used).
+- **Weather auto-refresh:** mandatory at 04/10/16/22 Asia/Tehran until night-before 22:00 for active reports — **automatic once billing/schedulers enabled** (paused until owner recharges Cursor account; see `AGENTS.md`).
 - Ship via `cursor/*-33ce` PR after `bundle exec jekyll build`.

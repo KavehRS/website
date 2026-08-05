@@ -23,19 +23,33 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 
 ## Climb-report weather (required)
 
-Every `_logbook` ascent report weather section must use **three** sources:
+Every `_logbook` ascent report weather section uses **only accurate sources** for that peak and region:
 
-1. Open-Meteo (peak / trailhead point forecast)
-2. [Mountain-Forecast](https://www.mountain-forecast.com/) (exact peak or nearest elevation-matched proxy + URL)
-3. [Meteoblue](https://www.meteoblue.com/) (peak coordinates + summit elevation + URL)
+1. **Open-Meteo** — peak coordinates + elevation (+ trailhead when useful); usually always
+2. **[Mountain-Forecast](https://www.mountain-forecast.com/)** — **only** when the peak has its own forecast page (no distant proxy)
+3. **[Meteoblue](https://www.meteoblue.com/)** — peak coordinates + summit elevation when reliable
 
-Refresh schedule (Asia/Tehran): **04:00, 10:00, 16:00, 22:00** from report creation until **22:00 the night before** the program start. See `.cursor/rules/logbook-weather-schedule.mdc`.
+**Omit** any source without accurate peak/region data. Number only sources actually used. Gear and challenges derive from those sources only.
 
-**Automatic:** the weather-refresh agent runs this cadence itself (Cursor Automation + GitHub Action `.github/workflows/logbook-weather-agent.yml`). Do not wait for the user to request weather updates.
-
-Gear lists must be derived from the climb date(s) and that triple weather forecast — refresh gear whenever weather is refreshed.
+Refresh schedule (Asia/Tehran): **04:00, 10:00, 16:00, 22:00** for `report_status: active` reports from creation until **22:00 the night before** program start. See `.cursor/rules/logbook-weather-schedule.mdc`.
 
 If a forecast change is **noticeable**, add/update `## چالش‌های برنامه` with before→after details (sources, time, impact) — see thresholds in `.cursor/rules/logbook-reports.mdc`.
+
+## Report lifecycle
+
+- Agent stays **active** from report creation until `report_status: completed` or user confirms the post-climb report is finished.
+- New reports: `report_status: active`. When done: `report_status: completed`.
+
+## Automation billing (owner)
+
+Scheduled agents (weather 4×/day, SEO daily) are **configured but paused** until the site owner recharges their Cursor account and enables:
+
+- Cursor Automation(s) from `.cursor/automations/`, **and/or**
+- GitHub secret `CURSOR_API_KEY` for `.github/workflows/logbook-weather-agent.yml`
+
+Until then: all rules still apply when the user or a manual agent run triggers work.
+
+**After recharge: enable schedulers — mandatory always-on; do not wait for user prompts for weather refresh.**
 
 
 ## Climb-report images (required)
@@ -64,9 +78,9 @@ When asked to create or update a `گزارش صعود` / climb report:
 4. For a Cursor Automation, paste `.cursor/automations/logbook-ascent-report-prompt.md` at https://cursor.com/automations/new
 5. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when safe.
 
-Related scheduled agents (must run automatically):
+Related scheduled agents (mandatory after billing recharge; paused until then):
 
-- Weather refresh (4× daily Tehran until night before climb): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
+- Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 
 

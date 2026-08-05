@@ -10,9 +10,9 @@ When the user asks for a new climb / ascent report (`گزارش صعود`), or w
 ## Create / publish
 
 1. Framework: `_drafts/logbook-ascent-report-template.md` + structural sample `_drafts/samples/kahar-peak-report-framework-sample.md` (never republish sample prose).
-2. Live file: `_logbook/YYYY-MM-DD-<peak-slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, `tags`, and when known `peak: { name, elevation_m, latitude, longitude, region }`.
+2. Live file: `_logbook/YYYY-MM-DD-<peak-slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, `tags`, `report_status: active` (until finished), and when known `peak: { name, elevation_m, latitude, longitude, region }`.
 3. `categories` from `_data/logbook_disciplines.yml` only (see table below) — never vague `mountaineering` / `logbook`.
-4. Section order: peak specs → region → **weather (3 sources)** → flora/fauna → access → routes → shelter/water → season → views → **چالش‌های برنامه** → **gear (date+weather)** → team → narrative (per program day if multi-day).
+4. Section order: peak specs → region → **weather (applicable accurate sources)** → flora/fauna → access → routes → shelter/water → season → views → **چالش‌های برنامه** → **gear (date+weather)** → team → narrative (per program day if multi-day).
 5. Images: `assets/mount/logbook/<exact-url-slug>/` matching the report URL (see `.cursor/rules/logbook-assets.mdc`).
 6. Related links: **select** by shared categories — not template look-alikes. **Public UI** must stay a flat list only (see below). Never put agent/implementation notes in published HTML.
 7. Program length/dates: use exactly what the user states (one-day vs multi-day). Do not invent overnight stays. Example: Kahar ۱۴۰۵/۰۵/۱۶ is **one-day** — see sample; do not reintroduce a two-day Kahar plan unless the user asks.
@@ -60,28 +60,51 @@ Classification notes:
 - `rock-climbing` / `wall-climbing` فقط برای سنگ‌نوردی یا دیواره‌نوردی واقعی
 
 
-## Triple weather (required)
+## Report lifecycle (agent stays active)
 
-For **every program day**, label three subsections:
+From the moment a report is created until it is **finished**:
 
-1. **Open-Meteo** — peak (+ trailhead when useful)
-2. **Mountain-Forecast** — https://www.mountain-forecast.com/ (exact peak or nearest elevation-matched proxy + distance + URL)
-3. **Meteoblue** — https://www.meteoblue.com/ (peak lat/lon + summit elevation + URL)
+- **Start:** first publish of `_logbook/YYYY-MM-DD-<slug>.md`
+- **End:** `report_status: completed` in front matter **or** user explicitly confirms the report is done and post-climb narrative is filled
+- **While active:** the logbook ascent-report agent owns all rules in this file (categories, assets, weather in window, gear, challenges, narrative completion, uniqueness, UI rules)
+- **Default:** new reports use `report_status: active`
+- **After completed:** no scheduled weather; only edit if the user asks
 
-Stamp Jalali + Gregorian (+ clock on scheduled refreshes). Metric units. Short operational summary when sources disagree.
+Weather auto-refresh is a **sub-routine** while the report is active and still inside the pre-climb weather window (below).
 
-## Weather refresh schedule (required — automatic)
+
+## Weather sources (only accurate — omit the rest)
+
+For **every program day**, use only sources with **accurate** data for **this peak and region**:
+
+| Source | Use when |
+|--------|----------|
+| **Open-Meteo** | Peak coordinates + elevation (and trailhead when useful) — usually always |
+| **Mountain-Forecast** | **Only** when the peak has its own forecast page on mountain-forecast.com (same peak / clearly representative massif) |
+| **Meteoblue** | Peak lat/lon + summit elevation when the point forecast is reliable for that location |
+
+**Do not use** a source — and **do not publish a subsection** for it — when:
+
+- the peak is missing and only a **distant or weak proxy** exists (e.g. another summit tens of km away)
+- the site has no meaningful forecast for that peak/region/elevation band
+- data would mislead packing or go/no-go decisions
+
+Number only the sources actually used (۱، ۲، …). If one or two qualify, gear and challenges use **those only**. Cross-source disagreement challenges apply **only among sources actually used**.
+
+Stamp Jalali + Gregorian (+ clock on scheduled refreshes). Metric units. Short operational summary when multiple accurate sources disagree.
+
+## Weather refresh schedule (required — automatic when billing enabled)
 
 Per `.cursor/rules/logbook-weather-schedule.mdc`:
 
-- From report creation until **22:00 Asia/Tehran the night before** program start
+- For reports with `report_status: active`, from creation until **22:00 Asia/Tehran the night before** program start
 - Refresh at **04:00 / 10:00 / 16:00 / 22:00** Asia/Tehran
-- Each refresh: update weather → maybe gear → maybe challenges (below)
-- The weather agent runs this **automatically** (Cursor Automation + `.github/workflows/logbook-weather-agent.yml`) — do not wait for the user to ask
+- Each refresh: update applicable weather sources → maybe gear → maybe challenges (below)
+- The weather agent runs this **automatically** once Cursor billing / Automations are enabled — do not wait for the user to ask (see automation pause note in `AGENTS.md`)
 
 ## Significant forecast change → program challenge (required)
 
-If a refresh shows a **noticeable** change vs the previous published forecast (or a sharp disagreement between the three sources), add/update an entry under `## چالش‌های برنامه` with details — do not only change the weather numbers silently.
+If a refresh shows a **noticeable** change vs the previous published forecast (or a sharp disagreement between the **accurate sources in use**), add/update an entry under `## چالش‌های برنامه` with details — do not only change the weather numbers silently.
 
 Treat as noticeable when any of these hold (or equally serious judgment calls):
 
@@ -90,7 +113,7 @@ Treat as noticeable when any of these hold (or equally serious judgment calls):
 - sustained wind or gusts change by about **≥ ۱۵ km/h**
 - summit temperature band shifts by about **≥ ۵°C**
 - freezing level moves close to / away from the summit in a way that changes ice tools need
-- sources strongly diverge (e.g. one wet & cold, others dry) in a way that affects go/no-go or packing
+- sources strongly diverge (among **accurate sources actually used**) in a way that affects go/no-go or packing
 
 Each challenge entry must include:
 
@@ -103,7 +126,7 @@ Also list non-weather challenges (altitude, wind-famous summit, crowded shelter,
 
 ## Weather-based gear (required)
 
-`تجهیزات مورد نیاز` must be derived from **this** climb date(s) + latest triple forecast — not a generic seasonal list. Include what is **not** needed for this date. Refresh gear whenever weather is refreshed.
+`تجهیزات مورد نیاز` must be derived from **this** climb date(s) + latest **applicable accurate** forecast(s) — not a generic seasonal list. Include what is **not** needed for this date. Refresh gear whenever weather is refreshed.
 
 ## Uniqueness
 

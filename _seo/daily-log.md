@@ -26,7 +26,8 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 
 - Added on-demand logbook ascent-report agent: `.cursor/automations/logbook-ascent-report-prompt.md`, `.cursor/rules/logbook-ascent-agent.mdc`, AGENTS.md + skill entry points.
 
-## 2026-08-05 — Automatic weather refresh
+## 2026-08-05 — Accurate sources + lifecycle + billing pause
 
-- Weather agent must auto-run at 04/10/16/22 Asia/Tehran until night-before 22:00: Automation prompt + `.github/workflows/logbook-weather-agent.yml`.
-- Kahar pre-report weather refreshed (۱۴ مرداد / ۵ اوت ~۱۱:۴۵) from Open-Meteo + Mountain-Forecast + Meteoblue.
+- Weather: use only accurate peak/region sources; omit distant proxies (e.g. Kahar drops Mountain-Forecast).
+- Report lifecycle: `report_status: active` until post-climb completion; agent stays active entire time.
+- Automation configured but paused until Cursor account recharge; mandatory always-on after.

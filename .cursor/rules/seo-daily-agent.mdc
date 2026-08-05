@@ -32,7 +32,7 @@ Goal: make https://www.kavehrs.com the leading Persian source for mountaineering
 ## Climb-report content note
 
 When touching `_logbook` content while doing SEO work:
-- keep the required triple-source weather block (Open-Meteo + Mountain-Forecast + Meteoblue)
+- keep the required weather block from **accurate sources only** (Open-Meteo; Mountain-Forecast only if peak has its own page; Meteoblue when reliable — omit distant proxies)
 - keep gear aligned to date/forecast
 - keep `categories` on the discipline taxonomy in `_data/logbook_disciplines.yml` (including `technical-mountaineering` / کوهنوردی فنی and `winter-ascent` / صعود زمستانه)
 - ridge/gendarme/alpine hand-and-foot → `technical-mountaineering`; rock/wall only for true rock/wall
