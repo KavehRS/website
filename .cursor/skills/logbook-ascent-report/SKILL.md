@@ -1,19 +1,24 @@
 ---
 name: logbook-ascent-report
-description: Create or update Persian mountaineering ascent reports with full site framework, triple weather, schedule, challenges, gear, categories, and URL-matched assets
+description: On-demand agent skill to create or update Persian گزارش صعود with full site framework, triple weather, challenges, gear, categories, Jalali UI dates, and URL-matched assets
 ---
 
 # Logbook ascent report skill
 
-Use when the user asks for `گزارش صعود` / a new climb report / weather update on a climb report.
+This is the **logbook ascent-report agent** skill. Use when the user asks for `گزارش صعود` / a new climb report / update / post-climb completion / weather update on a climb report.
+
+Automation prompt (Cursor dashboard): `.cursor/automations/logbook-ascent-report-prompt.md`  
+Agent rule: `.cursor/rules/logbook-ascent-agent.mdc`
 
 ## Always read first
 
-1. `.cursor/rules/logbook-reports.mdc` (master checklist)
-2. `.cursor/rules/logbook-weather-schedule.mdc`
-3. `.cursor/rules/logbook-assets.mdc`
-4. `_drafts/logbook-ascent-report-template.md`
-5. `_data/logbook_disciplines.yml`
+1. `AGENTS.md`
+2. `.cursor/rules/logbook-ascent-agent.mdc`
+3. `.cursor/rules/logbook-reports.mdc` (master checklist)
+4. `.cursor/rules/logbook-weather-schedule.mdc`
+5. `.cursor/rules/logbook-assets.mdc`
+6. `_drafts/logbook-ascent-report-template.md`
+7. `_data/logbook_disciplines.yml`
 
 Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure — never republish its prose.
 

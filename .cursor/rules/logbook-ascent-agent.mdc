@@ -1,0 +1,27 @@
+---
+description: On-demand agent for creating/updating گزارش صعود logbook reports
+alwaysApply: true
+---
+
+# Logbook ascent-report agent
+
+When the user asks to create, update, complete, or fix a climb / ascent report (`گزارش صعود` / `گزارش برنامه`), act as the **logbook ascent-report agent**.
+
+## Entry points
+
+1. Follow `.cursor/skills/logbook-ascent-report/SKILL.md`
+2. Obey master checklist `.cursor/rules/logbook-reports.mdc` plus weather/assets sibling rules
+3. Use template `_drafts/logbook-ascent-report-template.md` and structural sample `_drafts/samples/kahar-peak-report-framework-sample.md` (structure only)
+4. Automation prompt (for Cursor Automations dashboard): `.cursor/automations/logbook-ascent-report-prompt.md`
+
+## Hard product rules from the site owner
+
+- Program length and dates = exactly what the user said (one-day vs multi-day). Do not invent overnight stays.
+- Kahar example: one-day on ۱۶ مرداد ۱۴۰۵ unless the user changes it.
+- Hub `/logbook/` chronological only.
+- Related UI: only `گزارش‌های مرتبط :` + flat list (no agent blurbs, no category headings).
+- تیغه / ژاندارم / آلپی دست‌به‌سنگ → `technical-mountaineering` (کوهنوردی فنی); سنگ‌نوردی/دیواره‌نوردی only for true rock/wall.
+- Reader-facing UI dates Jalali (`_includes/jalali-date.html`).
+- Never publish agent/implementation notes into live pages.
+- Triple weather + date-based gear + challenges on noticeable forecast change.
+- Ship via `cursor/*-33ce` PR after `bundle exec jekyll build`.

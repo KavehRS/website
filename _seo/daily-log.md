@@ -21,3 +21,7 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 ## 2026-08-04 — Jalali UI dates
 
 - Footer «آخرین بروزرسانی», post meta, and `/logbook/` list dates use Jalali via `_includes/jalali-date.html` (e.g. 13 مرداد 1405).
+
+## 2026-08-05 — Ascent-report agent
+
+- Added on-demand logbook ascent-report agent: `.cursor/automations/logbook-ascent-report-prompt.md`, `.cursor/rules/logbook-ascent-agent.mdc`, AGENTS.md + skill entry points.
