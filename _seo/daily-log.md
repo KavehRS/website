@@ -25,3 +25,8 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 ## 2026-08-05 — Ascent-report agent
 
 - Added on-demand logbook ascent-report agent: `.cursor/automations/logbook-ascent-report-prompt.md`, `.cursor/rules/logbook-ascent-agent.mdc`, AGENTS.md + skill entry points.
+
+## 2026-08-05 — Automatic weather refresh
+
+- Weather agent must auto-run at 04/10/16/22 Asia/Tehran until night-before 22:00: Automation prompt + `.github/workflows/logbook-weather-agent.yml`.
+- Kahar pre-report weather refreshed (۱۴ مرداد / ۵ اوت ~۱۱:۴۵) from Open-Meteo + Mountain-Forecast + Meteoblue.

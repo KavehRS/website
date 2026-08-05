@@ -37,11 +37,13 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 9. Never publish agent notes (implementation reminders, «بر اساس نوع برنامه…», path references to `.cursor/`) in live page HTML.
 10. Reader-facing UI dates are Jalali (`_includes/jalali-date.html`); body program dates Jalali-first (Gregorian optional in parentheses for weather stamps).
 
-## Scheduled weather runs
+## Scheduled weather runs (automatic — agent duty)
 
-At 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before start:
+At 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before start, the weather agent runs **without being asked**:
 
 - refresh weather → gear if needed → **challenges if change is noticeable** → PR only on real diffs
+- Automation prompt: `.cursor/automations/logbook-weather-update-prompt.md`
+- GitHub Action fallback: `.github/workflows/logbook-weather-agent.yml` (secret `CURSOR_API_KEY`)
 
 ## Uniqueness
 

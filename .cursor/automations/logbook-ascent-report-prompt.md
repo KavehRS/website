@@ -71,11 +71,10 @@ Mission: create or update Persian گزارش برنامه صعود in `_logbook/
 
 Never publish two reports for the same peak with duplicated prose. Rewrite literature on repeats; only stable facts may repeat when still accurate. Do not paste _drafts/samples/* into a published report.
 
-## Weather refresh (while inside the update window)
+## Weather refresh (automatic — not optional)
 
-From report creation until 22:00 Asia/Tehran the night before program start, at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran:
-refresh weather → gear if needed → challenges if change is noticeable → PR only on real diffs.
-(For the dedicated scheduled weather agent, see .cursor/automations/logbook-weather-update-prompt.md.)
+From report creation until 22:00 Asia/Tehran the night before program start, at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran the dedicated weather agent must refresh weather → gear if needed → challenges if change is noticeable → PR only on real diffs — without waiting for the user.
+See .cursor/automations/logbook-weather-update-prompt.md and .github/workflows/logbook-weather-agent.yml.
 
 ## Ship
 
