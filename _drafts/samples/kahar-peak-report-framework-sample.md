@@ -17,9 +17,10 @@ categories: [high-altitude]
 <!--
 SAMPLE / DRAFT ONLY (agent guidance — never copy this comment into published pages)
 Source snapshot of the Kahar pre-report framework (one-day program on ۱۶ مرداد ۱۴۰۵ / 2026-08-07).
+Used by the logbook ascent-report agent (.cursor/automations/logbook-ascent-report-prompt.md).
 When creating a NEW climb report (even for Kahar again):
 - keep the SECTION FRAMEWORK; rewrite prose so it is not a duplicate of any published logbook entry
-- follow master checklist in .cursor/rules/logbook-reports.mdc
+- follow master checklist in .cursor/rules/logbook-reports.mdc and .cursor/rules/logbook-ascent-agent.mdc
 - THIS Kahar program is one-day on 1405/05/16 — do not reintroduce a two-day overnight plan unless the user asks
 - program length/dates always come from the user; do not invent overnight stays
 - refresh weather (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb

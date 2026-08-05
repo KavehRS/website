@@ -13,6 +13,8 @@ dir_attr: rtl
 
 <!--
 USAGE (agent-only — do not copy this comment block into published pages)
+0) This template is used by the logbook ascent-report agent
+   (.cursor/automations/logbook-ascent-report-prompt.md + .cursor/skills/logbook-ascent-report/SKILL.md)
 1) Copy structure into `_logbook/YYYY-MM-DD-<peak-slug>.md`
 2) Front matter must include: lang, dir_attr, description, date, tags, image,
    categories from _data/logbook_disciplines.yml
