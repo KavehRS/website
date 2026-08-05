@@ -52,6 +52,22 @@ Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/
 - Reader-facing dates use Jalali via `_includes/jalali-date.html` (footer «آخرین بروزرسانی», post meta, hub list) — e.g. `13 مرداد 1405`, not `04 August 2026`. Keep ISO/`date:` Gregorian for machines. Report body program dates should be Jalali-first.
 
 
+## Logbook ascent-report agent
+
+When asked to create or update a `گزارش صعود` / climb report:
+
+1. Follow `.cursor/skills/logbook-ascent-report/SKILL.md` end-to-end.
+2. Obey `.cursor/rules/logbook-ascent-agent.mdc` and `.cursor/rules/logbook-reports.mdc` (plus weather/assets rules).
+3. Use `_drafts/logbook-ascent-report-template.md`; treat `_drafts/samples/kahar-peak-report-framework-sample.md` as structure only.
+4. For a Cursor Automation, paste `.cursor/automations/logbook-ascent-report-prompt.md` at https://cursor.com/automations/new
+5. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when safe.
+
+Related scheduled agents:
+
+- Weather refresh (4× daily Tehran): `.cursor/automations/logbook-weather-update-prompt.md`
+- Daily SEO: `.cursor/automations/daily-seo-prompt.md`
+
+
 ## Daily SEO agent
 
 
