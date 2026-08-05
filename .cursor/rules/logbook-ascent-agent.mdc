@@ -24,4 +24,5 @@ When the user asks to create, update, complete, or fix a climb / ascent report (
 - Reader-facing UI dates Jalali (`_includes/jalali-date.html`).
 - Never publish agent/implementation notes into live pages.
 - Triple weather + date-based gear + challenges on noticeable forecast change.
+- **Weather auto-refresh is mandatory:** the scheduled weather agent (`.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`) must update in-window reports at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until 22:00 the night before the climb — without waiting for the user.
 - Ship via `cursor/*-33ce` PR after `bundle exec jekyll build`.

@@ -43,6 +43,13 @@ Cron equivalents in UTC (for Cursor Automations / GitHub Actions):
 6. Commit / PR / merge only when numbers, gear, or challenges actually changed; skip no-op runs.
 
 
-## Automation
+## Automation (required — agent runs this, not the user)
 
-Use the prompt in `.cursor/automations/logbook-weather-update-prompt.md` on a scheduled Automation with the cron above, repo `KavehRS/website`, branch `master`.
+The weather-refresh agent must run these updates **automatically** inside the window. Do not wait for the user to ask.
+
+Enable both (belt and suspenders):
+
+1. **Cursor Automation** — paste `.cursor/automations/logbook-weather-update-prompt.md` with cron `30 0,6,12,18 * * *` (UTC), repo `KavehRS/website`, branch `master`
+2. **GitHub Action fallback** — `.github/workflows/logbook-weather-agent.yml` (same cron; needs repo secret `CURSOR_API_KEY`)
+
+Each run: find in-window reports → refresh triple weather → gear/challenges if needed → PR/merge only on real diffs.

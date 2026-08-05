@@ -70,13 +70,14 @@ For **every program day**, label three subsections:
 
 Stamp Jalali + Gregorian (+ clock on scheduled refreshes). Metric units. Short operational summary when sources disagree.
 
-## Weather refresh schedule (required)
+## Weather refresh schedule (required — automatic)
 
 Per `.cursor/rules/logbook-weather-schedule.mdc`:
 
 - From report creation until **22:00 Asia/Tehran the night before** program start
 - Refresh at **04:00 / 10:00 / 16:00 / 22:00** Asia/Tehran
 - Each refresh: update weather → maybe gear → maybe challenges (below)
+- The weather agent runs this **automatically** (Cursor Automation + `.github/workflows/logbook-weather-agent.yml`) — do not wait for the user to ask
 
 ## Significant forecast change → program challenge (required)
 

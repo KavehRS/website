@@ -1,0 +1,92 @@
+# Auto weather-refresh agent for upcoming climb reports.
+# Runs at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until each report's
+# night-before 22:00 cutoff (enforced inside the agent prompt/rules).
+#
+# Required repo secret:
+#   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
+#
+# If the secret is missing, the workflow no-ops successfully so Actions stays green.
+# Prefer also enabling the native Cursor Automation from
+# .cursor/automations/logbook-weather-update-prompt.md
+
+name: Logbook Weather Cloud Agent
+
+on:
+  schedule:
+    # 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran = 00:30 / 06:30 / 12:30 / 18:30 UTC
+    - cron: "30 0,6,12,18 * * *"
+  workflow_dispatch:
+
+jobs:
+  start-weather-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Cursor Cloud Agent (weather refresh)
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CURSOR_API_KEY:-}" ]; then
+            echo "CURSOR_API_KEY secret not set — skip API trigger."
+            echo "Set the secret, or enable Cursor Automation: .cursor/automations/logbook-weather-update-prompt.md"
+            exit 0
+          fi
+
+          python3 <<'PY'
+          import json, os, urllib.request
+          from datetime import datetime, timezone, timedelta
+
+          tehran = timezone(timedelta(hours=3, minutes=30))
+          now = datetime.now(tehran)
+          stamp = now.strftime("%Y%m%d-%H%M")
+
+          prompt = f"""You are the scheduled weather-refresh agent for https://www.kavehrs.com climb reports.
+
+          This run was auto-triggered at {now.isoformat()} (Asia/Tehran). Do the work yourself — do not ask the user to refresh weather.
+
+          Follow:
+          1. AGENTS.md
+          2. .cursor/rules/logbook-weather-schedule.mdc
+          3. .cursor/rules/logbook-reports.mdc
+          4. .cursor/skills/logbook-ascent-report/SKILL.md (weather/gear/challenges parts)
+          5. .cursor/automations/logbook-weather-update-prompt.md
+
+          For every `_logbook/*.md` report still inside the update window
+          (from creation until 22:00 Asia/Tehran the night before the program start):
+
+          1. Refresh weather for every program day from Open-Meteo, Mountain-Forecast, and Meteoblue
+          2. Stamp the update time in Jalali + Gregorian + clock Asia/Tehran
+          3. Update gear if the forecast change matters
+          4. If the change is noticeable, add/update `## چالش‌های برنامه` with before→after details, sources, time, and impact
+          5. Keep uniqueness rules; do not rewrite unrelated prose
+          6. Preserve UI rules: related flat list, Jalali reader dates, no agent notes on pages
+
+          If anything material changed: branch `cursor/weather-refresh-{stamp}-33ce`,
+          `bundle exec jekyll build`, open PR, merge after clean build.
+          If nothing changed: make no PR; leave a one-line summary of reports checked.
+          Never invent climb facts. Never commit secrets.
+          """
+
+          body = {
+              "name": f"Logbook weather refresh {stamp}",
+              "prompt": {"text": prompt},
+              "repos": [{
+                  "url": "https://github.com/KavehRS/website",
+                  "startingRef": "master",
+              }],
+              "autoCreatePR": True,
+              "skipReviewerRequest": True,
+          }
+          req = urllib.request.Request(
+              "https://api.cursor.com/v1/agents",
+              data=json.dumps(body).encode(),
+              headers={
+                  "Authorization": f"Bearer {os.environ['CURSOR_API_KEY']}",
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          with urllib.request.urlopen(req) as resp:
+              print(resp.read().decode())
+          print("Weather cloud agent requested.")
+          PY

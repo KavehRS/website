@@ -31,6 +31,8 @@ Every `_logbook` ascent report weather section must use **three** sources:
 
 Refresh schedule (Asia/Tehran): **04:00, 10:00, 16:00, 22:00** from report creation until **22:00 the night before** the program start. See `.cursor/rules/logbook-weather-schedule.mdc`.
 
+**Automatic:** the weather-refresh agent runs this cadence itself (Cursor Automation + GitHub Action `.github/workflows/logbook-weather-agent.yml`). Do not wait for the user to request weather updates.
+
 Gear lists must be derived from the climb date(s) and that triple weather forecast — refresh gear whenever weather is refreshed.
 
 If a forecast change is **noticeable**, add/update `## چالش‌های برنامه` with before→after details (sources, time, impact) — see thresholds in `.cursor/rules/logbook-reports.mdc`.
@@ -62,10 +64,10 @@ When asked to create or update a `گزارش صعود` / climb report:
 4. For a Cursor Automation, paste `.cursor/automations/logbook-ascent-report-prompt.md` at https://cursor.com/automations/new
 5. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when safe.
 
-Related scheduled agents:
+Related scheduled agents (must run automatically):
 
-- Weather refresh (4× daily Tehran): `.cursor/automations/logbook-weather-update-prompt.md`
-- Daily SEO: `.cursor/automations/daily-seo-prompt.md`
+- Weather refresh (4× daily Tehran until night before climb): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
+- Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 
 
 ## Daily SEO agent
