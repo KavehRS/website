@@ -23,7 +23,7 @@ When creating a NEW climb report (even for Kahar again):
 - follow master checklist in .cursor/rules/logbook-reports.mdc and .cursor/rules/logbook-ascent-agent.mdc
 - THIS Kahar program is one-day on 1405/05/16 — do not reintroduce a two-day overnight plan unless the user asks
 - program length/dates always come from the user; do not invent overnight stays
-- refresh weather (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb
+- weather agent auto-refreshes (every program day, 3 sources) on 04:00/10:00/16:00/22:00 Asia/Tehran until 22:00 night before climb — do not wait for the user (see logbook-weather-update-prompt + logbook-weather-agent.yml)
 - if forecast change is noticeable: add/update ## چالش‌های برنامه with before→after details
 - gear from date + weather; categories from _data/logbook_disciplines.yml
   (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering, hiking, rock-climbing, wall-climbing)
