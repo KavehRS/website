@@ -125,4 +125,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-email-protect
-  #- jekyll-target-blank
