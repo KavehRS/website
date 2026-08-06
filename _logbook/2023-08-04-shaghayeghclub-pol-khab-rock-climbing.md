@@ -140,7 +140,7 @@ site:
 - **۱۳:۰۰** – حضور همه اعضای شرکت‌کننده در **پارکینگ پل‌خواب**.
 - **آماده‌سازی** – آماده‌سازی تجهیزات و حرکت به سمت پای دیواره.
 
-![نمای دیواره پل‌خواب](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6279_orig.jpeg "نمای دیواره پل‌خواب و مسیرهای سنگ‌نوردی")
+![نمای دیواره پل‌خواب](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6279_orig.jpeg "نمای دیواره پل‌خواب و مسیرهای سنگ‌نوردی")
 
 - **۱۳:۱۵** – شروع تمرین روی مسیرها.
 
@@ -150,15 +150,15 @@ site:
 - **علی کفاش و لیلا خورشیدی** – ابتدا به صورت **قرقره (Top Rope)** و پس از آن به صورت **سرطناب (Lead Climbing)** مسیر را صعود کردند.
 - **در مرحله بعد** – مسیر به صورت **کرده‌ای** (به **سرطنابی** پیام غلامی، **نفر میانی** علی کفاش و **ته‌طنابی** لیلا خورشیدی) صعود شد.
 
-![تمرین روی مسیر کارآموز](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6276_orig.jpeg "تمرین اعضا روی مسیر کارآموز")
+![تمرین روی مسیر کارآموز](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6276_orig.jpeg "تمرین اعضا روی مسیر کارآموز")
 
 ### مسیر کلاهک داوودی
 
 - مسیر کلاهک داوودی به صورت **سرطناب (Lead Climbing)** توسط **پیام غلامی** و **علی کفاش** صعود شد.
 
-![تمرین روی مسیر کلاهک داوودی](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6282_orig.jpeg "تمرین روی مسیر کلاهک داوودی")
+![تمرین روی مسیر کلاهک داوودی](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6282_orig.jpeg "تمرین روی مسیر کلاهک داوودی")
 
-![نمای دیگر مسیر کلاهک داوودی](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6278_orig.jpeg "صعود در مسیر کلاهک داوودی")
+![نمای دیگر مسیر کلاهک داوودی](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6278_orig.jpeg "صعود در مسیر کلاهک داوودی")
 
 ### مسیر سی سخت
 
@@ -166,11 +166,11 @@ site:
 - **کاوه رضائی شیراز** – ابتدا به صورت **قرقره (Top Rope)** و پس از آن به صورت **سرطناب (Lead Climbing)** بر روی این مسیر چندین تلاش داشت.
 - **در پایان** – مسیر به صورت **کرده‌ای** (به **سرطنابی** پیام غلامی، **نفر میانی** علی کفاش و **ته‌طنابی** کاوه رضائی شیراز) صعود شد.
 
-![تمرین روی مسیر سی سخت](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6281_orig.jpeg "تمرین روی مسیر سی سخت")
+![تمرین روی مسیر سی سخت](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6281_orig.jpeg "تمرین روی مسیر سی سخت")
 
-![ادامه تمرین روی مسیر سی سخت](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6280_orig.jpeg "ادامه تمرین اعضا روی مسیر سی سخت")
+![ادامه تمرین روی مسیر سی سخت](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6280_orig.jpeg "ادامه تمرین اعضا روی مسیر سی سخت")
 
-![نمای دیگری از مسیر سی سخت](assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6277_orig.jpeg "صعود در مسیر سی سخت")
+![نمای دیگری از مسیر سی سخت](/assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6277_orig.jpeg "صعود در مسیر سی سخت")
 
 - **۱۹:۳۰** – پس از جمع‌آوری کلیه تجهیزات در پارکینگ پل‌خواب، برنامه به پایان رسید.
 
