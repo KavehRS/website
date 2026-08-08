@@ -111,3 +111,12 @@ Become the authoritative Persian source for:
 - Publish `_drafts/`
 - Invent climb facts, weather, or team members
 - Weaken uniqueness of logbook narratives for SEO
+
+## Cursor Cloud specific instructions
+
+Static Jekyll 4 site (Ruby 3.2). Standard commands live in `## Install / verify` above.
+
+- Gems install into `./vendor/bundle` (gitignored via a local `bundle config path`). The startup update script runs `bundle install`, so gems are ready — no need to reinstall unless `Gemfile`/`Gemfile.lock` changed.
+- Run the dev server with `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload`. It auto-regenerates on file changes; there is no separate lint step for this site — `bundle exec jekyll build` succeeding is the check.
+- The Sass `@import` / `lighten()` deprecation warnings during build/serve are expected and harmless; the build still finishes with exit code 0.
+- Adding/removing content files is picked up by the running server via auto-regeneration; editing `_config.yml` requires restarting the server.
