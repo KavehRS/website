@@ -44,7 +44,7 @@ The agent stays **active** from report creation until `report_status: completed`
    - peak: { name, elevation_m, latitude, longitude, region } only from a named source or this climb’s GPS; omit guessed/rounded placeholders
 3. Follow the template section order: peak specs → region → weather (accurate sources only) → flora/fauna → access → routes → shelter/water → season → views → چالش‌های برنامه → gear (date+weather) → team → narrative outline.
 4. Weather for EVERY program day from **accurate sources only**: Open-Meteo; Mountain-Forecast only if the peak has its own page; Meteoblue when reliable. **Omit** distant proxies or missing data. Stamp Jalali (+ Gregorian when useful).
-5. Gear MUST come from this climb’s date(s) + applicable forecast(s); list what is NOT needed for this date.
+5. Gear MUST come from this climb’s date(s) + applicable forecast(s). Do not publish a «همراه نبرید» / not-needed subsection.
 6. If forecasts among **sources actually used** disagree or swing noticeably, add/update ## چالش‌های برنامه with before→after, sources, time Asia/Tehran, impact (thresholds in logbook-reports.mdc).
 7. Images go in assets/mount/logbook/<exact-url-slug>/ matching the report URL.
 8. Narrative stays outline/pre-report until the user provides post-climb details; then fill per real program day(s).

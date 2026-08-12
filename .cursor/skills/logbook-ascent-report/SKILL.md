@@ -39,7 +39,7 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
    - `rock-climbing` / `wall-climbing` only for true rock or multipitch wall routes
 3. Weather for every program day from **accurate sources only** (Open-Meteo, Mountain-Forecast if peak has its own page, Meteoblue when reliable) — **omit** distant proxies / missing data
 4. `## چالش‌های برنامه` — noticeable forecast change or disagreement among **sources actually used**
-5. Gear derived from date(s) + applicable forecast(s) (and “not needed for this date”)
+5. Gear derived from date(s) + applicable forecast(s). Do not publish a «همراه نبرید» list.
 6. `assets/mount/logbook/<exact-url-slug>/` for all images
 7. Narrative outline → post-climb completion when user provides details. Program length from user only (Kahar = one-day ۱۶ مرداد ۱۴۰۵ unless changed).
 8. Hub `/logbook/` chronological; related UI = only `گزارش‌های مرتبط :` + flat list
