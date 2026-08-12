@@ -38,3 +38,9 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Weather: use only accurate peak/region sources; omit distant proxies (e.g. Kahar drops Mountain-Forecast).
 - Report lifecycle: `report_status: active` until post-climb completion; agent stays active entire time.
 - Automation configured but paused until Cursor account recharge; mandatory always-on after.
+
+## 2026-08-12 — Authority roadmap
+
+- Added unpublished `_seo/authority-roadmap.md`: path to become the leading Persian ascent-report source.
+- Based on live inventory (22 reports), competitor club SERPs, and Google Search Central people-first / E-E-A-T guidance.
+- Does not change published pages.
