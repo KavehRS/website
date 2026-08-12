@@ -10,7 +10,7 @@ profile:
   image: kavehrs.jpg
   image_alt: عکس پروفایل کاوه‌ رضائی‌شیراز
 published: true
-dir_attr: ltr
+dir_attr: rtl
 lang: fa-IR
 
 ---
