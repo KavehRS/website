@@ -16,10 +16,11 @@ lang: en
 
 # About
 <blockquote>
-  <p><strong>Software Engineer | MBA - IT &amp; Information Systems | Climber</strong></p>
+  <p><strong>مهندس نرم‌افزار | MBA (گرایش فناوری اطلاعات و سیستم‌های اطلاعاتی) | کوهنورد</strong></p>
   <ul>
-    <li>I'm a Software Engineer interested in open source software, technologies and knowledge. I also love books, climbing, rock climbing &amp; DryTooling.</li>
-    <li>Born: Oct 1985 — Guilan, Iran</li>
-    <li>Live: Tehran, Iran</li>
+    <li>من مهندس نرم‌افزار هستم و به دنیای متن‌باز، فناوری‌های نوین و دانش علاقه‌ی زیادی دارم. کتاب، کوهنوردی، سنگ‌نوردی و درایتولینگ هم از دیگر علایق من هستند.
+</li>
+    <li>زادهٔ مهر ۱۳۶۴ در گیلان | ساکن تهران</li>
+
   </ul>
 </blockquote>
