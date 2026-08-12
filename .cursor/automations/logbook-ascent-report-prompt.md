@@ -28,6 +28,7 @@ The agent stays **active** from report creation until `report_status: completed`
 1. AGENTS.md
 2. .cursor/skills/logbook-ascent-report/SKILL.md
 3. .cursor/rules/logbook-reports.mdc  (master checklist)
+3b. .cursor/rules/logbook-facts.mdc (no guessed elevations/coordinates/species)
 4. .cursor/rules/logbook-weather-schedule.mdc
 5. .cursor/rules/logbook-assets.mdc
 6. _data/logbook_disciplines.yml
@@ -40,7 +41,7 @@ The agent stays **active** from report creation until `report_status: completed`
 2. Create `_logbook/YYYY-MM-DD-<peak-slug>.md` with:
    - lang: fa-IR, dir_attr: rtl, description, date (Gregorian for machines), tags, report_status: active
    - categories from _data/logbook_disciplines.yml ONLY
-   - peak: { name, elevation_m, latitude, longitude, region } when known
+   - peak: { name, elevation_m, latitude, longitude, region } only from a named source or this climb’s GPS; omit guessed/rounded placeholders
 3. Follow the template section order: peak specs → region → weather (accurate sources only) → flora/fauna → access → routes → shelter/water → season → views → چالش‌های برنامه → gear (date+weather) → team → narrative outline.
 4. Weather for EVERY program day from **accurate sources only**: Open-Meteo; Mountain-Forecast only if the peak has its own page; Meteoblue when reliable. **Omit** distant proxies or missing data. Stamp Jalali (+ Gregorian when useful).
 5. Gear MUST come from this climb’s date(s) + applicable forecast(s); list what is NOT needed for this date.

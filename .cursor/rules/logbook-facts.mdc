@@ -1,0 +1,39 @@
+---
+description: No guessed or unsourced facts on published pages; climb experience is the only exception
+alwaysApply: true
+---
+
+# Factual accuracy — no guessed data
+
+Site owner rule: **nothing published on the site may be guessed or imprecise**, except the **experience of that specific climb** (times, rests, how the team moved, weather felt on the day, GPS of that outing).
+
+## What must be sourced or omitted
+
+Stable facts (peak name spelling, elevation, coordinates, trailhead elevation, shelter elevation, road distance, flora/fauna species lists, wall height, icefall elevation, “typical” ascent hours copied from other sites):
+
+- Publish **only** if taken from a **named, checkable source** (Wikipedia / PeakVisor / SummitPost / GeoNames / دانشنامه / GPS file from **this** program / Open-Meteo–Meteoblue–Mountain-Forecast for weather) **or** from the user’s first-hand measurement on that climb.
+- If sources **disagree**, publish the disagreement with the source names and their numbers. Do **not** pick a round “حدود X” to hide the conflict.
+- If no accurate source exists: **omit the field**. Do not invent rounded lat/lon (`36.05000`, `36.10000`, `35.83333`), round elevations (`۱۸۰۰`, `۲۲۰۰`, `۳۶۰۰`), or copy generic lists from tourism blogs.
+
+Front matter `peak.latitude` / `peak.longitude` / `peak.elevation_m`: same rule. Missing is better than a placeholder. JSON-LD must not emit guessed geo.
+
+## What may stay experiential (this climb only)
+
+- Program date/length the user stated
+- Clock times, rest stops, who turned back, summit/shelter arrival
+- GPS track stats **from that day** (distance, gain) if the user/device recorded them
+- Observed weather on the day (as felt/recorded), distinct from forecast sources
+- Gear actually used vs planned
+- Photos and narrative of that outing
+
+Do not back-fill those from “typical Kahar times” or other reports.
+
+## Language
+
+- Do not use «حدود / تقریبی / تخمین» as a substitute for a missing source.
+- «حدود» is allowed only when the **source itself** gives a range (e.g. Open-Meteo 6–15 °C) or the user measured a range that day.
+- Never leave `[reference:N]` placeholders in published copy.
+
+## Weather (unchanged, restated)
+
+Open-Meteo / Mountain-Forecast (own peak page only) / Meteoblue when the point is this peak. Omit distant proxies. Do not fabricate a third source.

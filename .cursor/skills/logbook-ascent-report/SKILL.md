@@ -15,10 +15,11 @@ Agent rule: `.cursor/rules/logbook-ascent-agent.mdc`
 1. `AGENTS.md`
 2. `.cursor/rules/logbook-ascent-agent.mdc`
 3. `.cursor/rules/logbook-reports.mdc` (master checklist)
-4. `.cursor/rules/logbook-weather-schedule.mdc`
-5. `.cursor/rules/logbook-assets.mdc`
-6. `_drafts/logbook-ascent-report-template.md`
-7. `_data/logbook_disciplines.yml`
+4. `.cursor/rules/logbook-facts.mdc` (no guessed elevations/coordinates/species)
+5. `.cursor/rules/logbook-weather-schedule.mdc`
+6. `.cursor/rules/logbook-assets.mdc`
+7. `_drafts/logbook-ascent-report-template.md`
+8. `_data/logbook_disciplines.yml`
 
 Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure — never republish its prose.
 
@@ -32,7 +33,7 @@ Use `_drafts/samples/kahar-peak-report-framework-sample.md` only as structure �
 
 ## Deliverables for a new report
 
-1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `report_status: active` + `peak` front matter when known
+1. `_logbook/YYYY-MM-DD-<slug>.md` with SEO + `report_status: active` + `peak` front matter only for sourced values (omit guessed lat/lon/elevation)
 2. `categories` from `_data/logbook_disciplines.yml`:
    - ridge / gendarme / alpine hand-and-foot → `technical-mountaineering` (کوهنوردی فنی)
    - `rock-climbing` / `wall-climbing` only for true rock or multipitch wall routes
