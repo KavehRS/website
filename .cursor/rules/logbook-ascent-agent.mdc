@@ -31,6 +31,7 @@ When the user asks to create, update, complete, or fix a climb / ascent report (
 - تیغه / ژاندارم / آلپی دست‌به‌سنگ → `technical-mountaineering` (کوهنوردی فنی); سنگ‌نوردی/دیواره‌نوردی only for true rock/wall.
 - Reader-facing UI dates Jalali (`_includes/jalali-date.html`).
 - Never publish agent/implementation notes into live pages.
+- **Voice:** published copy is the climber’s report (من / ما / تیم), never an editor or agent. Do not write «ترک GPS منتشر نشده», JSON-LD, «این بند برای اینکه تکراری نباشد», «اگر بعداً عکس اضافه شود», «به‌روزرسانی خودکار», «نقطهٔ پیش‌بینی ثبت‌شده», or named-source footnotes (SummitPost, Wikipedia, دانشنامه) in the body. Keep accurate numbers; leave sourcing in front matter / agent notes only.
 - **No guessed facts:** elevations, coordinates, distances, flora/fauna only from named sources or this climb’s GPS/observation; omit if unknown. Climb times/narrative may be experiential. See `.cursor/rules/logbook-facts.mdc`.
 - **Weather sources:** use only Open-Meteo / Mountain-Forecast / Meteoblue when accurate for **this peak and region**; **omit** distant proxies or missing data — do not fake a third source.
 - Date-based gear + challenges on noticeable forecast change (among sources actually used).

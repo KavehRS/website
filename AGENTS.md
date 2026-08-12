@@ -72,6 +72,7 @@ Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/
 - Hub `/logbook/` lists reports **chronologically by date** (newest first), not by category.
 - Related reports are **selected** by shared categories, but the **public UI** is only `گزارش‌های مرتبط :` + a flat list — no «بر اساس نوع برنامه…» note and no category subheadings on the page.
 - Never put agent/implementation instructions into published page copy; keep them in `.cursor/` and `_drafts/` comments.
+- Published logbook prose is the climber’s voice (من / ما / تیم). No «ترک منتشر نشده», JSON-LD, source-footnote asides, or notes about how the agent wrote the page.
 - Program dates/length come from the user only (e.g. Kahar is one-day on ۱۶ مرداد ۱۴۰۵ unless the user changes it).
 - Reader-facing dates use Jalali via `_includes/jalali-date.html` (footer «آخرین بروزرسانی», post meta, hub list) — e.g. `13 مرداد 1405`, not `04 August 2026`. Keep ISO/`date:` Gregorian for machines. Report body program dates should be Jalali-first.
 

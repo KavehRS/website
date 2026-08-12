@@ -32,6 +32,9 @@ Do not back-fill those from “typical Kahar times” or other reports.
 
 ## Language
 
+- Published pages are written as the **climber**, not as a third-person editor or agent.
+- Do not mention unpublished GPS, JSON-LD, other reports, automation schedules, or “this section was rewritten so it is not a duplicate.”
+- Do not cite SummitPost / Wikipedia / دانشنامه / موج کوه in reader-facing sentences. Accurate numbers stay; source names stay out of the body.
 - Do not use «حدود / تقریبی / تخمین» as a substitute for a missing source.
 - «حدود» is allowed only when the **source itself** gives a range (e.g. Open-Meteo 6–15 °C) or the user measured a range that day.
 - Never leave `[reference:N]` placeholders in published copy.

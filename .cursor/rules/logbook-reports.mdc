@@ -14,7 +14,7 @@ When the user asks for a new climb / ascent report (`گزارش صعود`), or w
 3. `categories` from `_data/logbook_disciplines.yml` only (see table below) — never vague `mountaineering` / `logbook`.
 4. Section order: peak specs → region → **weather (applicable accurate sources)** → flora/fauna → access → routes → shelter/water → season → views → **چالش‌های برنامه** → **gear (date+weather)** → team → narrative (per program day if multi-day).
 5. Images: `assets/mount/logbook/<exact-url-slug>/` matching the report URL (see `.cursor/rules/logbook-assets.mdc`).
-6. Related links: **select** by shared categories — not template look-alikes. **Public UI** must stay a flat list only (see below). Never put agent/implementation notes in published HTML.
+6. Related links: **select** by shared categories — not template look-alikes. **Public UI** must stay a flat list only (see below). Never put agent/implementation notes in published HTML. Body copy is the climber’s voice (من / ما / تیم) — no unpublished-GPS asides, JSON-LD, or source-name footnotes.
 7. Program length/dates: use exactly what the user states (one-day vs multi-day). Do not invent overnight stays. Example: Kahar ۱۴۰۵/۰۵/۱۶ is **one-day** — see sample; do not reintroduce a two-day Kahar plan unless the user asks.
 8. **Visible dates on the site are Jalali** for readers (footer «آخرین بروزرسانی», post meta, `/logbook/` list) via `_includes/jalali-date.html` → e.g. `13 مرداد 1405`. Keep machine `datetime=` / front-matter `date:` in Gregorian. In report **body** prose, prefer Jalali for program dates (optionally add Gregorian in parentheses when useful, e.g. weather stamps).
 
