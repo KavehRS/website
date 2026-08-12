@@ -8,6 +8,10 @@ date: 2026-07-05
 categories: [training-camp, snowfield, high-altitude]
 tags: [یخنوردی, البرز, لشگرک, حصارچال, علم‌کوه, برفچال]
 image: /assets/mount/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/cover.jpg
+peak:
+  name: "لشگرک بزرگ"
+  elevation_m: 4256
+  region: "البرز مرکزی، تخت سلیمان، کلاردشت، مازندران"
 ---
 
 **کمپ آموزشی و تمرینی تکنیک‌های پیمایش برفچال - قله لشگرک**

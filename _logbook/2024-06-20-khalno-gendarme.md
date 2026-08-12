@@ -7,6 +7,10 @@ description: "گزارش صعود قله خلنو از مسیر تیغه‌ها�
 date: 2024-06-20
 categories: [high-altitude, technical-mountaineering]
 image: /assets/mount/logbook/2024-06-20-khalno-gendarme/6.jpg
+peak:
+  name: "خلنو"
+  elevation_m: 4375
+  region: "البرز مرکزی، فشم، روستای لالان"
 ---
 
 صعود به قله‌های برج و خلنو از مسیر تیغه‌های ژاندارم

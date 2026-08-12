@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل پیمایش تیغه‌های دارآباد و صعود به قلل دارآباد، چپ‌دره، چنبره‌بند و سیاه‌بند در تاریخ ۱۵ تیر ۱۴۰۳ به سرپرستی کاوه رضائی شیراز."
 date: 2024-07-05
-categories: [high-altitude, mountaineering, traverse]
+categories: [technical-mountaineering]
 tags: [دارآباد, سیاه‌بند, چنبره‌بند, تهران, البرز, کوهنوردی, پیمایش, باشگاه همنورد]
 club: "باشگاه کوهنوردی همنورد - تهران"
 peak:

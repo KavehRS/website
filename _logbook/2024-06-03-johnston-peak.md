@@ -7,6 +7,10 @@ description: "گزارش برنامه صعود به قله جانستون از �
 date: 2024-06-03
 categories: [hiking, technical-mountaineering]
 image: /assets/mount/logbook/2024-06-03-johnston-peak/johnston-1.jpg
+peak:
+  name: "جانستون"
+  elevation_m: 3950
+  region: "البرز مرکزی، روستای آبنیک"
 ---
 
 گزارش برنامه صعود به قله جانستون

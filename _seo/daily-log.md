@@ -26,7 +26,14 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 
 - Added on-demand logbook ascent-report agent: `.cursor/automations/logbook-ascent-report-prompt.md`, `.cursor/rules/logbook-ascent-agent.mdc`, AGENTS.md + skill entry points.
 
-## 2026-08-05 — Accurate sources + lifecycle + billing pause
+## 2026-08-12 — Full SEO remediation
+
+- **Categories:** normalized all 22 logbook posts to `_data/logbook_disciplines.yml` slugs (`mountaineering` / `ice-climbing` / `training` / `traverse` removed).
+- **peak front matter:** added or fixed on all 22 reports (renamed legacy `site:` → `peak:` on ice/rock training posts).
+- **Duplicate titles:** Hezarla 1402 vs 1403 titles differentiated.
+- **OG image:** Kahar 1405 report uses climb cover in slug folder (placeholder from 1402 until 1405 photos uploaded).
+- **DNS (owner action):** `pop.kavehrs.com` spam subdomain — see `_seo/subdomain-dns-checklist.md`.
+- Live check: sitemap 35 URLs, robots OK, 0 broken asset refs.
 
 - Weather: use only accurate peak/region sources; omit distant proxies (e.g. Kahar drops Mountain-Forecast).
 - Report lifecycle: `report_status: active` until post-climb completion; agent stays active entire time.

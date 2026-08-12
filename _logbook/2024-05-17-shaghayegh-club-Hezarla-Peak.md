@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "صعود به قله هزارلا"
+title: "صعود به قله هزارلا (باشگاه شقایق ۱۴۰۳)"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود به قله هزارلا با باشگاه شقایق؛ مسیر، شرایط برنامه و تصاویر قله."
+description: "گزارش صعود به قله هزارلا با باشگاه شقایق در ۲۸ اردیبهشت ۱۴۰۳؛ مسیر وارنگه‌رود، شرایط برنامه و تصاویر."
 date: 2024-05-17
 categories: [hiking]
 image: /assets/mount/logbook/2024-05-17-shaghayegh-club-Hezarla-Peak/7.jpg
+peak:
+  name: "هزارلا"
+  elevation_m: 3556
+  region: "البرز، روستای وارنگه‌رود"
 ---
 
 

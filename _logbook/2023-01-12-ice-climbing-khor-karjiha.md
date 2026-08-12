@@ -5,10 +5,10 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل تمرین یک‌روزه یخ‌نوردی در آبشار کرجی‌ها (روستای خور، جاده چالوس) در تاریخ ۲۲ دی ۱۴۰۱ به سرپرستی سلمان بهمن‌دار."
 date: 2023-01-12
-categories: [ice-climbing, training]
+categories: [icefall, training-camp, winter-ascent]
 tags: [خور, یخ‌نوردی, آبشار یخی, آموزش, البرز, چالوس, زمستان, کارگاه, کرجی‌ها]
 image: /assets/mount/logbook/2023-01-12-ice-climbing-khor-karjiha/5858_orig.jpg
-site:
+peak:
   name: "آبشار کرجی‌ها - روستای خور"
   elevation_m: 2200
   region: "البرز، جاده چالوس، روستای خور"

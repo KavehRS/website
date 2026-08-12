@@ -7,6 +7,10 @@ description: "گزارش صعود به قله خوراسان‌کوه فشم ب�
 date: 2024-01-08
 categories: [winter-ascent, hiking]
 image: /assets/mount/logbook/2024-01-08-khorasan-kouh-fashand-shaghaueghClimbingclub/1.jpg
+peak:
+  name: "خوراسان کوه"
+  elevation_m: 3120
+  region: "غرب البرز مرکزی، روستای فشند"
 ---
 
 صعود به قله خوراسان کوه

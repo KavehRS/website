@@ -7,6 +7,10 @@ description: "گزارش پیمایش مسیر پناهگاه پلنگ‌چال�
 date: 2024-02-02
 categories: [winter-ascent, hiking]
 image: /assets/mount/logbook/2024-02-02-palangchal-shelter/palangchal-1.jpg
+peak:
+  name: "پناهگاه پلنگچال"
+  elevation_m: 2450
+  region: "شمال تهران، درکه"
 ---
 
 گزارش برنامه پیمایش مسیر پناهگاه پلنگچال

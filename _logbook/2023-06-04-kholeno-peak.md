@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل صعود یک‌روزه به قله خلهنو در تاریخ ۱۴ خرداد ۱۴۰۲ به صورت انفرادی (با همراهی یک همنورد در مسیر) - بررسی علت ماندگاری برف در جبهه جنوبی."
 date: 2023-06-04
-categories: [high-altitude, mountaineering]
+categories: [high-altitude]
 tags: [خلهنو, خلنو, تهران, البرز, کوهنوردی, گزارش صعود, انفرادی, برف, جبهه جنوبی]
 image: /assets/mount/logbook/2023-06-04-kholeno-peak/cover.jpg
 club: "صعود انفرادی"

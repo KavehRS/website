@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "صعود به قله هزارلا"
+title: "صعود زمستانه به قله هزارلا (همنورد ۱۴۰۲)"
 lang: fa-IR
 dir_attr: rtl
-description: "گزارش صعود زمستانی قله هزارلا با باشگاه همنورد؛ مسیر وارنگه‌رود، زمان‌بندی و جزئیات برنامه."
+description: "گزارش صعود زمستانه قله هزارلا (۳۵۵۶ م) با باشگاه همنورد تهران در ۵ آذر ۱۴۰۲؛ مسیر وارنگه‌رود و جزئیات برنامه."
 date: 2023-11-26
 categories: [winter-ascent, hiking]
 image: /assets/mount/logbook/2023-11-26-hamnavard-club-Hezarla-Peak/3.jpg
+peak:
+  name: "هزارلا"
+  elevation_m: 3556
+  region: "البرز، روستای وارنگه‌رود"
 ---
 
 

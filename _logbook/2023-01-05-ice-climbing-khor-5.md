@@ -5,10 +5,10 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل تمرین یک‌روزه یخ‌نوردی در آبشار شماره ۵ روستای خور (جاده چالوس) در تاریخ ۱۵ دی ۱۴۰۱ به سرپرستی سلمان بهمن‌دار."
 date: 2023-01-05
-categories: [ice-climbing, training]
+categories: [icefall, training-camp, winter-ascent]
 tags: [خور, یخ‌نوردی, آبشار یخی, آموزش, البرز, چالوس, زمستان, کارگاه]
 image: /assets/mount/logbook/2023-01-05-ice-climbing-khor-5/5839_orig.jpg
-site:
+peak:
   name: "آبشار شماره ۵ - روستای خور"
   elevation_m: 2200
   region: "البرز، جاده چالوس، روستای خور"

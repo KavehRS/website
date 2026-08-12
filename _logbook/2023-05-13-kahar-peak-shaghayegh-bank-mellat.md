@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل صعود یک‌روزه به قله کهار (۴۰۵۰ متر) از مسیر روستای کلوان در تاریخ ۲۳ اردیبهشت ۱۴۰۲ به سرپرستی افشین محمدی."
 date: 2023-05-13
-categories: [high-altitude, mountaineering]
+categories: [high-altitude]
 tags: [کهار, البرز, کلوان, آسارا, کوهنوردی, گزارش صعود, صعود گروهی, باشگاه شقایق, بانک ملت]
 image: /assets/mount/logbook/2023-05-13-kahar-peak-shaghayegh-bank-mellat/6035_orig.jpeg
 peak:

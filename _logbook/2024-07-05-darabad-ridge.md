@@ -7,6 +7,10 @@ description: "گزارش صعود خط‌الراس دارآباد از مسیر
 date: 2024-07-05
 categories: [technical-mountaineering]
 image: /assets/mount/logbook/2024-07-05-darabad-ridge/darabad-ridge-1.jpg
+peak:
+  name: "دارآباد"
+  elevation_m: 3320
+  region: "البرز مرکزی، شمال شرق تهران، دارآباد"
 ---
 
 گزارش برنامه صعود خط الارس دارآباد از روی تیغه‌ها

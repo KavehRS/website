@@ -5,10 +5,10 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل تمرین یک‌روزه سنگ‌نوردی در سایت باشگاه شقایق (جاده چالوس، روستای پورکان) در تاریخ ۲۳ فروردین ۱۴۰۲ به سرپرستی پیام غلامی."
 date: 2023-04-12
-categories: [rock-climbing, training]
+categories: [rock-climbing, training-camp]
 tags: [سنگ‌نوردی, آموزش, کرج, چالوس, پورکان, باشگاه شقایق, دیواره, کارگاه]
 image: /assets/mount/logbook/2023-04-12-rock-climbing-shaghayegh/5988_orig.jpeg
-site:
+peak:
   name: "سایت سنگ‌نوردی شقایق - روستای پورکان"
   elevation_m: 1800
   region: "البرز، جاده چالوس، روستای پورکان"

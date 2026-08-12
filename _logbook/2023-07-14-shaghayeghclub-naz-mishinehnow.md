@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل پیمایش خط‌الراس ناز و میشینه‌نو به همراه باشگاه کوهنوردی شقایق کرج در تاریخ ۲۳ تیر ۱۴۰۲."
 date: 2023-07-14
-categories: [high-altitude, mountaineering, traverse]
+categories: [high-altitude, technical-mountaineering]
 tags: [ناز, میشینه‌نو, کهار, البرز, کلوان, پیمایش, خط‌الراس, باشگاه شقایق]
 image: /assets/mount/logbook/2023-07-14-shaghayeghclub-naz-mishinehnow/cover.jpg
 club: "باشگاه کوهنوردی شقایق کرج"
