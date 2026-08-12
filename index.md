@@ -1,14 +1,14 @@
 ---
 layout: about
 permalink: /
-title: Kaveh RezaeiShiraz
+title: Kaveh RezaeiShiraz کاوه‌ رضائی‌شیراز
 description: >-
   کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار، MBA فناوری اطلاعات و سیستم‌های اطلاعاتی،
   علاقه‌مند به متن‌باز، کوهنوردی و DryTooling. ساکن تهران.
 profile:
   align: right
   image: kavehrs.jpg
-  image_alt: عکس پروفایل کاوه‌ رضایی‌شیراز
+  image_alt: عکس پروفایل کاوه‌ رضائی‌شیراز
 published: true
 dir_attr: ltr
 ---
