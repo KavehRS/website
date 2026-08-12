@@ -11,6 +11,8 @@ profile:
   image_alt: عکس پروفایل کاوه‌ رضائی‌شیراز
 published: true
 dir_attr: ltr
+lang: fa-IR
+
 ---
 
 # درباره من
