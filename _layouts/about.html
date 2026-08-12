@@ -5,7 +5,6 @@ layout: default
 {% comment %}
 --------------------------------------------------------------
 تنظیم جهت صفحه بر اساس متغیر dir_attr در Front Matter
-اگر در صفحه نوشته باشید dir_attr: rtl راست‌چین می‌شود
 --------------------------------------------------------------
 {% endcomment %}
 {% assign dir = page.dir_attr | default: 'ltr' %}
@@ -14,18 +13,55 @@ layout: default
   {% assign text_align = 'right' %}
 {% endif %}
 
-<div dir="{{ dir }}" style="text-align: {{ text_align }};">
+<style>
+  /* ===== رفع مشکلات راست‌چینی در همین صفحه ===== */
+  .about-container {
+    overflow: auto; /* جلوگیری از همپوشانی عکس و متن */
+  }
+
+  /* وقتی صفحه راست‌چین است */
+  [dir="rtl"] .profile-img {
+    float: left !important; /* عکس را به چپ می‌برد تا متن از راست شروع شود */
+    margin-left: 1.5rem !important;
+    margin-right: 0 !important;
+    border: none !important; /* خط سبز را کاملاً حذف می‌کند */
+  }
+
+  /* اگر دوست دارید خط سبز به سمت راست عکس برود، به‌جای border:none از این دو خط استفاده کنید: */
+  /*
+  [dir="rtl"] .profile-img {
+    border-left: none !important;
+    border-right: 3px solid #00a651 !important;
+  }
+  */
+</style>
+
+<div class="about-container" dir="{{ dir }}" style="text-align: {{ text_align }};">
 
   {% if page.profile %}
     {% if page.profile.image %}
+
+      {% comment %}
+        محاسبهٔ جهت float: اگر صفحه راست‌چین است، جای right و left را عوض می‌کنیم
+      {% endcomment %}
+      {% assign float_dir = page.profile.align | default: 'right' %}
+      {% if dir == 'rtl' %}
+        {% if float_dir == 'right' %}
+          {% assign float_dir = 'left' %}
+        {% elsif float_dir == 'left' %}
+          {% assign float_dir = 'right' %}
+        {% endif %}
+      {% endif %}
+
       <img
-        class="profile {{ page.profile.align }}"
+        class="profile-img"
         width="33.33%"
         src="{{ page.profile.image | prepend: '/assets/images/logos/1/' | relative_url }}"
         alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
         loading="eager"
         decoding="async"
-        {% if dir == 'rtl' %}style="margin-left: auto; margin-right: 0; float: right;"{% endif %}>
+        style="float: {{ float_dir }};">
+
     {% endif %}
   {% endif %}
 
