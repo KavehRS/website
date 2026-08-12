@@ -24,16 +24,18 @@ layout: default
     float: left !important; /* عکس را به چپ می‌برد تا متن از راست شروع شود */
     margin-left: 1.5rem !important;
     margin-right: 0 !important;
-    border: none !important; /* خط سبز را کاملاً حذف می‌کند */
+    /* --- کادر دایره‌ای (خط سبز) را به سمت راست عکس منتقل می‌کنیم --- */
+    border-left: none !important;
+    border-right: 3px solid #00a651 !important; /* خط سبز رنگ در سمت راست عکس */
+    border-radius: 50% !important; /* اگر عکس گرد است، این خط را نگه می‌دارد */
   }
 
-  /* اگر دوست دارید خط سبز به سمت راست عکس برود، به‌جای border:none از این دو خط استفاده کنید: */
-  /*
-  [dir="rtl"] .profile-img {
-    border-left: none !important;
-    border-right: 3px solid #00a651 !important;
+  /* اگر صفحه چپ‌چین است (حالت پیش‌فرض انگلیسی) */
+  [dir="ltr"] .profile-img {
+    border-right: none !important;
+    border-left: 3px solid #00a651 !important;
+    border-radius: 50% !important;
   }
-  */
 </style>
 
 <div class="about-container" dir="{{ dir }}" style="text-align: {{ text_align }};">
