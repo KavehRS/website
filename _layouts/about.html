@@ -3,63 +3,22 @@ layout: default
 ---
 
 {% assign dir = page.dir_attr | default: 'ltr' %}
-{% assign text_align = 'left' %}
-{% if dir == 'rtl' %}
-  {% assign text_align = 'right' %}
-{% endif %}
 
-<style>
-  .about-container {
-    overflow: auto;
-  }
-
-  /* راست‌چین */
-  [dir="rtl"] .profile-img {
-    float: left !important;
-    margin-left: 1.5rem !important;
-    margin-right: 0 !important;
-    border: 3px solid #00a651 !important;
-    border-radius: 50% !important;
-  }
-
-  /* چپ‌چین */
-  [dir="ltr"] .profile-img {
-    border: 3px solid #00a651 !important;
-    border-radius: 50% !important;
-  }
-
-  /* حذف خط سبز اضافی */
-  .about-container {
-    border: none !important;
-  }
-</style>
-
-<div class="about-container" dir="{{ dir }}" style="text-align: {{ text_align }};">
-
-  {% if page.profile %}
-    {% if page.profile.image %}
-
-      {% assign float_dir = page.profile.align | default: 'right' %}
-      {% if dir == 'rtl' %}
-        {% if float_dir == 'right' %}
-          {% assign float_dir = 'left' %}
-        {% elsif float_dir == 'left' %}
-          {% assign float_dir = 'right' %}
-        {% endif %}
-      {% endif %}
-
+<div class="about-page" dir="{{ dir }}">
+  <div class="about-hero">
+    {% if page.profile and page.profile.image %}
       <img
-        class="profile-img"
-        width="33.33%"
+        class="about-photo"
         src="{{ page.profile.image | relative_url }}"
         alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
         loading="eager"
         decoding="async"
-        style="float: {{ float_dir }};">
-
+        width="176"
+        height="176">
     {% endif %}
-  {% endif %}
 
-  {{ content }}
-
+    <div class="about-intro">
+      {{ content }}
+    </div>
+  </div>
 </div>

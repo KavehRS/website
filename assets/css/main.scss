@@ -30,8 +30,8 @@ $on-laptop:        1000px;
 
 
 
-/* عکس‌های وسط‌چین و واکنش‌گرا (Responsive) */
-article img {
+/* عکس‌های وسط‌چین و واکنش‌گرا (Responsive) — نه عکس پروفایل صفحهٔ اول */
+article img:not(.about-photo) {
     display: block;
     max-width: 100%;
     width: auto;
