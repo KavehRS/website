@@ -44,3 +44,10 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Added unpublished `_seo/authority-roadmap.md`: path to become the leading Persian ascent-report source.
 - Based on live inventory (22 reports), competitor club SERPs, and Google Search Central people-first / E-E-A-T guidance.
 - Does not change published pages.
+
+## 2026-08-12 — No guessed facts
+
+- Owner rule: published data must be sourced or omitted; only that climb’s experience may be un-sourced narrative/GPS/times.
+- Added `.cursor/rules/logbook-facts.mdc`; synced AGENTS.md, logbook rules/skill/template/automation.
+- Removed rounded placeholder coordinates (Pol-Khab, Kamachal, Dona, Naz geo conflict); stripped `[reference:N]` leftovers.
+- Kahar machine elevation/coords aligned to SummitPost/Wikipedia (4015 m) with Persian 4050 noted as disagreement.

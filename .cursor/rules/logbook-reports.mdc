@@ -10,7 +10,7 @@ When the user asks for a new climb / ascent report (`گزارش صعود`), or w
 ## Create / publish
 
 1. Framework: `_drafts/logbook-ascent-report-template.md` + structural sample `_drafts/samples/kahar-peak-report-framework-sample.md` (never republish sample prose).
-2. Live file: `_logbook/YYYY-MM-DD-<peak-slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, `tags`, `report_status: active` (until finished), and when known `peak: { name, elevation_m, latitude, longitude, region }`.
+2. Live file: `_logbook/YYYY-MM-DD-<peak-slug>.md` with `lang: fa-IR`, `dir_attr: rtl`, `description`, `date`, `tags`, `report_status: active` (until finished), and `peak: { name, elevation_m, latitude, longitude, region }` **only for values from a named source or this climb’s GPS** — omit guessed/rounded placeholders (see `.cursor/rules/logbook-facts.mdc`).
 3. `categories` from `_data/logbook_disciplines.yml` only (see table below) — never vague `mountaineering` / `logbook`.
 4. Section order: peak specs → region → **weather (applicable accurate sources)** → flora/fauna → access → routes → shelter/water → season → views → **چالش‌های برنامه** → **gear (date+weather)** → team → narrative (per program day if multi-day).
 5. Images: `assets/mount/logbook/<exact-url-slug>/` matching the report URL (see `.cursor/rules/logbook-assets.mdc`).
@@ -127,6 +127,10 @@ Also list non-weather challenges (altitude, wind-famous summit, crowded shelter,
 ## Weather-based gear (required)
 
 `تجهیزات مورد نیاز` must be derived from **this** climb date(s) + latest **applicable accurate** forecast(s) — not a generic seasonal list. Include what is **not** needed for this date. Refresh gear whenever weather is refreshed.
+
+## Factual accuracy
+
+Stable specs (elevation, coordinates, trailhead/shelter heights, road km, flora/fauna) must be sourced or omitted. Climb narrative/GPS/times for **this** outing may be experiential. Never invent rounded geo or «حدود» to cover a missing source. Full rule: `.cursor/rules/logbook-facts.mdc`.
 
 ## Uniqueness
 

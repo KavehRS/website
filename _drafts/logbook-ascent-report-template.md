@@ -19,11 +19,12 @@ USAGE (agent-only — do not copy this comment block into published pages)
 2) Front matter must include: lang, dir_attr, description, date, tags, image,
    categories from _data/logbook_disciplines.yml
    (training-camp | snowfield | glacier | icefall | winter-ascent | high-altitude | technical-mountaineering | hiking | rock-climbing | wall-climbing),
-   and peak: { name, elevation_m, latitude, longitude, region } when known (SEO JSON-LD)
+   and peak: { name, elevation_m, latitude, longitude, region } ONLY from a named source or this climb’s GPS — omit guessed/rounded placeholders (see .cursor/rules/logbook-facts.mdc)
 3) Classification: ridge/gendarme/alpine hand-and-foot → technical-mountaineering (کوهنوردی فنی).
    rock-climbing / wall-climbing only for true rock or multipitch wall — never for alpine ridge trips.
 4) Fill facts for THIS climb only. Program length/dates = exactly what the user said (one-day vs multi-day).
    Do not invent overnight stays. Kahar sample is one-day on ۱۶ مرداد ۱۴۰۵.
+   Stable specs (elevation, coordinates, flora/fauna, road km) must be sourced or omitted — never guessed «حدود». Climb times/GPS/narrative may be experiential.
 5) Weather: use only **accurate** sources for this peak/region (Open-Meteo; Mountain-Forecast only if peak has its own page; Meteoblue when reliable). **Omit** distant proxies or missing data — do not publish empty subsections.
 6) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran for report_status: active until 22:00 the night before the climb (automatic when billing enabled)
 7) If a forecast change is noticeable among sources actually used, add/update ## چالش‌های برنامه with before→after details (sources, time, impact).
@@ -65,17 +66,17 @@ categories: [high-altitude]
 ## مشخصات قله
 
 - **نام قله:**
-- **ارتفاع قله:**
+- **ارتفاع قله:** (منبع نام‌دار یا GPS این برنامه؛ اگر اختلاف منابع است هر دو عدد را بنویس)
 - **رشته‌کوه:**
 - **موقعیت اداری:**
 - **مبدأ رایج صعود:**
-- **ارتفاع پای‌کار:**
-- **اختلاف ارتفاع تقریبی تا قله:**
-- **طول مسیر تقریبی:**
-- **مدت زمان تقریبی صعود / فرود:**
+- **ارتفاع پای‌کار:** (فقط اگر منبع/GPS دارید)
+- **اختلاف ارتفاع تا قله:** (فقط از اعداد منبع‌دار)
+- **طول مسیر:** (GPS این برنامه یا منبع نام‌دار)
+- **مدت زمان صعود / فرود این برنامه:** (تجربهٔ همین صعود؛ «معمول ۵ تا ۷ ساعت» را از سایت‌های دیگر کپی نکن)
 - **سطح فنی مسیر نرمال:**
 - **وجه شهرت / نکته کلیدی:**
-- **مختصات تقریبی قله:**
+- **مختصات قله:** (منبع نام‌دار؛ اگر نیست این خط را حذف کن)
 
 
 ## معرفی منطقه

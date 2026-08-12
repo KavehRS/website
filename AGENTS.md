@@ -21,6 +21,14 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 | `_drafts/` | Unpublished templates/samples only |
 | `_projects/` | Not published (`output: false`, `noindex`) |
 
+## Factual accuracy (required)
+
+Published pages must not contain **guessed or unsourced** numbers or species lists. Omit the field if there is no named source.
+
+The **only** exception is the experience of **that** climb (clock times, rests, GPS of that day, weather as felt, who was on the team). Do not copy “typical” hours, rounded lat/lon, or tourism-blog flora into a report.
+
+If elevations/coordinates disagree across named sources, publish the disagreement — do not hide it behind «حدود». Details: `.cursor/rules/logbook-facts.mdc`.
+
 ## Climb-report weather (required)
 
 Every `_logbook` ascent report weather section uses **only accurate sources** for that peak and region:
@@ -109,7 +117,8 @@ Become the authoritative Persian source for:
 
 - Commit secrets, API keys, or credentials
 - Publish `_drafts/`
-- Invent climb facts, weather, or team members
+- Invent climb facts, weather, team members, coordinates, elevations, or flora/fauna
+- Publish rounded placeholder lat/lon or «حدود» in place of a missing source
 - Weaken uniqueness of logbook narratives for SEO
 
 ## Cursor Cloud specific instructions
