@@ -7,6 +7,10 @@ description: "گزارش برنامه صعود به قله عرقچین؛ جزئ
 date: 2024-03-30
 categories: [hiking]
 image: /assets/mount/logbook/2024-03-30-araghchin-peak/araghchin-1.jpg
+peak:
+  name: "عرقچین"
+  elevation_m: 2800
+  region: "شمال تهران، پارک نیلوفر"
 ---
 
 گزارش برنامه قله عرقچین

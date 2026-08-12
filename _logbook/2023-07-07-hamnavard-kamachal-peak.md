@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل صعود یک‌روزه به قله کماچال (حدود ۳۰۵۰ متر) از مسیر یال ولنجک در تاریخ ۱۶ تیر ۱۴۰۲ به سرپرستی کاوه رضائی شیراز."
 date: 2023-07-07
-categories: [high-altitude, mountaineering]
+categories: [hiking]
 tags: [کماچال, توچال, ولنجک, تهران, کوهنوردی, گزارش صعود, باشگاه همنورد]
 image: /assets/mount/logbook/2023-07-07-hamnavard-kamachal-peak/summit.jpg
 club: "باشگاه کوهنوردی همنورد - تهران"

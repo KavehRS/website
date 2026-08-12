@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل صعود یک‌روزه به قله هزاربند (حدود ۳۳۵۰ متر) از مسیر روستای حسنکدر در تاریخ ۲۸ مهر ۱۴۰۲ به سرپرستی جمشید مهرآور."
 date: 2023-10-20
-categories: [high-altitude, mountaineering]
+categories: [hiking]
 tags: [هزاربند, البرز, حسنکدر, کرج, کوهنوردی, گزارش صعود, صعود گروهی, باشگاه شقایق]
 image: /assets/mount/logbook/2023-10-20-shaghayeghclub-hezarband-peak/6387_orig.jpg
 club: "باشگاه کوهنوردی شقایق کرج"

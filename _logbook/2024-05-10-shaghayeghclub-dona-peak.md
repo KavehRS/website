@@ -5,7 +5,7 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل صعود یک‌روزه به قله دونا (۳۶۰۰ متر) از مسیر روستای دونا در تاریخ ۲۱ اردیبهشت ۱۴۰۳ به سرپرستی مریم رضایی."
 date: 2024-05-10
-categories: [high-altitude, mountaineering]
+categories: [hiking]
 tags: [دونا, البرز, یوش, بلده, کوهنوردی, گزارش صعود, صعود گروهی, باشگاه شقایق]
 image: /assets/mount/logbook/2024-05-10-shaghayeghclub-dona-peak/6634_orig.jpg
 club: "باشگاه کوهنوردی شقایق کرج"

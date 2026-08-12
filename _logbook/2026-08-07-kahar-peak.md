@@ -5,10 +5,11 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش برنامه یک‌روزه صعود به قله کهار (۴۰۵۰ متر) در ۱۶ مرداد ۱۴۰۵؛ مسیر کلوان، زمان‌بندی اجرا و جزئیات برنامه."
 date: 2026-08-07
+report_status: completed
 
 categories: [high-altitude]
 tags: [کهار, البرز, کلوان, آسارا, طالقان, کوهنوردی, گزارش صعود, کوهنوردی مرتفع]
-image: /assets/images/logos/1/kavehrs.jpg
+image: /assets/mount/logbook/2026-08-07-kahar-peak/cover.jpeg
 peak:
   name: "کهار"
   elevation_m: 4050

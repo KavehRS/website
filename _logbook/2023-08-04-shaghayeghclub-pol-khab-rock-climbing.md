@@ -5,11 +5,11 @@ lang: fa-IR
 dir_attr: rtl
 description: "گزارش کامل تمرین یک‌روزه سنگ‌نوردی در دیواره پل‌خواب (جاده چالوس) در تاریخ ۱۳ مرداد ۱۴۰۲ به سرپرستی پیام غلامی."
 date: 2023-08-04
-categories: [rock-climbing, training]
+categories: [rock-climbing, training-camp]
 tags: [سنگ‌نوردی, آموزش, کرج, چالوس, پل‌خواب, باشگاه شقایق, دیواره, کارگاه]
 image: /assets/mount/logbook/2023-08-04-shaghayeghclub-pol-khab-rock-climbing/6279_orig.jpeg
 club: "باشگاه کوهنوردی شقایق کرج"
-site:
+peak:
   name: "دیواره پل‌خواب"
   elevation_m: 1800
   latitude: 36.05000
