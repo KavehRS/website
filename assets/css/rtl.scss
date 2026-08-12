@@ -1,0 +1,30 @@
+---
+# فقط این خط برای Jekyll لازم است تا فایل پردازش شود
+---
+
+// تمام المان‌های صفحه را راست‌چین می‌کند
+html {
+    direction: rtl;
+}
+
+// راست‌چین کردن تک تک بخش‌های تم
+body {
+    text-align: right;
+}
+
+// تنظیم مجدد برای المان‌هایی که باید چپ‌چین بمانند (مثل کدها)
+pre, code, .highlight, .math {
+    direction: ltr;
+    text-align: left;
+}
+
+// راست‌چین کردن منو و فوتر
+.navbar, .footer {
+    direction: rtl;
+}
+
+// تنظیم موقعیت عکس پروفایل (اگر align: right است، این کار را اصلاح می‌کند)
+.profile .img-fluid {
+    margin-left: auto;
+    margin-right: 0;
+}
