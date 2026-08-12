@@ -1,5 +1,5 @@
 ---
-layout: "خانه"
+layout: about
 permalink: /
 title: Kaveh RezaeiShiraz
 description: >-
