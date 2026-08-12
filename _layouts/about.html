@@ -51,7 +51,7 @@ layout: default
       <img
         class="profile-img"
         width="33.33%"
-        src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+        src="{{ page.profile.image | relative_url }}"
         alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
         loading="eager"
         decoding="async"

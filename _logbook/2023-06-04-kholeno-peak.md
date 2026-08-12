@@ -7,7 +7,7 @@ description: "گزارش کامل صعود یک‌روزه به قله خلهن�
 date: 2023-06-04
 categories: [high-altitude, mountaineering]
 tags: [خلهنو, خلنو, تهران, البرز, کوهنوردی, گزارش صعود, انفرادی, برف, جبهه جنوبی]
-image: /assets/mount/logbook/2023-06-04-kholeno-peak/cover.jpeg
+image: /assets/mount/logbook/2023-06-04-kholeno-peak/cover.jpg
 club: "صعود انفرادی"
 peak:
   name: "خلهنو"

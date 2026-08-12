@@ -7,7 +7,7 @@ description: >-
   علاقه‌مند به متن‌باز، کوهنوردی و DryTooling. ساکن تهران.
 profile:
   align: right
-  image: /assets/media/images/kavehrs.jpg
+  image: /assets/images/logos/1/kavehrs.jpg
   image_alt: عکس پروفایل کاوه‌ رضائی‌شیراز
 published: true
 dir_attr: rtl
