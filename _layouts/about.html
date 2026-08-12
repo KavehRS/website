@@ -24,16 +24,14 @@ layout: default
     float: left !important; /* عکس را به چپ می‌برد تا متن از راست شروع شود */
     margin-left: 1.5rem !important;
     margin-right: 0 !important;
-    /* --- کادر دایره‌ای (خط سبز) را به سمت راست عکس منتقل می‌کنیم --- */
-    border-left: none !important;
-    border-right: 3px solid #00a651 !important; /* خط سبز رنگ در سمت راست عکس */
-    border-radius: 50% !important; /* اگر عکس گرد است، این خط را نگه می‌دارد */
+    /* --- ایجاد دایره کامل سبز دور عکس (همهٔ چهار طرف) --- */
+    border: 3px solid #00a651 !important; /* خط سبز دورتادور عکس */
+    border-radius: 50% !important; /* گرد کردن عکس به شکل دایره */
   }
 
-  /* اگر صفحه چپ‌چین است (حالت پیش‌فرض انگلیسی) */
+  /* وقتی صفحه چپ‌چین است (حالت پیش‌فرض انگلیسی) */
   [dir="ltr"] .profile-img {
-    border-right: none !important;
-    border-left: 3px solid #00a651 !important;
+    border: 3px solid #00a651 !important;
     border-radius: 50% !important;
   }
 </style>
