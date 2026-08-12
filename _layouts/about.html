@@ -2,11 +2,6 @@
 layout: default
 ---
 
-{% comment %}
---------------------------------------------------------------
-تنظیم جهت صفحه بر اساس متغیر dir_attr در Front Matter
---------------------------------------------------------------
-{% endcomment %}
 {% assign dir = page.dir_attr | default: 'ltr' %}
 {% assign text_align = 'left' %}
 {% if dir == 'rtl' %}
@@ -14,27 +9,26 @@ layout: default
 {% endif %}
 
 <style>
-  /* ===== رفع مشکلات راست‌چینی در همین صفحه ===== */
   .about-container {
-    overflow: auto; /* جلوگیری از همپوشانی عکس و متن */
+    overflow: auto;
   }
 
-  /* وقتی صفحه راست‌چین است */
+  /* راست‌چین */
   [dir="rtl"] .profile-img {
-    float: left !important; /* عکس را به چپ می‌برد تا متن از راست شروع شود */
+    float: left !important;
     margin-left: 1.5rem !important;
     margin-right: 0 !important;
-    /* --- ایجاد دایره کامل سبز دور عکس (همهٔ چهار طرف) --- */
-    border: 3px solid #00a651 !important; /* خط سبز دورتادور عکس */
-    border-radius: 50% !important; /* گرد کردن عکس به شکل دایره */
+    border: 3px solid #00a651 !important;
+    border-radius: 50% !important;
   }
 
-  /* وقتی صفحه چپ‌چین است (حالت پیش‌فرض انگلیسی) */
+  /* چپ‌چین */
   [dir="ltr"] .profile-img {
     border: 3px solid #00a651 !important;
     border-radius: 50% !important;
   }
-    /* حذف خط سبز اضافی */
+
+  /* حذف خط سبز اضافی */
   .about-container {
     border: none !important;
   }
@@ -45,9 +39,6 @@ layout: default
   {% if page.profile %}
     {% if page.profile.image %}
 
-      {% comment %}
-        محاسبهٔ جهت float: اگر صفحه راست‌چین است، جای right و left را عوض می‌کنیم
-      {% endcomment %}
       {% assign float_dir = page.profile.align | default: 'right' %}
       {% if dir == 'rtl' %}
         {% if float_dir == 'right' %}
@@ -60,7 +51,7 @@ layout: default
       <img
         class="profile-img"
         width="33.33%"
-        src="{{ page.profile.image | prepend: '/assets/images/logos/1/' | relative_url }}"
+        src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
         alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
         loading="eager"
         decoding="async"
