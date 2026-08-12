@@ -124,8 +124,16 @@ exclude:
   - _seo
 
 
+
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-email-protect
+
+
+# _config.yml
+assets:
+  css:
+    - "rtl.scss"
