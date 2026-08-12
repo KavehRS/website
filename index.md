@@ -13,7 +13,7 @@ published: true
 dir_attr: ltr
 ---
 
-# About
+# درباره من
 <blockquote>
   <p><strong>مهندس نرم‌افزار | MBA (گرایش فناوری اطلاعات و سیستم‌های اطلاعاتی) | کوهنورد</strong></p>
   <ul>
