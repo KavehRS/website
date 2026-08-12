@@ -15,6 +15,8 @@ Stable facts (peak name spelling, elevation, coordinates, trailhead elevation, s
 - If sources **disagree**, publish the disagreement with the source names and their numbers. Do **not** pick a round “حدود X” to hide the conflict.
 - If no accurate source exists: **omit the field**. Do not invent rounded lat/lon (`36.05000`, `36.10000`, `35.83333`), round elevations (`۱۸۰۰`, `۲۲۰۰`, `۳۶۰۰`), or copy generic lists from tourism blogs.
 
+**Flora / fauna (required section, not a copied checklist):** rewrite for **this program’s Jalali date, elevation bands, and that day’s forecast**. Do not paste another report’s species bullets (e.g. spring Kahar ≠ mid-summer Kahar). Do not invent “we saw X” unless the user recorded a sighting. Describe seasonal condition; name a species only when it is expected in that belt/season or was observed.
+
 Front matter `peak.latitude` / `peak.longitude` / `peak.elevation_m`: same rule. Missing is better than a placeholder. JSON-LD must not emit guessed geo.
 
 ## What may stay experiential (this climb only)
