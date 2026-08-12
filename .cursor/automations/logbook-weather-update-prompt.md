@@ -1,7 +1,8 @@
 # Cursor Automation — Logbook weather refresh (4× daily, automatic)
 
-> The agent must perform these refreshes itself until the night before each climb.  
+> The agent must perform these refreshes itself for **active** reports until the night before each climb.  
 > Do **not** wait for the user to ask.  
+> **Billing pause:** configured but **paused** until the site owner recharges Cursor and enables schedulers. After recharge: **mandatory always-on.**  
 > Native Automations: paste the prompt below at the Cursor Automations dashboard.  
 > Fallback scheduler: `.github/workflows/logbook-weather-agent.yml` (needs `CURSOR_API_KEY` secret).
 
@@ -27,18 +28,22 @@ Follow:
 1. AGENTS.md
 2. .cursor/rules/logbook-weather-schedule.mdc
 3. .cursor/rules/logbook-reports.mdc
-4. .cursor/skills/logbook-ascent-report/SKILL.md (weather / gear / challenges)
+4. .cursor/skills/logbook-ascent-report/SKILL.md (weather / gear / challenges / lifecycle)
 
-For every `_logbook/*.md` report still inside the update window
+For every `_logbook/*.md` report with `report_status: active` (or unset) still inside the weather window
 (from creation until 22:00 Asia/Tehran the night before the program start):
 
-1. Refresh weather for every program day from Open-Meteo, Mountain-Forecast, and Meteoblue
+1. Refresh weather for every program day from **accurate sources only**:
+   - Open-Meteo when coordinates apply
+   - Mountain-Forecast ONLY if the peak has its own page (no distant proxy)
+   - Meteoblue when lat/lon + elevation are reliable
+   - OMIT any source without accurate peak/region data; do not publish empty subsections
 2. Stamp the update time in Jalali + Gregorian + clock Asia/Tehran
 3. Update gear if the forecast change matters
-4. If the change is noticeable, add/update `## چالش‌های برنامه` with before→after details, sources, time, and impact (see logbook-reports.mdc thresholds)
+4. If the change is noticeable, add/update `## چالش‌های برنامه` with before→after details, sources, time, and impact (only among sources actually used; see logbook-reports.mdc thresholds)
 5. Keep uniqueness rules; do not rewrite unrelated prose
 6. Preserve UI rules: related = flat «گزارش‌های مرتبط :» only; reader dates Jalali; no agent notes on pages
-7. Sync structural sample only if it is meant to mirror the live Kahar pre-report framework
+7. Skip reports with `report_status: completed`
 
 If anything material changed: branch `cursor/weather-refresh-YYYYMMDD-HHMM-33ce`,
 `bundle exec jekyll build`, open PR, merge after clean build.

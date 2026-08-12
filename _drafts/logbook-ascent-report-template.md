@@ -24,22 +24,22 @@ USAGE (agent-only — do not copy this comment block into published pages)
    rock-climbing / wall-climbing only for true rock or multipitch wall — never for alpine ridge trips.
 4) Fill facts for THIS climb only. Program length/dates = exactly what the user said (one-day vs multi-day).
    Do not invent overnight stays. Kahar sample is one-day on ۱۶ مرداد ۱۴۰۵.
-5) Weather MUST cover every program day from three sources: Open-Meteo + mountain-forecast.com + meteoblue.com
-   (if Mountain-Forecast lacks the peak, use nearest elevation-matched proxy and say so)
-6) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran from creation until 22:00 the night before the climb
-7) If a forecast change is noticeable, add/update ## چالش‌های برنامه with before→after details (sources, time, impact).
-   Thresholds live in .cursor/rules/logbook-reports.mdc — never paste that path into the published report body.
-8) Gear list MUST be derived from climb date(s) + that triple weather forecast (not a generic seasonal packing list)
-9) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
-10) Related reports: SELECT by shared categories in _includes/related-links.html.
+5) Weather: use only **accurate** sources for this peak/region (Open-Meteo; Mountain-Forecast only if peak has its own page; Meteoblue when reliable). **Omit** distant proxies or missing data — do not publish empty subsections.
+6) Weather is refreshed at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran for report_status: active until 22:00 the night before the climb (automatic when billing enabled)
+7) If a forecast change is noticeable among sources actually used, add/update ## چالش‌های برنامه with before→after details (sources, time, impact).
+8) Gear list MUST be derived from climb date(s) + applicable accurate forecast(s) (not a generic seasonal packing list)
+9) report_status: active until post-climb report finished; then completed
+10) Images live in assets/mount/logbook/<exact-url-slug>/ matching the report URL slug
+11) Related reports: SELECT by shared categories in _includes/related-links.html.
     Public UI must be only «گزارش‌های مرتبط :» + flat list — no «بر اساس نوع برنامه…», no category headings.
-11) Hub /logbook/ is chronological by date (newest first), not grouped by category.
-12) Before publish: compare against existing `_logbook/*` for the same peak
-13) Never paste this template prose unchanged into a published report
-14) Never publish agent/implementation notes on live pages
-15) Reader-facing site dates (footer آخرین بروزرسانی, post meta, /logbook/ list) use Jalali via _includes/jalali-date.html
+12) Hub /logbook/ is chronological by date (newest first), not grouped by category.
+13) Before publish: compare against existing `_logbook/*` for the same peak
+14) Never paste this template prose unchanged into a published report
+15) Never publish agent/implementation notes on live pages
+16) Reader-facing site dates (footer آخرین بروزرسانی, post meta, /logbook/ list) use Jalali via _includes/jalali-date.html
     e.g. 13 مرداد 1405 — never English Gregorian like «04 August 2026» in those UI spots.
     Report body: program dates Jalali-first; weather stamps may add Gregorian in parentheses.
+17) Scheduled automation paused until owner recharges Cursor; after recharge mandatory always-on (see AGENTS.md)
 -->
 
 
@@ -87,7 +87,7 @@ categories: [high-altitude]
 
 {{اقلیم_و_نکات_محلی — متن تازه}}
 
-**آخرین پیش‌بینی هوا برای تمام روزهای برنامه — حتماً از سه منبع:**
+**آخرین پیش‌بینی هوا برای تمام روزهای برنامه — فقط منابع دقیق:**
 
 زمان به‌روزرسانی:
 
@@ -95,13 +95,15 @@ categories: [high-altitude]
 - نقطه / ارتفاع قله و پای‌کار:
 - خلاصهٔ هر روز برنامه (دما، باد/تندباد، ابر، احتمال بارش):
 
-### ۲) Mountain-Forecast (https://www.mountain-forecast.com/)
-- اگر خود قله در سایت نبود: نزدیک‌ترین قلهٔ هم‌ارتفاع + فاصله تقریبی + لینک elevation band
-- خلاصهٔ هر روز برنامه در نزدیک‌ترین باند ارتفاعی به قله:
+### ۲) Mountain-Forecast (https://www.mountain-forecast.com/) — فقط اگر صفحهٔ خود قله وجود دارد
+- اگر قله در سایت نیست: این منبع را **حذف کن** (پروکسی دور ممنوع)
+- خلاصهٔ هر روز برنامه:
 
-### ۳) Meteoblue (https://www.meteoblue.com/)
-- مختصات + ارتفاع تنظیم‌شده نزدیک قله + لینک
-- خلاصهٔ هر روز برنامه (دما، باد/تندباد، بارش، شرایط عمومی):
+### ۳) Meteoblue — فقط اگر مختصات + ارتفاع قله قابل‌اعتماد است
+- لینک نقطه @ elevation
+- خلاصهٔ هر روز برنامه:
+
+> فقط منابعی را بنویس که برای همین قله و منطقه دقیق‌اند. شماره‌گذاری فقط همان منابع (۱، ۲، …).
 
 > جمع‌بندی عملیاتی (اختلاف منابع / توصیه پوشاک و تصمیم برنامه):
 
@@ -169,7 +171,7 @@ categories: [high-altitude]
 ### نوسان / تغییر پیش‌بینی هوا (فقط اگر قابل‌ملاحظه باشد)
 
 - **زمان مشاهده:** {{جلالی + میلادی + ساعت Asia/Tehran}}
-- **منبع(ها):** Open-Meteo / Mountain-Forecast / Meteoblue
+- **منبع(ها):** {{فقط منابع دقیق استفاده‌شده — Open-Meteo / Mountain-Forecast / Meteoblue}}
 - **قبل → بعد:** {{اعداد مشخص: دما، باد/تندباد، احتمال/مقدار بارش، سطح انجماد}}
 - **اثر روی برنامه:** {{زمان‌بندی / مسیر / شب‌مانی / تجهیزات / تصمیم اجرا}}
 
@@ -181,7 +183,7 @@ categories: [high-altitude]
 ## تجهیزات مورد نیاز (بر اساس تاریخ و پیش‌بینی هوا)
 
 
-**مبنا:** {{تاریخ_جلالی_و_نوع_برنامه}} + خلاصه پیش‌بینی سه منبع (Open-Meteo / Mountain-Forecast / Meteoblue).  
+**مبنا:** {{تاریخ_جلالی_و_نوع_برنامه}} + خلاصه پیش‌بینی منابع دقیق استفاده‌شده.  
 خلاصه شرایط مورد انتظار: {{دما_باد_بارش_ابری_یخ_برف}}
 
 ### پوشاک (متناسب با دمای پیش‌بینی‌شده و باد)

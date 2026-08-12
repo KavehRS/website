@@ -1,6 +1,9 @@
-# Auto weather-refresh agent for upcoming climb reports.
+# Auto weather-refresh agent for **active** climb reports.
 # Runs at 04:00 / 10:00 / 16:00 / 22:00 Asia/Tehran until each report's
-# night-before 22:00 cutoff (enforced inside the agent prompt/rules).
+# night-before 22:00 cutoff.
+#
+# Billing pause: configured but paused until owner recharges Cursor account.
+# After recharge: mandatory always-on.
 #
 # Required repo secret:
 #   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
@@ -51,13 +54,15 @@ jobs:
           4. .cursor/skills/logbook-ascent-report/SKILL.md (weather/gear/challenges parts)
           5. .cursor/automations/logbook-weather-update-prompt.md
 
-          For every `_logbook/*.md` report still inside the update window
+          For every `_logbook/*.md` report with `report_status: active` (or unset) still inside the weather window
           (from creation until 22:00 Asia/Tehran the night before the program start):
 
-          1. Refresh weather for every program day from Open-Meteo, Mountain-Forecast, and Meteoblue
+          1. Refresh weather for every program day from **accurate sources only**:
+             Open-Meteo; Mountain-Forecast only if the peak has its own page; Meteoblue when reliable.
+             Omit distant proxies or missing data. Skip `report_status: completed`.
           2. Stamp the update time in Jalali + Gregorian + clock Asia/Tehran
           3. Update gear if the forecast change matters
-          4. If the change is noticeable, add/update `## چالش‌های برنامه` with before→after details, sources, time, and impact
+          4. If the change is noticeable among sources actually used, add/update `## چالش‌های برنامه` with before→after details, sources, time, and impact
           5. Keep uniqueness rules; do not rewrite unrelated prose
           6. Preserve UI rules: related flat list, Jalali reader dates, no agent notes on pages
 
