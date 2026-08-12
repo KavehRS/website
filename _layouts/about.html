@@ -2,16 +2,21 @@
 layout: default
 ---
 
-{% if page.profile %}
-  {% if page.profile.image %}
-    <img
-      class="profile {{ page.profile.align }}"
-      width="33.33%"
-      src="{{ page.profile.image | prepend: '/assets/images/logos/1/' | relative_url }}"
-      alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
-      loading="eager"
-      decoding="async">
-  {% endif %}
-{% endif %}
+<div dir="{{ page.dir_attr | default: 'ltr' }}" style="text-align: {{ page.dir_attr | default: 'left' | replace: 'rtl', 'right' | replace: 'ltr', 'left' }};">
 
-{{ content }}
+  {% if page.profile %}
+    {% if page.profile.image %}
+      <img
+        class="profile {{ page.profile.align }}"
+        width="33.33%"
+        src="{{ page.profile.image | prepend: '/assets/images/logos/1/' | relative_url }}"
+        alt="{{ page.profile.image_alt | default: page.title | default: site.title | escape }}"
+        loading="eager"
+        decoding="async"
+        {% if page.dir_attr == 'rtl' %}style="margin-left: auto; margin-right: 0;"{% endif %}>
+    {% endif %}
+  {% endif %}
+
+  {{ content }}
+
+</div>
