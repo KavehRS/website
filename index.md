@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: خانه
 permalink: /
 title: Kaveh RezaeiShiraz
 description: >-
@@ -11,7 +11,6 @@ profile:
   image_alt: عکس پروفایل کاوه‌ رضایی‌شیراز
 published: true
 dir_attr: ltr
-lang: en
 ---
 
 # About
