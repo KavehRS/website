@@ -17,7 +17,9 @@ Improve discoverability of Persian **گزارش برنامه صعود** content 
 
 Hub `/logbook/` is chronological. Related blocks must stay a flat `گزارش‌های مرتبط :` list (no agent blurbs / category subheads on the page). Reader-facing dates stay Jalali (`_includes/jalali-date.html`), not English Gregorian.
 
-Primary hub: `/logbook/` · Site: `https://www.kavehrs.com`
+Primary hub: `/logbook/` · Technical notes: `/blog/` · Site: `https://www.kavehrs.com`
+
+Every published post (logbook and blog) should be crawlable, have unique title/description, correct `lang`/`dir`, valid canonical, and useful structured data. Ranking “#1 for everything” is not a switch — compound people-first reports + technical hygiene + owner actions (Search Console, Bing, DNS trust). Do not keyword-stuff.
 
 ## Step 0 — Fresh guidance
 
@@ -44,7 +46,7 @@ Record: title, meta description, canonical, `lang`/`dir`, H1 count, OG/Twitter t
 
 ## Step 2 — Repo audit checklist
 
-For each `_logbook/*.md` and key pages (`index.md`, `logbook.md`, blog index):
+For each `_logbook/*.md`, `_blog/*.md`, and key pages (`index.md`, `logbook.md`, blog index):
 
 - [ ] Unique `title` and `description` (≈120–160 chars for description when practical)
 - [ ] `lang` / `dir_attr` correct

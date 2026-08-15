@@ -98,12 +98,12 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 
 When running the scheduled SEO automation (or when asked to audit SEO):
 
-
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc` and `.cursor/rules/logbook-reports.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Never republish duplicate report prose for the same peak.
-5. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
+4. Audit every published `/logbook/` and `/blog/` URL (unique title/description, canonical, structured data) — logbook first.
+5. Never republish duplicate report prose for the same peak.
+6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 
 ## Target ranking theme
 

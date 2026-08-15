@@ -40,7 +40,7 @@ social:
 # Twitter card settings for jekyll-seo-tag
 twitter:
   username: kavehrs
-  card: summary
+  card: summary_large_image
 
 # Social media usernames used in footer links
 facebook: "imkavehrs"
