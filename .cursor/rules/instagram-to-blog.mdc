@@ -27,7 +27,7 @@ When the user asks to turn Instagram posts into blog notes (`پست‌های ا�
 
 Publish a post **only** from:
 
-1. Official Instagram download under `_drafts/instagram-export/`, or
+1. Official Instagram export under `_drafts/instagram-export/` (2026: Meta Account or Accounts Center → Export your information → JSON), or
 2. Captions / dates / photos / URLs the owner attached or pasted
 
 Instagram’s public site is login-walled. Do **not** invent an archive. Do **not** use anonymous viewer sites. Omit the field if the caption does not contain it.

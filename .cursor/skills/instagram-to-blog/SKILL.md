@@ -31,7 +31,7 @@ If `.cursor/skills/blog-post/SKILL.md` exists, follow it for `_blog/` file shape
 
 Use the first source that actually contains **this account’s** posts:
 
-1. Official Instagram data download unzipped under `_drafts/instagram-export/` (preferred — complete archive)
+1. Official Instagram export (2026: **Meta Account** or **Accounts Center** → **Your information and permissions** → **Export your information** → **Create export** → **Export to device** → format **JSON**, date range all time) unzipped under `_drafts/instagram-export/` — see `_drafts/instagram-export/README.md`
 2. Files the user attached in the chat (ZIP / JSON / photos + captions)
 3. Captions, dates, and URLs the user pasted
 4. A public Instagram URL that fetches without a login wall

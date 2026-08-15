@@ -35,7 +35,7 @@ Mission: convert every unused Instagram post from account imkavehrs into a Persi
 ## Source
 
 Use only:
-- Official Instagram data download unzipped in _drafts/instagram-export/, or
+- Official Instagram export (Meta Account / Accounts Center → Export your information → JSON, all time) unzipped in _drafts/instagram-export/, or
 - Files / captions / URLs the owner attached in this run
 
 If none exist: stop. Tell the owner to follow _drafts/instagram-export/README.md and re-run. Do not scrape instagram.com (login wall). Do not use anonymous viewer mirrors.

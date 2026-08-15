@@ -94,7 +94,7 @@ When asked to convert Instagram posts into blog notes (`پست‌های اینس
 1. Follow `.cursor/skills/instagram-to-blog/SKILL.md`.
 2. Obey `.cursor/rules/instagram-to-blog.mdc`.
 3. Use `_drafts/instagram-blog-post-template.md` (structure only).
-4. Source **only** an official Instagram download in `_drafts/instagram-export/` or captions/photos/URLs the owner attached. Instagram’s public site is login-walled — do not invent posts.
+4. Source **only** an official Instagram export in `_drafts/instagram-export/` (2026 path: Meta Account or Accounts Center → Export your information → JSON) or captions/photos/URLs the owner attached. Instagram’s public site is login-walled — do not invent posts. See `_drafts/instagram-export/README.md`.
 5. Parse with `.cursor/scripts/parse-instagram-export.py`. Write `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date). Images in `assets/blog/<exact-url-slug>/`. Track ids in `_data/instagram_imports.yml`.
 6. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing `_logbook/` report instead of cloning it.
 7. For a Cursor Automation, paste `.cursor/automations/instagram-to-blog-prompt.md` at https://cursor.com/automations/new
