@@ -87,6 +87,19 @@ When asked to create or update a `گزارش صعود` / climb report:
 4. For a Cursor Automation, paste `.cursor/automations/logbook-ascent-report-prompt.md` at https://cursor.com/automations/new
 5. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when safe.
 
+## Blog post agent
+
+When asked for a `پست جدید وبلاگ` / یادداشت فنی / update to `_blog/`:
+
+1. Follow `.cursor/skills/blog-post/SKILL.md`.
+2. Obey `.cursor/rules/blog-posts.mdc`.
+3. Use `_drafts/blog-post-template.md` (structure only — never publish placeholders).
+4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
+5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
+6. Related UI stays `یادداشت‌های مرتبط :` + flat list. Hub `/blog/` chronological.
+7. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
+8. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
+
 Related scheduled agents (mandatory after billing recharge; paused until then):
 
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
