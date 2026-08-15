@@ -1,0 +1,55 @@
+---
+description: Convert Instagram posts (imkavehrs) into `_blog/` notes — official export or owner-provided captions only
+globs: _blog/**, _data/instagram_imports.yml, _drafts/instagram-export/**, _drafts/instagram-blog-post-template.md
+alwaysApply: false
+---
+
+# Instagram → blog
+
+When the user asks to turn Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن`), act as the **instagram-to-blog agent**.
+
+## Entry points
+
+1. Follow `.cursor/skills/instagram-to-blog/SKILL.md`
+2. Use `_drafts/instagram-blog-post-template.md` (structure only)
+3. Automation prompt: `.cursor/automations/instagram-to-blog-prompt.md`
+4. Parse with `.cursor/scripts/parse-instagram-export.py`
+
+## Destination
+
+- Collection: `_blog/` (not `_logbook/`)
+- New file: `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date)
+- URL: `/blog/YYYY-MM-DD-<slug>/`
+- Images: `assets/blog/<exact-url-slug>/` only
+- Ledger: `_data/instagram_imports.yml` — skip ids already listed
+
+## Sources (hard rule)
+
+Publish a post **only** from:
+
+1. Official Instagram download under `_drafts/instagram-export/`, or
+2. Captions / dates / photos / URLs the owner attached or pasted
+
+Instagram’s public site is login-walled. Do **not** invent an archive. Do **not** use anonymous viewer sites. Omit the field if the caption does not contain it.
+
+## Voice and facts
+
+- Body is the author’s note (من), rewritten from that post’s caption
+- No guessed elevations, coordinates, distances, or species lists
+- No raw hashtag dumps; keep 1–3 real topic tags in YAML
+- If a logbook report already exists for that climb, link it — do not clone the report
+- Reader-facing dates stay Jalali via `_includes/jalali-date.html`
+
+## Front matter extras
+
+```yaml
+source: instagram
+instagram_url: https://www.instagram.com/p/SHORTCODE/
+instagram_shortcode: SHORTCODE
+```
+
+Comment `image:` out until a file for **this** post exists.
+
+## Ship
+
+`bundle exec jekyll build` must succeed. Never publish `_drafts/` or `.cursor/`. Never commit the export ZIP or `parsed.json`.

@@ -1,0 +1,69 @@
+# Optional on-demand trigger: starts a Cursor Cloud Agent to import Instagram → `_blog/`.
+# Prefer native Cursor Automations (see .cursor/automations/instagram-to-blog-prompt.md).
+#
+# Required repo secret:
+#   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
+#
+# If the secret is missing, the workflow no-ops successfully so Actions stays green.
+# Do not schedule this. Instagram is login-walled; a run with no export will stop.
+
+name: Instagram to blog Cloud Agent
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start-instagram-blog-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Cursor Cloud Agent
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CURSOR_API_KEY:-}" ]; then
+            echo "CURSOR_API_KEY secret not set — skip API trigger."
+            echo "Create a Cursor Automation instead: .cursor/automations/instagram-to-blog-prompt.md"
+            exit 0
+          fi
+
+          python3 <<'PY'
+          import json, os, urllib.request
+
+          prompt = """You are the instagram-to-blog agent for https://www.kavehrs.com (repo KavehRS/website, branch master).
+
+          Mission: convert every unused Instagram post from account imkavehrs into a Persian `_blog/` note. Never invent captions, dates, or photos.
+
+          Before changing anything:
+          1. Read AGENTS.md
+          2. Follow .cursor/skills/instagram-to-blog/SKILL.md
+          3. Obey .cursor/rules/instagram-to-blog.mdc
+          4. Read _data/instagram_imports.yml and existing _blog/*.md / _logbook/*.md
+
+          Source only an official Instagram download in _drafts/instagram-export/ or files the owner attached. If none exist: stop and ask for the export (see _drafts/instagram-export/README.md). Do not scrape instagram.com. Do not use anonymous viewer mirrors.
+
+          Parse with python3 .cursor/scripts/parse-instagram-export.py, write `_blog/YYYY-MM-DD-<slug>.md` notes, copy that post's images to assets/blog/<slug>/, update _data/instagram_imports.yml, run bundle exec jekyll build, and open a PR on cursor/*-33ce. Do not commit the ZIP or parsed.json."""
+
+          body = {
+              "name": "Instagram → blog — kavehrs.com",
+              "prompt": {"text": prompt},
+              "repos": [{
+                  "url": "https://github.com/KavehRS/website",
+                  "startingRef": "master",
+              }],
+              "autoCreatePR": True,
+              "skipReviewerRequest": True,
+          }
+          req = urllib.request.Request(
+              "https://api.cursor.com/v1/agents",
+              data=json.dumps(body).encode(),
+              headers={
+                  "Authorization": f"Bearer {os.environ['CURSOR_API_KEY']}",
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          with urllib.request.urlopen(req) as resp:
+              print(resp.read().decode())
+          print("Cloud agent requested.")
+          PY
