@@ -1,0 +1,4 @@
+# Ledger of Instagram posts already turned into `_blog/` notes.
+# Agent: skip any id listed here. Do not invent rows.
+# id = instagram_shortcode, or "ts-<creation_timestamp>", or media uri basename.
+imports: []

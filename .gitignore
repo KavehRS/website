@@ -4,3 +4,8 @@ _site/
 .jekyll-cache/
 .bundle/
 vendor/
+
+# Official Instagram download — never publish or commit the archive
+_drafts/instagram-export/**
+!_drafts/instagram-export/README.md
+!_drafts/instagram-export/.gitkeep

@@ -100,6 +100,19 @@ When asked for a `پست جدید وبلاگ` / یادداشت فنی / update t
 7. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
 8. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
+## Instagram → blog agent
+
+When asked to convert Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن` / import `imkavehrs`):
+
+1. Follow `.cursor/skills/instagram-to-blog/SKILL.md`.
+2. Obey `.cursor/rules/instagram-to-blog.mdc`.
+3. Use `_drafts/instagram-blog-post-template.md` (structure only).
+4. Source **only** an official Instagram export in `_drafts/instagram-export/` (2026 path: Meta Account or Accounts Center → Export your information → JSON) or captions/photos/URLs the owner attached. Instagram’s public site is login-walled — do not invent posts. See `_drafts/instagram-export/README.md`.
+5. Parse with `.cursor/scripts/parse-instagram-export.py`. Write `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date). Images in `assets/blog/<exact-url-slug>/`. Track ids in `_data/instagram_imports.yml`.
+6. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing `_logbook/` report instead of cloning it.
+7. For a Cursor Automation, paste `.cursor/automations/instagram-to-blog-prompt.md` at https://cursor.com/automations/new
+8. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
+
 Related scheduled agents (mandatory after billing recharge; paused until then):
 
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
@@ -132,6 +145,7 @@ Become the authoritative Persian source for:
 - Commit secrets, API keys, or credentials
 - Publish `_drafts/`
 - Invent climb facts, weather, team members, coordinates, elevations, or flora/fauna
+- Invent Instagram captions, dates, or photos when converting `imkavehrs` into `_blog/`
 - Publish rounded placeholder lat/lon or «حدود» in place of a missing source
 - Weaken uniqueness of logbook narratives for SEO
 
