@@ -51,3 +51,14 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Added `.cursor/rules/logbook-facts.mdc`; synced AGENTS.md, logbook rules/skill/template/automation.
 - Removed rounded placeholder coordinates (Pol-Khab, Kamachal, Dona, Naz geo conflict); stripped `[reference:N]` leftovers.
 - Kahar machine elevation/coords aligned to SummitPost/Wikipedia (4015 m) with Persian 4050 noted as disagreement.
+
+## 2026-08-15 — Kahar photos paused + discoverability
+
+- Commented Kahar ۱۴۰۵ `image:` until owner uploads climb photos to `assets/mount/logbook/2026-08-07-kahar-peak/`.
+- Homepage: short logbook block + 3 first-hand reports (internal links; people-first, not keyword stuffing).
+- Visible byline + crumbs on logbook/blog posts (Google E-E-A-T “Who”).
+- BreadcrumbList + hub ItemList; Article image omitted when it would be the site logo.
+- Twitter card `summary_large_image`; blog index shows Jalali dates + descriptions.
+- Daily SEO skill/automation now audits every sitemap logbook **and** blog URL.
+- Sources: Google SEO starter, people-first content, Article + Breadcrumb structured data, sitemap guidance. Bing webmaster page required JS (no extra guideline text).
+- Owner still needed: Search Console + Bing sitemap submit, DNS spam (`pop.kavehrs.com`), Cursor recharge so daily SEO/weather automations run.

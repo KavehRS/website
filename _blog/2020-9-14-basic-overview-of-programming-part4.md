@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "مفاهیم اولیه برنامه‌نویسی ۴: توابع و I/O"
+title: "مفاهیم اولیه برنامه‌نویسی ۴: آرایه‌ها"
 lang: fa-IR
 dir_attr: rtl
-description: "آموزش توابع و ورودی/خروجی در مفاهیم اولیه برنامه‌نویسی برای نوشتن کد ساخت‌یافته."
-pdate: 1399-6-24
-author: KavehRS
-tags: برنامه‌نویسی c python
+description: "آرایه‌ها در C؛ تعریف، مقداردهی اولیه و دسترسی به عناصر."
+date: 2020-09-14
+tags: [برنامه‌نویسی, C, Python]
 related:
-  - title: "یادداشت نخست: مفاهیم پایه"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۱: مفاهیم پایه"
     url: /blog/2020-8-31-basic-overview-of-programming-part1/
-  - title: "یادداشت سوم: اعداد و کاراکترها"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۲: داده و حلقه‌ها"
+    url: /blog/2020-9-4-basic-overview-of-programming-part2/
+  - title: "مفاهیم اولیه برنامه‌نویسی ۳: اعداد و کاراکترها"
     url: /blog/2020-9-8-basic-overview-of-programming-part3/
   - title: "راه‌های ساده برای داشتن کد تمیز"
     url: /blog/2020-9-16-Clean-Code/

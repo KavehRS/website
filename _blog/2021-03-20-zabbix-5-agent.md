@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "نصب و تنظیم زبیکس 5 - زبیکس اجنت لینوکس"
+title: "نصب و تنظیم زبیکس ۵ — Agent لینوکس"
 lang: fa-IR
 dir_attr: rtl
 description: "آموزش نصب و تنظیم Zabbix 5 Agent روی لینوکس برای مانیتورینگ سرورها."
-pdate: 1399-12-30
-author: KavehRS
-tags: zabbix zabbix-agent
+date: 2021-03-20
+tags: [Zabbix, لینوکس, مانیتورینگ]
 related:
-  - title: "نصب و تنظیم زبیکس ۵ — Server"
+  - title: "نصب و تنظیم زبیکس ۵ — سرور"
     url: /blog/2021-03-18-zabbix-5-server/
 ---
 

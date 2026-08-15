@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "نصب و تنظیم زبیکس 5 - زبیکس سرور"
+title: "نصب و تنظیم زبیکس ۵ — سرور"
 lang: fa-IR
 dir_attr: rtl
 description: "آموزش نصب و پیکربندی Zabbix 5 Server روی اوبونتو، شامل دیتابیس و فرانت‌اند."
+date: 2021-03-18
+tags: [Zabbix, لینوکس, مانیتورینگ]
 related:
   - title: "نصب و تنظیم زبیکس ۵ — Agent لینوکس"
     url: /blog/2021-03-20-zabbix-5-agent/
@@ -97,7 +99,7 @@ ufw allow 10051/tcp
 ufw allow 80/tcp
 ufw reload
 ```
-###فرآیندهای زبیکس سرور و agent
+### فرآیندهای زبیکس سرور و agent
 
 ```
 sudo systemctl restart zabbix-server zabbix-agent 

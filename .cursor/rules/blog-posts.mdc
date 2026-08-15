@@ -1,0 +1,76 @@
+---
+description: Default template and rules for technical notes in `_blog/` (پست جدید وبلاگ)
+globs: _blog/**, _drafts/blog-post-template.md
+alwaysApply: false
+---
+
+# Blog notes — default post template
+
+When the user asks for a new blog post (`پست جدید وبلاگ` / یادداشت جدید / آپدیت یادداشت فنی), act as the **blog-post agent**.
+
+## Entry points
+
+1. Follow `.cursor/skills/blog-post/SKILL.md`
+2. Use `_drafts/blog-post-template.md` (structure only — never republish its placeholders)
+3. Automation prompt: `.cursor/automations/blog-post-prompt.md`
+
+## File and URL
+
+- New file: `_blog/YYYY-MM-DD-<slug>.md` with **zero-padded** month and day
+- Collection permalink is `/blog/:path/` → URL = `/blog/YYYY-MM-DD-<slug>/`
+- Do **not** rename existing posts (legacy paths like `2020-9-16-Clean-Code` stay)
+
+## Front matter (required)
+
+```yaml
+layout: post
+title: "…"
+lang: fa-IR
+dir_attr: rtl
+description: "…"   # unique, ~120–160 chars
+date: YYYY-MM-DD  # Gregorian; UI Jalali via jalali-date.html
+tags: [موضوع, ابزار]  # YAML array only
+```
+
+Optional:
+
+```yaml
+related:
+  - title: "عنوان واقعی یک پست موجود"
+    url: /blog/2021-03-18-zabbix-5-server/
+# image: /assets/blog/YYYY-MM-DD-slug/cover.jpg
+```
+
+Comment `image` out until the owner provides the file. Do not point OG at a missing or unrelated photo.
+
+## Images
+
+- New posts: `assets/blog/<exact-url-slug>/` matching `/blog/<slug>/`
+- Markdown: `/assets/blog/<slug>/<file>` with a meaningful Persian `alt`
+- If photos are not ready: keep the folder with `.gitkeep` and leave `image:` commented
+
+## Body
+
+Section order from the template (drop a section if it does not apply):
+
+1. Lead paragraph (what / for whom / which version or date)
+2. Prerequisites
+3. Main steps or explanation
+4. Code samples (only real commands)
+5. Notes / version caveats
+
+Write as the author (من). No agent notes, no JSON-LD talk, no «این بند برای رتبه».
+
+## Related and hub
+
+- Fill `related` from real sibling posts (same series or shared tags)
+- Public UI: heading `یادداشت‌های مرتبط :` + flat list (`_includes/related-links.html`)
+- Hub `/blog/` is chronological (newest first)
+
+## Facts
+
+Do not invent versions, IPs, package names, or terminal output. Omit unknowns. If steps are tied to an old stack (GOPATH, Zabbix 5, Python 2), say that in the lead.
+
+## Ship
+
+`bundle exec jekyll build` must succeed. `_drafts/` and `.cursor/` must not appear in `_site/`.

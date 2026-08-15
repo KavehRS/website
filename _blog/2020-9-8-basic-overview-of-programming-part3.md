@@ -3,14 +3,15 @@ layout: post
 title: "مفاهیم اولیه برنامه‌نویسی ۳: اعداد و کاراکترها"
 lang: fa-IR
 dir_attr: rtl
-description: "کار با اعداد، کاراکترها و Escape Sequenceها در مفاهیم اولیه برنامه‌نویسی."
-pdate: 1399-6-18
-author: KavehRS
-tags: برنامه‌نویسی c python
+description: "کار با اعداد، کاراکترها و Escape Sequence در C و پایتون."
+date: 2020-09-08
+tags: [برنامه‌نویسی, C, Python]
 related:
-  - title: "یادداشت دوم: انواع داده و حلقه‌ها"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۱: مفاهیم پایه"
+    url: /blog/2020-8-31-basic-overview-of-programming-part1/
+  - title: "مفاهیم اولیه برنامه‌نویسی ۲: داده و حلقه‌ها"
     url: /blog/2020-9-4-basic-overview-of-programming-part2/
-  - title: "یادداشت چهارم: توابع و I/O"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۴: آرایه‌ها"
     url: /blog/2020-9-14-basic-overview-of-programming-part4/
 ---
 ## اعداد
@@ -18,7 +19,7 @@ related:
 هر زبان برنامه نویسی پشتیبانی از انواع داده همانند integer ساده و یا اعداد اعشاری را فراهم می‌سازد. زبان‌های برنامه نویسی مانند c و پایتون این اعداد را در گروه‌های مختلف گروه‌بندی می‌کند.
 انواع داده عددی در زبان c را می‌توان در جدول زیر دید:
 
-![C Numeric Data Types](/assets/images/CNumericDataTypes.jpg)
+![انواع دادهٔ عددی در C](/assets/images/CNumericDataTypes.jpg)
 
 برای مشاهده استفاده از انواع داده های  عددی می‌توانید به کد زیر نگاه کنید :
 
@@ -28,7 +29,7 @@ main(){
 short s;
 int i;
 long l;
-float t;
+float f;
 double d;
 
 s = 10;
@@ -39,9 +40,9 @@ d = 30949.374;
 
 printf("s: %d\n",s);
 printf("i: %d\n",i);
-printf("l: %1d\n",l);
-printf("f: %.3d\n",f);
-printf("d: %.3d\n",d);
+printf("l: %ld\n",l);
+printf("f: %.3f\n",f);
+printf("d: %.3f\n",d);
 }
 ```
 با همه بخش‌های این کد به غیر از %.3f که برای چاپ اعداد اعشاری تا سه رقم اعشار استفاده می‌شود آشنا هستید. در هنگام اجرای کپ بالا خروجی زیر چاپ می‌شود.
@@ -57,13 +58,13 @@ d: 30949.374
 ### عملیات ریاضی در زبان c
 یکی از include های زبان c <> است که عملگر‌های ریاضی را در خود دارد که در لیست زیر می‌توانید عملگر‌های داخلی ان را ببینید
 
-![C math.h library functions](/assets/images/c-math-h-library-functions.jpg)
+![توابع کتابخانهٔ math.h در C](/assets/images/c-math-h-library-functions.jpg)
 
 
 ### اعداد در پایتون
 پایتون تفاوت‌های اندکی با c دارد، در پایتون اعدا به 4 دسته که در جدول زیر به همراه مثال امده است، تقسیم می‌شوند:
 
-![Python - Numbers](/assets/images/Python-Numbers.jpg)
+![انواع عدد در پایتون](/assets/images/Python-Numbers.jpg)
 
 ## کاراکتر‌ها
 کاراکتر به هر تک واج گفته می شود. تمام اعداد، حروف، سمبل ها و حتی کلید خط جدید و فاصله کاراکتر هستند. ساده ترین راه برای آشنا شدن با کاراکتر شاید درج مثال و نمونه باشد.
@@ -74,7 +75,7 @@ d: 30949.374
 بسیاری از زبان‌های برنامه نویسی از Escape Sequences پشتیبانی میکنند، و به مفهوم کاراکتری ازت که پس از \ امده و برای کامپایلر معنای خاص خواهد داشت، جدول زیر Escape Sequences را در زبان c نشان می‌دهد :
 
 
-![Escape Sequences in C](/assets/images/C-Escape-Sequences.png)
+![Escape Sequence در C](/assets/images/C-Escape-Sequences.png)
 
 ### کاراکتر‌ها در پایتون
 پایتون از نوع داده کاراکتر پشتیبانی نمی‌کند اما تمامی کاراکتر ها را به مانند رشته می‌بیند که رشته توالی کاراکتر‌هاست.
