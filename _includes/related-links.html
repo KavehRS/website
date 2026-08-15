@@ -1,6 +1,8 @@
 {% comment %}
 Related logbook reports: SELECT by shared activity disciplines (categories),
 not by template similarity or loose tag overlap.
+Rank by number of shared disciplines (desc), then date (newest first),
+so a 4000 m hike still surfaces other high-altitude reports — not only recent hiking.
 Reader UI must stay: heading «گزارش‌های مرتبط :» + flat list only.
 Do NOT render agent notes or discipline/category subheadings.
 Manual page.related still wins when provided.
@@ -21,30 +23,40 @@ Manual page.related still wins when provided.
   {% endif %}
   {% if page_cats and page_cats.size > 0 %}
     {% assign discipline_order = site.data.logbook_disciplines.order %}
-    {% assign related_items = '' %}
-    {% assign related_count = 0 %}
-    {% assign seen_urls = '|' %}
-    {% for post in site.logbook reversed %}
-      {% if post.url != page.url and related_count < 6 %}
+    {% assign ranked_entries = '' %}
+    {% for post in site.logbook %}
+      {% if post.url != page.url %}
         {% assign post_cats = post.categories %}
         {% if post_cats == nil or post_cats.size == 0 %}
           {% assign post_cats = post.disciplines %}
         {% endif %}
-        {% assign shares_discipline = false %}
+        {% assign overlap = 0 %}
         {% for disc in discipline_order %}
           {% if page_cats contains disc and post_cats contains disc %}
-            {% assign shares_discipline = true %}
+            {% assign overlap = overlap | plus: 1 %}
           {% endif %}
         {% endfor %}
-        {% assign url_token = post.url | append: '|' %}
-        {% unless seen_urls contains url_token %}
-          {% if shares_discipline %}
+        {% if overlap > 0 %}
+          {% assign overlap_pad = overlap | plus: 10 %}
+          {% assign date_ord = post.date | date: '%s' %}
+          {% capture ranked_entries %}{{ ranked_entries }}{{ overlap_pad }}-{{ date_ord }}:::{{ post.url }}:::{{ post.title }}|||{% endcapture %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign ranked_list = ranked_entries | split: '|||' | compact | sort | reverse %}
+    {% assign related_items = '' %}
+    {% assign related_count = 0 %}
+    {% for entry in ranked_list %}
+      {% if related_count < 6 %}
+        {% assign entry_s = entry | strip %}
+        {% if entry_s != '' %}
+          {% assign parts = entry_s | split: ':::' %}
+          {% if parts.size >= 3 %}
             {% assign related_count = related_count | plus: 1 %}
-            {% assign seen_urls = seen_urls | append: url_token %}
-            {% capture one_item %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endcapture %}
+            {% capture one_item %}<li><a href="{{ parts[1] | relative_url }}">{{ parts[2] }}</a></li>{% endcapture %}
             {% assign related_items = related_items | append: one_item %}
           {% endif %}
-        {% endunless %}
+        {% endif %}
       {% endif %}
     {% endfor %}
     {% if related_count > 0 %}
