@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign dir = page.dir_attr | default: 'ltr' %}
+{% assign about_parts = content | split: '<!--home-columns-->' %}
 
 <div class="about-page" dir="{{ dir }}">
   <div class="about-hero">
@@ -18,7 +19,10 @@ layout: default
     {% endif %}
 
     <div class="about-intro">
-      {{ content }}
+      {{ about_parts[0] }}
     </div>
   </div>
+  {% if about_parts.size > 1 %}
+    {{ about_parts[1] }}
+  {% endif %}
 </div>
