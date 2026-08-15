@@ -146,3 +146,40 @@
 }
 </script>
 {% endif %}
+
+{% if page.url == '/blog/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "inLanguage": "fa-IR",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}{{ site.baseurl }}/"
+  },
+  "about": [
+    {"@type": "Thing", "name": "برنامه‌نویسی"},
+    {"@type": "Thing", "name": "لینوکس"},
+    {"@type": "Thing", "name": "مانیتورینگ"}
+  ],
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ site.blog.size }},
+    "itemListElement": [
+      {% for post in site.blog reversed %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": {{ post.url | absolute_url | jsonify }},
+        "name": {{ post.title | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endif %}

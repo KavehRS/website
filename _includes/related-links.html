@@ -1,15 +1,12 @@
 {% comment %}
-Related logbook reports: SELECT by shared activity disciplines (categories),
-not by template similarity or loose tag overlap.
-Rank by number of shared disciplines (desc), then date (newest first),
-so a 4000 m hike still surfaces other high-altitude reports — not only recent hiking.
-Reader UI must stay: heading «گزارش‌های مرتبط :» + flat list only.
-Do NOT render agent notes or discipline/category subheadings.
+Related links:
+- Logbook: SELECT by shared disciplines; public UI «گزارش‌های مرتبط :» + flat list.
+- Blog: manual page.related, else shared tags; public UI «یادداشت‌های مرتبط :» + flat list.
 Manual page.related still wins when provided.
 {% endcomment %}
 {% if page.related and page.related.size > 0 %}
-<nav class="related-posts" aria-label="مطالب مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">مطالب مرتبط</h2>
+<nav class="related-posts" aria-label="{% if page.collection == 'logbook' %}گزارش‌های مرتبط{% else %}یادداشت‌های مرتبط{% endif %}" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% if page.collection == 'logbook' %}گزارش‌های مرتبط :{% else %}یادداشت‌های مرتبط :{% endif %}</h2>
   <ul>
     {% for item in page.related %}
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
@@ -65,5 +62,44 @@ Manual page.related still wins when provided.
   <ul>{{ related_items }}</ul>
 </nav>
     {% endif %}
+  {% endif %}
+{% elsif page.collection == 'blog' and page.tags and page.tags.size > 0 %}
+  {% assign ranked_entries = '' %}
+  {% for post in site.blog %}
+    {% if post.url != page.url and post.tags %}
+      {% assign overlap = 0 %}
+      {% for tag in page.tags %}
+        {% if post.tags contains tag %}
+          {% assign overlap = overlap | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% if overlap > 0 %}
+        {% assign overlap_pad = overlap | plus: 10 %}
+        {% assign date_ord = post.date | date: '%s' %}
+        {% capture ranked_entries %}{{ ranked_entries }}{{ overlap_pad }}-{{ date_ord }}:::{{ post.url }}:::{{ post.title }}|||{% endcapture %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% assign ranked_list = ranked_entries | split: '|||' | compact | sort | reverse %}
+  {% assign related_items = '' %}
+  {% assign related_count = 0 %}
+  {% for entry in ranked_list %}
+    {% if related_count < 6 %}
+      {% assign entry_s = entry | strip %}
+      {% if entry_s != '' %}
+        {% assign parts = entry_s | split: ':::' %}
+        {% if parts.size >= 3 %}
+          {% assign related_count = related_count | plus: 1 %}
+          {% capture one_item %}<li><a href="{{ parts[1] | relative_url }}">{{ parts[2] }}</a></li>{% endcapture %}
+          {% assign related_items = related_items | append: one_item %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if related_count > 0 %}
+<nav class="related-posts" aria-label="یادداشت‌های مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">یادداشت‌های مرتبط :</h2>
+  <ul>{{ related_items }}</ul>
+</nav>
   {% endif %}
 {% endif %}

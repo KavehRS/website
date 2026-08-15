@@ -3,16 +3,15 @@ layout: post
 title: "مفاهیم اولیه برنامه‌نویسی ۲: داده و حلقه‌ها"
 lang: fa-IR
 dir_attr: rtl
-description: "انواع داده، کلمات کلیدی، عملگرها و حلقه‌ها در مفاهیم اولیه برنامه‌نویسی با مثال."
-pdate: 1399-6-14
-author: KavehRS
-tags: برنامه‌نویسی c python
+description: "انواع داده، کلمات کلیدی، عملگرها و حلقه‌ها در مفاهیم اولیه برنامه‌نویسی با مثال C و پایتون."
+date: 2020-09-04
+tags: [برنامه‌نویسی, C, Python]
 related:
-  - title: "یادداشت نخست: مفاهیم پایه"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۱: مفاهیم پایه"
     url: /blog/2020-8-31-basic-overview-of-programming-part1/
-  - title: "یادداشت سوم: اعداد و کاراکترها"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۳: اعداد و کاراکترها"
     url: /blog/2020-9-8-basic-overview-of-programming-part3/
-  - title: "یادداشت چهارم: توابع و I/O"
+  - title: "مفاهیم اولیه برنامه‌نویسی ۴: آرایه‌ها"
     url: /blog/2020-9-14-basic-overview-of-programming-part4/
 ---
 
@@ -101,8 +100,8 @@ float e,f;
 main()
 {
 int a, b;
-a = 20
-b = 53
+a = 20;
+b = 53;
 }
 ```
  برنامه فوق، دو دستور اضافه دارد که عدد 20 را در متغیر a  و عدد 53 را در متغیر b ذخیره می‌کند. اکثر زبان‌های برنامه نویسی روش مشابهی برای ذخیره مقادیر در نظر می‌گیرند که مشابه کد بالاست.
@@ -116,10 +115,10 @@ b = 53
 main()
 {
 int a, b;
-a = 20
-b = 53
-printf("Value of a = %d\n",a");
-printf("Value of a = %d\n",b");
+a = 20;
+b = 53;
+printf("Value of a = %d\n", a);
+printf("Value of b = %d\n", b);
 }
 ```
 و پس از اجرای کد، خروجی به این شکل خواهد بود :
@@ -231,7 +230,7 @@ Operator | Descriotion
 #include<stdio.h>
 main()
 {
-int = 0;
+int i = 0;
 while (i < 5)
 {
 printf("Hello, world!\n");
@@ -255,7 +254,7 @@ Hello, world!
 
 
 
-<img src="/assets/images/loop1.jpg" alt="loop diagram">
+<img src="/assets/images/loop1.jpg" alt="نمودار کلی حلقه در برنامه‌نویسی">
 
 
 ### حلقه while
@@ -271,7 +270,7 @@ while (condition)
 کد بالا را می‌توان به صورت دیاگرام پایین شرح داد :
 
 
-<img src="/assets/images/while-loop.jpg" alt="while-loop">
+<img src="/assets/images/while-loop.jpg" alt="نمودار حلقه while">
 
 
 نکات قابل توجه در مورد حلقه while به شرح زیر است :
@@ -300,7 +299,7 @@ do
 
 کد بالا را می‌توان به صورت دیاگرام پایین شرح داد :
 
-<img src="/assets/images/cpp_do_while_loop.jpg" alt="cpp_do_while_loop">
+<img src="/assets/images/cpp_do_while_loop.jpg" alt="نمودار حلقه do while">
 
 
 
@@ -312,7 +311,7 @@ do
  ```
  دستور شکست به شکل دیاگرام زیر ارایه می‌شود :
 
-<img src="/assets/images/cpp_break_statement.jpg" alt="cpp_break_statement">
+<img src="/assets/images/cpp_break_statement.jpg" alt="نمودار دستور break">
 
  ### دستور ادامه the continue statement
   دستور ادامه در زبان c همانند دستور شکست عمل می‌کند. اما به جای اجبار پایان برنامه، اجبار به ادامه تکرار بعدی حلقه را در پی خواهد داشت. گرامر این دستور به شکل زیر است.
@@ -324,16 +323,16 @@ continue;
   دستور ادامه به شکل دیاگرام زیر تحلیل می‌شود :
 
 
- <img src="/assets/images/c_continue_statement.jpg" alt=" c_continue_statement">
+<img src="/assets/images/c_continue_statement.jpg" alt="نمودار دستور continue">
 
 
 ### حلقه در پایتون Loops in Python
 مثال زیر یک حلقه while در زبان برنامه نویسی پایتون می‌باشد :
 
 ```PYTHON
-i =0
-while(i<5)
-  print"Hello, World!"
+i = 0
+while i < 5:
+  print "Hello, World!"
   i = i+1
  print "Loop ends"
 

@@ -1,13 +1,18 @@
 ---
 layout: default
 title: یادداشت‌ها
-description: "یادداشت‌ها و آموزش‌های فنی کاوه‌ رضایی‌شیراز درباره برنامه‌نویسی، مانیتورینگ و ابزارهای لینوکس."
+description: "یادداشت‌های فنی کاوه‌ رضایی‌شیراز درباره برنامه‌نویسی، لینوکس، Zabbix و مانیتورینگ."
 permalink: /blog/
 lang: fa-IR
 dir_attr: rtl
 ---
 
+<nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
+  <small><a href="{{ '/' | relative_url }}">خانه</a> · یادداشت‌ها</small>
+</nav>
+
 <h1>یادداشت‌ها</h1>
+<p>آموزش‌ها و یادداشت‌های فنی که هنگام کار نوشته‌ام: برنامه‌نویسی، لینوکس و مانیتورینگ.</p>
 <ul>
   {% for post in site.blog reversed %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
