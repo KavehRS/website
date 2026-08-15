@@ -52,6 +52,12 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Removed rounded placeholder coordinates (Pol-Khab, Kamachal, Dona, Naz geo conflict); stripped `[reference:N]` leftovers.
 - Kahar machine elevation/coords aligned to SummitPost/Wikipedia (4015 m) with Persian 4050 noted as disagreement.
 
+## 2026-08-15 — Kahar 1405 published without photos
+
+- Owner: ship this report without waiting for climb photos.
+- Removed `image:` and deleted the 1402 team-photo placeholder (`cover.jpeg` was a copy of `6039_orig.jpeg`).
+- Asset folder kept with `.gitkeep`. OG/JSON-LD image omitted (not the other climb’s photo, not the site logo as Article image).
+
 ## 2026-08-15 — Kahar photos paused + discoverability
 
 - Commented Kahar ۱۴۰۵ `image:` until owner uploads climb photos to `assets/mount/logbook/2026-08-07-kahar-peak/`.

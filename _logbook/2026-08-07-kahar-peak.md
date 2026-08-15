@@ -9,8 +9,6 @@ report_status: completed
 
 categories: [high-altitude, hiking]
 tags: [کهار, البرز, کلوان, آسارا, طالقان, کوهنوردی, گزارش صعود, کوهنوردی مرتفع, کوهپیمایی]
-# عکس‌های این برنامه وقتی آماده شد در assets/mount/logbook/2026-08-07-kahar-peak/ می‌آید؛ تا آن موقع cover را منتشر نکن.
-# image: /assets/mount/logbook/2026-08-07-kahar-peak/cover.jpeg
 peak:
   name: "کهار"
   elevation_m: 4015
