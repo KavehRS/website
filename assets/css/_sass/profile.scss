@@ -64,6 +64,54 @@
   margin-top: 0.45rem;
 }
 
+.home-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem 2rem;
+  width: 100%;
+  margin-top: 3.4em; /* دو خط: 2 × line-height 1.7 */
+  margin-top: 2lh;
+}
+
+.home-column h2 {
+  font-size: 1.2rem;
+  line-height: 1.45;
+  margin: 0 0 0.5rem;
+}
+
+.home-column p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: $base-line-height;
+}
+
+.home-column ul {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  font-size: 0.95rem;
+  line-height: $base-line-height;
+}
+
+.home-column li + li {
+  margin-top: 0.45rem;
+}
+
+[dir="rtl"] .home-columns,
+[dir="rtl"] .home-column h2,
+[dir="rtl"] .home-column p,
+[dir="rtl"] .home-column ul {
+  text-align: right;
+  text-align-last: right;
+}
+
+[dir="ltr"] .home-columns,
+[dir="ltr"] .home-column h2,
+[dir="ltr"] .home-column p,
+[dir="ltr"] .home-column ul {
+  text-align: left;
+  text-align-last: left;
+}
+
 [dir="rtl"] .about-hero {
   flex-direction: row-reverse;
 }
@@ -103,6 +151,18 @@ html[dir="ltr"] article .about-intro li {
   text-align-last: left;
 }
 
+html[dir="rtl"] article .home-column p,
+html[dir="rtl"] article .home-column li {
+  text-align: right;
+  text-align-last: right;
+}
+
+html[dir="ltr"] article .home-column p,
+html[dir="ltr"] article .home-column li {
+  text-align: left;
+  text-align-last: left;
+}
+
 @include media-query($on-palm) {
   .about-hero {
     flex-direction: column;
@@ -122,6 +182,11 @@ html[dir="ltr"] article .about-intro li {
   [dir="rtl"] .about-intro,
   [dir="ltr"] .about-intro {
     text-align: inherit;
+  }
+
+  .home-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

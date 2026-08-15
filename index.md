@@ -23,7 +23,11 @@ lang: fa-IR
   </ul>
 </blockquote>
 
-## گزارش صعود
+<!--home-columns-->
+<div class="home-columns">
+<div class="home-column" markdown="1">
+
+## گزارش صعود {: #home-logbook}
 
 برنامه‌های اجراشده را با مسیر، هوا، تجهیزات و زمان‌بندی در [گزارش صعود](/logbook/) می‌نویسم.
 
@@ -31,9 +35,15 @@ lang: fa-IR
 - [صعود قله خلنو از تیغه‌های ژاندارم](/logbook/2024-06-20-khalno-gendarme/)
 - [یخ‌نوردی آبشار شماره ۵ روستای خور](/logbook/2023-01-05-ice-climbing-khor-5/)
 
-## یادداشت‌ها
+</div>
+<div class="home-column" markdown="1">
+
+## یادداشت‌ها {: #home-notes}
 
 آموزش‌ها و یادداشت‌های فنی در [یادداشت‌ها](/blog/).
 
 - [نصب و تنظیم زبیکس ۵ — سرور](/blog/2021-03-18-zabbix-5-server/)
 - [مفاهیم اولیه برنامه‌نویسی ۱: مفاهیم پایه](/blog/2020-8-31-basic-overview-of-programming-part1/)
+
+</div>
+</div>
