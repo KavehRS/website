@@ -40,7 +40,7 @@ jobs:
           3. Obey .cursor/rules/instagram-to-blog.mdc
           4. Read _data/instagram_imports.yml and existing _blog/*.md / _logbook/*.md
 
-          Source only an official Instagram download in _drafts/instagram-export/ or files the owner attached. If none exist: stop and ask for the export (see _drafts/instagram-export/README.md). Do not scrape instagram.com. Do not use anonymous viewer mirrors.
+          Source only an official Instagram export in _drafts/instagram-export/ (2026: Meta Account or Accounts Center → Export your information → JSON) or files the owner attached. If none exist: stop and ask for the export (see _drafts/instagram-export/README.md). Do not scrape instagram.com. Do not use anonymous viewer mirrors.
 
           Parse with python3 .cursor/scripts/parse-instagram-export.py, write `_blog/YYYY-MM-DD-<slug>.md` notes, copy that post's images to assets/blog/<slug>/, update _data/instagram_imports.yml, run bundle exec jekyll build, and open a PR on cursor/*-33ce. Do not commit the ZIP or parsed.json."""
 
