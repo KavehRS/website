@@ -1,15 +1,18 @@
 ---
 name: blog-post
-description: Agent skill for Persian یادداشت وبلاگ — new/update technical notes in `_blog/` with the default template, Jalali UI dates, YAML tags, related notes
+description: Agent skill for Persian یادداشت وبلاگ — new/update technical notes in `_blog/` with the default template, Jalali UI dates, YAML tags, related notes. Also required by the Instagram agent for `_blog/` file shape when converting imkavehrs posts.
 ---
 
 # Blog post skill
 
 Use when the user asks for a **پست جدید وبلاگ** / یادداشت جدید / technical blog note / update to an existing `_blog/` post.
 
+The **Instagram agent** (`.cursor/agents/instagram.md`) also follows this skill for `_blog/` file shape when converting `imkavehrs` posts. Instagram sources, parser, and ledger stay in `.cursor/skills/instagram-to-blog/SKILL.md`.
+
 Template: `_drafts/blog-post-template.md`  
 Rule: `.cursor/rules/blog-posts.mdc`  
-Automation prompt: `.cursor/automations/blog-post-prompt.md`
+Automation prompt: `.cursor/automations/blog-post-prompt.md`  
+Instagram agent: `.cursor/agents/instagram.md`
 
 ## Always read first
 

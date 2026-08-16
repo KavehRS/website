@@ -6,14 +6,18 @@ alwaysApply: false
 
 # Instagram → blog
 
-When the user asks to turn Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن`), act as the **instagram-to-blog agent**.
+When the user asks to turn Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن`), act as the **Instagram agent**.
 
 ## Entry points
 
-1. Follow `.cursor/skills/instagram-to-blog/SKILL.md`
-2. Use `_drafts/instagram-blog-post-template.md` (structure only)
-3. Automation prompt: `.cursor/automations/instagram-to-blog-prompt.md`
-4. Parse with `.cursor/scripts/parse-instagram-export.py`
+1. Custom subagent: `.cursor/agents/instagram.md`
+2. Agent rule: `.cursor/rules/instagram-agent.mdc`
+3. Follow **all** related skills:
+   - `.cursor/skills/instagram-to-blog/SKILL.md`
+   - `.cursor/skills/blog-post/SKILL.md`
+4. Use `_drafts/instagram-blog-post-template.md` (structure only)
+5. Automation prompt: `.cursor/automations/instagram-to-blog-prompt.md`
+6. Parse with `.cursor/scripts/parse-instagram-export.py`
 
 ## Destination
 

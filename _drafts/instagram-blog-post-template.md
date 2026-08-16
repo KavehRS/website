@@ -13,8 +13,9 @@ dir_attr: rtl
 
 <!--
 USAGE (agent-only — do not copy this comment block into published pages)
-0) instagram-to-blog agent
-   (.cursor/skills/instagram-to-blog/SKILL.md)
+0) Instagram agent
+   (.cursor/agents/instagram.md + .cursor/rules/instagram-agent.mdc)
+   skills: instagram-to-blog, blog-post
 1) File: `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date)
 2) Front matter required:
    layout: post

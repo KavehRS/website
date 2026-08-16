@@ -1,4 +1,4 @@
-# Cursor Automation — Instagram → blog
+# Cursor Automation — Instagram agent
 
 > Native Automations are created in the Cursor dashboard (not from this file).  
 > Paste the prompt below into a new Automation at https://cursor.com/automations/new
@@ -7,30 +7,35 @@
 
 | Field | Value |
 |-------|--------|
-| Name | Blog — تبدیل پست‌های اینستاگرام |
+| Name | Instagram — تبدیل پست‌های اینستاگرام به بلاگ |
 | Trigger | Manual / on-demand (when an Instagram export is dropped or the owner asks to import) |
 | Repository | `KavehRS/website` |
 | Base branch | `master` |
 | Tools | GitHub/PRs enabled |
 | PR behavior | Create PR on `cursor/<descriptive-name>-33ce`; merge after clean `jekyll build` when verified |
+| Subagent | `.cursor/agents/instagram.md` (related skills: `instagram-to-blog`, `blog-post`) |
 
 Do **not** schedule this until an export is in the repo. Instagram is login-walled; a cron run with no archive will no-op.
 
 ## Prompt (copy everything below this line)
 
 ```
-You are the instagram-to-blog agent for https://www.kavehrs.com (repo KavehRS/website, branch master).
+You are the Instagram agent for https://www.kavehrs.com (repo KavehRS/website, branch master).
 
 Mission: convert every unused Instagram post from account imkavehrs into a Persian `_blog/` note. Never invent captions, dates, or photos.
 
 ## Always read first (in order)
 
 1. AGENTS.md
-2. .cursor/skills/instagram-to-blog/SKILL.md
-3. .cursor/rules/instagram-to-blog.mdc
-4. _drafts/instagram-blog-post-template.md
-5. _data/instagram_imports.yml
-6. Existing _blog/*.md and _logbook/*.md
+2. .cursor/agents/instagram.md
+3. .cursor/rules/instagram-agent.mdc
+4. .cursor/skills/instagram-to-blog/SKILL.md
+5. .cursor/skills/blog-post/SKILL.md
+6. .cursor/rules/instagram-to-blog.mdc
+7. .cursor/rules/blog-posts.mdc
+8. _drafts/instagram-blog-post-template.md
+9. _data/instagram_imports.yml
+10. Existing _blog/*.md and _logbook/*.md
 
 ## Source
 

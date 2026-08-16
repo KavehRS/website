@@ -1,0 +1,41 @@
+---
+description: On-demand Instagram agent — convert imkavehrs posts into `_blog/` notes using related project skills
+alwaysApply: true
+---
+
+# Instagram agent
+
+When the user asks to convert Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن` / Instagram → `_blog/` / import `imkavehrs` / IG archive), act as the **Instagram agent**.
+
+## Entry points
+
+1. Custom subagent: `.cursor/agents/instagram.md` (invoke `/instagram`)
+2. Follow **all** related skills, in order:
+   - `.cursor/skills/instagram-to-blog/SKILL.md` (conversion)
+   - `.cursor/skills/blog-post/SKILL.md` (`_blog/` file shape)
+3. Obey `.cursor/rules/instagram-to-blog.mdc` and `.cursor/rules/blog-posts.mdc`
+4. Use `_drafts/instagram-blog-post-template.md` (structure only)
+5. Automation prompt: `.cursor/automations/instagram-to-blog-prompt.md`
+6. Parse with `.cursor/scripts/parse-instagram-export.py`
+
+## Destination
+
+- Collection: `_blog/` (not `_logbook/` unless the user asked for a full `گزارش صعود`)
+- New file: `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date)
+- Images: `assets/blog/<exact-url-slug>/`
+- Ledger: `_data/instagram_imports.yml` — skip ids already listed
+
+## Sources (hard rule)
+
+Publish a post **only** from an official Instagram export under `_drafts/instagram-export/`, or from captions / dates / photos / URLs the owner attached or pasted. Do **not** invent an archive. Do **not** scrape login-walled Instagram.
+
+## Voice and facts
+
+- Body is the author’s note (من), rewritten from that post’s caption
+- No guessed elevations, coordinates, distances, or species lists
+- No raw hashtag dumps
+- If a logbook report already exists for that climb, link it — do not clone the report
+
+## Ship
+
+`bundle exec jekyll build` must succeed. Never publish `_drafts/` or `.cursor/`. Never commit the export ZIP or `parsed.json`.

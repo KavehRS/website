@@ -1,15 +1,18 @@
 ---
 name: instagram-to-blog
-description: Convert the owner’s Instagram posts (imkavehrs) into Persian `_blog/` notes from an official export or pasted captions — never invent posts
+description: Instagram agent conversion skill — turn the owner’s Instagram posts (imkavehrs) into Persian `_blog/` notes from an official export or pasted captions; never invent posts. Use with the Instagram agent and the blog-post skill.
 ---
 
 # Instagram → blog skill
 
-Use when the user asks to convert Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن` / Instagram → `_blog/` / import IG archive).
+This is the **Instagram agent** conversion skill. Use when the user asks to convert Instagram posts into blog notes (`پست‌های اینستاگرام را به بلاگ تبدیل کن` / Instagram → `_blog/` / import IG archive / `/instagram`).
 
 Account: `imkavehrs` → https://www.instagram.com/imkavehrs/
 
-Rule: `.cursor/rules/instagram-to-blog.mdc`  
+Agent: `.cursor/agents/instagram.md`  
+Agent rule: `.cursor/rules/instagram-agent.mdc`  
+Conversion rule: `.cursor/rules/instagram-to-blog.mdc`  
+Related skill (required): `.cursor/skills/blog-post/SKILL.md` (`_blog/` file shape)  
 Template: `_drafts/instagram-blog-post-template.md`  
 Automation: `.cursor/automations/instagram-to-blog-prompt.md`  
 Parser: `.cursor/scripts/parse-instagram-export.py`  
@@ -20,12 +23,16 @@ This is **not** the logbook ascent-report agent. Climb photos become `_blog/` fi
 ## Always read first
 
 1. `AGENTS.md`
-2. `.cursor/rules/instagram-to-blog.mdc`
-3. `_drafts/instagram-blog-post-template.md`
-4. `_data/instagram_imports.yml` (skip already-imported ids)
-5. Existing `_blog/*.md` and `_logbook/*.md` (do not duplicate)
+2. `.cursor/agents/instagram.md`
+3. `.cursor/rules/instagram-agent.mdc`
+4. `.cursor/rules/instagram-to-blog.mdc`
+5. `.cursor/skills/blog-post/SKILL.md` (required — `_blog/` file shape, assets, related UI)
+6. `.cursor/rules/blog-posts.mdc`
+7. `_drafts/instagram-blog-post-template.md`
+8. `_data/instagram_imports.yml` (skip already-imported ids)
+9. Existing `_blog/*.md` and `_logbook/*.md` (do not duplicate)
 
-If `.cursor/skills/blog-post/SKILL.md` exists, follow it for `_blog/` file shape. Otherwise use the front-matter and asset rules in this skill.
+Follow the blog-post skill for `_blog/` file shape. Use this skill for Instagram sources, parser, ledger, and caption rewrite.
 
 ## Source order (do not invent)
 
