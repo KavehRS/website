@@ -95,8 +95,10 @@ Checked via API on active zone `kavehrs.com` (Free, NS ken/melina). Applied:
 - Early Hints on
 - Apex `always_use_https` + page rule 301 `kavehrs.com/*` → `www`
 
-Left unchanged on purpose: `blog.kavehrs.com` Blogger CNAME; DMARC `p=none`; Rocket Loader off; hotlink protection off; no wildcard.
+Left unchanged on purpose: `blog.kavehrs.com` Blogger CNAME; Rocket Loader off; hotlink protection off; no wildcard.
 
-Owner follow-up: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. Chrome WebMCP origin trial still needs an OT token.
+Owner asked for strictest DMARC: `p=reject; sp=reject; adkim=s; aspf=s; pct=100; fo=1` (reports still to Cloudflare `rua`). SPF tightened from `~all` to `-all`.
+
+Owner follow-up: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. If you send from Proton as `@kavehrs.com`, those messages will now fail until Proton is added to SPF/DKIM. Chrome WebMCP origin trial still needs an OT token.
 
 - Sources: Google SEO starter, Article (`BlogPosting`) structured data, Breadcrumb structured data, schema.org BlogPosting, Chrome WebMCP declarative/imperative docs. Bing webmaster page was a sign-in wall.

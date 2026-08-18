@@ -32,3 +32,8 @@ Live nameservers are `ken.ns.cloudflare.com` / `melina.ns.cloudflare.com`. API l
 `blog.kavehrs.com` is a DNS-only CNAME to `ghs.google.com` (Blogger: «بریده هایی از دلمشغولی های من») — not the Jekyll site, not spam. Leave unless the owner wants it removed.
 
 Mail: MX currently points at Cloudflare Email Routing, but routing status is `unconfigured` / disabled. ProtonMail verification TXT is also present. Owner should confirm inbound mail to `@kavehrs.com` actually arrives.
+
+Email auth (2026-08-18, owner asked for strictest):
+
+- DMARC: `v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; pct=100; fo=1; rua=mailto:…@dmarc-reports.cloudflare.net`
+- SPF: `v=spf1 include:_spf.mx.cloudflare.net -all`
