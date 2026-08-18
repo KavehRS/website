@@ -37,3 +37,10 @@ Email auth (2026-08-18, owner asked for strictest):
 
 - DMARC: `v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; pct=100; fo=1; rua=mailto:…@dmarc-reports.cloudflare.net`
 - SPF: `v=spf1 include:_spf.mx.cloudflare.net -all`
+
+Domain hardening (same day):
+
+- DNSSEC enabled at Cloudflare (`status: pending` until DS is published at the registrar):
+  `kavehrs.com. 3600 IN DS 2371 13 2 0BDD0957C75EA576647BA21524CE6E8E98640619BF92087B6280EC1CE1FC9CEC`
+- HSTS: `max-age=31536000; includeSubDomains; preload` + `nosniff`
+- CAA tightened to `pki.goog` and `letsencrypt.org` only (removed ssl.com / comodoca / digicert)
