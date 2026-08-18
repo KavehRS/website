@@ -83,4 +83,20 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
   - IndexNow key file (Bing/Yandex); ping after Pages deploy
 - WebMCP addable remainder: declarative filter forms on `/logbook/` and `/blog/` (`toolname`/`tooldescription`); catalog tags/categories; `search_site` / `get_ascent_report` / `get_note`
 - Beyond-repo: Cloudflare zone `kavehrs.com` (NS ken/melina) is live; `pop`/`docs`/`*` absent. Set `Permissions-Policy: tools=(self)` and `Origin-Agent-Cluster: ?1` on `www` (verified in live response headers). Minimum TLS 1.2. Origin trial token still needs owner Chrome OT signup.
+
+## 2026-08-18 — Cloudflare live-zone audit
+
+Checked via API on active zone `kavehrs.com` (Free, NS ken/melina). Applied:
+
+- SSL `full` → `strict` (GitHub Pages origin still HTTP 200)
+- TLS min 1.2 (already), TLS 1.3 on
+- HSTS `max-age=15552000` without includeSubDomains/preload; `X-Content-Type-Options: nosniff`
+- `Referrer-Policy: strict-origin-when-cross-origin`, `X-Frame-Options: SAMEORIGIN`
+- Early Hints on
+- Apex `always_use_https` + page rule 301 `kavehrs.com/*` → `www`
+
+Left unchanged on purpose: `blog.kavehrs.com` Blogger CNAME; DMARC `p=none`; Rocket Loader off; hotlink protection off; no wildcard.
+
+Owner follow-up: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. Chrome WebMCP origin trial still needs an OT token.
+
 - Sources: Google SEO starter, Article (`BlogPosting`) structured data, Breadcrumb structured data, schema.org BlogPosting, Chrome WebMCP declarative/imperative docs. Bing webmaster page was a sign-in wall.
