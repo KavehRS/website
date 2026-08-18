@@ -1,0 +1,30 @@
+---
+layout: null
+permalink: /webmcp-catalog.json
+sitemap: false
+---
+{
+  "site": {{ "/" | absolute_url | jsonify }},
+  "logbook": [
+    {%- assign items = site.logbook | sort: "date" | reverse -%}
+    {%- for post in items %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "description": {{ post.description | default: "" | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor %}
+  ],
+  "blog": [
+    {%- assign items = site.blog | sort: "date" | reverse -%}
+    {%- for post in items %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "description": {{ post.description | default: "" | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor %}
+  ]
+}

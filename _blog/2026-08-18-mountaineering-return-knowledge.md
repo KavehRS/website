@@ -6,7 +6,7 @@ dir_attr: rtl
 description: "درددل ثبت‌شده از شب ارائه در باشگاه دماوند؛ چرا از کوهنوردی فاصله گرفتم، چه دانشی از مدیریت باشگاه گرفتم، و چرا با تمرین دوباره برگشتم."
 date: 2026-08-18
 tags: [کوهنوردی, باشگاه, مدیریت, یخ‌نوردی]
-# image: /assets/blog/2026-08-18-mountaineering-return-knowledge/cover.jpg
+image: /assets/blog/2026-08-18-mountaineering-return-knowledge/Cover.jpg
 ---
 
 🥶😋🥰
