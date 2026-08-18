@@ -7,10 +7,6 @@ lang: fa-IR
 dir_attr: rtl
 ---
 
-<nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
-  <small><a href="{{ '/' | relative_url }}">خانه</a> · یادداشت‌ها</small>
-</nav>
-
 <h1>یادداشت‌ها</h1>
 <p>اینجا هم روایت برگشت به کوهستان را می‌نویسم، هم آموزش‌هایی که هنگام کار ثبت کرده‌ام: برنامه‌نویسی، لینوکس و مانیتورینگ.</p>
 {% include hub-filter.html toolname="filter_notes" tooldescription="Filter the published notes listed on this page by title or summary text." %}

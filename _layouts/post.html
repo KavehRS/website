@@ -1,22 +1,22 @@
 ---
 layout: default
 ---
+{% if page.collection == 'logbook' %}
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
-    {% if page.collection == 'blog' %}
-      · <a href="{{ '/blog/' | relative_url }}">یادداشت‌ها</a>
-    {% elsif page.collection == 'logbook' %}
-      · <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
-    {% endif %}
+    · <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
   </small>
 </nav>
+{% endif %}
 
 <h1 class="post-headline">{{ page.title }}</h1>
 {% if page.date %}
 <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{% include jalali-date.html date=page.date %}</small></time></p>
 {% endif %}
+{% if page.collection != 'blog' %}
 <p class="meta"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
+{% endif %}
 {% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
 {% if page.image.path %}
   {% assign cover_src = page.image.path %}
@@ -32,6 +32,10 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+{% if page.collection == 'blog' %}
+<p class="meta post-byline-end"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
+{% endif %}
 
 {% include related-links.html %}
 
