@@ -42,5 +42,7 @@ Domain hardening (same day):
 
 - DNSSEC enabled at Cloudflare (`status: pending` until DS is published at the registrar):
   `kavehrs.com. 3600 IN DS 2371 13 2 0BDD0957C75EA576647BA21524CE6E8E98640619BF92087B6280EC1CE1FC9CEC`
+  CDS/CDNSKEY are published; parent `.com` RDAP still `delegationSigned: false`. Registrar is Hosting Concepts B.V. / Registrar.eu — no API credential in this environment, so DS cannot be pushed from here.
 - HSTS: `max-age=31536000; includeSubDomains; preload` + `nosniff`
+- Apex HTTP now 301s to `https://kavehrs.com/` first, then HTTPS apex 301s to `www` (required by hstspreload.org). Submitted `kavehrs.com` to the Chromium HSTS preload list; status `pending`.
 - CAA tightened to `pki.goog` and `letsencrypt.org` only (removed ssl.com / comodoca / digicert)

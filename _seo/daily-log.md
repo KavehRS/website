@@ -99,8 +99,8 @@ Left unchanged on purpose: `blog.kavehrs.com` Blogger CNAME; Rocket Loader off; 
 
 Owner asked for strictest DMARC: `p=reject; sp=reject; adkim=s; aspf=s; pct=100; fo=1` (reports still to Cloudflare `rua`). SPF tightened from `~all` to `-all`.
 
-Domain bar raised the same day: DNSSEC on at Cloudflare (pending registrar DS), HSTS 1-year + includeSubDomains + preload, CAA limited to Google Trust Services + Let's Encrypt.
+Domain bar raised the same day: DNSSEC on at Cloudflare (CDS published; parent DS still pending at Registrar.eu — no registrar API here), HSTS 1-year + includeSubDomains + preload, CAA limited to Google Trust Services + Let's Encrypt. Apex HTTP→HTTPS same-host hop fixed; `kavehrs.com` submitted to hstspreload.org (`status: pending`).
 
-Owner follow-up: add the DS record at the domain registrar so DNSSEC leaves `pending`; optionally submit `www.kavehrs.com` / `kavehrs.com` to https://hstspreload.org after a few days of clean HTTPS. Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. If you send from Proton as `@kavehrs.com`, those messages will now fail until Proton is added to SPF/DKIM. Chrome WebMCP origin trial still needs an OT token.
+Owner follow-up left: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. If you send from Proton as `@kavehrs.com`, those messages will now fail until Proton is added to SPF/DKIM. Chrome WebMCP origin trial still needs an OT token.
 
 - Sources: Google SEO starter, Article (`BlogPosting`) structured data, Breadcrumb structured data, schema.org BlogPosting, Chrome WebMCP declarative/imperative docs. Bing webmaster page was a sign-in wall.
