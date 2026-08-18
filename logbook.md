@@ -21,7 +21,9 @@ dir_attr: rtl
       <time datetime="{{ post.date | date_to_xmlschema }}">{% include jalali-date.html date=post.date %}</time>
     </p>
     {% endif %}
-    {% if post.excerpt %}
+    {% if post.description %}
+    <p style="margin: 5px 0 0; color: #555; font-size: 0.95rem;">{{ post.description }}</p>
+    {% elsif post.excerpt %}
     <p style="margin: 5px 0 0; color: #555; font-size: 0.95rem;">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
     {% endif %}
   </li>

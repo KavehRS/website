@@ -103,4 +103,10 @@ Domain bar raised the same day: DNSSEC on at Cloudflare (CDS published; parent D
 
 Owner follow-up left: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. If you send from Proton as `@kavehrs.com`, those messages will now fail until Proton is added to SPF/DKIM. Chrome WebMCP origin trial still needs an OT token.
 
-- Sources: Google SEO starter, Article (`BlogPosting`) structured data, Breadcrumb structured data, schema.org BlogPosting, Chrome WebMCP declarative/imperative docs. Bing webmaster page was a sign-in wall.
+## 2026-08-18 — 20-day discoverability plan (day 1)
+
+- Owner asked for top-5 Google on every site topic in 20 days with 45-minute checks. That outcome cannot be guaranteed; 45-minute rank checks do not move Google (Search Central: wait weeks).
+- Added unpublished `_seo/20-day-discoverability-plan.md`.
+- Day 1: Kahar ۱۴۰۵ title now includes کلوان + ۱۶ مرداد ۱۴۰۵ (distinct from ۱۴۰۲ and from club roundups). Hub `/logbook/` lists each report `description`.
+- Still needed from owner: GSC sitemap + Removal of indexed `pop.kavehrs.com`; Cursor recharge for daily SEO agent.
+
