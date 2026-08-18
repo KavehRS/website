@@ -11,6 +11,7 @@ description: >-
   
 lang: fa-IR
 locale: fa_IR
+timezone: Asia/Tehran
 
 # Allow publishing dated logbook/blog entries ahead of the climb date
 future: true
@@ -23,7 +24,7 @@ email: me@kavehrs.com
 logo: /assets/images/logos/1/kavehrs.jpg
 
 author:
-  name: Kaveh RezaeiShiraz
+  name: کاوه‌ رضائی‌شیراز
   twitter: kavehrs
   url: https://www.kavehrs.com/
 

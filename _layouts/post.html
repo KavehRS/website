@@ -18,8 +18,17 @@ layout: default
 {% endif %}
 <p class="meta"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
 {% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
-{% if page.image and page.image != empty and page.image != default_img %}
-<img class="post-cover" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+{% if page.image.path %}
+  {% assign cover_src = page.image.path %}
+  {% assign cover_alt = page.image.alt | default: page.title %}
+  {% assign cover_w = page.image.width %}
+  {% assign cover_h = page.image.height %}
+{% else %}
+  {% assign cover_src = page.image %}
+  {% assign cover_alt = page.title %}
+{% endif %}
+{% if cover_src and cover_src != empty and cover_src != default_img %}
+<img class="post-cover" src="{{ cover_src | relative_url }}" alt="{{ cover_alt | escape }}"{% if cover_w %} width="{{ cover_w }}"{% endif %}{% if cover_h %} height="{{ cover_h }}"{% endif %} fetchpriority="high" decoding="async">
 {% endif %}
 
 {{ content }}

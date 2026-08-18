@@ -68,3 +68,19 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Daily SEO skill/automation now audits every sitemap logbook **and** blog URL.
 - Sources: Google SEO starter, people-first content, Article + Breadcrumb structured data, sitemap guidance. Bing webmaster page required JS (no extra guideline text).
 - Owner still needed: Search Console + Bing sitemap submit, DNS spam (`pop.kavehrs.com`), Cursor recharge so daily SEO/weather automations run.
+
+## 2026-08-18 — Latest blog note SEO + WebMCP remainder
+
+- Target URL: `/blog/2026-08-18-mountaineering-return-knowledge/`
+- Live already had unique title/description, canonical, `lang=fa-IR`/`dir=rtl`, single H1, `og:image`/`twitter:image` = `Cover.jpg`, `BlogPosting` from jekyll-seo-tag, sitemap entry, cover `<img class="post-cover">`.
+- Fixes implemented:
+  - Cover `alt` + `image` hash (`path`/`width`/`height`/`alt`) for OG dimensions and `og:image:alt`
+  - `width`/`height` + `fetchpriority="high"` on the cover (CLS/LCP)
+  - BreadcrumbList last item now includes `item` URL (Google Breadcrumb docs)
+  - In-body links to existing ice-climbing logbook reports (no related-block heading mismatch)
+  - Hub `/blog/` description + CollectionPage `about` include mountaineering notes
+  - Author JSON-LD name aligned with visible byline (`کاوه‌ رضائی‌شیراز`); `timezone: Asia/Tehran` for ISO dates
+  - IndexNow key file (Bing/Yandex); ping after Pages deploy
+- WebMCP addable remainder: declarative filter forms on `/logbook/` and `/blog/` (`toolname`/`tooldescription`); catalog tags/categories; `search_site` / `get_ascent_report` / `get_note`
+- Beyond-repo: Cloudflare zone `kavehrs.com` (NS ken/melina) is live; `pop`/`docs`/`*` absent. Set `Permissions-Policy: tools=(self)` and `Origin-Agent-Cluster: ?1` on `www` (verified in live response headers). Minimum TLS 1.2. Origin trial token still needs owner Chrome OT signup.
+- Sources: Google SEO starter, Article (`BlogPosting`) structured data, Breadcrumb structured data, schema.org BlogPosting, Chrome WebMCP declarative/imperative docs. Bing webmaster page was a sign-in wall.

@@ -11,8 +11,8 @@ dir_attr: rtl
 
 <h1>گزارش صعود</h1>
 <p>اینجا روایت صعودهای اجراشده جمع شده است: قله‌های مرتفع، تیغه‌ها، کمپ‌های آموزشی برفچال و برنامه‌های زمستانه. هر گزارش مسیر، هوا، تجهیزات و جزئیات اجرا را برای کوهنوردانی می‌نویسد که پیش از برنامه به منبع دقیق نیاز دارند.</p>
-
-<ul>
+{% include hub-filter.html toolname="filter_ascent_reports" tooldescription="Filter the published mountaineering ascent reports listed on this page by title or summary text." %}
+<ul data-hub-list>
   {% for post in site.logbook reversed %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
     <a href="{{ post.url }}" style="font-size: 1.2rem; font-weight: bold; text-decoration: none;">{{ post.title }}</a>

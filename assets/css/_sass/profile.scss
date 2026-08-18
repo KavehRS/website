@@ -97,6 +97,28 @@
   border-radius: 2px;
 }
 
+.hub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin: 0 0 1.25rem;
+}
+
+.hub-filter label {
+  font-size: 0.95rem;
+}
+
+.hub-filter input[type="search"] {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.hub-filter button {
+  padding: 0.35rem 0.75rem;
+}
+
 .home-column p {
   margin: 0 0 0.75rem;
   font-size: 0.95rem;

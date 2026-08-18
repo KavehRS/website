@@ -1,7 +1,7 @@
 ---
 layout: default
 title: یادداشت‌ها
-description: "یادداشت‌های فنی کاوه‌ رضایی‌شیراز درباره برنامه‌نویسی، لینوکس، Zabbix و مانیتورینگ."
+description: "یادداشت‌های کاوه‌ رضائی‌شیراز: کوهنوردی و یخ‌نوردی، به‌همراه آموزش‌های فنی برنامه‌نویسی، لینوکس و مانیتورینگ."
 permalink: /blog/
 lang: fa-IR
 dir_attr: rtl
@@ -12,8 +12,9 @@ dir_attr: rtl
 </nav>
 
 <h1>یادداشت‌ها</h1>
-<p>آموزش‌ها و یادداشت‌های فنی که هنگام کار نوشته‌ام: برنامه‌نویسی، لینوکس و مانیتورینگ.</p>
-<ul>
+<p>اینجا هم روایت برگشت به کوهستان را می‌نویسم، هم آموزش‌هایی که هنگام کار ثبت کرده‌ام: برنامه‌نویسی، لینوکس و مانیتورینگ.</p>
+{% include hub-filter.html toolname="filter_notes" tooldescription="Filter the published notes listed on this page by title or summary text." %}
+<ul data-hub-list>
   {% for post in site.blog reversed %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
     <a href="{{ post.url }}" style="font-size: 1.2rem; font-weight: bold; text-decoration: none;">{{ post.title }}</a>

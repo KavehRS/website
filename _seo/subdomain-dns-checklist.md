@@ -25,11 +25,6 @@ The GitHub Pages site is served from `www.kavehrs.com` (or apex). These subdomai
 6. In [Google Search Console](https://search.google.com/search-console), check **Security issues** and **Manual actions**.
 7. Submit updated sitemap: `https://www.kavehrs.com/sitemap.xml`
 
-## Verify
+## Status (2026-08-18)
 
-```bash
-curl -sI https://pop.kavehrs.com/ | head -3
-curl -sI https://www.kavehrs.com/ | head -3
-```
-
-After cleanup, unknown subdomains should fail or redirect — not serve third-party content.
+Live nameservers are `ken.ns.cloudflare.com` / `melina.ns.cloudflare.com`. API listing of the active zone shows **no** `pop`, `docs`, `tri`, or wildcard `*` records. `www` is a proxied CNAME to `kavehrs.github.io`; apex 301s to `www`. Re-check if a wildcard or spam host reappears; do **not** recreate `*`.
