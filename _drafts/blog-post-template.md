@@ -24,6 +24,7 @@ USAGE (agent-only — do not copy this comment block into published pages)
    description (unique, ~120–160 chars, not keyword-stuffed)
    date: YYYY-MM-DD (Gregorian for machines; UI shows Jalali)
    tags: [YAML array] — never a single unquoted string
+   kind: omit or `note` for یادداشت; `news` is a different template (`_drafts/news-post-template.md`)
 3) Optional:
    related: [{ title, url }] for a series (manual list wins over tag matching)
    image: only a real photo/diagram for THIS note
@@ -32,7 +33,7 @@ USAGE (agent-only — do not copy this comment block into published pages)
    Reference as `/assets/blog/YYYY-MM-DD-<slug>/<file>` with a Persian alt
 5) Related UI is selected by `page.related` or shared tags.
    Public heading: «یادداشت‌های مرتبط :» + flat list only
-6) Hub `/blog/` is chronological by date (newest first)
+6) Hub `/blog/` is chronological by date (newest first) and lists notes only — news items (`kind: news`) go to `/news/`
 7) Write as the author (من). Never publish agent notes, JSON-LD asides, or «این بند برای SEO»
 8) Do not invent commands, version numbers, IPs, or results the user did not give
 9) If the note is version-dated (e.g. Zabbix 5, GOPATH-era Go), say so in the lead

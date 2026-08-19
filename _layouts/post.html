@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-{% if page.collection == 'logbook' %}
+{% if page.collection == 'logbook' or page.kind == 'news' %}
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
+    {% if page.collection == 'logbook' %}
     · <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
+    {% else %}
+    · <a href="{{ '/news/' | relative_url }}">اخبار</a>
+    {% endif %}
   </small>
 </nav>
 {% endif %}

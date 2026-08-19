@@ -27,7 +27,7 @@ Before changing anything:
 3. Obey .cursor/rules/seo-daily-agent.mdc and .cursor/rules/logbook-reports.mdc
 4. Refresh guidance from Google Search Central, Bing Webmaster Guidelines, and schema.org (latest public docs)
 
-Then audit the live site + repo (every `/logbook/` and `/blog/` URL in the sitemap), implement only evidence-based SEO improvements (logbook first, then blog), append a short entry to _seo/daily-log.md, run `bundle exec jekyll build`, and confirm drafts/.cursor are unpublished.
+Then audit the live site + repo (every `/logbook/`, `/blog/`, and `/news/` URL in the sitemap), implement only evidence-based SEO improvements (logbook first, then blog/news), append a short entry to _seo/daily-log.md, run `bundle exec jekyll build`, and confirm drafts/.cursor are unpublished.
 
 If you make verified high-confidence changes: open a PR on a cursor/*-33ce branch and merge to master after a clean build.
 If nothing material needs changing: do not open a PR; leave a brief summary of what you checked.
