@@ -97,8 +97,9 @@ When asked for a `پست جدید وبلاگ` / یادداشت فنی / update t
 4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
 5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
 6. Related UI stays `یادداشت‌های مرتبط :` + flat list. Hub `/blog/` chronological.
-7. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
-8. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
+7. Homepage `/` lists the 4 newest notes and reports automatically; do not hardcode teasers in `index.md`.
+8. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
+9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
 ## Instagram agent
 

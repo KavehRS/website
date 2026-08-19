@@ -30,7 +30,9 @@ Instagram agent: `.cursor/agents/instagram.md`
 5. Images in `assets/blog/YYYY-MM-DD-<slug>/` matching the URL path (`.gitkeep` if photos come later)
 6. Body from the template sections — rewrite all prose; never ship placeholders like `{{عنوان}}`
 7. Hub `/blog/` stays chronological; related UI = `یادداشت‌های مرتبط :` + flat list
-8. `bundle exec jekyll build` must succeed; `_drafts/` must not appear in `_site/`
+8. Homepage `/` always lists the **4 newest** `_blog/` and `_logbook/` items via `_includes/home-latest.html` — do **not** hardcode teasers in `index.md`
+9. If `image:` is set, the post layout shows it at the top of the note (and as OG cover)
+10. `bundle exec jekyll build` must succeed; `_drafts/` must not appear in `_site/`
 
 ## Voice and facts
 

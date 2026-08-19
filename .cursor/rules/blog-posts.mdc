@@ -68,6 +68,7 @@ Write as the author (من). No agent notes, no JSON-LD talk, no «این بند 
 - Fill `related` from real sibling posts (same series or shared tags)
 - Public UI: heading `یادداشت‌های مرتبط :` + flat list (`_includes/related-links.html`)
 - Hub `/blog/` is chronological (newest first)
+- Homepage `/` is filled automatically from the 4 newest blog notes and 4 newest logbook reports (`_includes/home-latest.html`). Do not edit `index.md` teasers.
 
 ## Facts
 

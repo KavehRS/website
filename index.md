@@ -22,27 +22,3 @@ lang: fa-IR
     <li>زادهٔ مهر ۱۳۶۴ در گیلان | ساکن تهران</li>
   </ul>
 </blockquote>
-
-<!--home-columns-->
-<div class="home-columns">
-<div class="home-column" markdown="1">
-
-## گزارش صعود
-
-- [صعود به قله کهار](/logbook/2026-08-07-kahar-peak/) — ۱۶ مرداد ۱۴۰۵، از کلوان
-- [کمپ برفچال لشگرک (حصارچال)](/logbook/2026-07-01-TrainingCampforSnowNavigationTechniques-lashgarak/)
-- [صعود قله خلنو از تیغه‌های ژاندارم](/logbook/2024-06-20-khalno-gendarme/)
-- [یخ‌نوردی آبشار شماره ۵ روستای خور](/logbook/2023-01-05-ice-climbing-khor-5/)
-
-</div>
-<div class="home-column" markdown="1">
-
-## یادداشت‌ها
-
-- [نصب و تنظیم زبیکس ۵ — Agent لینوکس](/blog/2021-03-20-zabbix-5-agent/)
-- [نصب و تنظیم زبیکس ۵ — سرور](/blog/2021-03-18-zabbix-5-server/)
-- [راه‌های ساده برای داشتن کد تمیز](/blog/2020-9-16-Clean-Code/)
-- [مفاهیم اولیه برنامه‌نویسی ۱: مفاهیم پایه](/blog/2020-8-31-basic-overview-of-programming-part1/)
-
-</div>
-</div>
