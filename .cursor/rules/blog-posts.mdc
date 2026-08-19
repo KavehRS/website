@@ -14,6 +14,8 @@ When the user asks for a new blog post (`پست جدید وبلاگ` / یادد�
 2. Use `_drafts/blog-post-template.md` (structure only — never republish its placeholders)
 3. Automation prompt: `.cursor/automations/blog-post-prompt.md`
 
+Instagram imports into `_blog/` use this same file shape via the Instagram agent (`.cursor/agents/instagram.md`) plus `.cursor/skills/instagram-to-blog/SKILL.md`. Do not send those notes through this rule’s technical-post template sections.
+
 ## File and URL
 
 - New file: `_blog/YYYY-MM-DD-<slug>.md` with **zero-padded** month and day
