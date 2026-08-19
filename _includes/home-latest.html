@@ -1,10 +1,12 @@
 {% comment %}
-Homepage teasers: four newest logbook reports and four newest blog notes.
-Do not hardcode titles in index.md — this include is the source of truth.
+Homepage teasers: four newest logbook reports, four newest notes, and four newest
+news items (kind: news). Do not hardcode titles in index.md.
+News column is omitted until at least one news post exists (avoids an empty third column).
 {% endcomment %}
 {% assign latest_logbook = site.logbook | sort: 'date' | reverse %}
-{% assign latest_blog = site.blog | sort: 'date' | reverse %}
-<div class="home-columns">
+{% assign latest_notes = site.blog | where_exp: "post", "post.kind != 'news'" | sort: 'date' | reverse %}
+{% assign latest_news = site.blog | where_exp: "post", "post.kind == 'news'" | sort: 'date' | reverse %}
+<div class="home-columns{% if latest_news.size > 0 %} home-columns--three{% endif %}">
   <div class="home-column">
     <h2><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></h2>
     <ul>
@@ -16,9 +18,19 @@ Do not hardcode titles in index.md — this include is the source of truth.
   <div class="home-column">
     <h2><a href="{{ '/blog/' | relative_url }}">یادداشت‌ها</a></h2>
     <ul>
-      {% for post in latest_blog limit: 4 %}
+      {% for post in latest_notes limit: 4 %}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
+  {% if latest_news.size > 0 %}
+  <div class="home-column">
+    <h2><a href="{{ '/news/' | relative_url }}">اخبار</a></h2>
+    <ul>
+      {% for post in latest_news limit: 4 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
 </div>

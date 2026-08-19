@@ -73,6 +73,15 @@
   margin-top: 2lh;
 }
 
+.home-columns--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem 1.25rem;
+}
+
+.home-columns--three .home-column h2 {
+  font-size: 1.05rem;
+}
+
 .home-column h2 {
   font-size: 1.2rem;
   line-height: 1.45;
@@ -134,6 +143,10 @@
   padding-inline-start: 1.25rem;
   font-size: 0.95rem;
   line-height: $base-line-height;
+}
+
+.home-columns--three .home-column ul {
+  font-size: 0.88rem;
 }
 
 .home-column li + li {
@@ -228,7 +241,8 @@ html[dir="ltr"] article .home-column li {
     text-align: inherit;
   }
 
-  .home-columns {
+  .home-columns,
+  .home-columns--three {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }

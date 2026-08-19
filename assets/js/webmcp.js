@@ -46,8 +46,8 @@
   function allowedPath(path, catalog) {
     if (!path || typeof path !== 'string' || path.charAt(0) !== '/') return false;
     if (path.indexOf('//') !== -1 || path.indexOf('\\') !== -1) return false;
-    if (path === '/' || path === '/logbook/' || path === '/blog/') return true;
-    var lists = (catalog.logbook || []).concat(catalog.blog || []);
+    if (path === '/' || path === '/logbook/' || path === '/blog/' || path === '/news/') return true;
+    var lists = (catalog.logbook || []).concat(catalog.blog || []).concat(catalog.news || []);
     for (var i = 0; i < lists.length; i++) {
       if (lists[i].url === path) return true;
     }
@@ -61,11 +61,13 @@
       kind:
         location.pathname.indexOf('/logbook/') === 0
           ? 'ascent_report'
-          : location.pathname.indexOf('/blog/') === 0
-            ? 'note'
-            : location.pathname === '/'
-              ? 'home'
-              : 'page'
+          : location.pathname.indexOf('/news/') === 0
+            ? 'news'
+            : location.pathname.indexOf('/blog/') === 0
+              ? 'note'
+              : location.pathname === '/'
+                ? 'home'
+                : 'page'
     };
   }
 
@@ -113,7 +115,7 @@
     await ctx.registerTool({
       name: 'search_site',
       description:
-        'Search published ascent reports and notes on kavehrs.com by title, description, tag, or category.',
+        'Search published ascent reports, notes, and news on kavehrs.com by title, description, tag, or category.',
       inputSchema: {
         type: 'object',
         properties: {
@@ -126,7 +128,8 @@
         var query = args && args.query;
         return JSON.stringify({
           logbook: filterItems(catalog.logbook || [], query),
-          blog: filterItems(catalog.blog || [], query)
+          blog: filterItems(catalog.blog || [], query),
+          news: filterItems(catalog.news || [], query)
         });
       }
     });
@@ -149,6 +152,22 @@
     });
 
     await ctx.registerTool({
+      name: 'list_news',
+      description:
+        'List published news items (اخبار) on kavehrs.com. Optional query filters by title or description.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          query: { type: 'string', description: 'Optional search text in Persian or English' }
+        }
+      },
+      annotations: { readOnlyHint: true },
+      execute: async function (args) {
+        return JSON.stringify(filterItems(catalog.news || [], args && args.query));
+      }
+    });
+
+    await ctx.registerTool({
       name: 'get_note',
       description: 'Return one published note (یادداشت) by its site path, such as /blog/2026-08-18-mountaineering-return-knowledge/.',
       inputSchema: {
@@ -166,8 +185,25 @@
     });
 
     await ctx.registerTool({
+      name: 'get_news',
+      description: 'Return one published news item (اخبار) by its site path, such as /news/2026-08-19-example/.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          path: { type: 'string', description: 'Catalog URL path beginning with /news/' }
+        },
+        required: ['path']
+      },
+      annotations: { readOnlyHint: true },
+      execute: async function (args) {
+        var item = findByPath(catalog.news || [], args && args.path);
+        return item ? JSON.stringify(item) : 'Not found: path is not a published news item.';
+      }
+    });
+
+    await ctx.registerTool({
       name: 'get_current_page',
-      description: 'Return the current page path, title, and kind (home, ascent_report, note, or page).',
+      description: 'Return the current page path, title, and kind (home, ascent_report, note, news, or page).',
       inputSchema: { type: 'object', properties: {} },
       annotations: { readOnlyHint: true },
       execute: async function () {
@@ -178,13 +214,13 @@
     await ctx.registerTool({
       name: 'open_page',
       description:
-        'Open a same-site page: /, /logbook/, /blog/, or a published report/note URL from the catalog.',
+        'Open a same-site page: /, /logbook/, /blog/, /news/, or a published report/note/news URL from the catalog.',
       inputSchema: {
         type: 'object',
         properties: {
           path: {
             type: 'string',
-            description: 'Site path such as /, /logbook/, /blog/, or a catalog URL'
+            description: 'Site path such as /, /logbook/, /blog/, /news/, or a catalog URL'
           }
         },
         required: ['path']

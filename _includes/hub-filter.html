@@ -1,5 +1,5 @@
 {% comment %}
-Client-side list filter for /logbook/ and /blog/. Also exposes a WebMCP declarative form tool.
+Client-side list filter for /logbook/, /blog/, and /news/. Also exposes a WebMCP declarative form tool.
 {% endcomment %}
 {% if include.toolname and include.tooldescription %}
 <form class="hub-filter" method="get" action="{{ page.url | relative_url }}" toolname="{{ include.toolname }}" tooldescription="{{ include.tooldescription }}">

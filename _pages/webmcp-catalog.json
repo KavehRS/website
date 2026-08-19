@@ -18,7 +18,19 @@ sitemap: false
     {%- endfor %}
   ],
   "blog": [
-    {%- assign items = site.blog | sort: "date" | reverse -%}
+    {%- assign items = site.blog | where_exp: "post", "post.kind != 'news'" | sort: "date" | reverse -%}
+    {%- for post in items %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "description": {{ post.description | default: "" | jsonify }},
+      "tags": {{ post.tags | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor %}
+  ],
+  "news": [
+    {%- assign items = site.blog | where_exp: "post", "post.kind == 'news'" | sort: "date" | reverse -%}
     {%- for post in items %}
     {
       "title": {{ post.title | jsonify }},
