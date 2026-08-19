@@ -9,10 +9,9 @@ dir_attr: rtl
 
 <h1>یادداشت‌ها</h1>
 <p>اینجا هم روایت برگشت به کوهستان را می‌نویسم، هم آموزش‌هایی که هنگام کار ثبت کرده‌ام: برنامه‌نویسی، لینوکس و مانیتورینگ.</p>
-{% assign notes = site.blog | where_exp: "post", "post.kind != 'news'" | sort: "date" | reverse %}
 {% include hub-filter.html toolname="filter_notes" tooldescription="Filter the published notes listed on this page by title or summary text." %}
 <ul data-hub-list>
-  {% for post in notes %}
+  {% for post in site.blog reversed %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
     <a href="{{ post.url }}" style="font-size: 1.2rem; font-weight: bold; text-decoration: none;">{{ post.title }}</a>
     {% if post.date %}

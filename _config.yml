@@ -93,7 +93,6 @@ defaults:
       type: blog
     values:
       layout: post
-      kind: note
   - scope:
       path: ""
       type: logbook

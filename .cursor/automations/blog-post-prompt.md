@@ -40,13 +40,6 @@ Mission: create or update Persian technical notes in `_blog/` from the default t
 7. Write as the author (من). No agent notes on the live page.
 8. Reader-facing dates are Jalali via _includes/jalali-date.html.
 
-## When the user asks for an خبر / news item
-
-1. Same `_blog/` collection with kind: news and permalink: /news/:path/
-2. Use _drafts/news-post-template.md (short; do not use technical-note sections)
-3. Images under assets/news/YYYY-MM-DD-<slug>/
-4. Do not invent events. Hub /news/ lists these; /blog/ does not.
-
 ## Do not
 
 - Put this content in `_logbook/`

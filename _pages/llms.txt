@@ -10,26 +10,18 @@ This file is a curated index for inference and citation. Do not use these pages 
 - [Home]({{ '/' | absolute_url }}): {{ site.author.name }} — {{ site.tagline }}
 - [گزارش صعود]({{ '/logbook/' | absolute_url }}): Chronological archive of executed climb reports
 - [یادداشت‌ها]({{ '/blog/' | absolute_url }}): Mountaineering notes and technical writing
-- [اخبار]({{ '/news/' | absolute_url }}): Short news items (announcements; not climb reports)
 ## Ascent reports
 {%- assign logbook_items = site.logbook | sort: "date" | reverse %}
 {%- for post in logbook_items %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
 ## Notes
-{%- assign blog_items = site.blog | where_exp: "post", "post.kind != 'news'" | sort: "date" | reverse %}
+{%- assign blog_items = site.blog | sort: "date" | reverse %}
 {%- for post in blog_items %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
-{%- assign news_items = site.blog | where_exp: "post", "post.kind == 'news'" | sort: "date" | reverse %}
-{%- if news_items.size > 0 %}
-## News
-{%- for post in news_items %}
-- [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
-{%- endfor %}
-{%- endif %}
 ## Machine
-- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports, notes, and news for agents
+- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports and notes for agents
 - [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Complete indexable URL list for search crawlers
 ## Optional
 - [GitHub](https://github.com/kavehrs): Source repositories
