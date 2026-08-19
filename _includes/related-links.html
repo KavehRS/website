@@ -1,23 +1,12 @@
 {% comment %}
 Related links:
 - Logbook: SELECT by shared disciplines; public UI «گزارش‌های مرتبط :» + flat list.
-- Notes (kind != news): manual page.related, else shared tags; «یادداشت‌های مرتبط :»
-- News (kind == news): same, but only other news; «اخبار مرتبط :»
+- Blog: manual page.related, else shared tags; public UI «یادداشت‌های مرتبط :» + flat list.
 Manual page.related still wins when provided.
 {% endcomment %}
-{% assign page_is_news = false %}
-{% if page.kind == 'news' %}
-  {% assign page_is_news = true %}
-{% endif %}
-{% assign related_heading = 'یادداشت‌های مرتبط' %}
-{% if page.collection == 'logbook' %}
-  {% assign related_heading = 'گزارش‌های مرتبط' %}
-{% elsif page_is_news %}
-  {% assign related_heading = 'اخبار مرتبط' %}
-{% endif %}
 {% if page.related and page.related.size > 0 %}
-<nav class="related-posts" aria-label="{{ related_heading }}" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{{ related_heading }} :</h2>
+<nav class="related-posts" aria-label="{% if page.collection == 'logbook' %}گزارش‌های مرتبط{% else %}یادداشت‌های مرتبط{% endif %}" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% if page.collection == 'logbook' %}گزارش‌های مرتبط :{% else %}یادداشت‌های مرتبط :{% endif %}</h2>
   <ul>
     {% for item in page.related %}
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
@@ -77,11 +66,7 @@ Manual page.related still wins when provided.
 {% elsif page.collection == 'blog' and page.tags and page.tags.size > 0 %}
   {% assign ranked_entries = '' %}
   {% for post in site.blog %}
-    {% assign post_is_news = false %}
-    {% if post.kind == 'news' %}
-      {% assign post_is_news = true %}
-    {% endif %}
-    {% if post.url != page.url and post.tags and page_is_news == post_is_news %}
+    {% if post.url != page.url and post.tags %}
       {% assign overlap = 0 %}
       {% for tag in page.tags %}
         {% if post.tags contains tag %}
@@ -112,8 +97,8 @@ Manual page.related still wins when provided.
     {% endif %}
   {% endfor %}
   {% if related_count > 0 %}
-<nav class="related-posts" aria-label="{{ related_heading }}" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{{ related_heading }} :</h2>
+<nav class="related-posts" aria-label="یادداشت‌های مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">یادداشت‌های مرتبط :</h2>
   <ul>{{ related_items }}</ul>
 </nav>
   {% endif %}

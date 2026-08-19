@@ -94,10 +94,10 @@ When asked for a `پست جدید وبلاگ` / یادداشت فنی / update t
 1. Follow `.cursor/skills/blog-post/SKILL.md`.
 2. Obey `.cursor/rules/blog-posts.mdc`.
 3. Use `_drafts/blog-post-template.md` (structure only — never publish placeholders).
-4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description. For اخبار set `kind: news` and `permalink: /news/:path/` (template `_drafts/news-post-template.md`); notes omit `kind` or use `kind: note`.
+4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
 5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
-6. Related UI stays `یادداشت‌های مرتبط :` + flat list for notes. News uses `اخبار مرتبط :`. Hub `/blog/` chronological notes only; hub `/news/` chronological news only.
-7. Homepage `/` lists the 4 newest notes, 4 newest reports, and 4 newest news items automatically; do not hardcode teasers in `index.md`. The news column appears only after the first `kind: news` post.
+6. Related UI stays `یادداشت‌های مرتبط :` + flat list. Hub `/blog/` chronological.
+7. Homepage `/` lists the 4 newest notes and reports automatically; do not hardcode teasers in `index.md`.
 8. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
@@ -132,7 +132,7 @@ When running the scheduled SEO automation (or when asked to audit SEO):
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc` and `.cursor/rules/logbook-reports.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/logbook/`, `/blog/`, and `/news/` URL (unique title/description, canonical, structured data) — logbook first.
+4. Audit every published `/logbook/` and `/blog/` URL (unique title/description, canonical, structured data) — logbook first.
 5. Never republish duplicate report prose for the same peak.
 6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 

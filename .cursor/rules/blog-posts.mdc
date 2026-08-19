@@ -1,17 +1,17 @@
 ---
 description: Default template and rules for technical notes in `_blog/` (پست جدید وبلاگ)
-globs: _blog/**, _drafts/blog-post-template.md, _drafts/news-post-template.md
+globs: _blog/**, _drafts/blog-post-template.md
 alwaysApply: false
 ---
 
 # Blog notes — default post template
 
-When the user asks for a new blog post (`پست جدید وبلاگ` / یادداشت جدید / آپدیت یادداشت فنی / خبر / اخبار), act as the **blog-post agent**.
+When the user asks for a new blog post (`پست جدید وبلاگ` / یادداشت جدید / آپدیت یادداشت فنی), act as the **blog-post agent**.
 
 ## Entry points
 
 1. Follow `.cursor/skills/blog-post/SKILL.md`
-2. Use `_drafts/blog-post-template.md` for notes, or `_drafts/news-post-template.md` for `kind: news`
+2. Use `_drafts/blog-post-template.md` (structure only — never republish its placeholders)
 3. Automation prompt: `.cursor/automations/blog-post-prompt.md`
 
 Instagram imports into `_blog/` use this same file shape via the Instagram agent (`.cursor/agents/instagram.md`) plus `.cursor/skills/instagram-to-blog/SKILL.md`. Do not send those notes through this rule’s technical-post template sections.
@@ -19,8 +19,7 @@ Instagram imports into `_blog/` use this same file shape via the Instagram agent
 ## File and URL
 
 - New file: `_blog/YYYY-MM-DD-<slug>.md` with **zero-padded** month and day
-- Collection permalink is `/blog/:path/` → URL = `/blog/YYYY-MM-DD-<slug>/` for notes
-- News: same collection, `kind: news` + `permalink: /news/:path/` → `/news/YYYY-MM-DD-<slug>/`
+- Collection permalink is `/blog/:path/` → URL = `/blog/YYYY-MM-DD-<slug>/`
 - Do **not** rename existing posts (legacy paths like `2020-9-16-Clean-Code` stay)
 - Do **not** overwrite or dilute published `_blog/` / `_logbook/` body copy when collecting “latest materials”. Put research in `_seo/watch-inbox.md`. A new note is a new file. Never paste other clubs’ reports into an existing post.
 
@@ -34,9 +33,6 @@ dir_attr: rtl
 description: "…"   # unique, ~120–160 chars
 date: YYYY-MM-DD  # Gregorian; UI Jalali via jalali-date.html
 tags: [موضوع, ابزار]  # YAML array only
-# kind: note is the default (یادداشت). For اخبار set:
-# kind: news
-# permalink: /news/:path/
 ```
 
 Optional:
@@ -52,9 +48,8 @@ Comment `image` out until the owner provides the file. Do not point OG at a miss
 
 ## Images
 
-- Notes: `assets/blog/<exact-url-slug>/` matching `/blog/<slug>/`
-- News: `assets/news/<exact-url-slug>/` matching `/news/<slug>/`
-- Markdown paths with a meaningful Persian `alt`
+- New posts: `assets/blog/<exact-url-slug>/` matching `/blog/<slug>/`
+- Markdown: `/assets/blog/<slug>/<file>` with a meaningful Persian `alt`
 - If photos are not ready: keep the folder with `.gitkeep` and leave `image:` commented
 
 ## Body
@@ -71,11 +66,10 @@ Write as the author (من). No agent notes, no JSON-LD talk, no «این بند 
 
 ## Related and hub
 
-- Fill `related` from real sibling posts (same series or shared tags; news only matches other news)
-- Public UI: heading `یادداشت‌های مرتبط :` or `اخبار مرتبط :` + flat list (`_includes/related-links.html`)
-- Hub `/blog/` lists **notes only**, chronological (newest first)
-- Hub `/news/` lists **news only**, chronological
-- Homepage `/` is filled automatically from the 4 newest notes, 4 newest logbook reports, and 4 newest news items (`_includes/home-latest.html`). The news column is omitted until the first news post exists. Do not edit `index.md` teasers.
+- Fill `related` from real sibling posts (same series or shared tags)
+- Public UI: heading `یادداشت‌های مرتبط :` + flat list (`_includes/related-links.html`)
+- Hub `/blog/` is chronological (newest first)
+- Homepage `/` is filled automatically from the 4 newest blog notes and 4 newest logbook reports (`_includes/home-latest.html`). Do not edit `index.md` teasers.
 
 ## Facts
 

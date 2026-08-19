@@ -67,7 +67,6 @@ For every item **not** already in `_data/instagram_imports.yml`:
    - unique `title` + `description` (~120–160 chars)
    - `date: YYYY-MM-DD`
    - `tags: [YAML array]` from real topics in the caption (strip spam hashtags)
-   - omit `kind` (defaults to note / یادداشت). Do not set `kind: news` unless the owner said the item is an announcement
    - `source: instagram`
    - `instagram_url` / `instagram_shortcode` when known
    - `image:` only after a real file is copied into `assets/blog/<slug>/`
