@@ -1,0 +1,31 @@
+# Optional fallback: every 45 minutes, fingerprint official SEO + AI-citation
+# docs and start a Cursor Cloud Agent only when the fingerprint changed.
+# Prefer native Cursor Automations (.cursor/automations/seo-ai-source-watch-prompt.md).
+#
+# Required repo secret:
+#   CURSOR_API_KEY — from https://cursor.com/settings (API keys)
+#
+# If the secret is missing, the workflow still fingerprints sources (checkout)
+# and exits 0 so Actions stays green.
+
+name: SEO + AI-source watch
+
+on:
+  schedule:
+    # True 45-minute cadence (UTC)
+    - cron: "0,45 0,3,6,9,12,15,18,21 * * *"
+    - cron: "30 1,4,7,10,13,16,19,22 * * *"
+    - cron: "15 2,5,8,11,14,17,20,23 * * *"
+  workflow_dispatch:
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fingerprint
+        uses: actions/checkout@v4
+
+      - name: Fingerprint official sources (spawn agent only on change)
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: python3 .github/scripts/seo-ai-source-watch.py

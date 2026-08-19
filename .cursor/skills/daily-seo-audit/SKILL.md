@@ -25,12 +25,14 @@ Every published post (logbook and blog) should be crawlable, have unique title/d
 
 Fetch and skim the latest public docs (prefer primary sources):
 
-- Google Search Central (SEO starter, meta tags, robots, sitemaps, structured data / rich results)
-- Bing Webmaster Guidelines
+- Google Search Central (SEO starter, meta tags, robots, sitemaps, structured data / rich results, [AI features](https://developers.google.com/search/docs/appearance/ai-features))
+- Bing Webmaster Guidelines + IndexNow
 - schema.org types relevant to articles, places, mountains, sports/activities
+- AI citation surfaces: [llms.txt](https://llmstxt.org/), OpenAI `OAI-SearchBot`, Anthropic `Claude-SearchBot` (training bots may stay disallowed)
 - Any material change vs previous run → note it in the PR body
 
 Do not invent “SEO tips” from random blogs when they conflict with primary docs.
+Do not rewrite published `_blog/` or `_logbook/` bodies during SEO work unless the owner asked to edit that file.
 
 ## Step 1 — Live crawl snapshot
 

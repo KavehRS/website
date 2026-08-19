@@ -1,0 +1,22 @@
+# Unpublished. Primary sources the 45-minute SEO + AI-source watcher fingerprints.
+# Do not treat random SEO blogs as apply-to-site authority.
+
+urls:
+  - https://developers.google.com/search/docs
+  - https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+  - https://developers.google.com/search/docs/appearance/ai-features
+  - https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+  - https://developers.google.com/search/docs/crawling-indexing/robots/intro
+  - https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a
+  - https://www.bing.com/indexnow
+  - https://schema.org/BlogPosting
+  - https://schema.org/Article
+  - https://schema.org/Mountain
+  - https://llmstxt.org/
+  - https://llmstxt.org/changes.html
+  - https://developers.openai.com/api/docs/bots
+  - https://platform.openai.com/docs/bots
+  - https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+  - https://docs.perplexity.ai/guides/bots
+  - https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/
+  - https://contentsignals.org/

@@ -103,10 +103,13 @@ Domain bar raised the same day: DNSSEC on at Cloudflare (CDS published; parent D
 
 Owner follow-up left: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. If you send from Proton as `@kavehrs.com`, those messages will now fail until Proton is added to SPF/DKIM. Chrome WebMCP origin trial still needs an OT token.
 
-## 2026-08-18 — 20-day discoverability plan (day 1)
+## 2026-08-19 — SEO + AI-source watch (45 min), no published-copy edits
 
-- Owner asked for top-5 Google on every site topic in 20 days with 45-minute checks. That outcome cannot be guaranteed; 45-minute rank checks do not move Google (Search Central: wait weeks).
-- Added unpublished `_seo/20-day-discoverability-plan.md`.
-- Day 1: Kahar ۱۴۰۵ title now includes کلوان + ۱۶ مرداد ۱۴۰۵ (distinct from ۱۴۰۲ and from club roundups). Hub `/logbook/` lists each report `description`.
-- Still needed from owner: GSC sitemap + Removal of indexed `pop.kavehrs.com`; Cursor recharge for daily SEO agent.
+- Owner correction: every 45 minutes monitor **SEO materials** and **being listed as an AI source**, then apply on the site **without damaging or changing published posts**. Not a Google-rank poll. Not a harvest of club climb reports.
+- Added `/llms.txt` (llmstxt.org v2 index from existing titles/descriptions), `rel=describedby` + catalog alternate in the default layout, origin `robots.txt` Content-Signal `search=yes, ai-input=yes, ai-train=no, use=reference`, explicit Allow for OAI-SearchBot / Claude-SearchBot / PerplexityBot / Googlebot / Bingbot.
+- Cloudflare managed training Disallows (GPTBot, Google-Extended, ClaudeBot) left as-is.
+- Scheduler: `.cursor/skills/seo-ai-source-watch/SKILL.md`, `.cursor/automations/seo-ai-source-watch-prompt.md`, `.github/workflows/seo-ai-source-watch.yml` (spawn agent only when `_seo/guidance-sources.yml` fingerprint changes).
+- `_blog/` and `_logbook/` files were not edited in this run.
+- Loop stays paused until Cursor billing + Automation / `CURSOR_API_KEY`.
+
 

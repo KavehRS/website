@@ -1,4 +1,30 @@
+# LLM-oriented overview (inference / citation): https://www.kavehrs.com/llms.txt
+# JSON catalog for agents: https://www.kavehrs.com/webmcp-catalog.json
+#
+# Search and live AI answers (RAG / grounding / citation): allowed.
+# Foundation-model training: not granted here. Training crawlers listed by
+# Cloudflare managed robots.txt (GPTBot, Google-Extended, ClaudeBot, …) stay disallowed.
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+Allow: /
+
+# ChatGPT Search / citations (independent of GPTBot training)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic search / citations (independent of ClaudeBot training)
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity search index
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://www.kavehrs.com/sitemap.xml

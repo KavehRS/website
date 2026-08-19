@@ -50,10 +50,10 @@ If a forecast change is **noticeable**, add/update `## چالش‌های برن�
 
 ## Automation billing (owner)
 
-Scheduled agents (weather 4×/day, SEO daily) are **configured but paused** until the site owner recharges their Cursor account and enables:
+Scheduled agents (weather 4×/day, SEO daily, SEO+AI-source every 45 minutes) are **configured but paused** until the site owner recharges their Cursor account and enables:
 
 - Cursor Automation(s) from `.cursor/automations/`, **and/or**
-- GitHub secret `CURSOR_API_KEY` for `.github/workflows/logbook-weather-agent.yml`
+- GitHub secret `CURSOR_API_KEY` for `.github/workflows/logbook-weather-agent.yml` and `.github/workflows/seo-ai-source-watch.yml`
 
 Until then: all rules still apply when the user or a manual agent run triggers work.
 
@@ -118,6 +118,7 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 
 - Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
+- SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
 
 
 ## Daily SEO agent

@@ -20,6 +20,8 @@ layout: compress
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     {% seo %}
+    <link rel="describedby" href="{{ '/llms.txt' | absolute_url }}">
+    <link rel="alternate" type="application/json" href="{{ '/webmcp-catalog.json' | absolute_url }}" title="WebMCP catalog">
     {% include structured-data-logbook.html %}
     {% include favicon.html %}
 

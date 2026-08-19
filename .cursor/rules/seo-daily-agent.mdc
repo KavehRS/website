@@ -10,7 +10,8 @@ Goal: make https://www.kavehrs.com the leading Persian source for mountaineering
 ## When this applies
 
 - Scheduled daily SEO automation
-- Any request to audit, improve, or update site SEO
+- **45-minute SEO + AI-source watch** (`.cursor/skills/seo-ai-source-watch/SKILL.md`)
+- Any request to audit, improve, or update site SEO or AI citation / source listing
 
 ## Required workflow
 
@@ -47,10 +48,18 @@ per `.cursor/rules/logbook-reports.mdc` and `.cursor/rules/logbook-assets.mdc`. 
 
 
 
+## 45-minute SEO + AI-source watch
+
+Cadence: every 45 minutes until the owner pauses it. Watch **official** SEO docs and AI-citation materials (`_seo/guidance-sources.yml`), then apply **technical** site signals only (`robots.txt`, `/llms.txt`, WebMCP, IndexNow, `rel=describedby`, crawl headers).
+
+This is not a Google rank refresh and not a scrape of other clubs’ reports.
+
+**Never edit existing `_blog/*.md` or `_logbook/*.md` bodies, titles, descriptions, tags, or categories** on this watch. Research notes go in unpublished `_seo/watch-inbox.md`.
+
 ## Hard limits
 
 - Do not duplicate published report prose for the same peak.
-
+- Do not rewrite published logbook/blog copy to chase SEO or AI citations.
 - Do not keyword-stuff titles or body copy.
 - Do not fabricate climb details to chase rankings.
 - Do not remove `noindex` from archive/projects/404 without explicit user request.
