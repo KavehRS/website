@@ -34,5 +34,5 @@ If nothing material needs changing: do not open a PR; leave a brief summary of w
 
 Preserve logbook UI rules from logbook-reports.mdc: hub chronological; related links = flat «گزارش‌های مرتبط :» only (no agent blurbs / category subheads on pages); reader-facing dates Jalali via _includes/jalali-date.html (e.g. آخرین بروزرسانی: 13 مرداد 1405).
 
-Never invent climb facts, never duplicate report prose for the same peak, never keyword-stuff, never commit secrets, never publish agent notes into live HTML.
+Never invent climb facts, never duplicate report prose for the same peak, never rewrite published `_blog/` / `_logbook/` bodies unless the owner asked to edit that file, never keyword-stuff, never commit secrets, never publish agent notes into live HTML.
 ```

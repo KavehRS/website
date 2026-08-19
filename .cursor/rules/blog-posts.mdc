@@ -19,6 +19,7 @@ When the user asks for a new blog post (`پست جدید وبلاگ` / یادد�
 - New file: `_blog/YYYY-MM-DD-<slug>.md` with **zero-padded** month and day
 - Collection permalink is `/blog/:path/` → URL = `/blog/YYYY-MM-DD-<slug>/`
 - Do **not** rename existing posts (legacy paths like `2020-9-16-Clean-Code` stay)
+- Do **not** overwrite or dilute published `_blog/` / `_logbook/` body copy when collecting “latest materials”. Put research in `_seo/watch-inbox.md`. A new note is a new file. Never paste other clubs’ reports into an existing post.
 
 ## Front matter (required)
 

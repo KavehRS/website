@@ -1,28 +1,41 @@
 ---
 layout: default
 ---
+{% if page.collection == 'logbook' %}
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
-    {% if page.collection == 'blog' %}
-      · <a href="{{ '/blog/' | relative_url }}">یادداشت‌ها</a>
-    {% elsif page.collection == 'logbook' %}
-      · <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
-    {% endif %}
+    · <a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
   </small>
 </nav>
+{% endif %}
 
 <h1 class="post-headline">{{ page.title }}</h1>
 {% if page.date %}
 <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{% include jalali-date.html date=page.date %}</small></time></p>
 {% endif %}
+{% if page.collection != 'blog' %}
 <p class="meta"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
+{% endif %}
 {% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
-{% if page.image and page.image != empty and page.image != default_img %}
-<img class="post-cover" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+{% if page.image.path %}
+  {% assign cover_src = page.image.path %}
+  {% assign cover_alt = page.image.alt | default: page.title %}
+  {% assign cover_w = page.image.width %}
+  {% assign cover_h = page.image.height %}
+{% else %}
+  {% assign cover_src = page.image %}
+  {% assign cover_alt = page.title %}
+{% endif %}
+{% if cover_src and cover_src != empty and cover_src != default_img %}
+<img class="post-cover" src="{{ cover_src | relative_url }}" alt="{{ cover_alt | escape }}"{% if cover_w %} width="{{ cover_w }}"{% endif %}{% if cover_h %} height="{{ cover_h }}"{% endif %} fetchpriority="high" decoding="async">
 {% endif %}
 
 {{ content }}
+
+{% if page.collection == 'blog' %}
+<p class="meta post-byline-end"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
+{% endif %}
 
 {% include related-links.html %}
 

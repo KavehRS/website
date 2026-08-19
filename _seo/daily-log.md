@@ -68,3 +68,48 @@ Append-only run notes for the scheduled SEO agent. Not published on the site.
 - Daily SEO skill/automation now audits every sitemap logbook **and** blog URL.
 - Sources: Google SEO starter, people-first content, Article + Breadcrumb structured data, sitemap guidance. Bing webmaster page required JS (no extra guideline text).
 - Owner still needed: Search Console + Bing sitemap submit, DNS spam (`pop.kavehrs.com`), Cursor recharge so daily SEO/weather automations run.
+
+## 2026-08-18 — Latest blog note SEO + WebMCP remainder
+
+- Target URL: `/blog/2026-08-18-mountaineering-return-knowledge/`
+- Live already had unique title/description, canonical, `lang=fa-IR`/`dir=rtl`, single H1, `og:image`/`twitter:image` = `Cover.jpg`, `BlogPosting` from jekyll-seo-tag, sitemap entry, cover `<img class="post-cover">`.
+- Fixes implemented:
+  - Cover `alt` + `image` hash (`path`/`width`/`height`/`alt`) for OG dimensions and `og:image:alt`
+  - `width`/`height` + `fetchpriority="high"` on the cover (CLS/LCP)
+  - BreadcrumbList last item now includes `item` URL (Google Breadcrumb docs)
+  - In-body links to existing ice-climbing logbook reports (no related-block heading mismatch)
+  - Hub `/blog/` description + CollectionPage `about` include mountaineering notes
+  - Author JSON-LD name aligned with visible byline (`کاوه‌ رضائی‌شیراز`); `timezone: Asia/Tehran` for ISO dates
+  - IndexNow key file (Bing/Yandex); ping after Pages deploy
+- WebMCP addable remainder: declarative filter forms on `/logbook/` and `/blog/` (`toolname`/`tooldescription`); catalog tags/categories; `search_site` / `get_ascent_report` / `get_note`
+- Beyond-repo: Cloudflare zone `kavehrs.com` (NS ken/melina) is live; `pop`/`docs`/`*` absent. Set `Permissions-Policy: tools=(self)` and `Origin-Agent-Cluster: ?1` on `www` (verified in live response headers). Minimum TLS 1.2. Origin trial token still needs owner Chrome OT signup.
+
+## 2026-08-18 — Cloudflare live-zone audit
+
+Checked via API on active zone `kavehrs.com` (Free, NS ken/melina). Applied:
+
+- SSL `full` → `strict` (GitHub Pages origin still HTTP 200)
+- TLS min 1.2 (already), TLS 1.3 on
+- HSTS `max-age=15552000` without includeSubDomains/preload; `X-Content-Type-Options: nosniff`
+- `Referrer-Policy: strict-origin-when-cross-origin`, `X-Frame-Options: SAMEORIGIN`
+- Early Hints on
+- Apex `always_use_https` + page rule 301 `kavehrs.com/*` → `www`
+
+Left unchanged on purpose: `blog.kavehrs.com` Blogger CNAME; Rocket Loader off; hotlink protection off; no wildcard.
+
+Owner asked for strictest DMARC: `p=reject; sp=reject; adkim=s; aspf=s; pct=100; fo=1` (reports still to Cloudflare `rua`). SPF tightened from `~all` to `-all`.
+
+Domain bar raised the same day: DNSSEC on at Cloudflare (CDS published; parent DS still pending at Registrar.eu — no registrar API here), HSTS 1-year + includeSubDomains + preload, CAA limited to Google Trust Services + Let's Encrypt. Apex HTTP→HTTPS same-host hop fixed; `kavehrs.com` submitted to hstspreload.org (`status: pending`).
+
+Owner follow-up left: Cloudflare Email Routing MX is present but routing is unconfigured — confirm `@kavehrs.com` mail. If you send from Proton as `@kavehrs.com`, those messages will now fail until Proton is added to SPF/DKIM. Chrome WebMCP origin trial still needs an OT token.
+
+## 2026-08-19 — SEO + AI-source watch (45 min), no published-copy edits
+
+- Owner correction: every 45 minutes monitor **SEO materials** and **being listed as an AI source**, then apply on the site **without damaging or changing published posts**. Not a Google-rank poll. Not a harvest of club climb reports.
+- Added `/llms.txt` (llmstxt.org v2 index from existing titles/descriptions), `rel=describedby` + catalog alternate in the default layout, origin `robots.txt` Content-Signal `search=yes, ai-input=yes, ai-train=no, use=reference`, explicit Allow for OAI-SearchBot / Claude-SearchBot / PerplexityBot / Googlebot / Bingbot.
+- Cloudflare managed training Disallows (GPTBot, Google-Extended, ClaudeBot) left as-is.
+- Scheduler: `.cursor/skills/seo-ai-source-watch/SKILL.md`, `.cursor/automations/seo-ai-source-watch-prompt.md`, `.github/workflows/seo-ai-source-watch.yml` (spawn agent only when `_seo/guidance-sources.yml` fingerprint changes).
+- `_blog/` and `_logbook/` files were not edited in this run.
+- Loop stays paused until Cursor billing + Automation / `CURSOR_API_KEY`.
+
+

@@ -1,5 +1,9 @@
 {% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
-{% assign page_img = page.image %}
+{% if page.image.path %}
+  {% assign page_img = page.image.path %}
+{% else %}
+  {% assign page_img = page.image %}
+{% endif %}
 {% if page_img and page_img != empty and page_img != default_img %}
   {% assign article_image = page_img %}
 {% else %}
@@ -47,7 +51,8 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": {{ page.title | jsonify }}
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
     }
   ]
 }
@@ -162,6 +167,8 @@
     "url": "{{ site.url }}{{ site.baseurl }}/"
   },
   "about": [
+    {"@type": "Thing", "name": "کوهنوردی"},
+    {"@type": "Thing", "name": "یخ‌نوردی"},
     {"@type": "Thing", "name": "برنامه‌نویسی"},
     {"@type": "Thing", "name": "لینوکس"},
     {"@type": "Thing", "name": "مانیتورینگ"}

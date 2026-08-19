@@ -1,0 +1,20 @@
+sha256:8e9d73dcb5786be001b9d03497f0cde6c12c429c81cd5605fbaeab0ea00ecd2a
+fetched:2026-08-19T12:10:15Z
+https://developers.google.com/search/docs 5fdd6a7317f55937a1840ea73092aee8699f1f629ecc71c4c9184025c83692b1 etag= last-mod=Tue, 04 Feb 2025 12:33:52 GMT
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide ed018e7aa4a8e4525cb77812eb5d5c4a720696f94b48e4f05280e8502b0aa282 etag= last-mod=Wed, 10 Dec 2025 18:38:05 GMT
+https://developers.google.com/search/docs/appearance/ai-features af07662022f380c0940ada02bce4b29b951431b84ac961dd9bf2da5a7c53eb58 etag= last-mod=Wed, 10 Dec 2025 18:38:05 GMT
+https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers 5646f763b51470debca3d70a805ab2a3753506a9d778e04182db3cdaafd724b4 etag= last-mod=Fri, 12 Jun 2026 11:47:15 GMT
+https://developers.google.com/search/docs/crawling-indexing/robots/intro 995c870ad9ed74fa9b1303a20fbf0bcc8fab8ba5a73aafea3d10313c6a56678d etag= last-mod=Wed, 10 Dec 2025 18:38:05 GMT
+https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a 76683b2eba89d21bea912e71d7e8d8f42fa1ae892f88e86958adfd491eefb8f0 etag= last-mod=
+https://www.bing.com/indexnow 018de33b78acebe7a5ca3618b6f1784ed4da2259b889e101ccbca5eb05dd5c16 etag= last-mod=
+https://schema.org/BlogPosting 44c35870277b0ad94ac5021d312df04ed48b00f7bf987673c0fcf2e45f5a100b etag="AxXBLg" last-mod=
+https://schema.org/Article 959e624bea75c637251c5f27b537fb8fbdd9e85ebfa2e6a56e4c07e6c78717e2 etag="AxXBLg" last-mod=
+https://schema.org/Mountain 84de0d1c2682f693b6eb03f7620d8c0a4ecd93957eb2b1b82c98b62bca0ba309 etag="AxXBLg" last-mod=
+https://llmstxt.org/ 947aa9f5225294ffbb49dd79070d58e6cca8b614c9a13033d76739978d6a2c56 etag= last-mod=Mon, 10 Aug 2026 11:55:11 GMT
+https://llmstxt.org/changes.html 0111dfb69e255f8c3e5041bfe3d7f761e4770475c484ee3c3ed43fdf93e597dd etag= last-mod=Mon, 10 Aug 2026 11:55:11 GMT
+https://developers.openai.com/api/docs/bots f6a80c8d1dd005c0000008172034d3dea172eeba02e1bcd91a2113fa3781067d etag="4e13565873c894987eaa67b2f1a34945" last-mod=Wed, 19 Aug 2026 11:08:14 GMT
+https://platform.openai.com/docs/bots f6a80c8d1dd005c0000008172034d3dea172eeba02e1bcd91a2113fa3781067d etag="4e13565873c894987eaa67b2f1a34945" last-mod=Wed, 19 Aug 2026 11:08:14 GMT
+https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler 58606d70d80100051b617f5c2dcb1f59b309e012e36079176036d433d7df261f etag= last-mod=
+https://docs.perplexity.ai/guides/bots 824ffab3d55d006cf5fade7da5dd46845755003e9072f2156e5bc1005cb85305 etag= last-mod=
+https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/ bc5f07dd6ec673a1c668b13a4e600ed816ff4702396c6404179f00f2156fd130 etag= last-mod=
+https://contentsignals.org/ f8d93838ad7c87e7947caec1c867b48d5d62b72af7ca22263fcdd2804e815ff5 etag= last-mod=
