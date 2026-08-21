@@ -124,4 +124,8 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - Updated site/hub descriptions, CollectionPage `about`, `/llms.txt`, daily SEO skill/automation, and unpublished `_seo/authority-roadmap.md`.
 - Published note bodies were not rewritten.
 
+## 2026-08-21 — Remove blog.kavehrs.com from Cloudflare
+
+- Deleted DNS-only CNAME `blog.kavehrs.com` → `ghs.google.com` from zone `kavehrs.com`.
+- Do not recreate. Imported Blogger notes are on `/notes/`.
 
