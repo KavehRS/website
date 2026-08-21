@@ -107,21 +107,25 @@ Related scheduled agents (mandatory after billing recharge; paused until then):
 
 ## Daily SEO agent
 
-
 When running the scheduled SEO automation (or when asked to audit SEO):
 
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/notes/`, `/tech/`, and `/blog/` note URL (unique title/description, canonical, structured data).
+4. Audit every published `/tech/`, `/notes/`, and `/blog/` note URL (unique title/description, canonical, structured data) — **technical notes first**.
 5. Keep `/logbook/` URLs as redirects to logbook.rocks; do not republish climb reports here.
 6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 
 ## Target ranking theme
 
-This site: یادداشت شخصی and یادداشت فنی.
+Become a Persian **reference for notes about software and technology**:
 
-Climb reports: https://logbook.rocks
+- یادداشت فنی برنامه‌نویسی
+- لینوکس و مانیتورینگ
+- ابزارها و زیرساخت نرم‌افزار
+- یادداشت‌های شخصی مرتبط با کار و یادگیری در همین حوزه
+
+Climb reports: https://logbook.rocks (not this site)
 
 ## Do not
 
@@ -130,7 +134,8 @@ Climb reports: https://logbook.rocks
 - Invent climb facts, weather, team members, coordinates, elevations, or flora/fauna
 - Invent Instagram captions, dates, or photos when converting `imkavehrs` into `_blog/`
 - Publish rounded placeholder lat/lon or «حدود» in place of a missing source
-- Weaken uniqueness of logbook narratives for SEO
+- Keyword-stuff software terms into personal notes
+- Weaken uniqueness of note prose for SEO
 
 ## Cursor Cloud specific instructions
 

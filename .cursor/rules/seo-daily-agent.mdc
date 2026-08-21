@@ -1,11 +1,11 @@
 ---
-description: Daily SEO agent goals and safety for kavehrs.com climb-report ranking
+description: Daily SEO agent goals — kavehrs.com as a Persian software and technology notes source
 alwaysApply: true
 ---
 
 # Daily SEO agent
 
-Goal: make https://www.kavehrs.com the author’s site for personal notes and technical notes. Climb reports rank on https://logbook.rocks, not here.
+Goal: make https://www.kavehrs.com a Persian **reference for notes about software and technology** (programming, Linux, monitoring, tools, and related personal notes). Climb reports rank on https://logbook.rocks, not here.
 
 ## When this applies
 
@@ -22,46 +22,38 @@ Goal: make https://www.kavehrs.com the author’s site for personal notes and te
 5. Run `bundle exec jekyll build` and confirm `_drafts/` / `.cursor/` are not published.
 6. Open PR, then merge after a clean build when the change is high-confidence.
 
-## Ranking priorities (notes)
+## Ranking priorities (software / technology notes)
 
-1. Unique personal and technical notes with strong titles/descriptions/tags
-2. Structured data (`BlogPosting`) and hub CollectionPage on `/notes/` and `/tech/`
+1. Unique technical notes (`note_kind: technical`) with clear titles/descriptions — hub `/tech/`
+2. Structured data (`BlogPosting`) and hub CollectionPage on `/tech/` and `/notes/`
 3. Internal links between related notes of the same `note_kind`
 4. Accurate Open Graph / Twitter images when the note has a real cover
 5. Technical hygiene: broken links, missing alts, wrong `lang`/`dir`, sitemap noise
-6. `/logbook/*` stays a redirect to the same path on logbook.rocks — do not put report bodies back on this site
+6. `/logbook/*` stays a redirect to logbook.rocks — do not put report bodies back on this site
 
-## Climb-report content note
+## Notes content (this site)
 
-When touching `_logbook` content while doing SEO work:
-- do not add guessed coordinates, elevations, or species lists; omit unsourced peak fields (`.cursor/rules/logbook-facts.mdc`)
-- keep the required weather block from **accurate sources only** (Open-Meteo; Mountain-Forecast only if peak has its own page; Meteoblue when reliable — omit distant proxies)
-- keep gear aligned to date/forecast
-- keep `categories` on the discipline taxonomy in `_data/logbook_disciplines.yml` (including `technical-mountaineering` / کوهنوردی فنی and `winter-ascent` / صعود زمستانه)
-- ridge/gendarme/alpine hand-and-foot → `technical-mountaineering`; rock/wall only for true rock/wall
-- keep images under `assets/mount/logbook/<exact-url-slug>/`
-- if touching weather numbers that changed noticeably, keep `## چالش‌های برنامه` in sync
-- hub `/logbook/` stays chronological; related UI stays flat `گزارش‌های مرتبط :` (no agent blurbs / category subheads)
-- reader-facing dates stay Jalali (`_includes/jalali-date.html`); do not revert footer/post/hub dates to English Gregorian
+When touching `_blog/` during SEO work:
+
+- do not rewrite published bodies unless the owner asked to edit that file
+- keep `note_kind: personal` vs `technical`; hubs `/notes/` and `/tech/`
+- related UI stays a flat `یادداشت‌های مرتبط :` list
+- reader-facing dates stay Jalali (`_includes/jalali-date.html`)
 - never publish agent/implementation notes into live page copy
-per `.cursor/rules/logbook-reports.mdc` and `.cursor/rules/logbook-assets.mdc`. Do not invent vague categories.
-
-
-
+- do not keyword-stuff software/technology terms into unrelated personal notes
 
 ## 45-minute SEO + AI-source watch
 
 Cadence: every 45 minutes until the owner pauses it. Watch **official** SEO docs and AI-citation materials (`_seo/guidance-sources.yml`), then apply **technical** site signals only (`robots.txt`, `/llms.txt`, WebMCP, IndexNow, `rel=describedby`, crawl headers).
 
-This is not a Google rank refresh and not a scrape of other clubs’ reports.
+This is not a Google rank refresh.
 
-**Never edit existing `_blog/*.md` or `_logbook/*.md` bodies, titles, descriptions, tags, or categories** on this watch. Research notes go in unpublished `_seo/watch-inbox.md`.
+**Never edit existing `_blog/*.md` bodies, titles, descriptions, tags, or `note_kind`** on this watch. Research notes go in unpublished `_seo/watch-inbox.md`.
 
 ## Hard limits
 
-- Do not duplicate published report prose for the same peak.
-- Do not rewrite published logbook/blog copy to chase SEO or AI citations.
+- Do not rewrite published note copy to chase SEO or AI citations.
 - Do not keyword-stuff titles or body copy.
-- Do not fabricate climb details to chase rankings.
+- Do not republish climb reports on this site.
 - Do not remove `noindex` from archive/projects/404 without explicit user request.
 - Do not change analytics IDs or domain/`CNAME` casually.

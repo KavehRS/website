@@ -118,4 +118,10 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - Site hubs are `/notes/` (personal; last blog post) and `/tech/` (remaining notes). `/blog/` points to those two; post URLs stay `/blog/:path/`
 - Damavand note ice-report links now point at logbook.rocks; other note bodies were not rewritten.
 
+## 2026-08-21 — SEO target: software and technology notes
+
+- Ranking theme on this domain is now Persian notes about software and technology (`/tech/` first). Climb-report SEO stays on logbook.rocks.
+- Updated site/hub descriptions, CollectionPage `about`, `/llms.txt`, daily SEO skill/automation, and unpublished `_seo/authority-roadmap.md`.
+- Published note bodies were not rewritten.
+
 

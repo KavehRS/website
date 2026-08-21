@@ -1,14 +1,14 @@
 ---
 layout: default
 title: یادداشت‌های فنی
-description: "یادداشت‌های فنی کاوه‌ رضائی‌شیراز: برنامه‌نویسی، لینوکس، مانیتورینگ و ابزارها."
+description: "یادداشت‌های نرم‌افزار و تکنولوژی: برنامه‌نویسی، لینوکس، مانیتورینگ و ابزارهایی که هنگام کار ثبت کرده‌ام."
 permalink: /tech/
 lang: fa-IR
 dir_attr: rtl
 ---
 
 <h1>یادداشت‌های فنی</h1>
-<p>آموزش‌ها و یادداشت‌هایی که هنگام کار با ابزار و زیرساخت نوشته‌ام.</p>
+<p>آموزش‌ها و یادداشت‌هایی از کار با نرم‌افزار، لینوکس و زیرساخت.</p>
 {% include hub-filter.html toolname="filter_technical_notes" tooldescription="Filter technical notes listed on this page by title or summary text." %}
 <ul data-hub-list>
   {% assign technical = site.blog | where: "note_kind", "technical" | sort: "date" | reverse %}

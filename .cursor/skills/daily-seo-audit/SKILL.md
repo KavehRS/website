@@ -1,6 +1,6 @@
 ---
 name: daily-seo-audit
-description: Daily SEO audit and update workflow for kavehrs.com personal and technical notes
+description: Daily SEO audit so kavehrs.com ranks as a Persian software and technology notes source
 ---
 
 # Daily SEO audit skill
@@ -9,7 +9,7 @@ Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API)
 
 ## Mission
 
-Improve discoverability of **یادداشت‌های شخصی** and **یادداشت‌های فنی** on https://www.kavehrs.com.
+Make https://www.kavehrs.com a Persian **reference for notes about software and technology**: programming, Linux, monitoring, infrastructure, and related tools. Primary hub: `/tech/`. Personal notes stay on `/notes/` without being stuffed as tech articles.
 
 Climb reports are on https://logbook.rocks/logbook/ — this site only **redirects** `/logbook/:path/` there. Do not republish report bodies here.
 
@@ -23,60 +23,59 @@ Fetch and skim the latest public docs (prefer primary sources):
 
 - Google Search Central (SEO starter, meta tags, robots, sitemaps, structured data / rich results, [AI features](https://developers.google.com/search/docs/appearance/ai-features))
 - Bing Webmaster Guidelines + IndexNow
-- schema.org types relevant to articles, places, mountains, sports/activities
+- schema.org types relevant to articles, software, how-to notes (`BlogPosting`, `TechArticle` only when it matches the page)
 - AI citation surfaces: [llms.txt](https://llmstxt.org/), OpenAI `OAI-SearchBot`, Anthropic `Claude-SearchBot` (training bots may stay disallowed)
 - Any material change vs previous run → note it in the PR body
 
 Do not invent “SEO tips” from random blogs when they conflict with primary docs.
-Do not rewrite published `_blog/` or `_logbook/` bodies during SEO work unless the owner asked to edit that file.
+Do not rewrite published `_blog/` bodies during SEO work unless the owner asked to edit that file.
 
 ## Step 1 — Live crawl snapshot
 
 Inspect:
 
 1. `https://www.kavehrs.com/`
-2. `https://www.kavehrs.com/notes/`
-3. `https://www.kavehrs.com/tech/`
+2. `https://www.kavehrs.com/tech/`
+3. `https://www.kavehrs.com/notes/`
 4. `https://www.kavehrs.com/robots.txt`
 5. `https://www.kavehrs.com/sitemap.xml`
-5. Every indexed HTML URL in the sitemap (or build output if live fetch fails)
+6. Every indexed HTML URL in the sitemap (or build output if live fetch fails)
 
 Record: title, meta description, canonical, `lang`/`dir`, H1 count, OG/Twitter tags, JSON-LD validity, obvious broken images/links.
 
+Confirm `/logbook/` still redirects to logbook.rocks (not a crawlable report body).
+
 ## Step 2 — Repo audit checklist
 
-For each `_logbook/*.md`, `_blog/*.md`, and key pages (`index.md`, `logbook.md`, blog index):
+For each `_blog/*.md` and key pages (`index.md`, `tech.md`, `notes.md`, `blog.md`):
 
 - [ ] Unique `title` and `description` (≈120–160 chars for description when practical)
 - [ ] `lang` / `dir_attr` correct
-- [ ] `image` points to a real climb asset when available (not only the logo)
+- [ ] `note_kind: technical` or `personal` set
+- [ ] `image` points to a real note asset when available (not only the logo)
 - [ ] `image` alt available when using object form supported by theme/includes
-- [ ] Categories use `_data/logbook_disciplines.yml` slugs (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering, hiking, rock-climbing, wall-climbing) plus place/peak tags
-- [ ] Upcoming reports still follow weather schedule + challenge-on-significant-change rules when weather text is edited
-
-- [ ] Peak front matter (`peak.name`, elevation, lat/lon) present when known → feeds JSON-LD
-- [ ] Internal links: related climbs + hub `/logbook/`
-- [ ] No duplicate body text vs another report of the same peak
+- [ ] Internal links: related notes of the same `note_kind` + hub `/tech/` or `/notes/`
 - [ ] Headings: single H1, logical H2+
 - [ ] Images: meaningful `alt` in Markdown
+- [ ] Technical notes stay people-first (version/date in the lead when the stack is old)
 
 Technical site-wide:
 
 - [ ] `jekyll-seo-tag` + `jekyll-sitemap` still enabled
 - [ ] `robots.txt` points at sitemap
-- [ ] Noindex pages stay out of ranking intent (archive, projects, 404, legacy redirects)
+- [ ] Noindex pages stay out of ranking intent (archive, projects, 404, `/logbook/` redirects)
 - [ ] Favicons / social image resolve (HTTP 200)
-- [ ] Structured data includes climb Place/Mountain when `page.peak` exists
+- [ ] Structured data for notes (`BlogPosting` / CollectionPage); no Mountain schema on this site
 - [ ] Performance proxies: oversized images in new posts, missing compression
 
 ## Step 3 — Decide what to change today
 
 Priority order:
 
-1. Broken crawl/index blockers (404 assets, bad canonical, accidental noindex on logbook)
-2. Missing/weak logbook metadata and structured data
-3. Internal linking gaps on climb reports
-4. Hub page (`/logbook/`) clarity for target queries
+1. Broken crawl/index blockers (404 assets, bad canonical, accidental noindex on `/tech/` or notes)
+2. Weak hub/meta on `/tech/` and software/technology note URLs
+3. Internal linking gaps among technical notes
+4. Hub page (`/tech/`) clarity for target queries (برنامه‌نویسی، لینوکس، مانیتورینگ، یادداشت فنی)
 5. Incremental content SEO (titles/descriptions) without rewriting unique narratives
 6. Only then: broader template/CSS SEO hygiene
 
@@ -87,7 +86,6 @@ If nothing material is wrong, **make no PR**.
 ## Step 4 — Implement
 
 - Branch: `cursor/seo-daily-YYYYMMDD-33ce` (or similar kebab + `-33ce`)
-- Keep uniqueness rules from `.cursor/rules/logbook-reports.mdc`
 - Prefer includes/layouts/`_config.yml` for systemic fixes over one-off hacks
 - Update `_seo/daily-log.md` with a short dated entry (what checked, what changed, sources consulted)
 
@@ -104,8 +102,8 @@ If a change is editorial/controversial, leave as draft PR and summarize for the 
 
 ## Success metrics (track qualitatively in `_seo/daily-log.md`)
 
-- Logbook URLs have complete meta + useful JSON-LD
-- Hub page ranks thematically for گزارش صعود / برنامه کوهنوردی
+- `/tech/` and technical note URLs have complete meta + useful JSON-LD
+- Hub thematically matches software/technology note queries (not گزارش صعود)
 - No duplicate thin pages
-- Sitemap only contains indexable URLs
+- Sitemap only contains indexable URLs (no climb-report bodies)
 - Each new improvement compounds; avoid oscillating rewrites day-to-day

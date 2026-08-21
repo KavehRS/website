@@ -73,6 +73,13 @@
 {% elsif page.url == '/tech/' %}
   {% assign hub_items = site.blog | where: "note_kind", "technical" %}
 {% endif %}
+{% if page.url == '/tech/' %}
+  {% assign hub_about = 'software' %}
+{% elsif page.url == '/notes/' %}
+  {% assign hub_about = 'personal' %}
+{% else %}
+  {% assign hub_about = 'both' %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,11 +94,18 @@
     "url": "{{ site.url }}{{ site.baseurl }}/"
   },
   "about": [
-    {"@type": "Thing", "name": "یادداشت شخصی"},
-    {"@type": "Thing", "name": "یادداشت فنی"},
+    {% if hub_about == 'personal' %}
+    {"@type": "Thing", "name": "یادداشت شخصی"}
+    {% elsif hub_about == 'software' %}
+    {"@type": "Thing", "name": "یادداشت نرم‌افزار و تکنولوژی"},
     {"@type": "Thing", "name": "برنامه‌نویسی"},
     {"@type": "Thing", "name": "لینوکس"},
     {"@type": "Thing", "name": "مانیتورینگ"}
+    {% else %}
+    {"@type": "Thing", "name": "یادداشت نرم‌افزار و تکنولوژی"},
+    {"@type": "Thing", "name": "یادداشت شخصی"},
+    {"@type": "Thing", "name": "برنامه‌نویسی"}
+    {% endif %}
   ],
   "mainEntity": {
     "@type": "ItemList",
