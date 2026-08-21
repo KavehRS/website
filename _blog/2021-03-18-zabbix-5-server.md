@@ -1,4 +1,5 @@
 ---
+note_kind: technical
 layout: post
 title: "نصب و تنظیم زبیکس ۵ — سرور"
 lang: fa-IR

@@ -112,4 +112,10 @@ Owner follow-up left: Cloudflare Email Routing MX is present but routing is unco
 - `_blog/` and `_logbook/` files were not edited in this run.
 - Loop stays paused until Cursor billing + Automation / `CURSOR_API_KEY`.
 
+## 2026-08-21 — Notes-only site; logbook redirects
+
+- Removed the climb-report section from kavehrs.com. `/logbook/` and `/logbook/:path/` redirect to the same path on https://logbook.rocks/logbook/
+- Site hubs are `/notes/` (personal; last blog post) and `/tech/` (remaining notes). `/blog/` points to those two; post URLs stay `/blog/:path/`
+- Damavand note ice-report links now point at logbook.rocks; other note bodies were not rewritten.
+
 

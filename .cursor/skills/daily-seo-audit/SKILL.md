@@ -1,6 +1,6 @@
 ---
 name: daily-seo-audit
-description: Daily SEO audit and update workflow for kavehrs.com climb-report ranking
+description: Daily SEO audit and update workflow for kavehrs.com personal and technical notes
 ---
 
 # Daily SEO audit skill
@@ -9,17 +9,13 @@ Run this every 24 hours (Cursor Automation or GitHub Action → Cloud Agent API)
 
 ## Mission
 
-Improve discoverability of Persian **گزارش برنامه صعود** content for the disciplines in `_data/logbook_disciplines.yml`:
+Improve discoverability of **یادداشت‌های شخصی** and **یادداشت‌های فنی** on https://www.kavehrs.com.
 
-- کمپ‌های آموزشی · برفچال · یخچال · آبشار یخی · صعود زمستانه
-- کوهنوردی مرتفع (بالای ۴۰۰۰ متر) · کوهنوردی فنی · کوهپیمایی · سنگ‌نوردی · دیواره‌نوردی
-- plus یخ‌نوردی / DryTooling where relevant in report content
+Climb reports are on https://logbook.rocks/logbook/ — this site only **redirects** `/logbook/:path/` there. Do not republish report bodies here.
 
-Hub `/logbook/` is chronological. Related blocks must stay a flat `گزارش‌های مرتبط :` list (no agent blurbs / category subheads on the page). Reader-facing dates stay Jalali (`_includes/jalali-date.html`), not English Gregorian.
+Hubs `/notes/` and `/tech/` are chronological. Related blocks stay a flat `یادداشت‌های مرتبط :` list. Reader-facing dates stay Jalali (`_includes/jalali-date.html`).
 
-Primary hub: `/logbook/` · Technical notes: `/blog/` · Site: `https://www.kavehrs.com`
-
-Every published post (logbook and blog) should be crawlable, have unique title/description, correct `lang`/`dir`, valid canonical, and useful structured data. Ranking “#1 for everything” is not a switch — compound people-first reports + technical hygiene + owner actions (Search Console, Bing, DNS trust). Do not keyword-stuff.
+Every published note should be crawlable, have unique title/description, correct `lang`/`dir`, valid canonical, and useful structured data. Do not keyword-stuff.
 
 ## Step 0 — Fresh guidance
 
@@ -39,9 +35,10 @@ Do not rewrite published `_blog/` or `_logbook/` bodies during SEO work unless t
 Inspect:
 
 1. `https://www.kavehrs.com/`
-2. `https://www.kavehrs.com/logbook/`
-3. `https://www.kavehrs.com/robots.txt`
-4. `https://www.kavehrs.com/sitemap.xml`
+2. `https://www.kavehrs.com/notes/`
+3. `https://www.kavehrs.com/tech/`
+4. `https://www.kavehrs.com/robots.txt`
+5. `https://www.kavehrs.com/sitemap.xml`
 5. Every indexed HTML URL in the sitemap (or build output if live fetch fails)
 
 Record: title, meta description, canonical, `lang`/`dir`, H1 count, OG/Twitter tags, JSON-LD validity, obvious broken images/links.

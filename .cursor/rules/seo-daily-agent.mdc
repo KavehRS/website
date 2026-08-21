@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Daily SEO agent
 
-Goal: make https://www.kavehrs.com the leading Persian source for mountaineering, rock-climbing, and ice-climbing ascent-program reports across major search engines.
+Goal: make https://www.kavehrs.com the author’s site for personal notes and technical notes. Climb reports rank on https://logbook.rocks, not here.
 
 ## When this applies
 
@@ -22,13 +22,14 @@ Goal: make https://www.kavehrs.com the leading Persian source for mountaineering
 5. Run `bundle exec jekyll build` and confirm `_drafts/` / `.cursor/` are not published.
 6. Open PR, then merge after a clean build when the change is high-confidence.
 
-## Ranking priorities (logbook first)
+## Ranking priorities (notes)
 
-1. Unique, factual ascent reports with strong titles/descriptions/tags
-2. Structured data (`BlogPosting` + mountain/place when peak data exists)
-3. Internal links between related climbs and the `/logbook/` hub
-4. Accurate Open Graph / Twitter images (prefer climb photos over logo)
+1. Unique personal and technical notes with strong titles/descriptions/tags
+2. Structured data (`BlogPosting`) and hub CollectionPage on `/notes/` and `/tech/`
+3. Internal links between related notes of the same `note_kind`
+4. Accurate Open Graph / Twitter images when the note has a real cover
 5. Technical hygiene: broken links, missing alts, wrong `lang`/`dir`, sitemap noise
+6. `/logbook/*` stays a redirect to the same path on logbook.rocks — do not put report bodies back on this site
 
 ## Climb-report content note
 

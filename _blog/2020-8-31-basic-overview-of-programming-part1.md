@@ -1,4 +1,5 @@
 ---
+note_kind: technical
 layout: post
 title: "مفاهیم اولیه برنامه‌نویسی ۱: مفاهیم پایه"
 lang: fa-IR

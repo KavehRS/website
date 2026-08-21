@@ -1,72 +1,22 @@
 {% comment %}
-Related links:
-- Logbook: SELECT by shared disciplines; public UI «گزارش‌های مرتبط :» + flat list.
-- Blog: manual page.related, else shared tags; public UI «یادداشت‌های مرتبط :» + flat list.
-Manual page.related still wins when provided.
+Related links for notes: manual page.related, else shared tags in the same note_kind.
+Public UI: «یادداشت‌های مرتبط :» + flat list.
 {% endcomment %}
+{% if page.collection == 'blog' %}
+{% assign related_heading = 'یادداشت‌های مرتبط :' %}
 {% if page.related and page.related.size > 0 %}
-<nav class="related-posts" aria-label="{% if page.collection == 'logbook' %}گزارش‌های مرتبط{% else %}یادداشت‌های مرتبط{% endif %}" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{% if page.collection == 'logbook' %}گزارش‌های مرتبط :{% else %}یادداشت‌های مرتبط :{% endif %}</h2>
+<nav class="related-posts" aria-label="یادداشت‌های مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{{ related_heading }}</h2>
   <ul>
     {% for item in page.related %}
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
 </nav>
-{% elsif page.collection == 'logbook' %}
-  {% assign page_cats = page.categories %}
-  {% if page_cats == nil or page_cats.size == 0 %}
-    {% assign page_cats = page.disciplines %}
-  {% endif %}
-  {% if page_cats and page_cats.size > 0 %}
-    {% assign discipline_order = site.data.logbook_disciplines.order %}
-    {% assign ranked_entries = '' %}
-    {% for post in site.logbook %}
-      {% if post.url != page.url %}
-        {% assign post_cats = post.categories %}
-        {% if post_cats == nil or post_cats.size == 0 %}
-          {% assign post_cats = post.disciplines %}
-        {% endif %}
-        {% assign overlap = 0 %}
-        {% for disc in discipline_order %}
-          {% if page_cats contains disc and post_cats contains disc %}
-            {% assign overlap = overlap | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-        {% if overlap > 0 %}
-          {% assign overlap_pad = overlap | plus: 10 %}
-          {% assign date_ord = post.date | date: '%s' %}
-          {% capture ranked_entries %}{{ ranked_entries }}{{ overlap_pad }}-{{ date_ord }}:::{{ post.url }}:::{{ post.title }}|||{% endcapture %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% assign ranked_list = ranked_entries | split: '|||' | compact | sort | reverse %}
-    {% assign related_items = '' %}
-    {% assign related_count = 0 %}
-    {% for entry in ranked_list %}
-      {% if related_count < 6 %}
-        {% assign entry_s = entry | strip %}
-        {% if entry_s != '' %}
-          {% assign parts = entry_s | split: ':::' %}
-          {% if parts.size >= 3 %}
-            {% assign related_count = related_count | plus: 1 %}
-            {% capture one_item %}<li><a href="{{ parts[1] | relative_url }}">{{ parts[2] }}</a></li>{% endcapture %}
-            {% assign related_items = related_items | append: one_item %}
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% if related_count > 0 %}
-<nav class="related-posts" aria-label="گزارش‌های مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">گزارش‌های مرتبط :</h2>
-  <ul>{{ related_items }}</ul>
-</nav>
-    {% endif %}
-  {% endif %}
-{% elsif page.collection == 'blog' and page.tags and page.tags.size > 0 %}
+{% elsif page.tags and page.tags.size > 0 %}
   {% assign ranked_entries = '' %}
   {% for post in site.blog %}
-    {% if post.url != page.url and post.tags %}
+    {% if post.url != page.url and post.tags and post.note_kind == page.note_kind %}
       {% assign overlap = 0 %}
       {% for tag in page.tags %}
         {% if post.tags contains tag %}
@@ -98,8 +48,9 @@ Manual page.related still wins when provided.
   {% endfor %}
   {% if related_count > 0 %}
 <nav class="related-posts" aria-label="یادداشت‌های مرتبط" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee;">
-  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">یادداشت‌های مرتبط :</h2>
+  <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{{ related_heading }}</h2>
   <ul>{{ related_items }}</ul>
 </nav>
   {% endif %}
+{% endif %}
 {% endif %}

@@ -24,13 +24,13 @@ Instagram agent: `.cursor/agents/instagram.md`
 ## New post deliverables
 
 1. `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date; slug lowercase kebab-case)
-2. Front matter: `layout: post`, `lang: fa-IR`, `dir_attr: rtl`, unique `title` + `description`, Gregorian `date:`, `tags: [array]`
+2. Front matter: `layout: post`, `note_kind: personal` or `technical`, `lang: fa-IR`, `dir_attr: rtl`, unique `title` + `description`, Gregorian `date:`, `tags: [array]`
 3. Optional `related:` with real `/blog/.../` URLs for a series
 4. `image:` only when a real asset exists; otherwise comment it out until the owner adds files
 5. Images in `assets/blog/YYYY-MM-DD-<slug>/` matching the URL path (`.gitkeep` if photos come later)
 6. Body from the template sections — rewrite all prose; never ship placeholders like `{{عنوان}}`
-7. Hub `/blog/` stays chronological; related UI = `یادداشت‌های مرتبط :` + flat list
-8. Homepage `/` always lists the **4 newest** `_blog/` and `_logbook/` items via `_includes/home-latest.html` — do **not** hardcode teasers in `index.md`
+7. Hub `/notes/` (personal) or `/tech/` (technical); related UI = `یادداشت‌های مرتبط :` + flat list
+8. Homepage `/` lists newest personal and technical notes via `_includes/home-latest.html` — do **not** hardcode teasers in `index.md`
 9. If `image:` is set, the post layout shows it at the top of the note (and as OG cover)
 10. `bundle exec jekyll build` must succeed; `_drafts/` must not appear in `_site/`
 
@@ -43,7 +43,7 @@ Instagram agent: `.cursor/agents/instagram.md`
 
 ## Do not
 
-- Put blog notes in `_logbook/`
+- Put climb reports in this repo; they belong on https://logbook.rocks
 - Use logbook `categories` / `peak` / weather blocks on blog posts
 - Rename old `_blog/` files (live URLs must stay)
 - Keyword-stuff titles

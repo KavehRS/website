@@ -1,4 +1,5 @@
 ---
+note_kind: technical
 layout: post
 title: "راه‌های ساده برای داشتن کد تمیز"
 lang: fa-IR

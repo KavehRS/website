@@ -1,4 +1,5 @@
 ---
+note_kind: technical
 layout: post
 title: "نصب زبان برنامه‌نویسی گو"
 lang: fa-IR
