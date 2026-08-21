@@ -3,17 +3,15 @@
 title: کاوه‌ رضائی‌شیراز
 tagline: "مهندس نرم‌افزار و کوهنورد"
 description: >-
-  گزارش برنامه‌های صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی به‌همراه یادداشت‌های فنی
-  کاوه‌ رضائی‌شیراز — مهندس نرم‌افزار و کوهنورد.
-  Kaveh RezaeiShiraz
-  Software Engineer & Climber
-  یادداشت‌های فنی و نرم افزاری و شخصی
+  یادداشت‌های نرم‌افزار و تکنولوژی کاوه‌ رضائی‌شیراز؛ برنامه‌نویسی، لینوکس،
+  مانیتورینگ و یادداشت‌های شخصی.
+  Kaveh RezaeiShiraz — software and technology notes
   
 lang: fa-IR
 locale: fa_IR
 timezone: Asia/Tehran
 
-# Allow publishing dated logbook/blog entries ahead of the climb date
+# Allow publishing dated notes ahead of the stated date
 future: true
 
 baseurl: ""
@@ -97,7 +95,9 @@ defaults:
       path: ""
       type: logbook
     values:
-      layout: post
+      layout: redirect
+      sitemap: false
+      noindex: true
   - scope:
       path: ""
       type: projects

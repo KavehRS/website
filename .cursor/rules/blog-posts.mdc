@@ -20,8 +20,11 @@ Instagram imports into `_blog/` use this same file shape via the Instagram agent
 
 - New file: `_blog/YYYY-MM-DD-<slug>.md` with **zero-padded** month and day
 - Collection permalink is `/blog/:path/` → URL = `/blog/YYYY-MM-DD-<slug>/`
+- Set `note_kind: personal` or `note_kind: technical` (required)
+- Hubs: `/notes/` personal, `/tech/` technical; `/blog/` is only a pointer to those two
 - Do **not** rename existing posts (legacy paths like `2020-9-16-Clean-Code` stay)
-- Do **not** overwrite or dilute published `_blog/` / `_logbook/` body copy when collecting “latest materials”. Put research in `_seo/watch-inbox.md`. A new note is a new file. Never paste other clubs’ reports into an existing post.
+- Do **not** overwrite or dilute published `_blog/` body copy when collecting “latest materials”. Put research in `_seo/watch-inbox.md`. A new note is a new file.
+- Climb reports are not published here; link https://logbook.rocks/logbook/… instead
 
 ## Front matter (required)
 
@@ -30,6 +33,7 @@ layout: post
 title: "…"
 lang: fa-IR
 dir_attr: rtl
+note_kind: technical  # or personal
 description: "…"   # unique, ~120–160 chars
 date: YYYY-MM-DD  # Gregorian; UI Jalali via jalali-date.html
 tags: [موضوع, ابزار]  # YAML array only
@@ -66,10 +70,10 @@ Write as the author (من). No agent notes, no JSON-LD talk, no «این بند 
 
 ## Related and hub
 
-- Fill `related` from real sibling posts (same series or shared tags)
+- Fill `related` from real sibling posts (same series or shared tags, same `note_kind`)
 - Public UI: heading `یادداشت‌های مرتبط :` + flat list (`_includes/related-links.html`)
-- Hub `/blog/` is chronological (newest first)
-- Homepage `/` is filled automatically from the 4 newest blog notes and 4 newest logbook reports (`_includes/home-latest.html`). Do not edit `index.md` teasers.
+- Hub `/notes/` for personal, `/tech/` for technical (newest first)
+- Homepage `/` is filled automatically from the newest personal and technical notes (`_includes/home-latest.html`). Do not edit `index.md` teasers.
 
 ## Facts
 

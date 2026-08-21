@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Logbook ascent-report agent
 
-When the user asks to create, update, complete, or fix a climb / ascent report (`گزارش صعود` / `گزارش برنامه`), act as the **logbook ascent-report agent**.
+When the user asks to create, update, complete, or fix a climb / ascent report (`گزارش صعود` / `گزارش برنامه`), **do not publish it on kavehrs.com**. Reports live on https://logbook.rocks (repo `KavehRS/logbook.rocks`). On this site, `/logbook/:path/` only redirects there.
 
 ## Entry points
 

@@ -30,7 +30,14 @@
 </script>
 {% endif %}
 
-{% if page.collection == 'logbook' or page.collection == 'blog' %}
+{% if page.collection == 'blog' %}
+{% if page.note_kind == 'technical' %}
+  {% assign crumb_hub_name = 'یادداشت‌های فنی' %}
+  {% assign crumb_hub_url = '/tech/' | absolute_url %}
+{% else %}
+  {% assign crumb_hub_name = 'یادداشت‌های شخصی' %}
+  {% assign crumb_hub_url = '/notes/' | absolute_url %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,8 +52,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "{% if page.collection == 'logbook' %}گزارش صعود{% else %}یادداشت‌ها{% endif %}",
-      "item": "{% if page.collection == 'logbook' %}{{ '/logbook/' | absolute_url }}{% else %}{{ '/blog/' | absolute_url }}{% endif %}"
+      "name": {{ crumb_hub_name | jsonify }},
+      "item": {{ crumb_hub_url | jsonify }}
     },
     {
       "@type": "ListItem",
@@ -59,57 +66,20 @@
 </script>
 {% endif %}
 
-{% if page.collection == 'logbook' and page.peak %}
-{% assign peak = page.peak %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": {{ page.title | jsonify }},
-  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 300 | jsonify }},
-  "inLanguage": {{ page.lang | default: site.lang | jsonify }},
-  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ page.url | absolute_url }}"
-  },
-  "author": {
-    "@type": "Person",
-    "name": {{ site.author.name | jsonify }},
-    "url": "{{ site.url }}{{ site.baseurl }}/",
-    "sameAs": [{% for link in site.social.links %}{{ link | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": {{ site.author.name | jsonify }},
-    "url": "{{ site.url }}{{ site.baseurl }}/"
-  }{% if article_image %},
-  "image": {{ article_image | absolute_url | jsonify }}{% endif %},
-  "about": {
-    "@type": "Mountain",
-    "name": {{ peak.name | jsonify }}{% if peak.elevation_m %},
-    "elevation": {
-      "@type": "QuantitativeValue",
-      "value": {{ peak.elevation_m }},
-      "unitCode": "MTR"
-    }{% endif %}{% if peak.latitude and peak.longitude %},
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": {{ peak.latitude }},
-      "longitude": {{ peak.longitude }}
-    }{% endif %}{% if peak.region %},
-    "containedInPlace": {
-      "@type": "Place",
-      "name": {{ peak.region | jsonify }}
-    }{% endif %}
-  }{% if page.tags %},
-  "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
-}
-</script>
+{% if page.url == '/notes/' or page.url == '/tech/' or page.url == '/blog/' %}
+{% assign hub_items = site.blog %}
+{% if page.url == '/notes/' %}
+  {% assign hub_items = site.blog | where: "note_kind", "personal" %}
+{% elsif page.url == '/tech/' %}
+  {% assign hub_items = site.blog | where: "note_kind", "technical" %}
 {% endif %}
-
-{% if page.url == '/logbook/' %}
+{% if page.url == '/tech/' %}
+  {% assign hub_about = 'software' %}
+{% elsif page.url == '/notes/' %}
+  {% assign hub_about = 'personal' %}
+{% else %}
+  {% assign hub_about = 'both' %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -124,60 +94,25 @@
     "url": "{{ site.url }}{{ site.baseurl }}/"
   },
   "about": [
-    {"@type": "Thing", "name": "گزارش برنامه صعود کوهنوردی"},
-    {"@type": "Thing", "name": "صعود زمستانه"},
-    {"@type": "Thing", "name": "کوهنوردی فنی"},
-    {"@type": "Thing", "name": "کوهنوردی مرتفع"},
-    {"@type": "Thing", "name": "سنگ‌نوردی"},
-    {"@type": "Thing", "name": "دیواره‌نوردی"},
-    {"@type": "Thing", "name": "یخ‌نوردی"},
-    {"@type": "Thing", "name": "برفچال"},
-    {"@type": "Thing", "name": "کمپ آموزشی کوهنوردی"}
-  ],
-  "mainEntity": {
-    "@type": "ItemList",
-    "numberOfItems": {{ site.logbook.size }},
-    "itemListElement": [
-      {% for post in site.logbook reversed %}
-      {
-        "@type": "ListItem",
-        "position": {{ forloop.index }},
-        "url": {{ post.url | absolute_url | jsonify }},
-        "name": {{ post.title | jsonify }}
-      }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]
-  }
-}
-</script>
-{% endif %}
-
-{% if page.url == '/blog/' %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": {{ page.title | jsonify }},
-  "description": {{ page.description | jsonify }},
-  "url": "{{ page.url | absolute_url }}",
-  "inLanguage": "fa-IR",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": {{ site.title | jsonify }},
-    "url": "{{ site.url }}{{ site.baseurl }}/"
-  },
-  "about": [
-    {"@type": "Thing", "name": "کوهنوردی"},
-    {"@type": "Thing", "name": "یخ‌نوردی"},
+    {% if hub_about == 'personal' %}
+    {"@type": "Thing", "name": "یادداشت شخصی"}
+    {% elsif hub_about == 'software' %}
+    {"@type": "Thing", "name": "یادداشت نرم‌افزار و تکنولوژی"},
     {"@type": "Thing", "name": "برنامه‌نویسی"},
     {"@type": "Thing", "name": "لینوکس"},
     {"@type": "Thing", "name": "مانیتورینگ"}
+    {% else %}
+    {"@type": "Thing", "name": "یادداشت نرم‌افزار و تکنولوژی"},
+    {"@type": "Thing", "name": "یادداشت شخصی"},
+    {"@type": "Thing", "name": "برنامه‌نویسی"}
+    {% endif %}
   ],
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": {{ site.blog.size }},
+    "numberOfItems": {{ hub_items.size }},
     "itemListElement": [
-      {% for post in site.blog reversed %}
+      {% assign hub_sorted = hub_items | sort: "date" | reverse %}
+      {% for post in hub_sorted %}
       {
         "@type": "ListItem",
         "position": {{ forloop.index }},

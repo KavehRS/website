@@ -33,20 +33,20 @@ jobs:
 
           prompt = """You are the daily SEO agent for https://www.kavehrs.com (repo KavehRS/website, branch master).
 
-          Mission: make this site the leading Persian authority for گزارش برنامه صعود کوهنوردی، سنگ‌نوردی و یخ‌نوردی across major search engines.
+          Mission: make this site a Persian reference for notes about software and technology (programming, Linux, monitoring, tools). Primary hub /tech/. Climb reports live on https://logbook.rocks — do not republish them here.
 
           Before changing anything:
           1. Read AGENTS.md
           2. Follow .cursor/skills/daily-seo-audit/SKILL.md exactly
-          3. Obey .cursor/rules/seo-daily-agent.mdc and .cursor/rules/logbook-reports.mdc
+          3. Obey .cursor/rules/seo-daily-agent.mdc
           4. Refresh guidance from Google Search Central, Bing Webmaster Guidelines, and schema.org (latest public docs)
 
-          Then audit the live site + repo (every /logbook/ and /blog/ URL), implement only evidence-based SEO improvements (logbook first, then blog), append a short entry to _seo/daily-log.md, run `bundle exec jekyll build`, and confirm drafts/.cursor are unpublished.
+          Then audit the live site + repo (every /tech/, /notes/, and /blog/ note URL), implement only evidence-based SEO improvements (technical notes first), append a short entry to _seo/daily-log.md, run `bundle exec jekyll build`, and confirm drafts/.cursor are unpublished.
 
           If you make verified high-confidence changes: open a PR on a cursor/*-33ce branch and merge to master after a clean build.
           If nothing material needs changing: do not open a PR; leave a brief summary of what you checked.
 
-          Never invent climb facts, never duplicate report prose for the same peak, never keyword-stuff, never commit secrets."""
+          Never rewrite published _blog/ bodies unless the owner asked to edit that file, never keyword-stuff, never commit secrets."""
 
           body = {
               "name": "Daily SEO — kavehrs.com",

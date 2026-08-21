@@ -1,4 +1,5 @@
 ---
+note_kind: technical
 layout: post
 title: "مفاهیم اولیه برنامه‌نویسی ۳: اعداد و کاراکترها"
 lang: fa-IR

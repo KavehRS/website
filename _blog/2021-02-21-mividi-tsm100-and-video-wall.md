@@ -1,4 +1,5 @@
 ---
+note_kind: technical
 layout: post
 title: "راهنمای Mividi TSM100 و Video Wall"
 lang: fa-IR

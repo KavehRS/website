@@ -1,22 +1,22 @@
 {% comment %}
-Homepage teasers: four newest logbook reports and four newest blog notes.
+Homepage teasers: technical notes first (SEO target), then personal notes.
 Do not hardcode titles in index.md — this include is the source of truth.
 {% endcomment %}
-{% assign latest_logbook = site.logbook | sort: 'date' | reverse %}
-{% assign latest_blog = site.blog | sort: 'date' | reverse %}
+{% assign latest_personal = site.blog | where: "note_kind", "personal" | sort: "date" | reverse %}
+{% assign latest_technical = site.blog | where: "note_kind", "technical" | sort: "date" | reverse %}
 <div class="home-columns">
   <div class="home-column">
-    <h2><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></h2>
+    <h2><a href="{{ '/tech/' | relative_url }}">یادداشت‌های فنی</a></h2>
     <ul>
-      {% for post in latest_logbook limit: 4 %}
+      {% for post in latest_technical limit: 4 %}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
   <div class="home-column">
-    <h2><a href="{{ '/blog/' | relative_url }}">یادداشت‌ها</a></h2>
+    <h2><a href="{{ '/notes/' | relative_url }}">یادداشت‌های شخصی</a></h2>
     <ul>
-      {% for post in latest_blog limit: 4 %}
+      {% for post in latest_personal limit: 4 %}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>

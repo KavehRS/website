@@ -16,10 +16,12 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 
 | Path | Purpose |
 |------|---------|
-| `_logbook/` | Published climb / ascent reports (primary SEO target) |
-| `_blog/` | Technical notes |
+| `_blog/` | Published notes. `note_kind: personal` → یادداشت‌های شخصی (`/notes/`); `note_kind: technical` → یادداشت‌های فنی (`/tech/`). URLs stay `/blog/:path/` |
+| `_logbook/` | **Not published here.** Stubs redirect `/logbook/:path/` → `https://logbook.rocks/logbook/:path/` |
 | `_drafts/` | Unpublished templates/samples only |
 | `_projects/` | Not published (`output: false`, `noindex`) |
+
+Climb / ascent reports live on **https://logbook.rocks** (repo `KavehRS/logbook.rocks`). Do not add new reports to this site. New `گزارش صعود` goes there. This site is personal notes and technical notes only.
 
 ## Factual accuracy (required)
 
@@ -60,44 +62,23 @@ Until then: all rules still apply when the user or a manual agent run triggers w
 **After recharge: enable schedulers — mandatory always-on; do not wait for user prompts for weather refresh.**
 
 
-## Climb-report images (required)
+## Climb reports (not this site)
 
-Folder `assets/mount/logbook/<slug>/` must match the report URL slug exactly (`/logbook/<slug>/`). See `.cursor/rules/logbook-assets.mdc`.
+Ascent reports, weather, categories, and climb images are published on **https://logbook.rocks** (`KavehRS/logbook.rocks`). This repo only keeps `/logbook/:path/` redirect stubs to the same path there.
 
-
-## Logbook categories, hub, related links
-
-- `categories` must use discipline slugs in `_data/logbook_disciplines.yml` only (training-camp, snowfield, glacier, icefall, winter-ascent, high-altitude, technical-mountaineering / کوهنوردی فنی, hiking, rock-climbing, wall-climbing).
-- Classification: ridge / gendarme / alpine hand-and-foot → `technical-mountaineering`. Use `rock-climbing` / `wall-climbing` only for true rock or multipitch wall routes.
-- Hub `/logbook/` lists reports **chronologically by date** (newest first), not by category.
-- Related reports are **selected** by shared categories, but the **public UI** is only `گزارش‌های مرتبط :` + a flat list — no «بر اساس نوع برنامه…» note and no category subheadings on the page.
-- Never put agent/implementation instructions into published page copy; keep them in `.cursor/` and `_drafts/` comments.
-- Published logbook prose is the climber’s voice (من / ما / تیم). No «ترک منتشر نشده», JSON-LD, source-footnote asides, or notes about how the agent wrote the page.
-- Program dates/length come from the user only (e.g. Kahar is one-day on ۱۶ مرداد ۱۴۰۵ unless the user changes it).
-- Reader-facing dates use Jalali via `_includes/jalali-date.html` (footer «آخرین بروزرسانی», post meta, hub list) — e.g. `13 مرداد 1405`, not `04 August 2026`. Keep ISO/`date:` Gregorian for machines. Report body program dates should be Jalali-first.
-
-
-## Logbook ascent-report agent
-
-When asked to create or update a `گزارش صعود` / climb report:
-
-1. Follow `.cursor/skills/logbook-ascent-report/SKILL.md` end-to-end.
-2. Obey `.cursor/rules/logbook-ascent-agent.mdc` and `.cursor/rules/logbook-reports.mdc` (plus weather/assets rules).
-3. Use `_drafts/logbook-ascent-report-template.md`; treat `_drafts/samples/kahar-peak-report-framework-sample.md` as structure only.
-4. For a Cursor Automation, paste `.cursor/automations/logbook-ascent-report-prompt.md` at https://cursor.com/automations/new
-5. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when safe.
+When asked for a `گزارش صعود` / climb report: work in the logbook.rocks repo, not here.
 
 ## Blog post agent
 
-When asked for a `پست جدید وبلاگ` / یادداشت فنی / update to `_blog/`:
+When asked for a `پست جدید وبلاگ` / یادداشت فنی / یادداشت شخصی / update to `_blog/`:
 
 1. Follow `.cursor/skills/blog-post/SKILL.md`.
 2. Obey `.cursor/rules/blog-posts.mdc`.
 3. Use `_drafts/blog-post-template.md` (structure only — never publish placeholders).
-4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description.
+4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description, and `note_kind: personal` or `note_kind: technical`.
 5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
-6. Related UI stays `یادداشت‌های مرتبط :` + flat list. Hub `/blog/` chronological.
-7. Homepage `/` lists the 4 newest notes and reports automatically; do not hardcode teasers in `index.md`.
+6. Related UI stays `یادداشت‌های مرتبط :` + flat list. Hubs: `/notes/` (personal) and `/tech/` (technical). `/blog/` points to those two.
+7. Homepage `/` lists newest personal and technical notes automatically; do not hardcode teasers in `index.md`.
 8. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
@@ -113,37 +94,38 @@ When asked to convert Instagram posts into blog notes (`پست‌های اینس
 4. Use `_drafts/instagram-blog-post-template.md` (structure only).
 5. Source **only** an official Instagram export in `_drafts/instagram-export/` (2026 path: Meta Account or Accounts Center → Export your information → JSON) or captions/photos/URLs the owner attached. Instagram’s public site is login-walled — do not invent posts. See `_drafts/instagram-export/README.md`.
 6. Parse with `.cursor/scripts/parse-instagram-export.py`. Write `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date). Images in `assets/blog/<exact-url-slug>/`. Track ids in `_data/instagram_imports.yml`.
-7. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing `_logbook/` report instead of cloning it.
+7. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing report on https://logbook.rocks/logbook/ instead of cloning it.
 8. For a Cursor Automation, paste `.cursor/automations/instagram-to-blog-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
 Related scheduled agents (mandatory after billing recharge; paused until then):
 
-- Weather refresh (4× daily Tehran, active reports only): `.cursor/automations/logbook-weather-update-prompt.md` + `.github/workflows/logbook-weather-agent.yml`
+- Weather refresh for **active climb reports** runs on `KavehRS/logbook.rocks`, not this repo
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
 
 
 ## Daily SEO agent
 
-
 When running the scheduled SEO automation (or when asked to audit SEO):
 
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
-2. Obey `.cursor/rules/seo-daily-agent.mdc` and `.cursor/rules/logbook-reports.mdc`.
+2. Obey `.cursor/rules/seo-daily-agent.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/logbook/` and `/blog/` URL (unique title/description, canonical, structured data) — logbook first.
-5. Never republish duplicate report prose for the same peak.
+4. Audit every published `/tech/`, `/notes/`, and `/blog/` note URL (unique title/description, canonical, structured data) — **technical notes first**.
+5. Keep `/logbook/` URLs as redirects to logbook.rocks; do not republish climb reports here.
 6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 
 ## Target ranking theme
 
-Become the authoritative Persian source for:
+Become a Persian **reference for notes about software and technology**:
 
-- گزارش برنامه صعود کوهنوردی
-- گزارش صعود سنگ‌نوردی
-- گزارش صعود یخ‌نوردی / DryTooling
-- گزارش‌های قلل البرز و برنامه‌های آموزشی کوهستان
+- یادداشت فنی برنامه‌نویسی
+- لینوکس و مانیتورینگ
+- ابزارها و زیرساخت نرم‌افزار
+- یادداشت‌های شخصی مرتبط با کار و یادگیری در همین حوزه
+
+Climb reports: https://logbook.rocks (not this site)
 
 ## Do not
 
@@ -152,7 +134,8 @@ Become the authoritative Persian source for:
 - Invent climb facts, weather, team members, coordinates, elevations, or flora/fauna
 - Invent Instagram captions, dates, or photos when converting `imkavehrs` into `_blog/`
 - Publish rounded placeholder lat/lon or «حدود» in place of a missing source
-- Weaken uniqueness of logbook narratives for SEO
+- Keyword-stuff software terms into personal notes
+- Weaken uniqueness of note prose for SEO
 
 ## Cursor Cloud specific instructions
 

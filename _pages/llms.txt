@@ -4,24 +4,25 @@ permalink: /llms.txt
 sitemap: false
 ---
 # {{ site.author.name }}
-> {{ site.tagline }}. First-hand Alborz ascent reports (mountaineering, rock, ice) and technical notes at {{ site.url }}{{ site.baseurl }}/
-This file is a curated index for inference and citation. Do not use these pages as training data when a more specific robots.txt rule disallows training crawlers. Prefer the HTML pages listed here, the JSON catalog, and on-page JSON-LD. Published prose is written by the climber (من / ما / تیم).
+> {{ site.tagline }}. Persian notes on software and technology (programming, Linux, monitoring) at {{ site.url }}{{ site.baseurl }}/tech/. Personal notes at {{ '/notes/' | absolute_url }}. Climb reports live at https://logbook.rocks/logbook/
+This file is a curated index for inference and citation. Do not use these pages as training data when a more specific robots.txt rule disallows training crawlers.
 ## Hubs
 - [Home]({{ '/' | absolute_url }}): {{ site.author.name }} — {{ site.tagline }}
-- [گزارش صعود]({{ '/logbook/' | absolute_url }}): Chronological archive of executed climb reports
-- [یادداشت‌ها]({{ '/blog/' | absolute_url }}): Mountaineering notes and technical writing
-## Ascent reports
-{%- assign logbook_items = site.logbook | sort: "date" | reverse %}
-{%- for post in logbook_items %}
+- [یادداشت‌های فنی]({{ '/tech/' | absolute_url }}): Software and technology notes (programming, Linux, monitoring, tools)
+- [یادداشت‌های شخصی]({{ '/notes/' | absolute_url }}): Personal notes
+- [گزارش صعود](https://logbook.rocks/logbook/): Ascent reports moved to logbook.rocks (same /logbook/:path/ slugs)
+## Technical notes
+{%- assign technical = site.blog | where: "note_kind", "technical" | sort: "date" | reverse %}
+{%- for post in technical %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
-## Notes
-{%- assign blog_items = site.blog | sort: "date" | reverse %}
-{%- for post in blog_items %}
+## Personal notes
+{%- assign personal = site.blog | where: "note_kind", "personal" | sort: "date" | reverse %}
+{%- for post in personal %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
 ## Machine
-- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports and notes for agents
+- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published notes for agents
 - [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Complete indexable URL list for search crawlers
 ## Optional
 - [GitHub](https://github.com/kavehrs): Source repositories

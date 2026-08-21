@@ -1,0 +1,24 @@
+---
+---
+{%- if page.redirect_to -%}
+  {%- assign dest = page.redirect_to -%}
+  {%- unless dest contains '://' -%}
+    {%- assign dest = dest | absolute_url -%}
+  {%- endunless -%}
+{%- else -%}
+  {%- assign dest = 'https://logbook.rocks' | append: page.url -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: 'انتقال صفحه' | escape }}</title>
+  <link rel="canonical" href="{{ dest }}">
+  <meta http-equiv="refresh" content="0; url={{ dest }}">
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <p>این صفحه منتقل شده است. <a href="{{ dest }}">ادامه در مقصد جدید</a></p>
+</body>
+</html>
