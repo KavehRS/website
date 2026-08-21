@@ -29,7 +29,7 @@ The GitHub Pages site is served from `www.kavehrs.com` (or apex). These subdomai
 
 Live nameservers are `ken.ns.cloudflare.com` / `melina.ns.cloudflare.com`. API listing of the active zone shows **no** `pop`, `docs`, `tri`, or wildcard `*` records (NXDOMAIN). `www` is a proxied CNAME to `kavehrs.github.io`; apex 301s to `www`. Re-check if a wildcard or spam host reappears; do **not** recreate `*`.
 
-`blog.kavehrs.com` is a DNS-only CNAME to `ghs.google.com` (Blogger: «بریده هایی از دلمشغولی های من») — not the Jekyll site, not spam. Leave unless the owner wants it removed.
+`blog.kavehrs.com` CNAME to `ghs.google.com` was **deleted** 2026-08-21 (owner request). Do **not** recreate it. Personal notes from that Blogger live on `/notes/`.
 
 Mail: MX currently points at Cloudflare Email Routing, but routing status is `unconfigured` / disabled. ProtonMail verification TXT is also present. Owner should confirm inbound mail to `@kavehrs.com` actually arrives.
 
