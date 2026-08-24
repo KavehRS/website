@@ -127,6 +127,10 @@ Become a Persian **reference for notes about software and technology**:
 
 Climb reports: https://logbook.rocks (not this site)
 
+## Local Persian fonts (graphics only)
+
+OFL Naskh files for Instagram / book-page graphics live in `.cursor/fonts/` (not published). For 1360s Offset book titles (e.g. ماجراهای کوه), use `XB-Zar-Bold.ttf` first. See `.cursor/fonts/README.md`.
+
 ## Do not
 
 - Commit secrets, API keys, or credentials
