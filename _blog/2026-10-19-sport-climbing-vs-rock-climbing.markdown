@@ -4,7 +4,7 @@ title: "تفاوت صعود ورزشی و سنگ‌نوردی چیست؟ راه�
 description: "صعود ورزشی و سنگ‌نوردی چه تفاوتی دارند؟ با تفاوت اصطلاح‌ها، رشته‌های بولدر، لید و سرعت، و سبک‌های سنگ‌نوردی در سالن و طبیعت آشنا شوید."
 date: 2026-10-19
 lang: fa
-permalink: /fa/tafavot-sood-varzeshi-va-sangnavardi/
+permalink: /tafavot-sood-varzeshi-va-sangnavardi/
 categories: [آموزش, صعودهای ورزشی]
 tags: [صعود ورزشی, سنگ‌نوردی, بولدر, لید, سرعت]
 nav_exclude: true
