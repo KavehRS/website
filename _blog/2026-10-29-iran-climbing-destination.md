@@ -7,7 +7,7 @@ lang: fa
 lang_name: فارسی
 lang_order: 1
 translation_key: iran-climbing-destination
-permalink: /fa/iran-maghsad-taze-sangnavardi/
+permalink: /iran-maghsad-taze-sangnavardi/
 nav_exclude: true
 ---
 
