@@ -1,0 +1,31 @@
+<footer class="site-footer" dir="ltr">
+  <div class="site-footer-inner">
+    <p class="site-footer-name">Kaveh RezaeiShiraz</p>
+    <p class="site-footer-role">Software Engineer</p>
+    <ul class="site-footer-links">
+      {%- if site.email -%}
+      <li><a href="mailto:{{ site.email | encode_email }}">Email</a></li>
+      {%- endif -%}
+      {%- if site.github -%}
+      <li><a href="https://github.com/{{ site.github }}">GitHub</a></li>
+      {%- endif -%}
+      {%- if site.linkedin -%}
+      <li><a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>
+      {%- endif -%}
+      {%- if site.instagram -%}
+      <li><a href="https://www.instagram.com/{{ site.instagram }}">Instagram</a></li>
+      {%- endif -%}
+      {%- assign twitter_user = site.twitter.username | default: site.twitter -%}
+      {%- if twitter_user -%}
+      <li><a href="https://twitter.com/{{ twitter_user }}">X</a></li>
+      {%- endif -%}
+      {%- if site.facebook -%}
+      <li><a href="https://www.facebook.com/{{ site.facebook }}">Facebook</a></li>
+      {%- endif -%}
+    </ul>
+    <p class="site-footer-copy">&copy; {{ site.time | date: '%Y' }} Kaveh RezaeiShiraz</p>
+    {% unless page.url == '/' %}
+    <p class="site-footer-updated">آخرین بروزرسانی: {% include jalali-date.html date=site.time %}</p>
+    {% endunless %}
+  </div>
+</footer>
