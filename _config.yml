@@ -3,9 +3,8 @@
 title: کاوه‌ رضائی‌شیراز
 tagline: "مهندس نرم‌افزار و کوهنورد"
 description: >-
-  یادداشت‌های نرم‌افزار و تکنولوژی کاوه‌ رضائی‌شیراز؛ برنامه‌نویسی، لینوکس،
-  مانیتورینگ و یادداشت‌های شخصی.
-  Kaveh RezaeiShiraz — software and technology notes
+  یادداشت‌های شخصی کاوه‌ رضائی‌شیراز، مهندس نرم‌افزار و کوهنورد.
+  Kaveh RezaeiShiraz — personal notes
   
 lang: fa-IR
 locale: fa_IR
@@ -91,6 +90,7 @@ defaults:
       type: blog
     values:
       layout: post
+      note_kind: personal
   - scope:
       path: ""
       type: logbook

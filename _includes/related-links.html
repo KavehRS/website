@@ -1,5 +1,5 @@
 {% comment %}
-Related links for notes: manual page.related, else shared tags in the same note_kind.
+Related links for notes: manual page.related, else shared tags.
 Public UI: «یادداشت‌های مرتبط :» + flat list.
 {% endcomment %}
 {% if page.collection == 'blog' %}
@@ -16,7 +16,7 @@ Public UI: «یادداشت‌های مرتبط :» + flat list.
 {% elsif page.tags and page.tags.size > 0 %}
   {% assign ranked_entries = '' %}
   {% for post in site.blog %}
-    {% if post.url != page.url and post.tags and post.note_kind == page.note_kind %}
+    {% if post.url != page.url and post.tags %}
       {% assign overlap = 0 %}
       {% for tag in page.tags %}
         {% if post.tags contains tag %}

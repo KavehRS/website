@@ -31,13 +31,8 @@
 {% endif %}
 
 {% if page.collection == 'blog' %}
-{% if page.note_kind == 'technical' %}
-  {% assign crumb_hub_name = 'یادداشت‌های فنی' %}
-  {% assign crumb_hub_url = '/tech/' | absolute_url %}
-{% else %}
-  {% assign crumb_hub_name = 'یادداشت‌های شخصی' %}
-  {% assign crumb_hub_url = '/notes/' | absolute_url %}
-{% endif %}
+{% assign crumb_hub_name = 'یادداشت‌های شخصی' %}
+{% assign crumb_hub_url = '/notes/' | absolute_url %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,20 +61,8 @@
 </script>
 {% endif %}
 
-{% if page.url == '/notes/' or page.url == '/tech/' or page.url == '/blog/' %}
+{% if page.url == '/notes/' or page.url == '/blog/' %}
 {% assign hub_items = site.blog %}
-{% if page.url == '/notes/' %}
-  {% assign hub_items = site.blog | where: "note_kind", "personal" %}
-{% elsif page.url == '/tech/' %}
-  {% assign hub_items = site.blog | where: "note_kind", "technical" %}
-{% endif %}
-{% if page.url == '/tech/' %}
-  {% assign hub_about = 'software' %}
-{% elsif page.url == '/notes/' %}
-  {% assign hub_about = 'personal' %}
-{% else %}
-  {% assign hub_about = 'both' %}
-{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -94,18 +77,7 @@
     "url": "{{ site.url }}{{ site.baseurl }}/"
   },
   "about": [
-    {% if hub_about == 'personal' %}
     {"@type": "Thing", "name": "یادداشت شخصی"}
-    {% elsif hub_about == 'software' %}
-    {"@type": "Thing", "name": "یادداشت نرم‌افزار و تکنولوژی"},
-    {"@type": "Thing", "name": "برنامه‌نویسی"},
-    {"@type": "Thing", "name": "لینوکس"},
-    {"@type": "Thing", "name": "مانیتورینگ"}
-    {% else %}
-    {"@type": "Thing", "name": "یادداشت نرم‌افزار و تکنولوژی"},
-    {"@type": "Thing", "name": "یادداشت شخصی"},
-    {"@type": "Thing", "name": "برنامه‌نویسی"}
-    {% endif %}
   ],
   "mainEntity": {
     "@type": "ItemList",

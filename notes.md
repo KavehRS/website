@@ -11,8 +11,8 @@ dir_attr: rtl
 <p>اینجا چیزهایی را می‌نویسم که گزارش فنی یا آموزش ابزار نیستند.</p>
 {% include hub-filter.html toolname="filter_personal_notes" tooldescription="Filter personal notes listed on this page by title or summary text." %}
 <ul data-hub-list>
-  {% assign personal = site.blog | where: "note_kind", "personal" | sort: "date" | reverse %}
-  {% for post in personal %}
+  {% assign notes = site.blog | sort: "date" | reverse %}
+  {% for post in notes %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
     <a href="{{ post.url }}" style="font-size: 1.2rem; font-weight: bold; text-decoration: none;">{{ post.title }}</a>
     {% if post.date %}

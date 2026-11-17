@@ -1,12 +1,12 @@
 ---
-description: Default template and rules for technical notes in `_blog/` (پست جدید وبلاگ)
+description: Default template and rules for personal notes in `_blog/` (پست جدید وبلاگ)
 globs: _blog/**, _drafts/blog-post-template.md
 alwaysApply: false
 ---
 
 # Blog notes — default post template
 
-When the user asks for a new blog post (`پست جدید وبلاگ` / یادداشت جدید / آپدیت یادداشت فنی), act as the **blog-post agent**.
+When the user asks for a new blog post (`پست جدید وبلاگ` / یادداشت جدید / آپدیت یادداشت), act as the **blog-post agent**.
 
 ## Entry points
 
@@ -14,14 +14,14 @@ When the user asks for a new blog post (`پست جدید وبلاگ` / یادد�
 2. Use `_drafts/blog-post-template.md` (structure only — never republish its placeholders)
 3. Automation prompt: `.cursor/automations/blog-post-prompt.md`
 
-Instagram imports into `_blog/` use this same file shape via the Instagram agent (`.cursor/agents/instagram.md`) plus `.cursor/skills/instagram-to-blog/SKILL.md`. Do not send those notes through this rule’s technical-post template sections.
+Instagram imports into `_blog/` use this same file shape via the Instagram agent (`.cursor/agents/instagram.md`) plus `.cursor/skills/instagram-to-blog/SKILL.md`.
 
 ## File and URL
 
 - New file: `_blog/YYYY-MM-DD-<slug>.md` with **zero-padded** month and day
 - Collection permalink is `/blog/:path/` → URL = `/blog/YYYY-MM-DD-<slug>/`
-- Set `note_kind: personal` or `note_kind: technical` (required)
-- Hubs: `/notes/` personal, `/tech/` technical; `/blog/` is only a pointer to those two
+- Do not require `note_kind`. `_config.yml` defaults blog posts to `personal`; listings must not filter on the field
+- The only notes hub is `/notes/`. `/blog/` points there. Do not recreate `/tech/`
 - Do **not** rename existing posts (legacy paths like `2020-9-16-Clean-Code` stay)
 - Do **not** overwrite or dilute published `_blog/` body copy when collecting “latest materials”. Put research in `_seo/watch-inbox.md`. A new note is a new file.
 - Climb reports are not published here; link https://logbook.rocks/logbook/… instead
@@ -33,7 +33,6 @@ layout: post
 title: "…"
 lang: fa-IR
 dir_attr: rtl
-note_kind: technical  # or personal
 description: "…"   # unique, ~120–160 chars
 date: YYYY-MM-DD  # Gregorian; UI Jalali via jalali-date.html
 tags: [موضوع, ابزار]  # YAML array only
@@ -44,7 +43,7 @@ Optional:
 ```yaml
 related:
   - title: "عنوان واقعی یک پست موجود"
-    url: /blog/2021-03-18-zabbix-5-server/
+    url: /blog/2022-06-15-fashand-climbing-routes/
 # image: /assets/blog/YYYY-MM-DD-slug/cover.jpg
 ```
 
@@ -70,10 +69,10 @@ Write as the author (من). No agent notes, no JSON-LD talk, no «این بند 
 
 ## Related and hub
 
-- Fill `related` from real sibling posts (same series or shared tags, same `note_kind`)
+- Fill `related` from real sibling posts (same series or shared tags)
 - Public UI: heading `یادداشت‌های مرتبط :` + flat list (`_includes/related-links.html`)
-- Hub `/notes/` for personal, `/tech/` for technical (newest first)
-- Homepage `/` is filled automatically from the newest personal and technical notes (`_includes/home-latest.html`). Do not edit `index.md` teasers.
+- Hub `/notes/` lists every published `_blog` file, newest first. Do not recreate `/tech/`
+- Homepage `/` is filled automatically from the newest notes in `site.blog` (`_includes/home-latest.html`), linking to `/notes/`. Do not edit `index.md` teasers.
 
 ## Facts
 
@@ -81,4 +80,4 @@ Do not invent versions, IPs, package names, or terminal output. Omit unknowns. I
 
 ## Ship
 
-`bundle exec jekyll build` must succeed. `_drafts/` and `.cursor/` must not appear in `_site/`.
+`bundle exec jekyll build` must succeed. `_drafts/` and `.cursor/` must not appear in `_site/`. Do not republish `_drafts/`.

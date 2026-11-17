@@ -1,11 +1,11 @@
 ---
-description: Daily SEO agent goals — kavehrs.com as a Persian software and technology notes source
+description: Daily SEO agent goals — kavehrs.com personal notes on /notes/ only
 alwaysApply: true
 ---
 
 # Daily SEO agent
 
-Goal: make https://www.kavehrs.com a Persian **reference for notes about software and technology** (programming, Linux, monitoring, tools, and related personal notes). Climb reports rank on https://logbook.rocks, not here.
+Goal: keep https://www.kavehrs.com a clear Persian site of personal notes. Published notes live on `/notes/` only. Climb reports rank on https://logbook.rocks, not here. Do not recreate `/tech/` or republish `_drafts/`.
 
 ## When this applies
 
@@ -22,11 +22,11 @@ Goal: make https://www.kavehrs.com a Persian **reference for notes about softwar
 5. Run `bundle exec jekyll build` and confirm `_drafts/` / `.cursor/` are not published.
 6. Open PR, then merge after a clean build when the change is high-confidence.
 
-## Ranking priorities (software / technology notes)
+## Ranking priorities (personal notes)
 
-1. Unique technical notes (`note_kind: technical`) with clear titles/descriptions — hub `/tech/`
-2. Structured data (`BlogPosting`) and hub CollectionPage on `/tech/` and `/notes/`
-3. Internal links between related notes of the same `note_kind`
+1. Unique personal notes with clear titles/descriptions — hub `/notes/`
+2. Structured data (`BlogPosting`) and hub CollectionPage on `/notes/`
+3. Internal links between related notes that share tags
 4. Accurate Open Graph / Twitter images when the note has a real cover
 5. Technical hygiene: broken links, missing alts, wrong `lang`/`dir`, sitemap noise
 6. `/logbook/*` stays a redirect to logbook.rocks — do not put report bodies back on this site
@@ -36,7 +36,7 @@ Goal: make https://www.kavehrs.com a Persian **reference for notes about softwar
 When touching `_blog/` during SEO work:
 
 - do not rewrite published bodies unless the owner asked to edit that file
-- keep `note_kind: personal` vs `technical`; hubs `/notes/` and `/tech/`
+- listings include every `_blog` document; do not require `note_kind` or recreate `/tech/`
 - related UI stays a flat `یادداشت‌های مرتبط :` list
 - reader-facing dates stay Jalali (`_includes/jalali-date.html`)
 - never publish agent/implementation notes into live page copy
@@ -48,12 +48,14 @@ Cadence: every 45 minutes until the owner pauses it. Watch **official** SEO docs
 
 This is not a Google rank refresh.
 
-**Never edit existing `_blog/*.md` bodies, titles, descriptions, tags, or `note_kind`** on this watch. Research notes go in unpublished `_seo/watch-inbox.md`.
+**Never edit existing `_blog/*.md` bodies, titles, descriptions, or tags** on this watch. Do not add `note_kind` or recreate `/tech/`. Research notes go in unpublished `_seo/watch-inbox.md`.
 
 ## Hard limits
 
 - Do not rewrite published note copy to chase SEO or AI citations.
 - Do not keyword-stuff titles or body copy.
 - Do not republish climb reports on this site.
+- Do not recreate `/tech/` or a یادداشت‌های فنی section.
+- Do not republish `_drafts/`.
 - Do not remove `noindex` from archive/projects/404 without explicit user request.
 - Do not change analytics IDs or domain/`CNAME` casually.

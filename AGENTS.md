@@ -16,12 +16,12 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 
 | Path | Purpose |
 |------|---------|
-| `_blog/` | Published notes. `note_kind: personal` → یادداشت‌های شخصی (`/notes/`); `note_kind: technical` → یادداشت‌های فنی (`/tech/`). URLs stay `/blog/:path/` |
+| `_blog/` | Published personal notes, listed on `/notes/` with no `note_kind` filter. URLs stay `/blog/:path/` |
 | `_logbook/` | **Not published here.** Stubs redirect `/logbook/:path/` → `https://logbook.rocks/logbook/:path/` |
 | `_drafts/` | Unpublished templates/samples only |
 | `_projects/` | Not published (`output: false`, `noindex`) |
 
-Climb / ascent reports live on **https://logbook.rocks** (repo `KavehRS/logbook.rocks`). Do not add new reports to this site. New `گزارش صعود` goes there. This site is personal notes and technical notes only.
+Climb / ascent reports live on **https://logbook.rocks** (repo `KavehRS/logbook.rocks`). Do not add new reports to this site. New `گزارش صعود` goes there. This site publishes personal notes on `/notes/` only. Do not recreate `/tech/` and do not republish `_drafts/`.
 
 ## Factual accuracy (required)
 
@@ -70,15 +70,15 @@ When asked for a `گزارش صعود` / climb report: work in the logbook.rocks
 
 ## Blog post agent
 
-When asked for a `پست جدید وبلاگ` / یادداشت فنی / یادداشت شخصی / update to `_blog/`:
+When asked for a `پست جدید وبلاگ` / یادداشت شخصی / update to `_blog/`:
 
 1. Follow `.cursor/skills/blog-post/SKILL.md`.
 2. Obey `.cursor/rules/blog-posts.mdc`.
 3. Use `_drafts/blog-post-template.md` (structure only — never publish placeholders).
-4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, unique description, and `note_kind: personal` or `note_kind: technical`.
+4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, and a unique description. Do not require `note_kind`; `_config.yml` defaults blog posts to `personal`.
 5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
-6. Related UI stays `یادداشت‌های مرتبط :` + flat list. Hubs: `/notes/` (personal) and `/tech/` (technical). `/blog/` points to those two.
-7. Homepage `/` lists newest personal and technical notes automatically; do not hardcode teasers in `index.md`.
+6. Related UI stays `یادداشت‌های مرتبط :` + flat list, matched by shared tags. The only notes hub is `/notes/`. `/blog/` points there. Do not recreate `/tech/`.
+7. Homepage `/` lists the newest notes from all of `site.blog`, linking to `/notes/`; do not hardcode teasers in `index.md`.
 8. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
@@ -112,18 +112,13 @@ When running the scheduled SEO automation (or when asked to audit SEO):
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/tech/`, `/notes/`, and `/blog/` note URL (unique title/description, canonical, structured data) — **technical notes first**.
+4. Audit every published `/notes/` and `/blog/` note URL (unique title/description, canonical, structured data). Do not recreate `/tech/` or republish `_drafts/`.
 5. Keep `/logbook/` URLs as redirects to logbook.rocks; do not republish climb reports here.
 6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 
 ## Target ranking theme
 
-Become a Persian **reference for notes about software and technology**:
-
-- یادداشت فنی برنامه‌نویسی
-- لینوکس و مانیتورینگ
-- ابزارها و زیرساخت نرم‌افزار
-- یادداشت‌های شخصی مرتبط با کار و یادگیری در همین حوزه
+Published notes are personal notes on `/notes/` only. Do not recreate `/tech/`, do not require `note_kind`, and do not republish `_drafts/`.
 
 Climb reports: https://logbook.rocks (not this site)
 
@@ -135,6 +130,8 @@ Climb reports: https://logbook.rocks (not this site)
 - Invent Instagram captions, dates, or photos when converting `imkavehrs` into `_blog/`
 - Publish rounded placeholder lat/lon or «حدود» in place of a missing source
 - Keyword-stuff software terms into personal notes
+- Recreate `/tech/` or a یادداشت‌های فنی section
+- Require `note_kind` on published notes
 - Weaken uniqueness of note prose for SEO
 
 ## Cursor Cloud specific instructions

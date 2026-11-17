@@ -12,7 +12,7 @@
   }
 
   function allNotes(catalog) {
-    return (catalog.notes || []).concat(catalog.tech || []);
+    return catalog.notes || [];
   }
 
   function findByPath(items, path) {
@@ -40,7 +40,7 @@
   function allowedPath(path, catalog) {
     if (!path || typeof path !== 'string' || path.charAt(0) !== '/') return false;
     if (path.indexOf('//') !== -1 || path.indexOf('\\') !== -1) return false;
-    if (path === '/' || path === '/notes/' || path === '/tech/' || path === '/blog/') return true;
+    if (path === '/' || path === '/notes/' || path === '/blog/') return true;
     var lists = allNotes(catalog);
     for (var i = 0; i < lists.length; i++) {
       if (lists[i].url === path) return true;
@@ -53,7 +53,6 @@
     var kind = 'page';
     if (path === '/') kind = 'home';
     else if (path === '/notes/' || path.indexOf('/notes/') === 0) kind = 'personal_notes';
-    else if (path === '/tech/' || path.indexOf('/tech/') === 0) kind = 'technical_notes';
     else if (path.indexOf('/blog/') === 0) kind = 'note';
     return { url: path, title: document.title, kind: kind };
   }
@@ -78,23 +77,8 @@
     });
 
     await ctx.registerTool({
-      name: 'list_technical_notes',
-      description: 'List published technical notes (یادداشت‌های فنی) on kavehrs.com.',
-      inputSchema: {
-        type: 'object',
-        properties: {
-          query: { type: 'string', description: 'Optional search text in Persian or English' }
-        }
-      },
-      annotations: { readOnlyHint: true },
-      execute: async function (args) {
-        return JSON.stringify(filterItems(catalog.tech || [], args && args.query));
-      }
-    });
-
-    await ctx.registerTool({
       name: 'search_site',
-      description: 'Search published personal and technical notes on kavehrs.com by title, description, or tag.',
+      description: 'Search published notes on kavehrs.com by title, description, or tag.',
       inputSchema: {
         type: 'object',
         properties: {
@@ -106,8 +90,7 @@
       execute: async function (args) {
         var query = args && args.query;
         return JSON.stringify({
-          notes: filterItems(catalog.notes || [], query),
-          tech: filterItems(catalog.tech || [], query)
+          notes: filterItems(catalog.notes || [], query)
         });
       }
     });
@@ -155,7 +138,7 @@
 
     await ctx.registerTool({
       name: 'get_current_page',
-      description: 'Return the current page path, title, and kind (home, personal_notes, technical_notes, note, or page).',
+      description: 'Return the current page path, title, and kind (home, personal_notes, note, or page).',
       inputSchema: { type: 'object', properties: {} },
       annotations: { readOnlyHint: true },
       execute: async function () {
@@ -165,13 +148,13 @@
 
     await ctx.registerTool({
       name: 'open_page',
-      description: 'Open a same-site page: /, /notes/, /tech/, /blog/, or a published note URL from the catalog.',
+      description: 'Open a same-site page: /, /notes/, /blog/, or a published note URL from the catalog.',
       inputSchema: {
         type: 'object',
         properties: {
           path: {
             type: 'string',
-            description: 'Site path such as /, /notes/, /tech/, /blog/, or a catalog URL'
+            description: 'Site path such as /, /notes/, /blog/, or a catalog URL'
           }
         },
         required: ['path']
