@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-{% if page.collection == 'logbook' or page.collection == 'blog' %}
+{% if page.collection == 'blog' %}
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
-    · {% if page.collection == 'logbook' %}<a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a>
-    {% else %}<a href="{{ '/notes/' | relative_url }}">یادداشت‌های شخصی</a>{% endif %}
+    · <a href="{{ '/notes/' | relative_url }}">یادداشت‌ها</a>
   </small>
 </nav>
 {% endif %}
@@ -14,9 +13,6 @@ layout: default
 <h1 class="post-headline">{{ page.title }}</h1>
 {% if page.date %}
 <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}"><small>{% include jalali-date.html date=page.date %}</small></time></p>
-{% endif %}
-{% if page.collection == 'logbook' %}
-<p class="meta"><small>نویسنده: <a href="{{ '/' | relative_url }}">کاوه‌ رضائی‌شیراز</a></small></p>
 {% endif %}
 {% assign default_img = site.logo | default: '/assets/images/logos/1/kavehrs.jpg' %}
 {% if page.image.path %}

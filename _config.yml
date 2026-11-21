@@ -95,7 +95,9 @@ defaults:
       path: ""
       type: logbook
     values:
-      layout: post
+      layout: redirect
+      sitemap: false
+      noindex: true
   - scope:
       path: ""
       type: projects

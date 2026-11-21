@@ -16,12 +16,12 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 
 | Path | Purpose |
 |------|---------|
-| `_blog/` | Published personal notes, listed on `/notes/` with no `note_kind` filter. URLs stay `/blog/:path/` |
-| `_logbook/` | Published ascent reports on `/logbook/:path/` |
+| `_blog/` | Published personal notes **and** climb reports, listed together on `/notes/`. URLs stay `/blog/:path/` |
+| `_logbook/` | Legacy redirects only (`layout: redirect` → `/blog/<same-slug>/`). Do not put report bodies here |
 | `_drafts/` | Unpublished templates/samples only |
 | `_projects/` | Not published (`output: false`, `noindex`) |
 
-Climb / ascent reports live **here** under `_logbook/` and `/logbook/`. News and journal articles stay on **https://logbook.rocks**. This site also publishes personal notes on `/notes/`. Do not recreate `/tech/` and do not republish `_drafts/`.
+Climb / ascent reports live in **`_blog/`** and appear on **`/notes/`** alongside other notes. `/logbook/:path/` redirects to `/blog/:path/`. The hub `/logbook/` redirects to `/notes/`. Do **not** recreate a separate گزارش صعود archive page or nav item. News and journal articles stay on **https://logbook.rocks**. Do not recreate `/tech/` and do not republish `_drafts/`.
 
 ## Factual accuracy (required)
 
@@ -33,7 +33,7 @@ If elevations/coordinates disagree across named sources, publish the disagreemen
 
 ## Climb-report weather (required)
 
-Every `_logbook` ascent report weather section uses **only accurate sources** for that peak and region:
+Every ascent report weather section (in `_blog/`) uses **only accurate sources** for that peak and region:
 
 1. **Open-Meteo** — peak coordinates + elevation (+ trailhead when useful); usually always
 2. **[Mountain-Forecast](https://www.mountain-forecast.com/)** — **only** when the peak has its own forecast page (no distant proxy)
@@ -64,9 +64,9 @@ Until then: all rules still apply when the user or a manual agent run triggers w
 
 ## Climb reports (this site)
 
-Ascent reports, weather, categories, and climb images are published here in `_logbook/` with assets under `assets/mount/logbook/<exact-url-slug>/`.
+Ascent reports are ordinary blog posts in `_blog/YYYY-MM-DD-<slug>.md` (same shape as other notes), listed on `/notes/`. Keep a matching redirect stub in `_logbook/YYYY-MM-DD-<slug>.md` → `/blog/<slug>/`. Climb images stay under `assets/mount/logbook/<exact-url-slug>/`.
 
-When asked for a `گزارش صعود` / climb report: work in this repo’s `_logbook/`. News/articles remain on logbook.rocks.
+When asked for a `گزارش صعود` / climb report: write the full report in `_blog/` and keep/update the `_logbook/` redirect stub. News/articles remain on logbook.rocks. Do not recreate a separate `/logbook/` hub page.
 
 ## Blog post agent
 
@@ -77,8 +77,8 @@ When asked for a `پست جدید وبلاگ` / یادداشت شخصی / update
 3. Use `_drafts/blog-post-template.md` (structure only — never publish placeholders).
 4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, and a unique description. Do not require `note_kind`; `_config.yml` defaults blog posts to `personal`.
 5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
-6. Related UI stays `یادداشت‌های مرتبط :` + flat list, matched by shared tags. The only notes hub is `/notes/`. `/blog/` points there. Do not recreate `/tech/`.
-7. Homepage `/` lists the newest notes from non-redirect `site.blog` plus newest logbook reports; do not hardcode teasers in `index.md`.
+6. Related UI stays `یادداشت‌های مرتبط :` + flat list, matched by shared tags or categories. The only notes hub is `/notes/`. `/blog/` points there. Do not recreate `/tech/` or a separate climb-report hub.
+7. Homepage `/` lists the newest non-redirect `site.blog` notes (including climb reports); do not hardcode teasers in `index.md`.
 8. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
@@ -94,13 +94,13 @@ When asked to convert Instagram posts into blog notes (`پست‌های اینس
 4. Use `_drafts/instagram-blog-post-template.md` (structure only).
 5. Source **only** an official Instagram export in `_drafts/instagram-export/` (2026 path: Meta Account or Accounts Center → Export your information → JSON) or captions/photos/URLs the owner attached. Instagram’s public site is login-walled — do not invent posts. See `_drafts/instagram-export/README.md`.
 6. Parse with `.cursor/scripts/parse-instagram-export.py`. Write `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date). Images in `assets/blog/<exact-url-slug>/`. Track ids in `_data/instagram_imports.yml`.
-7. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing report on `/logbook/` instead of cloning it.
+7. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing climb note on `/blog/` (or via `/notes/`) instead of cloning it.
 8. For a Cursor Automation, paste `.cursor/automations/instagram-to-blog-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
 Related scheduled agents (mandatory after billing recharge; paused until then):
 
-- Weather refresh for **active climb reports** on this repo’s `_logbook/`
+- Weather refresh for **active climb reports** published as `_blog/` notes (redirect stubs remain in `_logbook/`)
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
 
@@ -112,15 +112,15 @@ When running the scheduled SEO automation (or when asked to audit SEO):
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/notes/`, `/blog/`, and `/logbook/` URL (unique title/description, canonical, structured data). Do not recreate `/tech/` or republish `_drafts/`.
-5. Keep climb reports published on this site’s `/logbook/`; news/articles stay on logbook.rocks.
+4. Audit every published `/notes/` and `/blog/` URL (unique title/description, canonical, structured data). Treat climb reports as ordinary notes. Do not recreate a separate `/logbook/` hub or `/tech/`, and do not republish `_drafts/`.
+5. Climb reports live in `_blog/` on this site; news/articles stay on logbook.rocks.
 6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 
 ## Target ranking theme
 
-Published notes are personal notes on `/notes/`; ascent reports rank on `/logbook/`. Do not recreate `/tech/`, do not require `note_kind`, and do not republish `_drafts/`.
+Published notes (including climb reports) rank via `/notes/` and `/blog/:path/`. Do not recreate `/tech/`, a separate گزارش صعود hub, or require `note_kind`, and do not republish `_drafts/`.
 
-Climb reports: this site (`/logbook/`). News/articles: https://logbook.rocks
+Climb reports: this site (`_blog/` → `/notes/`). News/articles: https://logbook.rocks
 
 ## Do not
 
@@ -131,6 +131,7 @@ Climb reports: this site (`/logbook/`). News/articles: https://logbook.rocks
 - Publish rounded placeholder lat/lon or «حدود» in place of a missing source
 - Keyword-stuff software terms into personal notes
 - Recreate `/tech/` or a یادداشت‌های فنی section
+- Recreate a separate `/logbook/` archive hub or nav item for climb reports
 - Require `note_kind` on published notes
 - Weaken uniqueness of note prose for SEO
 

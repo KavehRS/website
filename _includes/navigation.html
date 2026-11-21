@@ -1,5 +1,4 @@
 <nav>
   <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>خانه</a>  |
-  <a href="{{ '/logbook/' | relative_url }}" {% if page.url contains '/logbook/' %}class="active"{% endif %}>گزارش صعود</a>  |
-  <a href="{{ '/notes/' | relative_url }}" {% if page.url == '/notes/' or page.collection == 'blog' %}class="active"{% endif %}>یادداشت‌های شخصی</a>
+  <a href="{{ '/notes/' | relative_url }}" {% if page.url == '/notes/' or page.collection == 'blog' %}class="active"{% endif %}>یادداشت‌ها</a>
 </nav>
