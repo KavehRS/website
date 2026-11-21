@@ -220,6 +220,19 @@ Project cards render only from _data/showcase.yml.
   </div>
 </section>
 
+<section class="band band-light" id="sites">
+  <div class="band-inner">
+    <p class="eyebrow eyebrow-dark">Sites</p>
+    <h2>Other sites</h2>
+    <ul class="site-links">
+      <li><a href="https://logbook.rocks/logbook/">Logbook</a></li>
+      {% if site.orcid %}
+      <li><a href="https://orcid.org/{{ site.orcid }}">ORCID</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</section>
+
 <section class="band band-dark" id="contact">
   <div class="band-inner contact-band">
     <p class="eyebrow">Contact</p>
@@ -229,6 +242,7 @@ Project cards render only from _data/showcase.yml.
     {% endif %}
     <ul class="contact-links">
       {% if site.github %}<li><a href="https://github.com/{{ site.github }}">GitHub</a></li>{% endif %}
+      {% if site.orcid %}<li><a href="https://orcid.org/{{ site.orcid }}">ORCID</a></li>{% endif %}
       {% if site.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
       {% if site.instagram %}<li><a href="https://www.instagram.com/{{ site.instagram }}">Instagram</a></li>{% endif %}
       {% assign twitter_user = site.twitter.username | default: site.twitter %}
