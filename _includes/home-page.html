@@ -1,0 +1,239 @@
+{% comment %}
+Homepage sections. Persian biography is the text previously published on this page.
+Project cards render only from _data/showcase.yml.
+{% endcomment %}
+
+<section class="hero" aria-labelledby="hero-title">
+  <img
+    class="hero-photo"
+    src="{{ '/assets/images/home/hero.jpg' | relative_url }}"
+    alt="A valley path and river below a mountain ridge at dusk, on the way toward Kholeno."
+    width="1600"
+    height="900"
+    fetchpriority="high"
+    decoding="async">
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">Software Engineer</p>
+    <h1 id="hero-title">Building systems.<br>Exploring possibilities.</h1>
+    <p class="hero-intro">I'm Kaveh RezaeiShiraz — a software engineer interested in technology, data, open-source software, and the outdoors.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">Explore My Work</a>
+      <a class="btn btn-quiet" href="#about">About Me</a>
+    </div>
+  </div>
+</section>
+
+<section class="band band-light" id="about">
+  <div class="band-inner">
+    <p class="eyebrow eyebrow-dark">About</p>
+    <h2>A Little About Me</h2>
+    <p class="lede">Technology is my profession, curiosity is my motivation, and climbing is one of the ways I explore the world.</p>
+
+    <div class="about-layout">
+      <figure class="portrait">
+        <img
+          src="{{ '/assets/images/home/portrait.jpg' | relative_url }}"
+          alt="Kaveh RezaeiShiraz with a laptop on a ridge above the clouds."
+          width="400"
+          height="400"
+          decoding="async">
+      </figure>
+
+      <ol class="interest-list">
+        <li>
+          <span class="interest-index">01</span>
+          <div>
+            <h3>Technology</h3>
+            <p>Software engineering, systems, databases, infrastructure, and technology.</p>
+          </div>
+        </li>
+        <li>
+          <span class="interest-index">02</span>
+          <div>
+            <h3>Open Source</h3>
+            <p>Open-source tools, personal projects, experimentation, and technical exploration.</p>
+            {% if site.github %}
+            <p><a href="https://github.com/{{ site.github }}">github.com/{{ site.github }}</a></p>
+            {% endif %}
+          </div>
+        </li>
+        <li>
+          <span class="interest-index">03</span>
+          <div>
+            <h3>Mountains</h3>
+            <p>Mountaineering, rock climbing, alpine environments, and outdoor exploration.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <blockquote class="bio-fa" lang="fa" dir="rtl">
+      <p><strong>مهندس نرم‌افزار | MBA (گرایش فناوری اطلاعات و سیستم‌های اطلاعاتی) | کوهنورد</strong></p>
+      <p>من مهندس نرم‌افزار هستم و به دنیای متن‌باز، فناوری‌های نوین و دانش علاقه‌ی زیادی دارم. کتاب، کوهنوردی، سنگ‌نوردی و درایتولینگ هم از دیگر علایق من هستند.</p>
+      <p>زادهٔ مهر ۱۳۶۴ در گیلان | ساکن تهران</p>
+    </blockquote>
+  </div>
+</section>
+
+<section class="band band-dark" id="professional">
+  <div class="band-inner">
+    <p class="eyebrow">Professional</p>
+    <h2>Where the work sits</h2>
+    <p class="lede lede-muted">I work as a software engineer. These are areas of the job and of ongoing interest. They are not a certificate list, and they are not ranked.</p>
+    <ul class="practice-list">
+      <li>
+        <h3>Software Engineering</h3>
+        <p>Building and looking after software, with a standing interest in open-source tools.</p>
+      </li>
+      <li>
+        <h3>Database Systems &amp; Data Management</h3>
+        <p>How information is stored, shaped, and kept reliable.</p>
+      </li>
+      <li>
+        <h3>Systems Integration</h3>
+        <p>Connecting separate systems so they can work as one.</p>
+      </li>
+      <li>
+        <h3>IT Infrastructure</h3>
+        <p>The machines, networks, and services that software depends on.</p>
+      </li>
+      <li>
+        <h3>Automation &amp; DevOps</h3>
+        <p>Reducing repeated manual work in how software is run.</p>
+      </li>
+      <li>
+        <h3>Artificial Intelligence &amp; Emerging Technologies</h3>
+        <p>Following new tools closely enough to see where they actually help.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band-light" id="projects">
+  <div class="band-inner">
+    <p class="eyebrow eyebrow-dark">Projects</p>
+    <h2>Selected work</h2>
+    {% assign showcase = site.data.showcase.items %}
+    {% if showcase and showcase.size > 0 %}
+    <ul class="project-list">
+      {% for project in showcase %}
+      <li class="project-item">
+        {% if project.image %}
+        <img src="{{ project.image | relative_url }}" alt="" width="320" height="200" decoding="async">
+        {% endif %}
+        <div>
+          <h3>
+            {% if project.url %}
+            <a href="{{ project.url }}">{{ project.title }}</a>
+            {% else %}
+            {{ project.title }}
+            {% endif %}
+          </h3>
+          {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+          {% if project.tech %}<p class="project-tech">{{ project.tech }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <div class="project-empty">
+      <p>Selected work will be listed here when it is ready to show.</p>
+      {% if site.github %}
+      <p><a href="https://github.com/{{ site.github }}">Public code on GitHub</a></p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="band band-photo" id="outdoors">
+  <div class="band-inner">
+    <p class="eyebrow">Outdoors</p>
+    <h2>Beyond Technology</h2>
+    <p class="lede lede-muted">Exploring the mountains, learning from nature, and challenging personal limits.</p>
+    <div class="photo-mosaic">
+      <figure class="photo-ice">
+        <img
+          src="{{ '/assets/images/home/ice.jpg' | relative_url }}"
+          alt="A climber on a frozen waterfall, with two people watching from the snow at Khor."
+          width="650"
+          height="863"
+          decoding="async">
+        <figcaption>Ice climbing, Khor</figcaption>
+      </figure>
+      <figure class="photo-rock">
+        <img
+          src="{{ '/assets/images/home/rock.jpg' | relative_url }}"
+          alt="A rock face at Fashand with climbing routes marked across the stone."
+          width="1280"
+          height="960"
+          decoding="async">
+        <figcaption><a href="{{ '/blog/2022-06-15-fashand-climbing-routes/' | relative_url }}">Rock routes, Fashand</a></figcaption>
+      </figure>
+      <figure class="photo-snow">
+        <img
+          src="{{ '/assets/images/home/snow.jpg' | relative_url }}"
+          alt="People with packs walking up a snowy slope among trees, toward Palangchal."
+          width="837"
+          height="491"
+          decoding="async">
+        <figcaption>Winter approach, Palangchal</figcaption>
+      </figure>
+    </div>
+    <p class="photo-note"><a href="https://logbook.rocks/logbook/">Ascent reports</a></p>
+  </div>
+</section>
+
+<section class="band band-light" id="notes">
+  <div class="band-inner">
+    <p class="eyebrow eyebrow-dark">Notes</p>
+    <h2>Notes &amp; Articles</h2>
+    {% assign latest_notes = site.blog | sort: "date" | reverse %}
+    {% if latest_notes.size > 0 %}
+    <ol class="note-list">
+      {% for post in latest_notes limit: 4 %}
+      {% assign note_label = "Personal note" %}
+      {% for tag in post.tags %}
+        {% if tag contains "کوه" or tag contains "سنگ" or tag contains "یخ" or tag contains "صعود" %}
+          {% assign note_label = "Mountaineering" %}
+        {% endif %}
+      {% endfor %}
+      <li>
+        <div class="note-meta">
+          <span>{{ note_label }}</span>
+          {% if post.date %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{% include jalali-date.html date=post.date %}</time>
+          {% endif %}
+        </div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.description %}
+        <p lang="fa" dir="rtl">{{ post.description }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    <p class="section-more"><a href="{{ '/notes/' | relative_url }}">All notes</a></p>
+    {% else %}
+    <p class="project-empty">Notes will appear here when they are published.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="band band-dark" id="contact">
+  <div class="band-inner contact-band">
+    <p class="eyebrow">Contact</p>
+    <h2>Get in touch</h2>
+    {% if site.email %}
+    <p class="contact-email"><a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p>
+    {% endif %}
+    <ul class="contact-links">
+      {% if site.github %}<li><a href="https://github.com/{{ site.github }}">GitHub</a></li>{% endif %}
+      {% if site.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
+      {% if site.instagram %}<li><a href="https://www.instagram.com/{{ site.instagram }}">Instagram</a></li>{% endif %}
+      {% assign twitter_user = site.twitter.username | default: site.twitter %}
+      {% if twitter_user %}<li><a href="https://twitter.com/{{ twitter_user }}">X</a></li>{% endif %}
+      {% if site.facebook %}<li><a href="https://www.facebook.com/{{ site.facebook }}">Facebook</a></li>{% endif %}
+    </ul>
+  </div>
+</section>

@@ -1,4 +1,8 @@
-<nav>
-  <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>خانه</a>  |
-  <a href="{{ '/notes/' | relative_url }}" {% if page.url == '/notes/' or page.collection == 'blog' %}class="active"{% endif %}>یادداشت‌ها</a>
+<nav id="site-nav" class="site-nav" aria-label="Primary">
+  <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+  <a href="{% if page.url == '/' %}#about{% else %}{{ '/#about' | relative_url }}{% endif %}">About</a>
+  <a href="{% if page.url == '/' %}#professional{% else %}{{ '/#professional' | relative_url }}{% endif %}">Professional</a>
+  <a href="{% if page.url == '/' %}#projects{% else %}{{ '/#projects' | relative_url }}{% endif %}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+  <a href="{{ '/notes/' | relative_url }}" {% if page.url == '/notes/' or page.collection == 'blog' %}aria-current="page"{% endif %}>Notes</a>
+  <a href="{% if page.url == '/' %}#contact{% else %}{{ '/#contact' | relative_url }}{% endif %}">Contact</a>
 </nav>

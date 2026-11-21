@@ -1,25 +1,15 @@
 ---
-layout: about
+layout: home
 permalink: /
-title: Kaveh RezaeiShiraz کاوه‌ رضائی‌شیراز
+title: Kaveh RezaeiShiraz
 description: >-
-  کاوه‌ رضایی‌شیراز — مهندس نرم‌افزار و کوهنورد. یادداشت‌های شخصی و گزارش صعود.
-  ساکن تهران.
-profile:
-  align: right
-  image: /assets/images/logos/1/kavehrs.jpg
-  image_alt: عکس پروفایل کاوه‌ رضائی‌شیراز
+  Kaveh RezaeiShiraz is a software engineer interested in technology, data,
+  open-source software, and the outdoors.
+image:
+  path: /assets/images/home/hero.jpg
+  alt: A valley path and river below a mountain ridge at dusk.
 published: true
-dir_attr: rtl
-lang: fa-IR
+lang: en
+locale: en_US
+dir_attr: ltr
 ---
-
-# درباره من
-<blockquote>
-  <p><strong>مهندس نرم‌افزار | MBA (گرایش فناوری اطلاعات و سیستم‌های اطلاعاتی) | کوهنورد</strong></p>
-  <ul>
-    <li>من مهندس نرم‌افزار هستم و به دنیای متن‌باز، فناوری‌های نوین و دانش علاقه‌ی زیادی دارم. کتاب، کوهنوردی، سنگ‌نوردی و درایتولینگ هم از دیگر علایق من هستند.</li>
-    <li>یادداشت‌های شخصی و گزارش‌های صعود را در <a href="{{ '/notes/' | relative_url }}">یادداشت‌ها</a> می‌نویسم.</li>
-    <li>زادهٔ مهر ۱۳۶۴ در گیلان | ساکن تهران</li>
-  </ul>
-</blockquote>

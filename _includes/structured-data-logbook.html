@@ -33,7 +33,7 @@
   "@type": "ProfilePage",
   "name": {{ page.title | jsonify }},
   "url": "{{ site.url }}{{ site.baseurl }}/",
-  "inLanguage": "fa-IR",
+  "inLanguage": {{ page.lang | default: "fa-IR" | jsonify }},
   "mainEntity": {
     "@type": "Person",
     "name": {{ site.author.name | jsonify }},
