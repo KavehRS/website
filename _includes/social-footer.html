@@ -1,13 +1,5 @@
 <div class="rounded-social-buttons">
 
-{%- if site.email -%}
-<a title="{{ _locale_string_email }}"
-class="social-button email" itemprop="email"
-href="mailto:{{ site.email | encode_email }}" target="_blank" rel="noopener noreferrer">
-<i class="far fa-envelope"></i>
-</a>
-{%- endif -%}
-
 {%- if site.linkedin -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'LinkedIn' }}"
 class="social-button linkedin"
