@@ -228,6 +228,19 @@ html:has(body.site-home) { background: $ink; }
   font-size: 0.92rem;
 }
 
+.site-footer-sites { margin-top: 1.25rem; }
+
+.site-footer-sites-label {
+  margin: 0;
+  color: $slate;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.site-footer-sites .site-footer-links { margin-top: 0.45rem; }
+
 .site-footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -578,25 +591,6 @@ html:has(body.site-home) { background: $ink; }
 .note-list p { font-family: Vazir, Inter, sans-serif; }
 
 .section-more { margin: 1.5rem 0 0; }
-
-#sites { border-top: 1px solid rgba(15, 23, 42, 0.12); }
-
-.site-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
-  list-style: none;
-  margin: 1.5rem 0 0;
-  padding: 0;
-}
-
-.site-links a {
-  color: $text;
-  text-decoration: none;
-  border-bottom: 1px solid $accent;
-}
-
-.site-links a:hover { color: $accent; }
 
 .contact-band { padding-bottom: 4rem; }
 

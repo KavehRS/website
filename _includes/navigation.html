@@ -4,6 +4,5 @@
   <a href="{% if page.url == '/' %}#professional{% else %}{{ '/#professional' | relative_url }}{% endif %}">Professional</a>
   <a href="{% if page.url == '/' %}#projects{% else %}{{ '/#projects' | relative_url }}{% endif %}" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
   <a href="{{ '/notes/' | relative_url }}" {% if page.url == '/notes/' or page.collection == 'blog' %}aria-current="page"{% endif %}>Notes</a>
-  <a href="{% if page.url == '/' %}#sites{% else %}{{ '/#sites' | relative_url }}{% endif %}">Sites</a>
   <a href="{% if page.url == '/' %}#contact{% else %}{{ '/#contact' | relative_url }}{% endif %}">Contact</a>
 </nav>
