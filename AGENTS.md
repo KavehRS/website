@@ -17,11 +17,11 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 | Path | Purpose |
 |------|---------|
 | `_blog/` | Published personal notes, listed on `/notes/` with no `note_kind` filter. URLs stay `/blog/:path/` |
-| `_logbook/` | **Not published here.** Stubs redirect `/logbook/:path/` → `https://logbook.rocks/logbook/:path/` |
+| `_logbook/` | Published ascent reports on `/logbook/:path/` |
 | `_drafts/` | Unpublished templates/samples only |
 | `_projects/` | Not published (`output: false`, `noindex`) |
 
-Climb / ascent reports live on **https://logbook.rocks** (repo `KavehRS/logbook.rocks`). Do not add new reports to this site. New `گزارش صعود` goes there. This site publishes personal notes on `/notes/` only. Do not recreate `/tech/` and do not republish `_drafts/`.
+Climb / ascent reports live **here** under `_logbook/` and `/logbook/`. News and journal articles stay on **https://logbook.rocks**. This site also publishes personal notes on `/notes/`. Do not recreate `/tech/` and do not republish `_drafts/`.
 
 ## Factual accuracy (required)
 
@@ -62,11 +62,11 @@ Until then: all rules still apply when the user or a manual agent run triggers w
 **After recharge: enable schedulers — mandatory always-on; do not wait for user prompts for weather refresh.**
 
 
-## Climb reports (not this site)
+## Climb reports (this site)
 
-Ascent reports, weather, categories, and climb images are published on **https://logbook.rocks** (`KavehRS/logbook.rocks`). This repo only keeps `/logbook/:path/` redirect stubs to the same path there.
+Ascent reports, weather, categories, and climb images are published here in `_logbook/` with assets under `assets/mount/logbook/<exact-url-slug>/`.
 
-When asked for a `گزارش صعود` / climb report: work in the logbook.rocks repo, not here.
+When asked for a `گزارش صعود` / climb report: work in this repo’s `_logbook/`. News/articles remain on logbook.rocks.
 
 ## Blog post agent
 
@@ -78,7 +78,7 @@ When asked for a `پست جدید وبلاگ` / یادداشت شخصی / update
 4. File: `_blog/YYYY-MM-DD-<slug>.md` with zero-padded date, `lang: fa-IR`, YAML `tags` array, and a unique description. Do not require `note_kind`; `_config.yml` defaults blog posts to `personal`.
 5. Images for new notes: `assets/blog/<exact-url-slug>/`; comment `image:` out until files exist.
 6. Related UI stays `یادداشت‌های مرتبط :` + flat list, matched by shared tags. The only notes hub is `/notes/`. `/blog/` points there. Do not recreate `/tech/`.
-7. Homepage `/` lists the newest notes from all of `site.blog`, linking to `/notes/`; do not hardcode teasers in `index.md`.
+7. Homepage `/` lists the newest notes from non-redirect `site.blog` plus newest logbook reports; do not hardcode teasers in `index.md`.
 8. For a Cursor Automation, paste `.cursor/automations/blog-post-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
@@ -94,13 +94,13 @@ When asked to convert Instagram posts into blog notes (`پست‌های اینس
 4. Use `_drafts/instagram-blog-post-template.md` (structure only).
 5. Source **only** an official Instagram export in `_drafts/instagram-export/` (2026 path: Meta Account or Accounts Center → Export your information → JSON) or captions/photos/URLs the owner attached. Instagram’s public site is login-walled — do not invent posts. See `_drafts/instagram-export/README.md`.
 6. Parse with `.cursor/scripts/parse-instagram-export.py`. Write `_blog/YYYY-MM-DD-<slug>.md` (zero-padded date). Images in `assets/blog/<exact-url-slug>/`. Track ids in `_data/instagram_imports.yml`.
-7. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing report on https://logbook.rocks/logbook/ instead of cloning it.
+7. Rewrite captions as the author (من). No hashtag dumps, no guessed geo. Link an existing report on `/logbook/` instead of cloning it.
 8. For a Cursor Automation, paste `.cursor/automations/instagram-to-blog-prompt.md` at https://cursor.com/automations/new
 9. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`.
 
 Related scheduled agents (mandatory after billing recharge; paused until then):
 
-- Weather refresh for **active climb reports** runs on `KavehRS/logbook.rocks`, not this repo
+- Weather refresh for **active climb reports** on this repo’s `_logbook/`
 - Daily SEO: `.cursor/automations/daily-seo-prompt.md` + `.github/workflows/daily-seo-agent.yml`
 - SEO + AI-source watch (every 45 minutes; technical crawl signals only, never rewrite published posts): `.cursor/automations/seo-ai-source-watch-prompt.md` + `.github/workflows/seo-ai-source-watch.yml`
 
@@ -112,15 +112,15 @@ When running the scheduled SEO automation (or when asked to audit SEO):
 1. Follow `.cursor/skills/daily-seo-audit/SKILL.md` end-to-end.
 2. Obey `.cursor/rules/seo-daily-agent.mdc`.
 3. Prefer high-confidence technical SEO and discoverability fixes over speculative copy rewrites.
-4. Audit every published `/notes/` and `/blog/` note URL (unique title/description, canonical, structured data). Do not recreate `/tech/` or republish `_drafts/`.
-5. Keep `/logbook/` URLs as redirects to logbook.rocks; do not republish climb reports here.
+4. Audit every published `/notes/`, `/blog/`, and `/logbook/` URL (unique title/description, canonical, structured data). Do not recreate `/tech/` or republish `_drafts/`.
+5. Keep climb reports published on this site’s `/logbook/`; news/articles stay on logbook.rocks.
 6. Open a PR on `cursor/<descriptive-name>-33ce`, verify `bundle exec jekyll build`, then merge to `master` when changes are safe and verified.
 
 ## Target ranking theme
 
-Published notes are personal notes on `/notes/` only. Do not recreate `/tech/`, do not require `note_kind`, and do not republish `_drafts/`.
+Published notes are personal notes on `/notes/`; ascent reports rank on `/logbook/`. Do not recreate `/tech/`, do not require `note_kind`, and do not republish `_drafts/`.
 
-Climb reports: https://logbook.rocks (not this site)
+Climb reports: this site (`/logbook/`). News/articles: https://logbook.rocks
 
 ## Do not
 

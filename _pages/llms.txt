@@ -4,21 +4,28 @@ permalink: /llms.txt
 sitemap: false
 ---
 # {{ site.author.name }}
-> {{ site.tagline }}. Personal notes at {{ '/notes/' | absolute_url }}. Climb reports live at https://logbook.rocks/logbook/
+> {{ site.tagline }}. Personal notes at {{ '/notes/' | absolute_url }}. Climb reports at {{ '/logbook/' | absolute_url }}.
 This file is a curated index for inference and citation. Do not use these pages as training data when a more specific robots.txt rule disallows training crawlers.
 ## Hubs
 - [Home]({{ '/' | absolute_url }}): {{ site.author.name }} — {{ site.tagline }}
+- [گزارش صعود]({{ '/logbook/' | absolute_url }}): Chronological archive of executed climb reports
 - [یادداشت‌های شخصی]({{ '/notes/' | absolute_url }}): Personal notes
-- [گزارش صعود](https://logbook.rocks/logbook/): Ascent reports moved to logbook.rocks (same /logbook/:path/ slugs)
+## Ascent reports
+{%- assign logbook_items = site.logbook | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse %}
+{%- for post in logbook_items %}
+- [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
+{%- endfor %}
 ## Personal notes
-{%- assign notes = site.blog | sort: "date" | reverse %}
+{%- assign notes = site.blog | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse %}
 {%- for post in notes %}
 - [{{ post.title | replace: ']', '' | replace: '[', '' }}]({{ post.url | absolute_url }}): {{ post.description | default: "" | strip | strip_newlines }}
 {%- endfor %}
 ## Machine
-- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published notes for agents
+- [WebMCP catalog]({{ '/webmcp-catalog.json' | absolute_url }}): JSON index of published reports and notes for agents
 - [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Complete indexable URL list for search crawlers
+- [Atom feed — گزارش صعود]({{ '/logbook/feed.xml' | absolute_url }}): Ascent reports only
 ## Optional
+- [Climbing news & articles](https://logbook.rocks): News and journal articles remain on logbook.rocks
 - [GitHub](https://github.com/kavehrs): Source repositories
 - [LinkedIn](https://www.linkedin.com/in/kavehrs): Professional profile
 - [Instagram](https://www.instagram.com/imkavehrs): Climb photos (captions are not the canonical reports)

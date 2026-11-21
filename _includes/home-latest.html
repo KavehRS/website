@@ -1,9 +1,18 @@
 {% comment %}
-Homepage teasers: newest notes from all of site.blog, linking to /notes/.
+Homepage teasers: four newest logbook reports + four newest non-redirect blog notes.
 Do not hardcode titles in index.md — this include is the source of truth.
 {% endcomment %}
-{% assign latest_notes = site.blog | sort: "date" | reverse %}
+{% assign latest_logbook = site.logbook | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse %}
+{% assign latest_notes = site.blog | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse %}
 <div class="home-columns">
+  <div class="home-column">
+    <h2><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></h2>
+    <ul>
+      {% for post in latest_logbook limit: 4 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
   <div class="home-column">
     <h2><a href="{{ '/notes/' | relative_url }}">یادداشت‌های شخصی</a></h2>
     <ul>
