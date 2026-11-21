@@ -1,5 +1,6 @@
 {% comment %}
-Related links for notes: manual page.related, else shared tags.
+Related links for notes (including climb reports published as blog posts):
+manual page.related, else shared tags OR categories.
 Public UI: «یادداشت‌های مرتبط :» + flat list.
 {% endcomment %}
 {% if page.collection == 'blog' %}
@@ -13,16 +14,45 @@ Public UI: «یادداشت‌های مرتبط :» + flat list.
     {% endfor %}
   </ul>
 </nav>
-{% elsif page.tags and page.tags.size > 0 %}
+{% else %}
+  {% assign page_tags = page.tags %}
+  {% assign page_cats = page.categories %}
+  {% if page_cats == nil or page_cats.size == 0 %}
+    {% assign page_cats = page.disciplines %}
+  {% endif %}
+  {% assign has_tags = false %}
+  {% if page_tags and page_tags.size > 0 %}
+    {% assign has_tags = true %}
+  {% endif %}
+  {% assign has_cats = false %}
+  {% if page_cats and page_cats.size > 0 %}
+    {% assign has_cats = true %}
+  {% endif %}
+  {% if has_tags or has_cats %}
   {% assign ranked_entries = '' %}
   {% for post in site.blog %}
-    {% if post.url != page.url and post.tags %}
+    {% if post.layout != 'redirect' and post.url != page.url %}
       {% assign overlap = 0 %}
-      {% for tag in page.tags %}
-        {% if post.tags contains tag %}
-          {% assign overlap = overlap | plus: 1 %}
+      {% if has_tags and post.tags %}
+        {% for tag in page_tags %}
+          {% if post.tags contains tag %}
+            {% assign overlap = overlap | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if has_cats %}
+        {% assign post_cats = post.categories %}
+        {% if post_cats == nil or post_cats.size == 0 %}
+          {% assign post_cats = post.disciplines %}
         {% endif %}
-      {% endfor %}
+        {% if post_cats and post_cats.size > 0 %}
+          {% for cat in page_cats %}
+            {% if post_cats contains cat %}
+              {% assign overlap = overlap | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
       {% if overlap > 0 %}
         {% assign overlap_pad = overlap | plus: 10 %}
         {% assign date_ord = post.date | date: '%s' %}
@@ -51,6 +81,7 @@ Public UI: «یادداشت‌های مرتبط :» + flat list.
   <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">{{ related_heading }}</h2>
   <ul>{{ related_items }}</ul>
 </nav>
+  {% endif %}
   {% endif %}
 {% endif %}
 {% endif %}

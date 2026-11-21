@@ -1,17 +1,17 @@
 ---
 layout: default
-title: یادداشت‌های شخصی
-description: "یادداشت‌های شخصی کاوه‌ رضائی‌شیراز؛ روایت‌ها و تجربه‌های غیر فنی."
+title: یادداشت‌ها
+description: "یادداشت‌های شخصی و گزارش‌های صعود کاوه‌ رضائی‌شیراز در یک فهرست."
 permalink: /notes/
 lang: fa-IR
 dir_attr: rtl
 ---
 
-<h1>یادداشت‌های شخصی</h1>
-<p>اینجا چیزهایی را می‌نویسم که گزارش فنی یا آموزش ابزار نیستند.</p>
-{% include hub-filter.html toolname="filter_personal_notes" tooldescription="Filter personal notes listed on this page by title or summary text." %}
+<h1>یادداشت‌ها</h1>
+<p>یادداشت‌های شخصی و گزارش‌های صعود اینجا در یک فهرست هستند.</p>
+{% include hub-filter.html toolname="filter_notes" tooldescription="Filter notes and climb reports listed on this page by title or summary text." %}
 <ul data-hub-list>
-  {% assign notes = site.blog | sort: "date" | reverse %}
+  {% assign notes = site.blog | where_exp: "post", "post.layout != 'redirect'" | sort: "date" | reverse %}
   {% for post in notes %}
   <li style="margin-bottom: 15px; list-style: none; border-bottom: 1px solid #eee; padding-bottom: 10px;">
     <a href="{{ post.url }}" style="font-size: 1.2rem; font-weight: bold; text-decoration: none;">{{ post.title }}</a>
