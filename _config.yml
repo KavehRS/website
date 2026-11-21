@@ -31,6 +31,7 @@ social:
   links:
     - https://www.linkedin.com/in/kavehrs
     - https://github.com/kavehrs
+    - https://orcid.org/0000-0001-9591-7724
     - https://twitter.com/kavehrs
     - https://www.facebook.com/imkavehrs
     - https://www.instagram.com/imkavehrs
@@ -46,7 +47,7 @@ instagram: "imkavehrs"
 linkedin: "kavehrs"
 github: "kavehrs"
 #researchgate: "#"
-#orcid: "0000-0001-9591-7724"
+orcid: "0000-0001-9591-7724"
 
 highlighter: rouge
 markdown: kramdown

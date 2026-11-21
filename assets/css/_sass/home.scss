@@ -579,6 +579,25 @@ html:has(body.site-home) { background: $ink; }
 
 .section-more { margin: 1.5rem 0 0; }
 
+#sites { border-top: 1px solid rgba(15, 23, 42, 0.12); }
+
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.site-links a {
+  color: $text;
+  text-decoration: none;
+  border-bottom: 1px solid $accent;
+}
+
+.site-links a:hover { color: $accent; }
+
 .contact-band { padding-bottom: 4rem; }
 
 .contact-email {
