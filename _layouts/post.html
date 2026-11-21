@@ -5,7 +5,7 @@ layout: default
 <nav class="crumbs" aria-label="مسیر صفحه" style="margin-bottom: 0.75rem;">
   <small>
     <a href="{{ '/' | relative_url }}">خانه</a>
-    · <a href="{{ '/notes/' | relative_url }}">یادداشت‌های شخصی</a>
+    · <a href="{{ '/notes/' | relative_url }}">یادداشت‌ها</a>
   </small>
 </nav>
 {% endif %}
@@ -20,12 +20,21 @@ layout: default
   {% assign cover_alt = page.image.alt | default: page.title %}
   {% assign cover_w = page.image.width %}
   {% assign cover_h = page.image.height %}
+  {% assign cover_cap = page.image.caption %}
 {% else %}
   {% assign cover_src = page.image %}
   {% assign cover_alt = page.title %}
 {% endif %}
 {% if cover_src and cover_src != empty and cover_src != default_img %}
-<img class="post-cover" src="{{ cover_src | relative_url }}" alt="{{ cover_alt | escape }}"{% if cover_w %} width="{{ cover_w }}"{% endif %}{% if cover_h %} height="{{ cover_h }}"{% endif %} fetchpriority="high" decoding="async">
+  {% if cover_src contains '://' %}
+    {% assign cover_href = cover_src %}
+  {% else %}
+    {% assign cover_href = cover_src | relative_url %}
+  {% endif %}
+<figure class="post-cover-fig">
+<img class="post-cover" src="{{ cover_href }}" alt="{{ cover_alt | escape }}"{% if cover_w %} width="{{ cover_w }}"{% endif %}{% if cover_h %} height="{{ cover_h }}"{% endif %} fetchpriority="high" decoding="async">
+{% if cover_cap %}<figcaption>{{ cover_cap }}</figcaption>{% endif %}
+</figure>
 {% endif %}
 
 {{ content }}
