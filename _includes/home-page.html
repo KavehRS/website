@@ -220,21 +220,9 @@ Project cards render only from _data/showcase.yml.
   </div>
 </section>
 
-<section class="band band-dark" id="contact">
+<section class="band band-dark">
   <div class="band-inner contact-band">
     <p class="eyebrow">Contact</p>
-    <h2>Get in touch</h2>
-    {% if site.email %}
-    <p class="contact-email"><a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p>
-    {% endif %}
-    <ul class="contact-links">
-      {% if site.github %}<li><a href="https://github.com/{{ site.github }}">GitHub</a></li>{% endif %}
-      {% if site.orcid %}<li><a href="https://orcid.org/{{ site.orcid }}">ORCID</a></li>{% endif %}
-      {% if site.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
-      {% if site.instagram %}<li><a href="https://www.instagram.com/{{ site.instagram }}">Instagram</a></li>{% endif %}
-      {% assign twitter_user = site.twitter.username | default: site.twitter %}
-      {% if twitter_user %}<li><a href="https://twitter.com/{{ twitter_user }}">X</a></li>{% endif %}
-      {% if site.facebook %}<li><a href="https://www.facebook.com/{{ site.facebook }}">Facebook</a></li>{% endif %}
-    </ul>
+    <p class="lede lede-muted"><a href="{{ '/contact/' | relative_url }}">Get in touch</a></p>
   </div>
 </section>

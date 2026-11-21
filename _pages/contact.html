@@ -1,0 +1,50 @@
+---
+layout: default
+title: Contact
+description: How to reach Kaveh RezaeiShiraz.
+permalink: /contact/
+published: true
+lang: en
+locale: en_US
+dir_attr: ltr
+body_class: contact-page
+main_class: contact-main
+---
+
+<section class="band band-dark" id="contact">
+  <div class="band-inner contact-band">
+    <p class="eyebrow">Contact</p>
+    <h2>Get in touch</h2>
+    {% if site.email %}
+    {% assign mail_user = site.email | split: "@" | first %}
+    {% assign mail_host = site.email | split: "@" | last %}
+    {% assign mail_user_last = mail_user | size | minus: 1 %}
+    {% assign mail_host_last = mail_host | size | minus: 1 %}
+    <p class="contact-email"><button type="button" id="contact-email">Email</button></p>
+    <script>
+      (function () {
+        var button = document.getElementById("contact-email");
+        if (!button) return;
+        var user = [{% for i in (0..mail_user_last) %}{{ mail_user | slice: i, 1 | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}];
+        var host = [{% for i in (0..mail_host_last) %}{{ mail_host | slice: i, 1 | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}];
+        button.addEventListener("click", function () {
+          var address = user.join("") + String.fromCharCode(64) + host.join("");
+          var link = document.createElement("a");
+          link.href = "mailto:" + address;
+          link.textContent = address;
+          button.replaceWith(link);
+        });
+      })();
+    </script>
+    {% endif %}
+    <ul class="contact-links">
+      {% if site.github %}<li><a href="https://github.com/{{ site.github }}">GitHub</a></li>{% endif %}
+      {% if site.orcid %}<li><a href="https://orcid.org/{{ site.orcid }}">ORCID</a></li>{% endif %}
+      {% if site.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
+      {% if site.instagram %}<li><a href="https://www.instagram.com/{{ site.instagram }}">Instagram</a></li>{% endif %}
+      {% assign twitter_user = site.twitter.username | default: site.twitter %}
+      {% if twitter_user %}<li><a href="https://twitter.com/{{ twitter_user }}">X</a></li>{% endif %}
+      {% if site.facebook %}<li><a href="https://www.facebook.com/{{ site.facebook }}">Facebook</a></li>{% endif %}
+    </ul>
+  </div>
+</section>

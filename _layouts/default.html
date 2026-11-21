@@ -26,11 +26,11 @@ layout: compress
     {% include favicon.html %}
 </head>
 
-<body class="site-page">
+<body class="site-page{% if page.body_class %} {{ page.body_class }}{% endif %}">
     <a class="skip-link" href="#content">Skip to content</a>
     {% include site-header.html %}
 
-    <main id="content">
+    <main id="content"{% if page.main_class %} class="{{ page.main_class }}"{% endif %}>
         <article>
             {{ content }}
         </article>
