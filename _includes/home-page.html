@@ -18,8 +18,7 @@ Project cards render only from _data/showcase.yml.
     <h1 id="hero-title">Building systems.<br>Exploring possibilities.</h1>
     <p class="hero-intro">I'm Kaveh RezaeiShiraz — a software engineer interested in technology, data, open-source software, and the outdoors.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">Explore My Work</a>
-      <a class="btn btn-quiet" href="#about">About Me</a>
+      <a class="btn btn-primary" href="#about">About Me</a>
     </div>
   </div>
 </section>
@@ -76,7 +75,7 @@ Project cards render only from _data/showcase.yml.
   </div>
 </section>
 
-<section class="band band-dark" id="professional">
+<section class="band band-mist" id="professional">
   <div class="band-inner">
     <p class="eyebrow">Professional</p>
     <h2>Where the work sits</h2>
@@ -107,43 +106,6 @@ Project cards render only from _data/showcase.yml.
         <p>Following new tools closely enough to see where they actually help.</p>
       </li>
     </ul>
-  </div>
-</section>
-
-<section class="band band-light" id="projects">
-  <div class="band-inner">
-    <p class="eyebrow eyebrow-dark">Projects</p>
-    <h2>Selected work</h2>
-    {% assign showcase = site.data.showcase.items %}
-    {% if showcase and showcase.size > 0 %}
-    <ul class="project-list">
-      {% for project in showcase %}
-      <li class="project-item">
-        {% if project.image %}
-        <img src="{{ project.image | relative_url }}" alt="" width="320" height="200" decoding="async">
-        {% endif %}
-        <div>
-          <h3>
-            {% if project.url %}
-            <a href="{{ project.url }}">{{ project.title }}</a>
-            {% else %}
-            {{ project.title }}
-            {% endif %}
-          </h3>
-          {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-          {% if project.tech %}<p class="project-tech">{{ project.tech }}</p>{% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <div class="project-empty">
-      <p>Selected work will be listed here when it is ready to show.</p>
-      {% if site.github %}
-      <p><a href="https://github.com/{{ site.github }}">Public code on GitHub</a></p>
-      {% endif %}
-    </div>
-    {% endif %}
   </div>
 </section>
 
@@ -217,12 +179,5 @@ Project cards render only from _data/showcase.yml.
     {% else %}
     <p class="project-empty">Notes will appear here when they are published.</p>
     {% endif %}
-  </div>
-</section>
-
-<section class="band band-dark">
-  <div class="band-inner contact-band">
-    <p class="eyebrow">Contact</p>
-    <p class="lede lede-muted"><a href="{{ '/contact/' | relative_url }}">Get in touch</a></p>
   </div>
 </section>
