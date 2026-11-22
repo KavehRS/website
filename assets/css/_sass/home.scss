@@ -452,6 +452,11 @@ html:has(body.site-home) { background: $ink; }
   color: $text;
 }
 
+.band-mist {
+  background: mix($slate, $paper, 34%);
+  color: $text;
+}
+
 .band-dark {
   background: $ink;
   color: $paper;
@@ -539,6 +544,12 @@ html:has(body.site-home) { background: $ink; }
 
 .band-light a { color: $accent; }
 .band-dark a { color: $white; }
+
+.band-mist a,
+.band-mist .eyebrow { color: mix($text, $accent, 15%); }
+.band-mist .lede-muted,
+.band-mist .practice-list p { color: mix($text, $muted, 28%); }
+.band-mist .practice-list li { border-top-color: rgba(15, 23, 42, 0.12); }
 
 .bio-fa {
   margin: 3rem 0 0;
