@@ -494,7 +494,8 @@ html:has(body.site-home) { background: $ink; }
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
+  border-radius: 50%;
 }
 
 .interest-list {
