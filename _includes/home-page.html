@@ -30,13 +30,14 @@ Project cards render only from _data/showcase.yml.
     <p class="lede">Technology is his profession and curiosity is his motivation. He is a mountain guide in mountaineering, rock climbing, and dry tooling.</p>
 
     <div class="about-layout">
-      <figure class="portrait">
+      <figure class="portrait" style="display:block;width:16rem;max-width:100%;aspect-ratio:1/1;border-radius:50%;overflow:hidden;margin:0;clip-path:circle(50%)">
         <img
           src="{{ '/assets/images/home/portrait.jpg' | relative_url }}"
           alt="Kaveh RezaeiShiraz with a laptop on a ridge above the clouds."
           width="400"
           height="400"
-          decoding="async">
+          decoding="async"
+          style="display:block;width:100%;height:100%;object-fit:cover;object-position:center">
       </figure>
 
       <ol class="interest-list">
