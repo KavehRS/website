@@ -1,0 +1,21 @@
+name: Restore Repository Version
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore target version
+        run: |
+          git reset --hard 9390f597b539ac99ad60dab3df094ccc46c3ffb5
+          git push --force origin HEAD:master
